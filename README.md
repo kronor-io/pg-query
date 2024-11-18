@@ -111,7 +111,8 @@ in `test/PgQuery/`.
 
 ## Installation
 
-TODO:
+You'll need to ensure [libpg_query](https://github.com/pganalyze/libpg_query)
+is installed before trying to build this package.
 
 ## Development
 
@@ -119,12 +120,6 @@ TODO:
 
 ```
 make build
-```
-
-### Running the executable
-
-```
-make run
 ```
 
 ### Testing

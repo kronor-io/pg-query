@@ -27,11 +27,6 @@ hpack:
 	hpack
 .PHONY: hpack
 
-run:
-	make build
-	cabal run exe:pg-query
-.PHONY: run
-
 test:
 	make hpack
 	cabal run pg-query-test -- $(if $(match), --match="$(match)")
