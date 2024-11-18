@@ -1,0 +1,10 @@
+cradle:
+  multi:
+    - path: "src"
+      config: {cradle: {cabal: {component: "lib:pg-query"}}}
+
+    - path: "bin"
+      config: {cradle: {cabal: {component: "pg-query:pg-query"}}}
+
+    - path: "test"
+      config: {cradle: {cabal: {component: "pg-query:pg-query-test"}}}

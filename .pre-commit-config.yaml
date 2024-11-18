@@ -1,0 +1,20 @@
+---
+repos:
+  - repo: local
+    hooks:
+      - id: hlint
+        name: HLint
+        entry: hlint
+        language: system
+        types:
+          - haskell
+        exclude: "^src\/PgQuery\/Internal\/Proto\/.*"
+
+      - id: fourmolu
+        name: Format Haskell code with Fourmolu
+        entry: fourmolu --mode=inplace
+        language: system
+        types:
+          - haskell
+        require_serial: true
+        exclude: "^src\/PgQuery\/Internal\/Proto\/.*"
