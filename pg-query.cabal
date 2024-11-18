@@ -5,7 +5,7 @@ cabal-version: 2.2
 -- see: https://github.com/sol/hpack
 
 name:           pg-query
-version:        0.0.1.0
+version:        0.0.1.1
 synopsis:       Parse PostgreSQL DDL and DML: Haskell bindings for libpg_query
 
 description:    pg-query offers Haskell bindings for @<https://github.com/pganalyze/libpg_query libpg_query>@, which makes use of the actual PostgreSQL server source to parse SQL queries and return the internal PostgreSQL parse tree.

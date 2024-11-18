@@ -17,6 +17,7 @@ generate-protobuf:
 
 	mv src/Proto/PgQuery.hs src/PgQuery/Internal/Proto/PgQuery.hs
 	sed -i -e 's/module Proto.PgQuery/module PgQuery.Internal.Proto.PgQuery/' src/PgQuery/Internal/Proto/PgQuery.hs
+	sed -i -e 's/Proto.PgQuery_Fields/PgQuery.Internal.Proto.PgQuery_Fields/' src/PgQuery/Internal/Proto/PgQuery.hs
 
 	mv src/Proto/PgQuery_Fields.hs src/PgQuery/Internal/Proto/PgQuery_Fields.hs
 	sed -i -e 's/module Proto.PgQuery_Fields/module PgQuery.Internal.Proto.PgQuery_Fields/' src/PgQuery/Internal/Proto/PgQuery_Fields.hs

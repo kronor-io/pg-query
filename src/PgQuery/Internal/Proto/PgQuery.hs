@@ -281,9 +281,9 @@ import qualified Data.ProtoLens.Runtime.Data.Vector.Unboxed as Data.Vector.Unbox
 import qualified Data.ProtoLens.Runtime.Text.Read as Text.Read
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.elements' @:: Lens' A_ArrayExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'elements' @:: Lens' A_ArrayExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' A_ArrayExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.elements' @:: Lens' A_ArrayExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'elements' @:: Lens' A_ArrayExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' A_ArrayExpr Data.Int.Int32@ -}
 data A_ArrayExpr
   = A_ArrayExpr'_constructor {_A_ArrayExpr'elements :: !(Data.Vector.Vector Node),
                               _A_ArrayExpr'location :: !Data.Int.Int32,
@@ -459,19 +459,19 @@ instance Control.DeepSeq.NFData A_ArrayExpr where
                 (Control.DeepSeq.deepseq (_A_ArrayExpr'location x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.isnull' @:: Lens' A_Const Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' A_Const Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.maybe'val' @:: Lens' A_Const (Prelude.Maybe A_Const'Val)@
-         * 'Proto.PgQuery_Fields.maybe'ival' @:: Lens' A_Const (Prelude.Maybe Integer)@
-         * 'Proto.PgQuery_Fields.ival' @:: Lens' A_Const Integer@
-         * 'Proto.PgQuery_Fields.maybe'fval' @:: Lens' A_Const (Prelude.Maybe Float)@
-         * 'Proto.PgQuery_Fields.fval' @:: Lens' A_Const Float@
-         * 'Proto.PgQuery_Fields.maybe'boolval' @:: Lens' A_Const (Prelude.Maybe Boolean)@
-         * 'Proto.PgQuery_Fields.boolval' @:: Lens' A_Const Boolean@
-         * 'Proto.PgQuery_Fields.maybe'sval' @:: Lens' A_Const (Prelude.Maybe String)@
-         * 'Proto.PgQuery_Fields.sval' @:: Lens' A_Const String@
-         * 'Proto.PgQuery_Fields.maybe'bsval' @:: Lens' A_Const (Prelude.Maybe BitString)@
-         * 'Proto.PgQuery_Fields.bsval' @:: Lens' A_Const BitString@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isnull' @:: Lens' A_Const Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' A_Const Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'val' @:: Lens' A_Const (Prelude.Maybe A_Const'Val)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'ival' @:: Lens' A_Const (Prelude.Maybe Integer)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ival' @:: Lens' A_Const Integer@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'fval' @:: Lens' A_Const (Prelude.Maybe Float)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fval' @:: Lens' A_Const Float@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'boolval' @:: Lens' A_Const (Prelude.Maybe Boolean)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.boolval' @:: Lens' A_Const Boolean@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'sval' @:: Lens' A_Const (Prelude.Maybe String)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sval' @:: Lens' A_Const String@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'bsval' @:: Lens' A_Const (Prelude.Maybe BitString)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.bsval' @:: Lens' A_Const BitString@ -}
 data A_Const
   = A_Const'_constructor {_A_Const'isnull :: !Prelude.Bool,
                           _A_Const'location :: !Data.Int.Int32,
@@ -940,14 +940,14 @@ _A_Const'Bsval
               _otherwise -> Prelude.Nothing)
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' A_Expr A_Expr_Kind@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' A_Expr [Node]@
-         * 'Proto.PgQuery_Fields.vec'name' @:: Lens' A_Expr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.lexpr' @:: Lens' A_Expr Node@
-         * 'Proto.PgQuery_Fields.maybe'lexpr' @:: Lens' A_Expr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.rexpr' @:: Lens' A_Expr Node@
-         * 'Proto.PgQuery_Fields.maybe'rexpr' @:: Lens' A_Expr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' A_Expr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' A_Expr A_Expr_Kind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' A_Expr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'name' @:: Lens' A_Expr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lexpr' @:: Lens' A_Expr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'lexpr' @:: Lens' A_Expr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rexpr' @:: Lens' A_Expr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rexpr' @:: Lens' A_Expr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' A_Expr Data.Int.Int32@ -}
 data A_Expr
   = A_Expr'_constructor {_A_Expr'kind :: !A_Expr_Kind,
                          _A_Expr'name :: !(Data.Vector.Vector Node),
@@ -1417,11 +1417,11 @@ instance Control.DeepSeq.NFData A_Expr_Kind where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.isSlice' @:: Lens' A_Indices Prelude.Bool@
-         * 'Proto.PgQuery_Fields.lidx' @:: Lens' A_Indices Node@
-         * 'Proto.PgQuery_Fields.maybe'lidx' @:: Lens' A_Indices (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.uidx' @:: Lens' A_Indices Node@
-         * 'Proto.PgQuery_Fields.maybe'uidx' @:: Lens' A_Indices (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isSlice' @:: Lens' A_Indices Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lidx' @:: Lens' A_Indices Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'lidx' @:: Lens' A_Indices (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.uidx' @:: Lens' A_Indices Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'uidx' @:: Lens' A_Indices (Prelude.Maybe Node)@ -}
 data A_Indices
   = A_Indices'_constructor {_A_Indices'isSlice :: !Prelude.Bool,
                             _A_Indices'lidx :: !(Prelude.Maybe Node),
@@ -1620,10 +1620,10 @@ instance Control.DeepSeq.NFData A_Indices where
                    (Control.DeepSeq.deepseq (_A_Indices'uidx x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' A_Indirection Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' A_Indirection (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.indirection' @:: Lens' A_Indirection [Node]@
-         * 'Proto.PgQuery_Fields.vec'indirection' @:: Lens' A_Indirection (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' A_Indirection Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' A_Indirection (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indirection' @:: Lens' A_Indirection [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'indirection' @:: Lens' A_Indirection (Data.Vector.Vector Node)@ -}
 data A_Indirection
   = A_Indirection'_constructor {_A_Indirection'arg :: !(Prelude.Maybe Node),
                                 _A_Indirection'indirection :: !(Data.Vector.Vector Node),
@@ -1869,9 +1869,9 @@ instance Control.DeepSeq.NFData A_Star where
     = \ x__ -> Control.DeepSeq.deepseq (_A_Star'_unknownFields x__) ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.privName' @:: Lens' AccessPriv Data.Text.Text@
-         * 'Proto.PgQuery_Fields.cols' @:: Lens' AccessPriv [Node]@
-         * 'Proto.PgQuery_Fields.vec'cols' @:: Lens' AccessPriv (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.privName' @:: Lens' AccessPriv Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cols' @:: Lens' AccessPriv [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'cols' @:: Lens' AccessPriv (Data.Vector.Vector Node)@ -}
 data AccessPriv
   = AccessPriv'_constructor {_AccessPriv'privName :: !Data.Text.Text,
                              _AccessPriv'cols :: !(Data.Vector.Vector Node),
@@ -2207,32 +2207,32 @@ instance Control.DeepSeq.NFData AggStrategy where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' Aggref Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' Aggref (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.aggfnoid' @:: Lens' Aggref Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.aggtype' @:: Lens' Aggref Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.aggcollid' @:: Lens' Aggref Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inputcollid' @:: Lens' Aggref Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.aggargtypes' @:: Lens' Aggref [Node]@
-         * 'Proto.PgQuery_Fields.vec'aggargtypes' @:: Lens' Aggref (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.aggdirectargs' @:: Lens' Aggref [Node]@
-         * 'Proto.PgQuery_Fields.vec'aggdirectargs' @:: Lens' Aggref (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' Aggref [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' Aggref (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.aggorder' @:: Lens' Aggref [Node]@
-         * 'Proto.PgQuery_Fields.vec'aggorder' @:: Lens' Aggref (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.aggdistinct' @:: Lens' Aggref [Node]@
-         * 'Proto.PgQuery_Fields.vec'aggdistinct' @:: Lens' Aggref (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.aggfilter' @:: Lens' Aggref Node@
-         * 'Proto.PgQuery_Fields.maybe'aggfilter' @:: Lens' Aggref (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.aggstar' @:: Lens' Aggref Prelude.Bool@
-         * 'Proto.PgQuery_Fields.aggvariadic' @:: Lens' Aggref Prelude.Bool@
-         * 'Proto.PgQuery_Fields.aggkind' @:: Lens' Aggref Data.Text.Text@
-         * 'Proto.PgQuery_Fields.agglevelsup' @:: Lens' Aggref Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.aggsplit' @:: Lens' Aggref AggSplit@
-         * 'Proto.PgQuery_Fields.aggno' @:: Lens' Aggref Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.aggtransno' @:: Lens' Aggref Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' Aggref Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' Aggref Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' Aggref (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggfnoid' @:: Lens' Aggref Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggtype' @:: Lens' Aggref Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggcollid' @:: Lens' Aggref Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inputcollid' @:: Lens' Aggref Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggargtypes' @:: Lens' Aggref [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'aggargtypes' @:: Lens' Aggref (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggdirectargs' @:: Lens' Aggref [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'aggdirectargs' @:: Lens' Aggref (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' Aggref [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' Aggref (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggorder' @:: Lens' Aggref [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'aggorder' @:: Lens' Aggref (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggdistinct' @:: Lens' Aggref [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'aggdistinct' @:: Lens' Aggref (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggfilter' @:: Lens' Aggref Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aggfilter' @:: Lens' Aggref (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggstar' @:: Lens' Aggref Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggvariadic' @:: Lens' Aggref Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggkind' @:: Lens' Aggref Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.agglevelsup' @:: Lens' Aggref Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggsplit' @:: Lens' Aggref AggSplit@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggno' @:: Lens' Aggref Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggtransno' @:: Lens' Aggref Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' Aggref Data.Int.Int32@ -}
 data Aggref
   = Aggref'_constructor {_Aggref'xpr :: !(Prelude.Maybe Node),
                          _Aggref'aggfnoid :: !Data.Word.Word32,
@@ -3320,9 +3320,9 @@ instance Control.DeepSeq.NFData Aggref where
                                                                       ())))))))))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.aliasname' @:: Lens' Alias Data.Text.Text@
-         * 'Proto.PgQuery_Fields.colnames' @:: Lens' Alias [Node]@
-         * 'Proto.PgQuery_Fields.vec'colnames' @:: Lens' Alias (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aliasname' @:: Lens' Alias Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colnames' @:: Lens' Alias [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colnames' @:: Lens' Alias (Data.Vector.Vector Node)@ -}
 data Alias
   = Alias'_constructor {_Alias'aliasname :: !Data.Text.Text,
                         _Alias'colnames :: !(Data.Vector.Vector Node),
@@ -3500,8 +3500,8 @@ instance Control.DeepSeq.NFData Alias where
                 (Control.DeepSeq.deepseq (_Alias'colnames x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.collname' @:: Lens' AlterCollationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'collname' @:: Lens' AlterCollationStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collname' @:: Lens' AlterCollationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'collname' @:: Lens' AlterCollationStmt (Data.Vector.Vector Node)@ -}
 data AlterCollationStmt
   = AlterCollationStmt'_constructor {_AlterCollationStmt'collname :: !(Data.Vector.Vector Node),
                                      _AlterCollationStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -3635,7 +3635,7 @@ instance Control.DeepSeq.NFData AlterCollationStmt where
              (Control.DeepSeq.deepseq (_AlterCollationStmt'collname x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.dbname' @:: Lens' AlterDatabaseRefreshCollStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dbname' @:: Lens' AlterDatabaseRefreshCollStmt Data.Text.Text@ -}
 data AlterDatabaseRefreshCollStmt
   = AlterDatabaseRefreshCollStmt'_constructor {_AlterDatabaseRefreshCollStmt'dbname :: !Data.Text.Text,
                                                _AlterDatabaseRefreshCollStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -3751,9 +3751,9 @@ instance Control.DeepSeq.NFData AlterDatabaseRefreshCollStmt where
                 (_AlterDatabaseRefreshCollStmt'dbname x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.dbname' @:: Lens' AlterDatabaseSetStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.setstmt' @:: Lens' AlterDatabaseSetStmt VariableSetStmt@
-         * 'Proto.PgQuery_Fields.maybe'setstmt' @:: Lens' AlterDatabaseSetStmt (Prelude.Maybe VariableSetStmt)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dbname' @:: Lens' AlterDatabaseSetStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.setstmt' @:: Lens' AlterDatabaseSetStmt VariableSetStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'setstmt' @:: Lens' AlterDatabaseSetStmt (Prelude.Maybe VariableSetStmt)@ -}
 data AlterDatabaseSetStmt
   = AlterDatabaseSetStmt'_constructor {_AlterDatabaseSetStmt'dbname :: !Data.Text.Text,
                                        _AlterDatabaseSetStmt'setstmt :: !(Prelude.Maybe VariableSetStmt),
@@ -3916,9 +3916,9 @@ instance Control.DeepSeq.NFData AlterDatabaseSetStmt where
                 (Control.DeepSeq.deepseq (_AlterDatabaseSetStmt'setstmt x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.dbname' @:: Lens' AlterDatabaseStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterDatabaseStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterDatabaseStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dbname' @:: Lens' AlterDatabaseStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterDatabaseStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterDatabaseStmt (Data.Vector.Vector Node)@ -}
 data AlterDatabaseStmt
   = AlterDatabaseStmt'_constructor {_AlterDatabaseStmt'dbname :: !Data.Text.Text,
                                     _AlterDatabaseStmt'options :: !(Data.Vector.Vector Node),
@@ -4096,10 +4096,10 @@ instance Control.DeepSeq.NFData AlterDatabaseStmt where
                 (Control.DeepSeq.deepseq (_AlterDatabaseStmt'options x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterDefaultPrivilegesStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterDefaultPrivilegesStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.action' @:: Lens' AlterDefaultPrivilegesStmt GrantStmt@
-         * 'Proto.PgQuery_Fields.maybe'action' @:: Lens' AlterDefaultPrivilegesStmt (Prelude.Maybe GrantStmt)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterDefaultPrivilegesStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterDefaultPrivilegesStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.action' @:: Lens' AlterDefaultPrivilegesStmt GrantStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'action' @:: Lens' AlterDefaultPrivilegesStmt (Prelude.Maybe GrantStmt)@ -}
 data AlterDefaultPrivilegesStmt
   = AlterDefaultPrivilegesStmt'_constructor {_AlterDefaultPrivilegesStmt'options :: !(Data.Vector.Vector Node),
                                              _AlterDefaultPrivilegesStmt'action :: !(Prelude.Maybe GrantStmt),
@@ -4286,14 +4286,14 @@ instance Control.DeepSeq.NFData AlterDefaultPrivilegesStmt where
                    (_AlterDefaultPrivilegesStmt'action x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.subtype' @:: Lens' AlterDomainStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' AlterDomainStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'typeName' @:: Lens' AlterDomainStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' AlterDomainStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.def' @:: Lens' AlterDomainStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'def' @:: Lens' AlterDomainStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.behavior' @:: Lens' AlterDomainStmt DropBehavior@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' AlterDomainStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subtype' @:: Lens' AlterDomainStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' AlterDomainStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'typeName' @:: Lens' AlterDomainStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' AlterDomainStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.def' @:: Lens' AlterDomainStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'def' @:: Lens' AlterDomainStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.behavior' @:: Lens' AlterDomainStmt DropBehavior@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' AlterDomainStmt Prelude.Bool@ -}
 data AlterDomainStmt
   = AlterDomainStmt'_constructor {_AlterDomainStmt'subtype :: !Data.Text.Text,
                                   _AlterDomainStmt'typeName :: !(Data.Vector.Vector Node),
@@ -4661,13 +4661,13 @@ instance Control.DeepSeq.NFData AlterDomainStmt where
                             (Control.DeepSeq.deepseq (_AlterDomainStmt'missingOk x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' AlterEnumStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'typeName' @:: Lens' AlterEnumStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.oldVal' @:: Lens' AlterEnumStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.newVal' @:: Lens' AlterEnumStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.newValNeighbor' @:: Lens' AlterEnumStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.newValIsAfter' @:: Lens' AlterEnumStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.skipIfNewValExists' @:: Lens' AlterEnumStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' AlterEnumStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'typeName' @:: Lens' AlterEnumStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oldVal' @:: Lens' AlterEnumStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newVal' @:: Lens' AlterEnumStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newValNeighbor' @:: Lens' AlterEnumStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newValIsAfter' @:: Lens' AlterEnumStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.skipIfNewValExists' @:: Lens' AlterEnumStmt Prelude.Bool@ -}
 data AlterEnumStmt
   = AlterEnumStmt'_constructor {_AlterEnumStmt'typeName :: !(Data.Vector.Vector Node),
                                 _AlterEnumStmt'oldVal :: !Data.Text.Text,
@@ -5034,8 +5034,8 @@ instance Control.DeepSeq.NFData AlterEnumStmt where
                                (_AlterEnumStmt'skipIfNewValExists x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.trigname' @:: Lens' AlterEventTrigStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.tgenabled' @:: Lens' AlterEventTrigStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.trigname' @:: Lens' AlterEventTrigStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tgenabled' @:: Lens' AlterEventTrigStmt Data.Text.Text@ -}
 data AlterEventTrigStmt
   = AlterEventTrigStmt'_constructor {_AlterEventTrigStmt'trigname :: !Data.Text.Text,
                                      _AlterEventTrigStmt'tgenabled :: !Data.Text.Text,
@@ -5196,11 +5196,11 @@ instance Control.DeepSeq.NFData AlterEventTrigStmt where
                 (Control.DeepSeq.deepseq (_AlterEventTrigStmt'tgenabled x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.extname' @:: Lens' AlterExtensionContentsStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.action' @:: Lens' AlterExtensionContentsStmt Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.objtype' @:: Lens' AlterExtensionContentsStmt ObjectType@
-         * 'Proto.PgQuery_Fields.object' @:: Lens' AlterExtensionContentsStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'object' @:: Lens' AlterExtensionContentsStmt (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.extname' @:: Lens' AlterExtensionContentsStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.action' @:: Lens' AlterExtensionContentsStmt Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objtype' @:: Lens' AlterExtensionContentsStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.object' @:: Lens' AlterExtensionContentsStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'object' @:: Lens' AlterExtensionContentsStmt (Prelude.Maybe Node)@ -}
 data AlterExtensionContentsStmt
   = AlterExtensionContentsStmt'_constructor {_AlterExtensionContentsStmt'extname :: !Data.Text.Text,
                                              _AlterExtensionContentsStmt'action :: !Data.Int.Int32,
@@ -5448,9 +5448,9 @@ instance Control.DeepSeq.NFData AlterExtensionContentsStmt where
                          (_AlterExtensionContentsStmt'object x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.extname' @:: Lens' AlterExtensionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterExtensionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterExtensionStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.extname' @:: Lens' AlterExtensionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterExtensionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterExtensionStmt (Data.Vector.Vector Node)@ -}
 data AlterExtensionStmt
   = AlterExtensionStmt'_constructor {_AlterExtensionStmt'extname :: !Data.Text.Text,
                                      _AlterExtensionStmt'options :: !(Data.Vector.Vector Node),
@@ -5628,11 +5628,11 @@ instance Control.DeepSeq.NFData AlterExtensionStmt where
                 (Control.DeepSeq.deepseq (_AlterExtensionStmt'options x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.fdwname' @:: Lens' AlterFdwStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.funcOptions' @:: Lens' AlterFdwStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'funcOptions' @:: Lens' AlterFdwStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterFdwStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterFdwStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fdwname' @:: Lens' AlterFdwStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcOptions' @:: Lens' AlterFdwStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funcOptions' @:: Lens' AlterFdwStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterFdwStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterFdwStmt (Data.Vector.Vector Node)@ -}
 data AlterFdwStmt
   = AlterFdwStmt'_constructor {_AlterFdwStmt'fdwname :: !Data.Text.Text,
                                _AlterFdwStmt'funcOptions :: !(Data.Vector.Vector Node),
@@ -5874,11 +5874,11 @@ instance Control.DeepSeq.NFData AlterFdwStmt where
                    (Control.DeepSeq.deepseq (_AlterFdwStmt'options x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.servername' @:: Lens' AlterForeignServerStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.version' @:: Lens' AlterForeignServerStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterForeignServerStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterForeignServerStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.hasVersion' @:: Lens' AlterForeignServerStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.servername' @:: Lens' AlterForeignServerStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.version' @:: Lens' AlterForeignServerStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterForeignServerStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterForeignServerStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasVersion' @:: Lens' AlterForeignServerStmt Prelude.Bool@ -}
 data AlterForeignServerStmt
   = AlterForeignServerStmt'_constructor {_AlterForeignServerStmt'servername :: !Data.Text.Text,
                                          _AlterForeignServerStmt'version :: !Data.Text.Text,
@@ -6150,11 +6150,11 @@ instance Control.DeepSeq.NFData AlterForeignServerStmt where
                          (_AlterForeignServerStmt'hasVersion x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.objtype' @:: Lens' AlterFunctionStmt ObjectType@
-         * 'Proto.PgQuery_Fields.func' @:: Lens' AlterFunctionStmt ObjectWithArgs@
-         * 'Proto.PgQuery_Fields.maybe'func' @:: Lens' AlterFunctionStmt (Prelude.Maybe ObjectWithArgs)@
-         * 'Proto.PgQuery_Fields.actions' @:: Lens' AlterFunctionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'actions' @:: Lens' AlterFunctionStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objtype' @:: Lens' AlterFunctionStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.func' @:: Lens' AlterFunctionStmt ObjectWithArgs@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'func' @:: Lens' AlterFunctionStmt (Prelude.Maybe ObjectWithArgs)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.actions' @:: Lens' AlterFunctionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'actions' @:: Lens' AlterFunctionStmt (Data.Vector.Vector Node)@ -}
 data AlterFunctionStmt
   = AlterFunctionStmt'_constructor {_AlterFunctionStmt'objtype :: !ObjectType,
                                     _AlterFunctionStmt'func :: !(Prelude.Maybe ObjectWithArgs),
@@ -6382,14 +6382,14 @@ instance Control.DeepSeq.NFData AlterFunctionStmt where
                    (Control.DeepSeq.deepseq (_AlterFunctionStmt'actions x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.objectType' @:: Lens' AlterObjectDependsStmt ObjectType@
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' AlterObjectDependsStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' AlterObjectDependsStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.object' @:: Lens' AlterObjectDependsStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'object' @:: Lens' AlterObjectDependsStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.extname' @:: Lens' AlterObjectDependsStmt String@
-         * 'Proto.PgQuery_Fields.maybe'extname' @:: Lens' AlterObjectDependsStmt (Prelude.Maybe String)@
-         * 'Proto.PgQuery_Fields.remove' @:: Lens' AlterObjectDependsStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objectType' @:: Lens' AlterObjectDependsStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' AlterObjectDependsStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' AlterObjectDependsStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.object' @:: Lens' AlterObjectDependsStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'object' @:: Lens' AlterObjectDependsStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.extname' @:: Lens' AlterObjectDependsStmt String@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'extname' @:: Lens' AlterObjectDependsStmt (Prelude.Maybe String)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.remove' @:: Lens' AlterObjectDependsStmt Prelude.Bool@ -}
 data AlterObjectDependsStmt
   = AlterObjectDependsStmt'_constructor {_AlterObjectDependsStmt'objectType :: !ObjectType,
                                          _AlterObjectDependsStmt'relation :: !(Prelude.Maybe RangeVar),
@@ -6695,13 +6695,13 @@ instance Control.DeepSeq.NFData AlterObjectDependsStmt where
                             (_AlterObjectDependsStmt'remove x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.objectType' @:: Lens' AlterObjectSchemaStmt ObjectType@
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' AlterObjectSchemaStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' AlterObjectSchemaStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.object' @:: Lens' AlterObjectSchemaStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'object' @:: Lens' AlterObjectSchemaStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.newschema' @:: Lens' AlterObjectSchemaStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' AlterObjectSchemaStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objectType' @:: Lens' AlterObjectSchemaStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' AlterObjectSchemaStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' AlterObjectSchemaStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.object' @:: Lens' AlterObjectSchemaStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'object' @:: Lens' AlterObjectSchemaStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newschema' @:: Lens' AlterObjectSchemaStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' AlterObjectSchemaStmt Prelude.Bool@ -}
 data AlterObjectSchemaStmt
   = AlterObjectSchemaStmt'_constructor {_AlterObjectSchemaStmt'objectType :: !ObjectType,
                                         _AlterObjectSchemaStmt'relation :: !(Prelude.Maybe RangeVar),
@@ -7007,12 +7007,12 @@ instance Control.DeepSeq.NFData AlterObjectSchemaStmt where
                             (_AlterObjectSchemaStmt'missingOk x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.opfamilyname' @:: Lens' AlterOpFamilyStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'opfamilyname' @:: Lens' AlterOpFamilyStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.amname' @:: Lens' AlterOpFamilyStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.isDrop' @:: Lens' AlterOpFamilyStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.items' @:: Lens' AlterOpFamilyStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'items' @:: Lens' AlterOpFamilyStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opfamilyname' @:: Lens' AlterOpFamilyStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opfamilyname' @:: Lens' AlterOpFamilyStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.amname' @:: Lens' AlterOpFamilyStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isDrop' @:: Lens' AlterOpFamilyStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.items' @:: Lens' AlterOpFamilyStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'items' @:: Lens' AlterOpFamilyStmt (Data.Vector.Vector Node)@ -}
 data AlterOpFamilyStmt
   = AlterOpFamilyStmt'_constructor {_AlterOpFamilyStmt'opfamilyname :: !(Data.Vector.Vector Node),
                                     _AlterOpFamilyStmt'amname :: !Data.Text.Text,
@@ -7295,10 +7295,10 @@ instance Control.DeepSeq.NFData AlterOpFamilyStmt where
                       (Control.DeepSeq.deepseq (_AlterOpFamilyStmt'items x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.opername' @:: Lens' AlterOperatorStmt ObjectWithArgs@
-         * 'Proto.PgQuery_Fields.maybe'opername' @:: Lens' AlterOperatorStmt (Prelude.Maybe ObjectWithArgs)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterOperatorStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterOperatorStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opername' @:: Lens' AlterOperatorStmt ObjectWithArgs@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'opername' @:: Lens' AlterOperatorStmt (Prelude.Maybe ObjectWithArgs)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterOperatorStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterOperatorStmt (Data.Vector.Vector Node)@ -}
 data AlterOperatorStmt
   = AlterOperatorStmt'_constructor {_AlterOperatorStmt'opername :: !(Prelude.Maybe ObjectWithArgs),
                                     _AlterOperatorStmt'options :: !(Data.Vector.Vector Node),
@@ -7482,13 +7482,13 @@ instance Control.DeepSeq.NFData AlterOperatorStmt where
                 (Control.DeepSeq.deepseq (_AlterOperatorStmt'options x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.objectType' @:: Lens' AlterOwnerStmt ObjectType@
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' AlterOwnerStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' AlterOwnerStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.object' @:: Lens' AlterOwnerStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'object' @:: Lens' AlterOwnerStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.newowner' @:: Lens' AlterOwnerStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'newowner' @:: Lens' AlterOwnerStmt (Prelude.Maybe RoleSpec)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objectType' @:: Lens' AlterOwnerStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' AlterOwnerStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' AlterOwnerStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.object' @:: Lens' AlterOwnerStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'object' @:: Lens' AlterOwnerStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newowner' @:: Lens' AlterOwnerStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'newowner' @:: Lens' AlterOwnerStmt (Prelude.Maybe RoleSpec)@ -}
 data AlterOwnerStmt
   = AlterOwnerStmt'_constructor {_AlterOwnerStmt'objectType :: !ObjectType,
                                  _AlterOwnerStmt'relation :: !(Prelude.Maybe RangeVar),
@@ -7755,15 +7755,15 @@ instance Control.DeepSeq.NFData AlterOwnerStmt where
                       (Control.DeepSeq.deepseq (_AlterOwnerStmt'newowner x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.policyName' @:: Lens' AlterPolicyStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.table' @:: Lens' AlterPolicyStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'table' @:: Lens' AlterPolicyStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.roles' @:: Lens' AlterPolicyStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'roles' @:: Lens' AlterPolicyStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.qual' @:: Lens' AlterPolicyStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'qual' @:: Lens' AlterPolicyStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.withCheck' @:: Lens' AlterPolicyStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'withCheck' @:: Lens' AlterPolicyStmt (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.policyName' @:: Lens' AlterPolicyStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.table' @:: Lens' AlterPolicyStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'table' @:: Lens' AlterPolicyStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.roles' @:: Lens' AlterPolicyStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'roles' @:: Lens' AlterPolicyStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.qual' @:: Lens' AlterPolicyStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'qual' @:: Lens' AlterPolicyStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withCheck' @:: Lens' AlterPolicyStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'withCheck' @:: Lens' AlterPolicyStmt (Prelude.Maybe Node)@ -}
 data AlterPolicyStmt
   = AlterPolicyStmt'_constructor {_AlterPolicyStmt'policyName :: !Data.Text.Text,
                                   _AlterPolicyStmt'table :: !(Prelude.Maybe RangeVar),
@@ -8181,13 +8181,13 @@ instance Control.DeepSeq.NFData AlterPublicationAction where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.pubname' @:: Lens' AlterPublicationStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterPublicationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterPublicationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.pubobjects' @:: Lens' AlterPublicationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'pubobjects' @:: Lens' AlterPublicationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.forAllTables' @:: Lens' AlterPublicationStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.action' @:: Lens' AlterPublicationStmt AlterPublicationAction@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pubname' @:: Lens' AlterPublicationStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterPublicationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterPublicationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pubobjects' @:: Lens' AlterPublicationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'pubobjects' @:: Lens' AlterPublicationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.forAllTables' @:: Lens' AlterPublicationStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.action' @:: Lens' AlterPublicationStmt AlterPublicationAction@ -}
 data AlterPublicationStmt
   = AlterPublicationStmt'_constructor {_AlterPublicationStmt'pubname :: !Data.Text.Text,
                                        _AlterPublicationStmt'options :: !(Data.Vector.Vector Node),
@@ -8521,11 +8521,11 @@ instance Control.DeepSeq.NFData AlterPublicationStmt where
                          (Control.DeepSeq.deepseq (_AlterPublicationStmt'action x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.role' @:: Lens' AlterRoleSetStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'role' @:: Lens' AlterRoleSetStmt (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.database' @:: Lens' AlterRoleSetStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.setstmt' @:: Lens' AlterRoleSetStmt VariableSetStmt@
-         * 'Proto.PgQuery_Fields.maybe'setstmt' @:: Lens' AlterRoleSetStmt (Prelude.Maybe VariableSetStmt)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.role' @:: Lens' AlterRoleSetStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'role' @:: Lens' AlterRoleSetStmt (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.database' @:: Lens' AlterRoleSetStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.setstmt' @:: Lens' AlterRoleSetStmt VariableSetStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'setstmt' @:: Lens' AlterRoleSetStmt (Prelude.Maybe VariableSetStmt)@ -}
 data AlterRoleSetStmt
   = AlterRoleSetStmt'_constructor {_AlterRoleSetStmt'role :: !(Prelude.Maybe RoleSpec),
                                    _AlterRoleSetStmt'database :: !Data.Text.Text,
@@ -8740,11 +8740,11 @@ instance Control.DeepSeq.NFData AlterRoleSetStmt where
                    (Control.DeepSeq.deepseq (_AlterRoleSetStmt'setstmt x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.role' @:: Lens' AlterRoleStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'role' @:: Lens' AlterRoleStmt (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterRoleStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterRoleStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.action' @:: Lens' AlterRoleStmt Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.role' @:: Lens' AlterRoleStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'role' @:: Lens' AlterRoleStmt (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterRoleStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterRoleStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.action' @:: Lens' AlterRoleStmt Data.Int.Int32@ -}
 data AlterRoleStmt
   = AlterRoleStmt'_constructor {_AlterRoleStmt'role :: !(Prelude.Maybe RoleSpec),
                                 _AlterRoleStmt'options :: !(Data.Vector.Vector Node),
@@ -8967,12 +8967,12 @@ instance Control.DeepSeq.NFData AlterRoleStmt where
                    (Control.DeepSeq.deepseq (_AlterRoleStmt'action x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.sequence' @:: Lens' AlterSeqStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'sequence' @:: Lens' AlterSeqStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterSeqStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterSeqStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.forIdentity' @:: Lens' AlterSeqStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' AlterSeqStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sequence' @:: Lens' AlterSeqStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'sequence' @:: Lens' AlterSeqStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterSeqStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterSeqStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.forIdentity' @:: Lens' AlterSeqStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' AlterSeqStmt Prelude.Bool@ -}
 data AlterSeqStmt
   = AlterSeqStmt'_constructor {_AlterSeqStmt'sequence :: !(Prelude.Maybe RangeVar),
                                _AlterSeqStmt'options :: !(Data.Vector.Vector Node),
@@ -9243,10 +9243,10 @@ instance Control.DeepSeq.NFData AlterSeqStmt where
                       (Control.DeepSeq.deepseq (_AlterSeqStmt'missingOk x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.defnames' @:: Lens' AlterStatsStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'defnames' @:: Lens' AlterStatsStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.stxstattarget' @:: Lens' AlterStatsStmt Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' AlterStatsStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defnames' @:: Lens' AlterStatsStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'defnames' @:: Lens' AlterStatsStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.stxstattarget' @:: Lens' AlterStatsStmt Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' AlterStatsStmt Prelude.Bool@ -}
 data AlterStatsStmt
   = AlterStatsStmt'_constructor {_AlterStatsStmt'defnames :: !(Data.Vector.Vector Node),
                                  _AlterStatsStmt'stxstattarget :: !Data.Int.Int32,
@@ -9469,13 +9469,13 @@ instance Control.DeepSeq.NFData AlterStatsStmt where
                    (Control.DeepSeq.deepseq (_AlterStatsStmt'missingOk x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' AlterSubscriptionStmt AlterSubscriptionType@
-         * 'Proto.PgQuery_Fields.subname' @:: Lens' AlterSubscriptionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.conninfo' @:: Lens' AlterSubscriptionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.publication' @:: Lens' AlterSubscriptionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'publication' @:: Lens' AlterSubscriptionStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterSubscriptionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterSubscriptionStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' AlterSubscriptionStmt AlterSubscriptionType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subname' @:: Lens' AlterSubscriptionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.conninfo' @:: Lens' AlterSubscriptionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.publication' @:: Lens' AlterSubscriptionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'publication' @:: Lens' AlterSubscriptionStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterSubscriptionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterSubscriptionStmt (Data.Vector.Vector Node)@ -}
 data AlterSubscriptionStmt
   = AlterSubscriptionStmt'_constructor {_AlterSubscriptionStmt'kind :: !AlterSubscriptionType,
                                         _AlterSubscriptionStmt'subname :: !Data.Text.Text,
@@ -9944,8 +9944,8 @@ instance Control.DeepSeq.NFData AlterSubscriptionType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.setstmt' @:: Lens' AlterSystemStmt VariableSetStmt@
-         * 'Proto.PgQuery_Fields.maybe'setstmt' @:: Lens' AlterSystemStmt (Prelude.Maybe VariableSetStmt)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.setstmt' @:: Lens' AlterSystemStmt VariableSetStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'setstmt' @:: Lens' AlterSystemStmt (Prelude.Maybe VariableSetStmt)@ -}
 data AlterSystemStmt
   = AlterSystemStmt'_constructor {_AlterSystemStmt'setstmt :: !(Prelude.Maybe VariableSetStmt),
                                   _AlterSystemStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -10174,16 +10174,16 @@ instance Control.DeepSeq.NFData AlterTSConfigType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' AlterTSConfigurationStmt AlterTSConfigType@
-         * 'Proto.PgQuery_Fields.cfgname' @:: Lens' AlterTSConfigurationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'cfgname' @:: Lens' AlterTSConfigurationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.tokentype' @:: Lens' AlterTSConfigurationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'tokentype' @:: Lens' AlterTSConfigurationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.dicts' @:: Lens' AlterTSConfigurationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'dicts' @:: Lens' AlterTSConfigurationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.override' @:: Lens' AlterTSConfigurationStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.replace' @:: Lens' AlterTSConfigurationStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' AlterTSConfigurationStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' AlterTSConfigurationStmt AlterTSConfigType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cfgname' @:: Lens' AlterTSConfigurationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'cfgname' @:: Lens' AlterTSConfigurationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tokentype' @:: Lens' AlterTSConfigurationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'tokentype' @:: Lens' AlterTSConfigurationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dicts' @:: Lens' AlterTSConfigurationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'dicts' @:: Lens' AlterTSConfigurationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.override' @:: Lens' AlterTSConfigurationStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.replace' @:: Lens' AlterTSConfigurationStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' AlterTSConfigurationStmt Prelude.Bool@ -}
 data AlterTSConfigurationStmt
   = AlterTSConfigurationStmt'_constructor {_AlterTSConfigurationStmt'kind :: !AlterTSConfigType,
                                            _AlterTSConfigurationStmt'cfgname :: !(Data.Vector.Vector Node),
@@ -10613,10 +10613,10 @@ instance Control.DeepSeq.NFData AlterTSConfigurationStmt where
                                   (_AlterTSConfigurationStmt'missingOk x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.dictname' @:: Lens' AlterTSDictionaryStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'dictname' @:: Lens' AlterTSDictionaryStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterTSDictionaryStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterTSDictionaryStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dictname' @:: Lens' AlterTSDictionaryStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'dictname' @:: Lens' AlterTSDictionaryStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterTSDictionaryStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterTSDictionaryStmt (Data.Vector.Vector Node)@ -}
 data AlterTSDictionaryStmt
   = AlterTSDictionaryStmt'_constructor {_AlterTSDictionaryStmt'dictname :: !(Data.Vector.Vector Node),
                                         _AlterTSDictionaryStmt'options :: !(Data.Vector.Vector Node),
@@ -10811,16 +10811,16 @@ instance Control.DeepSeq.NFData AlterTSDictionaryStmt where
                 (Control.DeepSeq.deepseq (_AlterTSDictionaryStmt'options x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.subtype' @:: Lens' AlterTableCmd AlterTableType@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' AlterTableCmd Data.Text.Text@
-         * 'Proto.PgQuery_Fields.num' @:: Lens' AlterTableCmd Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.newowner' @:: Lens' AlterTableCmd RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'newowner' @:: Lens' AlterTableCmd (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.def' @:: Lens' AlterTableCmd Node@
-         * 'Proto.PgQuery_Fields.maybe'def' @:: Lens' AlterTableCmd (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.behavior' @:: Lens' AlterTableCmd DropBehavior@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' AlterTableCmd Prelude.Bool@
-         * 'Proto.PgQuery_Fields.recurse' @:: Lens' AlterTableCmd Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subtype' @:: Lens' AlterTableCmd AlterTableType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' AlterTableCmd Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.num' @:: Lens' AlterTableCmd Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newowner' @:: Lens' AlterTableCmd RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'newowner' @:: Lens' AlterTableCmd (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.def' @:: Lens' AlterTableCmd Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'def' @:: Lens' AlterTableCmd (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.behavior' @:: Lens' AlterTableCmd DropBehavior@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' AlterTableCmd Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.recurse' @:: Lens' AlterTableCmd Prelude.Bool@ -}
 data AlterTableCmd
   = AlterTableCmd'_constructor {_AlterTableCmd'subtype :: !AlterTableType,
                                 _AlterTableCmd'name :: !Data.Text.Text,
@@ -11239,12 +11239,12 @@ instance Control.DeepSeq.NFData AlterTableCmd where
                                   (Control.DeepSeq.deepseq (_AlterTableCmd'recurse x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.origTablespacename' @:: Lens' AlterTableMoveAllStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.objtype' @:: Lens' AlterTableMoveAllStmt ObjectType@
-         * 'Proto.PgQuery_Fields.roles' @:: Lens' AlterTableMoveAllStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'roles' @:: Lens' AlterTableMoveAllStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.newTablespacename' @:: Lens' AlterTableMoveAllStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.nowait' @:: Lens' AlterTableMoveAllStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.origTablespacename' @:: Lens' AlterTableMoveAllStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objtype' @:: Lens' AlterTableMoveAllStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.roles' @:: Lens' AlterTableMoveAllStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'roles' @:: Lens' AlterTableMoveAllStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newTablespacename' @:: Lens' AlterTableMoveAllStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nowait' @:: Lens' AlterTableMoveAllStmt Prelude.Bool@ -}
 data AlterTableMoveAllStmt
   = AlterTableMoveAllStmt'_constructor {_AlterTableMoveAllStmt'origTablespacename :: !Data.Text.Text,
                                         _AlterTableMoveAllStmt'objtype :: !ObjectType,
@@ -11564,10 +11564,10 @@ instance Control.DeepSeq.NFData AlterTableMoveAllStmt where
                             (_AlterTableMoveAllStmt'nowait x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.tablespacename' @:: Lens' AlterTableSpaceOptionsStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterTableSpaceOptionsStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterTableSpaceOptionsStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.isReset' @:: Lens' AlterTableSpaceOptionsStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tablespacename' @:: Lens' AlterTableSpaceOptionsStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterTableSpaceOptionsStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterTableSpaceOptionsStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isReset' @:: Lens' AlterTableSpaceOptionsStmt Prelude.Bool@ -}
 data AlterTableSpaceOptionsStmt
   = AlterTableSpaceOptionsStmt'_constructor {_AlterTableSpaceOptionsStmt'tablespacename :: !Data.Text.Text,
                                              _AlterTableSpaceOptionsStmt'options :: !(Data.Vector.Vector Node),
@@ -11794,12 +11794,12 @@ instance Control.DeepSeq.NFData AlterTableSpaceOptionsStmt where
                       (_AlterTableSpaceOptionsStmt'isReset x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' AlterTableStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' AlterTableStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.cmds' @:: Lens' AlterTableStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'cmds' @:: Lens' AlterTableStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.objtype' @:: Lens' AlterTableStmt ObjectType@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' AlterTableStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' AlterTableStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' AlterTableStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cmds' @:: Lens' AlterTableStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'cmds' @:: Lens' AlterTableStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objtype' @:: Lens' AlterTableStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' AlterTableStmt Prelude.Bool@ -}
 data AlterTableStmt
   = AlterTableStmt'_constructor {_AlterTableStmt'relation :: !(Prelude.Maybe RangeVar),
                                  _AlterTableStmt'cmds :: !(Data.Vector.Vector Node),
@@ -12623,10 +12623,10 @@ instance Control.DeepSeq.NFData AlterTableType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' AlterTypeStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'typeName' @:: Lens' AlterTypeStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterTypeStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterTypeStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' AlterTypeStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'typeName' @:: Lens' AlterTypeStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterTypeStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterTypeStmt (Data.Vector.Vector Node)@ -}
 data AlterTypeStmt
   = AlterTypeStmt'_constructor {_AlterTypeStmt'typeName :: !(Data.Vector.Vector Node),
                                 _AlterTypeStmt'options :: !(Data.Vector.Vector Node),
@@ -12821,11 +12821,11 @@ instance Control.DeepSeq.NFData AlterTypeStmt where
                 (Control.DeepSeq.deepseq (_AlterTypeStmt'options x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.user' @:: Lens' AlterUserMappingStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'user' @:: Lens' AlterUserMappingStmt (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.servername' @:: Lens' AlterUserMappingStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' AlterUserMappingStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' AlterUserMappingStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.user' @:: Lens' AlterUserMappingStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'user' @:: Lens' AlterUserMappingStmt (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.servername' @:: Lens' AlterUserMappingStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' AlterUserMappingStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' AlterUserMappingStmt (Data.Vector.Vector Node)@ -}
 data AlterUserMappingStmt
   = AlterUserMappingStmt'_constructor {_AlterUserMappingStmt'user :: !(Prelude.Maybe RoleSpec),
                                        _AlterUserMappingStmt'servername :: !Data.Text.Text,
@@ -13059,10 +13059,10 @@ instance Control.DeepSeq.NFData AlterUserMappingStmt where
                    (Control.DeepSeq.deepseq (_AlterUserMappingStmt'options x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' AlternativeSubPlan Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' AlternativeSubPlan (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.subplans' @:: Lens' AlternativeSubPlan [Node]@
-         * 'Proto.PgQuery_Fields.vec'subplans' @:: Lens' AlternativeSubPlan (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' AlternativeSubPlan Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' AlternativeSubPlan (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subplans' @:: Lens' AlternativeSubPlan [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'subplans' @:: Lens' AlternativeSubPlan (Data.Vector.Vector Node)@ -}
 data AlternativeSubPlan
   = AlternativeSubPlan'_constructor {_AlternativeSubPlan'xpr :: !(Prelude.Maybe Node),
                                      _AlternativeSubPlan'subplans :: !(Data.Vector.Vector Node),
@@ -13248,17 +13248,17 @@ instance Control.DeepSeq.NFData AlternativeSubPlan where
                 (Control.DeepSeq.deepseq (_AlternativeSubPlan'subplans x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' ArrayCoerceExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' ArrayCoerceExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' ArrayCoerceExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' ArrayCoerceExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.elemexpr' @:: Lens' ArrayCoerceExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'elemexpr' @:: Lens' ArrayCoerceExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.resulttype' @:: Lens' ArrayCoerceExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.resulttypmod' @:: Lens' ArrayCoerceExpr Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.resultcollid' @:: Lens' ArrayCoerceExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.coerceformat' @:: Lens' ArrayCoerceExpr CoercionForm@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' ArrayCoerceExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' ArrayCoerceExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' ArrayCoerceExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' ArrayCoerceExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' ArrayCoerceExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.elemexpr' @:: Lens' ArrayCoerceExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'elemexpr' @:: Lens' ArrayCoerceExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttype' @:: Lens' ArrayCoerceExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttypmod' @:: Lens' ArrayCoerceExpr Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resultcollid' @:: Lens' ArrayCoerceExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coerceformat' @:: Lens' ArrayCoerceExpr CoercionForm@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' ArrayCoerceExpr Data.Int.Int32@ -}
 data ArrayCoerceExpr
   = ArrayCoerceExpr'_constructor {_ArrayCoerceExpr'xpr :: !(Prelude.Maybe Node),
                                   _ArrayCoerceExpr'arg :: !(Prelude.Maybe Node),
@@ -13704,15 +13704,15 @@ instance Control.DeepSeq.NFData ArrayCoerceExpr where
                                      (_ArrayCoerceExpr'location x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' ArrayExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' ArrayExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arrayTypeid' @:: Lens' ArrayExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.arrayCollid' @:: Lens' ArrayExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.elementTypeid' @:: Lens' ArrayExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.elements' @:: Lens' ArrayExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'elements' @:: Lens' ArrayExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.multidims' @:: Lens' ArrayExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' ArrayExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' ArrayExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' ArrayExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arrayTypeid' @:: Lens' ArrayExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arrayCollid' @:: Lens' ArrayExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.elementTypeid' @:: Lens' ArrayExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.elements' @:: Lens' ArrayExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'elements' @:: Lens' ArrayExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.multidims' @:: Lens' ArrayExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' ArrayExpr Data.Int.Int32@ -}
 data ArrayExpr
   = ArrayExpr'_constructor {_ArrayExpr'xpr :: !(Prelude.Maybe Node),
                             _ArrayExpr'arrayTypeid :: !Data.Word.Word32,
@@ -14110,7 +14110,7 @@ instance Control.DeepSeq.NFData ArrayExpr where
                                (Control.DeepSeq.deepseq (_ArrayExpr'location x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.bsval' @:: Lens' BitString Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.bsval' @:: Lens' BitString Data.Text.Text@ -}
 data BitString
   = BitString'_constructor {_BitString'bsval :: !Data.Text.Text,
                             _BitString'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -14219,12 +14219,12 @@ instance Control.DeepSeq.NFData BitString where
              (Control.DeepSeq.deepseq (_BitString'bsval x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' BoolExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' BoolExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.boolop' @:: Lens' BoolExpr BoolExprType@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' BoolExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' BoolExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' BoolExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' BoolExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' BoolExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.boolop' @:: Lens' BoolExpr BoolExprType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' BoolExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' BoolExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' BoolExpr Data.Int.Int32@ -}
 data BoolExpr
   = BoolExpr'_constructor {_BoolExpr'xpr :: !(Prelude.Maybe Node),
                            _BoolExpr'boolop :: !BoolExprType,
@@ -14665,7 +14665,7 @@ instance Control.DeepSeq.NFData BoolTestType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.boolval' @:: Lens' Boolean Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.boolval' @:: Lens' Boolean Prelude.Bool@ -}
 data Boolean
   = Boolean'_constructor {_Boolean'boolval :: !Prelude.Bool,
                           _Boolean'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -14769,12 +14769,12 @@ instance Control.DeepSeq.NFData Boolean where
              (Control.DeepSeq.deepseq (_Boolean'boolval x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' BooleanTest Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' BooleanTest (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' BooleanTest Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' BooleanTest (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.booltesttype' @:: Lens' BooleanTest BoolTestType@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' BooleanTest Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' BooleanTest Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' BooleanTest (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' BooleanTest Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' BooleanTest (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.booltesttype' @:: Lens' BooleanTest BoolTestType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' BooleanTest Data.Int.Int32@ -}
 data BooleanTest
   = BooleanTest'_constructor {_BooleanTest'xpr :: !(Prelude.Maybe Node),
                               _BooleanTest'arg :: !(Prelude.Maybe Node),
@@ -15026,19 +15026,19 @@ instance Control.DeepSeq.NFData BooleanTest where
                       (Control.DeepSeq.deepseq (_BooleanTest'location x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.cycleColList' @:: Lens' CTECycleClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'cycleColList' @:: Lens' CTECycleClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.cycleMarkColumn' @:: Lens' CTECycleClause Data.Text.Text@
-         * 'Proto.PgQuery_Fields.cycleMarkValue' @:: Lens' CTECycleClause Node@
-         * 'Proto.PgQuery_Fields.maybe'cycleMarkValue' @:: Lens' CTECycleClause (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.cycleMarkDefault' @:: Lens' CTECycleClause Node@
-         * 'Proto.PgQuery_Fields.maybe'cycleMarkDefault' @:: Lens' CTECycleClause (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.cyclePathColumn' @:: Lens' CTECycleClause Data.Text.Text@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CTECycleClause Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.cycleMarkType' @:: Lens' CTECycleClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.cycleMarkTypmod' @:: Lens' CTECycleClause Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.cycleMarkCollation' @:: Lens' CTECycleClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.cycleMarkNeop' @:: Lens' CTECycleClause Data.Word.Word32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cycleColList' @:: Lens' CTECycleClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'cycleColList' @:: Lens' CTECycleClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cycleMarkColumn' @:: Lens' CTECycleClause Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cycleMarkValue' @:: Lens' CTECycleClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'cycleMarkValue' @:: Lens' CTECycleClause (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cycleMarkDefault' @:: Lens' CTECycleClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'cycleMarkDefault' @:: Lens' CTECycleClause (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cyclePathColumn' @:: Lens' CTECycleClause Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CTECycleClause Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cycleMarkType' @:: Lens' CTECycleClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cycleMarkTypmod' @:: Lens' CTECycleClause Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cycleMarkCollation' @:: Lens' CTECycleClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cycleMarkNeop' @:: Lens' CTECycleClause Data.Word.Word32@ -}
 data CTECycleClause
   = CTECycleClause'_constructor {_CTECycleClause'cycleColList :: !(Data.Vector.Vector Node),
                                  _CTECycleClause'cycleMarkColumn :: !Data.Text.Text,
@@ -15693,11 +15693,11 @@ instance Control.DeepSeq.NFData CTEMaterialize where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.searchColList' @:: Lens' CTESearchClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'searchColList' @:: Lens' CTESearchClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.searchBreadthFirst' @:: Lens' CTESearchClause Prelude.Bool@
-         * 'Proto.PgQuery_Fields.searchSeqColumn' @:: Lens' CTESearchClause Data.Text.Text@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CTESearchClause Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.searchColList' @:: Lens' CTESearchClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'searchColList' @:: Lens' CTESearchClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.searchBreadthFirst' @:: Lens' CTESearchClause Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.searchSeqColumn' @:: Lens' CTESearchClause Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CTESearchClause Data.Int.Int32@ -}
 data CTESearchClause
   = CTESearchClause'_constructor {_CTESearchClause'searchColList :: !(Data.Vector.Vector Node),
                                   _CTESearchClause'searchBreadthFirst :: !Prelude.Bool,
@@ -15970,7 +15970,7 @@ instance Control.DeepSeq.NFData CTESearchClause where
                       (Control.DeepSeq.deepseq (_CTESearchClause'location x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.atomic' @:: Lens' CallContext Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.atomic' @:: Lens' CallContext Prelude.Bool@ -}
 data CallContext
   = CallContext'_constructor {_CallContext'atomic :: !Prelude.Bool,
                               _CallContext'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -16075,12 +16075,12 @@ instance Control.DeepSeq.NFData CallContext where
              (Control.DeepSeq.deepseq (_CallContext'atomic x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.funccall' @:: Lens' CallStmt FuncCall@
-         * 'Proto.PgQuery_Fields.maybe'funccall' @:: Lens' CallStmt (Prelude.Maybe FuncCall)@
-         * 'Proto.PgQuery_Fields.funcexpr' @:: Lens' CallStmt FuncExpr@
-         * 'Proto.PgQuery_Fields.maybe'funcexpr' @:: Lens' CallStmt (Prelude.Maybe FuncExpr)@
-         * 'Proto.PgQuery_Fields.outargs' @:: Lens' CallStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'outargs' @:: Lens' CallStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funccall' @:: Lens' CallStmt FuncCall@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'funccall' @:: Lens' CallStmt (Prelude.Maybe FuncCall)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcexpr' @:: Lens' CallStmt FuncExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'funcexpr' @:: Lens' CallStmt (Prelude.Maybe FuncExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.outargs' @:: Lens' CallStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'outargs' @:: Lens' CallStmt (Data.Vector.Vector Node)@ -}
 data CallStmt
   = CallStmt'_constructor {_CallStmt'funccall :: !(Prelude.Maybe FuncCall),
                            _CallStmt'funcexpr :: !(Prelude.Maybe FuncExpr),
@@ -16310,17 +16310,17 @@ instance Control.DeepSeq.NFData CallStmt where
                    (Control.DeepSeq.deepseq (_CallStmt'outargs x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' CaseExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CaseExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.casetype' @:: Lens' CaseExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.casecollid' @:: Lens' CaseExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' CaseExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' CaseExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' CaseExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' CaseExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.defresult' @:: Lens' CaseExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'defresult' @:: Lens' CaseExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CaseExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' CaseExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CaseExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.casetype' @:: Lens' CaseExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.casecollid' @:: Lens' CaseExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' CaseExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' CaseExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' CaseExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' CaseExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defresult' @:: Lens' CaseExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'defresult' @:: Lens' CaseExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CaseExpr Data.Int.Int32@ -}
 data CaseExpr
   = CaseExpr'_constructor {_CaseExpr'xpr :: !(Prelude.Maybe Node),
                            _CaseExpr'casetype :: !Data.Word.Word32,
@@ -16730,11 +16730,11 @@ instance Control.DeepSeq.NFData CaseExpr where
                                (Control.DeepSeq.deepseq (_CaseExpr'location x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' CaseTestExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CaseTestExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.typeId' @:: Lens' CaseTestExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.typeMod' @:: Lens' CaseTestExpr Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.collation' @:: Lens' CaseTestExpr Data.Word.Word32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' CaseTestExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CaseTestExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeId' @:: Lens' CaseTestExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeMod' @:: Lens' CaseTestExpr Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collation' @:: Lens' CaseTestExpr Data.Word.Word32@ -}
 data CaseTestExpr
   = CaseTestExpr'_constructor {_CaseTestExpr'xpr :: !(Prelude.Maybe Node),
                                _CaseTestExpr'typeId :: !Data.Word.Word32,
@@ -16969,13 +16969,13 @@ instance Control.DeepSeq.NFData CaseTestExpr where
                       (Control.DeepSeq.deepseq (_CaseTestExpr'collation x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' CaseWhen Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CaseWhen (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.expr' @:: Lens' CaseWhen Node@
-         * 'Proto.PgQuery_Fields.maybe'expr' @:: Lens' CaseWhen (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.result' @:: Lens' CaseWhen Node@
-         * 'Proto.PgQuery_Fields.maybe'result' @:: Lens' CaseWhen (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CaseWhen Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' CaseWhen Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CaseWhen (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.expr' @:: Lens' CaseWhen Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'expr' @:: Lens' CaseWhen (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.result' @:: Lens' CaseWhen Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'result' @:: Lens' CaseWhen (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CaseWhen Data.Int.Int32@ -}
 data CaseWhen
   = CaseWhen'_constructor {_CaseWhen'xpr :: !(Prelude.Maybe Node),
                            _CaseWhen'expr :: !(Prelude.Maybe Node),
@@ -17289,7 +17289,7 @@ instance Control.DeepSeq.NFData CheckPointStmt where
         -> Control.DeepSeq.deepseq (_CheckPointStmt'_unknownFields x__) ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.portalname' @:: Lens' ClosePortalStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.portalname' @:: Lens' ClosePortalStmt Data.Text.Text@ -}
 data ClosePortalStmt
   = ClosePortalStmt'_constructor {_ClosePortalStmt'portalname :: !Data.Text.Text,
                                   _ClosePortalStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -17407,11 +17407,11 @@ instance Control.DeepSeq.NFData ClosePortalStmt where
              (Control.DeepSeq.deepseq (_ClosePortalStmt'portalname x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' ClusterStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' ClusterStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.indexname' @:: Lens' ClusterStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.params' @:: Lens' ClusterStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'params' @:: Lens' ClusterStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' ClusterStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' ClusterStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexname' @:: Lens' ClusterStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.params' @:: Lens' ClusterStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'params' @:: Lens' ClusterStmt (Data.Vector.Vector Node)@ -}
 data ClusterStmt
   = ClusterStmt'_constructor {_ClusterStmt'relation :: !(Prelude.Maybe RangeVar),
                               _ClusterStmt'indexname :: !Data.Text.Text,
@@ -17748,13 +17748,13 @@ instance Control.DeepSeq.NFData CmdType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' CoalesceExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CoalesceExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.coalescetype' @:: Lens' CoalesceExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.coalescecollid' @:: Lens' CoalesceExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' CoalesceExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' CoalesceExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CoalesceExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' CoalesceExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CoalesceExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coalescetype' @:: Lens' CoalesceExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coalescecollid' @:: Lens' CoalesceExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' CoalesceExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' CoalesceExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CoalesceExpr Data.Int.Int32@ -}
 data CoalesceExpr
   = CoalesceExpr'_constructor {_CoalesceExpr'xpr :: !(Prelude.Maybe Node),
                                _CoalesceExpr'coalescetype :: !Data.Word.Word32,
@@ -18065,15 +18065,15 @@ instance Control.DeepSeq.NFData CoalesceExpr where
                          (Control.DeepSeq.deepseq (_CoalesceExpr'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' CoerceToDomain Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CoerceToDomain (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' CoerceToDomain Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' CoerceToDomain (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.resulttype' @:: Lens' CoerceToDomain Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.resulttypmod' @:: Lens' CoerceToDomain Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.resultcollid' @:: Lens' CoerceToDomain Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.coercionformat' @:: Lens' CoerceToDomain CoercionForm@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CoerceToDomain Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' CoerceToDomain Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CoerceToDomain (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' CoerceToDomain Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' CoerceToDomain (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttype' @:: Lens' CoerceToDomain Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttypmod' @:: Lens' CoerceToDomain Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resultcollid' @:: Lens' CoerceToDomain Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coercionformat' @:: Lens' CoerceToDomain CoercionForm@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CoerceToDomain Data.Int.Int32@ -}
 data CoerceToDomain
   = CoerceToDomain'_constructor {_CoerceToDomain'xpr :: !(Prelude.Maybe Node),
                                  _CoerceToDomain'arg :: !(Prelude.Maybe Node),
@@ -18460,12 +18460,12 @@ instance Control.DeepSeq.NFData CoerceToDomain where
                                (Control.DeepSeq.deepseq (_CoerceToDomain'location x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' CoerceToDomainValue Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CoerceToDomainValue (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.typeId' @:: Lens' CoerceToDomainValue Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.typeMod' @:: Lens' CoerceToDomainValue Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.collation' @:: Lens' CoerceToDomainValue Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CoerceToDomainValue Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' CoerceToDomainValue Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CoerceToDomainValue (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeId' @:: Lens' CoerceToDomainValue Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeMod' @:: Lens' CoerceToDomainValue Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collation' @:: Lens' CoerceToDomainValue Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CoerceToDomainValue Data.Int.Int32@ -}
 data CoerceToDomainValue
   = CoerceToDomainValue'_constructor {_CoerceToDomainValue'xpr :: !(Prelude.Maybe Node),
                                       _CoerceToDomainValue'typeId :: !Data.Word.Word32,
@@ -18746,14 +18746,14 @@ instance Control.DeepSeq.NFData CoerceToDomainValue where
                             (_CoerceToDomainValue'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' CoerceViaIO Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CoerceViaIO (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' CoerceViaIO Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' CoerceViaIO (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.resulttype' @:: Lens' CoerceViaIO Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.resultcollid' @:: Lens' CoerceViaIO Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.coerceformat' @:: Lens' CoerceViaIO CoercionForm@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CoerceViaIO Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' CoerceViaIO Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CoerceViaIO (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' CoerceViaIO Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' CoerceViaIO (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttype' @:: Lens' CoerceViaIO Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resultcollid' @:: Lens' CoerceViaIO Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coerceformat' @:: Lens' CoerceViaIO CoercionForm@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CoerceViaIO Data.Int.Int32@ -}
 data CoerceViaIO
   = CoerceViaIO'_constructor {_CoerceViaIO'xpr :: !(Prelude.Maybe Node),
                               _CoerceViaIO'arg :: !(Prelude.Maybe Node),
@@ -19271,11 +19271,11 @@ instance Control.DeepSeq.NFData CoercionForm where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' CollateClause Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' CollateClause (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.collname' @:: Lens' CollateClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'collname' @:: Lens' CollateClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CollateClause Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' CollateClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' CollateClause (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collname' @:: Lens' CollateClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'collname' @:: Lens' CollateClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CollateClause Data.Int.Int32@ -}
 data CollateClause
   = CollateClause'_constructor {_CollateClause'arg :: !(Prelude.Maybe Node),
                                 _CollateClause'collname :: !(Data.Vector.Vector Node),
@@ -19501,12 +19501,12 @@ instance Control.DeepSeq.NFData CollateClause where
                    (Control.DeepSeq.deepseq (_CollateClause'location x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' CollateExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CollateExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' CollateExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' CollateExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.collOid' @:: Lens' CollateExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CollateExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' CollateExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CollateExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' CollateExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' CollateExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collOid' @:: Lens' CollateExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CollateExpr Data.Int.Int32@ -}
 data CollateExpr
   = CollateExpr'_constructor {_CollateExpr'xpr :: !(Prelude.Maybe Node),
                               _CollateExpr'arg :: !(Prelude.Maybe Node),
@@ -19750,32 +19750,32 @@ instance Control.DeepSeq.NFData CollateExpr where
                       (Control.DeepSeq.deepseq (_CollateExpr'location x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.colname' @:: Lens' ColumnDef Data.Text.Text@
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' ColumnDef TypeName@
-         * 'Proto.PgQuery_Fields.maybe'typeName' @:: Lens' ColumnDef (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.compression' @:: Lens' ColumnDef Data.Text.Text@
-         * 'Proto.PgQuery_Fields.inhcount' @:: Lens' ColumnDef Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.isLocal' @:: Lens' ColumnDef Prelude.Bool@
-         * 'Proto.PgQuery_Fields.isNotNull' @:: Lens' ColumnDef Prelude.Bool@
-         * 'Proto.PgQuery_Fields.isFromType' @:: Lens' ColumnDef Prelude.Bool@
-         * 'Proto.PgQuery_Fields.storage' @:: Lens' ColumnDef Data.Text.Text@
-         * 'Proto.PgQuery_Fields.storageName' @:: Lens' ColumnDef Data.Text.Text@
-         * 'Proto.PgQuery_Fields.rawDefault' @:: Lens' ColumnDef Node@
-         * 'Proto.PgQuery_Fields.maybe'rawDefault' @:: Lens' ColumnDef (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.cookedDefault' @:: Lens' ColumnDef Node@
-         * 'Proto.PgQuery_Fields.maybe'cookedDefault' @:: Lens' ColumnDef (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.identity' @:: Lens' ColumnDef Data.Text.Text@
-         * 'Proto.PgQuery_Fields.identitySequence' @:: Lens' ColumnDef RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'identitySequence' @:: Lens' ColumnDef (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.generated' @:: Lens' ColumnDef Data.Text.Text@
-         * 'Proto.PgQuery_Fields.collClause' @:: Lens' ColumnDef CollateClause@
-         * 'Proto.PgQuery_Fields.maybe'collClause' @:: Lens' ColumnDef (Prelude.Maybe CollateClause)@
-         * 'Proto.PgQuery_Fields.collOid' @:: Lens' ColumnDef Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.constraints' @:: Lens' ColumnDef [Node]@
-         * 'Proto.PgQuery_Fields.vec'constraints' @:: Lens' ColumnDef (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.fdwoptions' @:: Lens' ColumnDef [Node]@
-         * 'Proto.PgQuery_Fields.vec'fdwoptions' @:: Lens' ColumnDef (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' ColumnDef Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colname' @:: Lens' ColumnDef Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' ColumnDef TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typeName' @:: Lens' ColumnDef (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.compression' @:: Lens' ColumnDef Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inhcount' @:: Lens' ColumnDef Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isLocal' @:: Lens' ColumnDef Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isNotNull' @:: Lens' ColumnDef Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isFromType' @:: Lens' ColumnDef Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.storage' @:: Lens' ColumnDef Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.storageName' @:: Lens' ColumnDef Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rawDefault' @:: Lens' ColumnDef Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rawDefault' @:: Lens' ColumnDef (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cookedDefault' @:: Lens' ColumnDef Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'cookedDefault' @:: Lens' ColumnDef (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.identity' @:: Lens' ColumnDef Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.identitySequence' @:: Lens' ColumnDef RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'identitySequence' @:: Lens' ColumnDef (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.generated' @:: Lens' ColumnDef Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collClause' @:: Lens' ColumnDef CollateClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'collClause' @:: Lens' ColumnDef (Prelude.Maybe CollateClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collOid' @:: Lens' ColumnDef Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constraints' @:: Lens' ColumnDef [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'constraints' @:: Lens' ColumnDef (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fdwoptions' @:: Lens' ColumnDef [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'fdwoptions' @:: Lens' ColumnDef (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' ColumnDef Data.Int.Int32@ -}
 data ColumnDef
   = ColumnDef'_constructor {_ColumnDef'colname :: !Data.Text.Text,
                             _ColumnDef'typeName :: !(Prelude.Maybe TypeName),
@@ -20844,9 +20844,9 @@ instance Control.DeepSeq.NFData ColumnDef where
                                                                       ())))))))))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.fields' @:: Lens' ColumnRef [Node]@
-         * 'Proto.PgQuery_Fields.vec'fields' @:: Lens' ColumnRef (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' ColumnRef Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fields' @:: Lens' ColumnRef [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'fields' @:: Lens' ColumnRef (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' ColumnRef Data.Int.Int32@ -}
 data ColumnRef
   = ColumnRef'_constructor {_ColumnRef'fields :: !(Data.Vector.Vector Node),
                             _ColumnRef'location :: !Data.Int.Int32,
@@ -21017,10 +21017,10 @@ instance Control.DeepSeq.NFData ColumnRef where
                 (Control.DeepSeq.deepseq (_ColumnRef'location x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.objtype' @:: Lens' CommentStmt ObjectType@
-         * 'Proto.PgQuery_Fields.object' @:: Lens' CommentStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'object' @:: Lens' CommentStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.comment' @:: Lens' CommentStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objtype' @:: Lens' CommentStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.object' @:: Lens' CommentStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'object' @:: Lens' CommentStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.comment' @:: Lens' CommentStmt Data.Text.Text@ -}
 data CommentStmt
   = CommentStmt'_constructor {_CommentStmt'objtype :: !ObjectType,
                               _CommentStmt'object :: !(Prelude.Maybe Node),
@@ -21222,27 +21222,27 @@ instance Control.DeepSeq.NFData CommentStmt where
                    (Control.DeepSeq.deepseq (_CommentStmt'comment x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.ctename' @:: Lens' CommonTableExpr Data.Text.Text@
-         * 'Proto.PgQuery_Fields.aliascolnames' @:: Lens' CommonTableExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'aliascolnames' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.ctematerialized' @:: Lens' CommonTableExpr CTEMaterialize@
-         * 'Proto.PgQuery_Fields.ctequery' @:: Lens' CommonTableExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'ctequery' @:: Lens' CommonTableExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.searchClause' @:: Lens' CommonTableExpr CTESearchClause@
-         * 'Proto.PgQuery_Fields.maybe'searchClause' @:: Lens' CommonTableExpr (Prelude.Maybe CTESearchClause)@
-         * 'Proto.PgQuery_Fields.cycleClause' @:: Lens' CommonTableExpr CTECycleClause@
-         * 'Proto.PgQuery_Fields.maybe'cycleClause' @:: Lens' CommonTableExpr (Prelude.Maybe CTECycleClause)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CommonTableExpr Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.cterecursive' @:: Lens' CommonTableExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.cterefcount' @:: Lens' CommonTableExpr Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.ctecolnames' @:: Lens' CommonTableExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'ctecolnames' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.ctecoltypes' @:: Lens' CommonTableExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'ctecoltypes' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.ctecoltypmods' @:: Lens' CommonTableExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'ctecoltypmods' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.ctecolcollations' @:: Lens' CommonTableExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'ctecolcollations' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctename' @:: Lens' CommonTableExpr Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aliascolnames' @:: Lens' CommonTableExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'aliascolnames' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctematerialized' @:: Lens' CommonTableExpr CTEMaterialize@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctequery' @:: Lens' CommonTableExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'ctequery' @:: Lens' CommonTableExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.searchClause' @:: Lens' CommonTableExpr CTESearchClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'searchClause' @:: Lens' CommonTableExpr (Prelude.Maybe CTESearchClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cycleClause' @:: Lens' CommonTableExpr CTECycleClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'cycleClause' @:: Lens' CommonTableExpr (Prelude.Maybe CTECycleClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CommonTableExpr Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cterecursive' @:: Lens' CommonTableExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cterefcount' @:: Lens' CommonTableExpr Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctecolnames' @:: Lens' CommonTableExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'ctecolnames' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctecoltypes' @:: Lens' CommonTableExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'ctecoltypes' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctecoltypmods' @:: Lens' CommonTableExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'ctecoltypmods' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctecolcollations' @:: Lens' CommonTableExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'ctecolcollations' @:: Lens' CommonTableExpr (Data.Vector.Vector Node)@ -}
 data CommonTableExpr
   = CommonTableExpr'_constructor {_CommonTableExpr'ctename :: !Data.Text.Text,
                                   _CommonTableExpr'aliascolnames :: !(Data.Vector.Vector Node),
@@ -22075,10 +22075,10 @@ instance Control.DeepSeq.NFData CommonTableExpr where
                                                     ())))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.typevar' @:: Lens' CompositeTypeStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'typevar' @:: Lens' CompositeTypeStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.coldeflist' @:: Lens' CompositeTypeStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'coldeflist' @:: Lens' CompositeTypeStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typevar' @:: Lens' CompositeTypeStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typevar' @:: Lens' CompositeTypeStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coldeflist' @:: Lens' CompositeTypeStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'coldeflist' @:: Lens' CompositeTypeStmt (Data.Vector.Vector Node)@ -}
 data CompositeTypeStmt
   = CompositeTypeStmt'_constructor {_CompositeTypeStmt'typevar :: !(Prelude.Maybe RangeVar),
                                     _CompositeTypeStmt'coldeflist :: !(Data.Vector.Vector Node),
@@ -22421,47 +22421,47 @@ instance Control.DeepSeq.NFData ConstrType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.contype' @:: Lens' Constraint ConstrType@
-         * 'Proto.PgQuery_Fields.conname' @:: Lens' Constraint Data.Text.Text@
-         * 'Proto.PgQuery_Fields.deferrable' @:: Lens' Constraint Prelude.Bool@
-         * 'Proto.PgQuery_Fields.initdeferred' @:: Lens' Constraint Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' Constraint Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.isNoInherit' @:: Lens' Constraint Prelude.Bool@
-         * 'Proto.PgQuery_Fields.rawExpr' @:: Lens' Constraint Node@
-         * 'Proto.PgQuery_Fields.maybe'rawExpr' @:: Lens' Constraint (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.cookedExpr' @:: Lens' Constraint Data.Text.Text@
-         * 'Proto.PgQuery_Fields.generatedWhen' @:: Lens' Constraint Data.Text.Text@
-         * 'Proto.PgQuery_Fields.nullsNotDistinct' @:: Lens' Constraint Prelude.Bool@
-         * 'Proto.PgQuery_Fields.keys' @:: Lens' Constraint [Node]@
-         * 'Proto.PgQuery_Fields.vec'keys' @:: Lens' Constraint (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.including' @:: Lens' Constraint [Node]@
-         * 'Proto.PgQuery_Fields.vec'including' @:: Lens' Constraint (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.exclusions' @:: Lens' Constraint [Node]@
-         * 'Proto.PgQuery_Fields.vec'exclusions' @:: Lens' Constraint (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' Constraint [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' Constraint (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.indexname' @:: Lens' Constraint Data.Text.Text@
-         * 'Proto.PgQuery_Fields.indexspace' @:: Lens' Constraint Data.Text.Text@
-         * 'Proto.PgQuery_Fields.resetDefaultTblspc' @:: Lens' Constraint Prelude.Bool@
-         * 'Proto.PgQuery_Fields.accessMethod' @:: Lens' Constraint Data.Text.Text@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' Constraint Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' Constraint (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.pktable' @:: Lens' Constraint RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'pktable' @:: Lens' Constraint (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.fkAttrs' @:: Lens' Constraint [Node]@
-         * 'Proto.PgQuery_Fields.vec'fkAttrs' @:: Lens' Constraint (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.pkAttrs' @:: Lens' Constraint [Node]@
-         * 'Proto.PgQuery_Fields.vec'pkAttrs' @:: Lens' Constraint (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.fkMatchtype' @:: Lens' Constraint Data.Text.Text@
-         * 'Proto.PgQuery_Fields.fkUpdAction' @:: Lens' Constraint Data.Text.Text@
-         * 'Proto.PgQuery_Fields.fkDelAction' @:: Lens' Constraint Data.Text.Text@
-         * 'Proto.PgQuery_Fields.fkDelSetCols' @:: Lens' Constraint [Node]@
-         * 'Proto.PgQuery_Fields.vec'fkDelSetCols' @:: Lens' Constraint (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.oldConpfeqop' @:: Lens' Constraint [Node]@
-         * 'Proto.PgQuery_Fields.vec'oldConpfeqop' @:: Lens' Constraint (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.oldPktableOid' @:: Lens' Constraint Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.skipValidation' @:: Lens' Constraint Prelude.Bool@
-         * 'Proto.PgQuery_Fields.initiallyValid' @:: Lens' Constraint Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.contype' @:: Lens' Constraint ConstrType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.conname' @:: Lens' Constraint Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.deferrable' @:: Lens' Constraint Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.initdeferred' @:: Lens' Constraint Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' Constraint Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isNoInherit' @:: Lens' Constraint Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rawExpr' @:: Lens' Constraint Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rawExpr' @:: Lens' Constraint (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cookedExpr' @:: Lens' Constraint Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.generatedWhen' @:: Lens' Constraint Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nullsNotDistinct' @:: Lens' Constraint Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.keys' @:: Lens' Constraint [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'keys' @:: Lens' Constraint (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.including' @:: Lens' Constraint [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'including' @:: Lens' Constraint (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.exclusions' @:: Lens' Constraint [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'exclusions' @:: Lens' Constraint (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' Constraint [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' Constraint (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexname' @:: Lens' Constraint Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexspace' @:: Lens' Constraint Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resetDefaultTblspc' @:: Lens' Constraint Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.accessMethod' @:: Lens' Constraint Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' Constraint Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' Constraint (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pktable' @:: Lens' Constraint RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'pktable' @:: Lens' Constraint (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fkAttrs' @:: Lens' Constraint [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'fkAttrs' @:: Lens' Constraint (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pkAttrs' @:: Lens' Constraint [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'pkAttrs' @:: Lens' Constraint (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fkMatchtype' @:: Lens' Constraint Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fkUpdAction' @:: Lens' Constraint Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fkDelAction' @:: Lens' Constraint Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fkDelSetCols' @:: Lens' Constraint [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'fkDelSetCols' @:: Lens' Constraint (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oldConpfeqop' @:: Lens' Constraint [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'oldConpfeqop' @:: Lens' Constraint (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oldPktableOid' @:: Lens' Constraint Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.skipValidation' @:: Lens' Constraint Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.initiallyValid' @:: Lens' Constraint Prelude.Bool@ -}
 data Constraint
   = Constraint'_constructor {_Constraint'contype :: !ConstrType,
                              _Constraint'conname :: !Data.Text.Text,
@@ -24317,9 +24317,9 @@ instance Control.DeepSeq.NFData Constraint where
                                                                                                        ()))))))))))))))))))))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.constraints' @:: Lens' ConstraintsSetStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'constraints' @:: Lens' ConstraintsSetStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.deferred' @:: Lens' ConstraintsSetStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constraints' @:: Lens' ConstraintsSetStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'constraints' @:: Lens' ConstraintsSetStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.deferred' @:: Lens' ConstraintsSetStmt Prelude.Bool@ -}
 data ConstraintsSetStmt
   = ConstraintsSetStmt'_constructor {_ConstraintsSetStmt'constraints :: !(Data.Vector.Vector Node),
                                      _ConstraintsSetStmt'deferred :: !Prelude.Bool,
@@ -24497,13 +24497,13 @@ instance Control.DeepSeq.NFData ConstraintsSetStmt where
                 (Control.DeepSeq.deepseq (_ConstraintsSetStmt'deferred x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' ConvertRowtypeExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' ConvertRowtypeExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' ConvertRowtypeExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' ConvertRowtypeExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.resulttype' @:: Lens' ConvertRowtypeExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.convertformat' @:: Lens' ConvertRowtypeExpr CoercionForm@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' ConvertRowtypeExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' ConvertRowtypeExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' ConvertRowtypeExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' ConvertRowtypeExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' ConvertRowtypeExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttype' @:: Lens' ConvertRowtypeExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.convertformat' @:: Lens' ConvertRowtypeExpr CoercionForm@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' ConvertRowtypeExpr Data.Int.Int32@ -}
 data ConvertRowtypeExpr
   = ConvertRowtypeExpr'_constructor {_ConvertRowtypeExpr'xpr :: !(Prelude.Maybe Node),
                                      _ConvertRowtypeExpr'arg :: !(Prelude.Maybe Node),
@@ -24806,19 +24806,19 @@ instance Control.DeepSeq.NFData ConvertRowtypeExpr where
                          (Control.DeepSeq.deepseq (_ConvertRowtypeExpr'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' CopyStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' CopyStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.query' @:: Lens' CopyStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'query' @:: Lens' CopyStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.attlist' @:: Lens' CopyStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'attlist' @:: Lens' CopyStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.isFrom' @:: Lens' CopyStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.isProgram' @:: Lens' CopyStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.filename' @:: Lens' CopyStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CopyStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CopyStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' CopyStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' CopyStmt (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' CopyStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' CopyStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.query' @:: Lens' CopyStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'query' @:: Lens' CopyStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.attlist' @:: Lens' CopyStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'attlist' @:: Lens' CopyStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isFrom' @:: Lens' CopyStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isProgram' @:: Lens' CopyStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.filename' @:: Lens' CopyStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CopyStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CopyStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' CopyStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' CopyStmt (Prelude.Maybe Node)@ -}
 data CopyStmt
   = CopyStmt'_constructor {_CopyStmt'relation :: !(Prelude.Maybe RangeVar),
                            _CopyStmt'query :: !(Prelude.Maybe Node),
@@ -25293,10 +25293,10 @@ instance Control.DeepSeq.NFData CopyStmt where
                                   (Control.DeepSeq.deepseq (_CopyStmt'whereClause x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.amname' @:: Lens' CreateAmStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.handlerName' @:: Lens' CreateAmStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'handlerName' @:: Lens' CreateAmStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.amtype' @:: Lens' CreateAmStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.amname' @:: Lens' CreateAmStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.handlerName' @:: Lens' CreateAmStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'handlerName' @:: Lens' CreateAmStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.amtype' @:: Lens' CreateAmStmt Data.Text.Text@ -}
 data CreateAmStmt
   = CreateAmStmt'_constructor {_CreateAmStmt'amname :: !Data.Text.Text,
                                _CreateAmStmt'handlerName :: !(Data.Vector.Vector Node),
@@ -25524,14 +25524,14 @@ instance Control.DeepSeq.NFData CreateAmStmt where
                    (Control.DeepSeq.deepseq (_CreateAmStmt'amtype x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.sourcetype' @:: Lens' CreateCastStmt TypeName@
-         * 'Proto.PgQuery_Fields.maybe'sourcetype' @:: Lens' CreateCastStmt (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.targettype' @:: Lens' CreateCastStmt TypeName@
-         * 'Proto.PgQuery_Fields.maybe'targettype' @:: Lens' CreateCastStmt (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.func' @:: Lens' CreateCastStmt ObjectWithArgs@
-         * 'Proto.PgQuery_Fields.maybe'func' @:: Lens' CreateCastStmt (Prelude.Maybe ObjectWithArgs)@
-         * 'Proto.PgQuery_Fields.context' @:: Lens' CreateCastStmt CoercionContext@
-         * 'Proto.PgQuery_Fields.inout' @:: Lens' CreateCastStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sourcetype' @:: Lens' CreateCastStmt TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'sourcetype' @:: Lens' CreateCastStmt (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.targettype' @:: Lens' CreateCastStmt TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'targettype' @:: Lens' CreateCastStmt (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.func' @:: Lens' CreateCastStmt ObjectWithArgs@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'func' @:: Lens' CreateCastStmt (Prelude.Maybe ObjectWithArgs)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.context' @:: Lens' CreateCastStmt CoercionContext@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inout' @:: Lens' CreateCastStmt Prelude.Bool@ -}
 data CreateCastStmt
   = CreateCastStmt'_constructor {_CreateCastStmt'sourcetype :: !(Prelude.Maybe TypeName),
                                  _CreateCastStmt'targettype :: !(Prelude.Maybe TypeName),
@@ -25840,13 +25840,13 @@ instance Control.DeepSeq.NFData CreateCastStmt where
                          (Control.DeepSeq.deepseq (_CreateCastStmt'inout x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.conversionName' @:: Lens' CreateConversionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'conversionName' @:: Lens' CreateConversionStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.forEncodingName' @:: Lens' CreateConversionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.toEncodingName' @:: Lens' CreateConversionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.funcName' @:: Lens' CreateConversionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'funcName' @:: Lens' CreateConversionStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.def' @:: Lens' CreateConversionStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.conversionName' @:: Lens' CreateConversionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'conversionName' @:: Lens' CreateConversionStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.forEncodingName' @:: Lens' CreateConversionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.toEncodingName' @:: Lens' CreateConversionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcName' @:: Lens' CreateConversionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funcName' @:: Lens' CreateConversionStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.def' @:: Lens' CreateConversionStmt Prelude.Bool@ -}
 data CreateConversionStmt
   = CreateConversionStmt'_constructor {_CreateConversionStmt'conversionName :: !(Data.Vector.Vector Node),
                                        _CreateConversionStmt'forEncodingName :: !Data.Text.Text,
@@ -26186,14 +26186,14 @@ instance Control.DeepSeq.NFData CreateConversionStmt where
                          (Control.DeepSeq.deepseq (_CreateConversionStmt'def x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.domainname' @:: Lens' CreateDomainStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'domainname' @:: Lens' CreateDomainStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' CreateDomainStmt TypeName@
-         * 'Proto.PgQuery_Fields.maybe'typeName' @:: Lens' CreateDomainStmt (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.collClause' @:: Lens' CreateDomainStmt CollateClause@
-         * 'Proto.PgQuery_Fields.maybe'collClause' @:: Lens' CreateDomainStmt (Prelude.Maybe CollateClause)@
-         * 'Proto.PgQuery_Fields.constraints' @:: Lens' CreateDomainStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'constraints' @:: Lens' CreateDomainStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.domainname' @:: Lens' CreateDomainStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'domainname' @:: Lens' CreateDomainStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' CreateDomainStmt TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typeName' @:: Lens' CreateDomainStmt (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collClause' @:: Lens' CreateDomainStmt CollateClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'collClause' @:: Lens' CreateDomainStmt (Prelude.Maybe CollateClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constraints' @:: Lens' CreateDomainStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'constraints' @:: Lens' CreateDomainStmt (Data.Vector.Vector Node)@ -}
 data CreateDomainStmt
   = CreateDomainStmt'_constructor {_CreateDomainStmt'domainname :: !(Data.Vector.Vector Node),
                                    _CreateDomainStmt'typeName :: !(Prelude.Maybe TypeName),
@@ -26501,10 +26501,10 @@ instance Control.DeepSeq.NFData CreateDomainStmt where
                       (Control.DeepSeq.deepseq (_CreateDomainStmt'constraints x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' CreateEnumStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'typeName' @:: Lens' CreateEnumStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.vals' @:: Lens' CreateEnumStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'vals' @:: Lens' CreateEnumStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' CreateEnumStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'typeName' @:: Lens' CreateEnumStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vals' @:: Lens' CreateEnumStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'vals' @:: Lens' CreateEnumStmt (Data.Vector.Vector Node)@ -}
 data CreateEnumStmt
   = CreateEnumStmt'_constructor {_CreateEnumStmt'typeName :: !(Data.Vector.Vector Node),
                                  _CreateEnumStmt'vals :: !(Data.Vector.Vector Node),
@@ -26698,12 +26698,12 @@ instance Control.DeepSeq.NFData CreateEnumStmt where
                 (Control.DeepSeq.deepseq (_CreateEnumStmt'vals x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.trigname' @:: Lens' CreateEventTrigStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.eventname' @:: Lens' CreateEventTrigStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.whenclause' @:: Lens' CreateEventTrigStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'whenclause' @:: Lens' CreateEventTrigStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.funcname' @:: Lens' CreateEventTrigStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'funcname' @:: Lens' CreateEventTrigStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.trigname' @:: Lens' CreateEventTrigStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.eventname' @:: Lens' CreateEventTrigStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whenclause' @:: Lens' CreateEventTrigStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'whenclause' @:: Lens' CreateEventTrigStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcname' @:: Lens' CreateEventTrigStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funcname' @:: Lens' CreateEventTrigStmt (Data.Vector.Vector Node)@ -}
 data CreateEventTrigStmt
   = CreateEventTrigStmt'_constructor {_CreateEventTrigStmt'trigname :: !Data.Text.Text,
                                       _CreateEventTrigStmt'eventname :: !Data.Text.Text,
@@ -26997,10 +26997,10 @@ instance Control.DeepSeq.NFData CreateEventTrigStmt where
                       (Control.DeepSeq.deepseq (_CreateEventTrigStmt'funcname x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.extname' @:: Lens' CreateExtensionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateExtensionStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateExtensionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateExtensionStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.extname' @:: Lens' CreateExtensionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateExtensionStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateExtensionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateExtensionStmt (Data.Vector.Vector Node)@ -}
 data CreateExtensionStmt
   = CreateExtensionStmt'_constructor {_CreateExtensionStmt'extname :: !Data.Text.Text,
                                       _CreateExtensionStmt'ifNotExists :: !Prelude.Bool,
@@ -27221,11 +27221,11 @@ instance Control.DeepSeq.NFData CreateExtensionStmt where
                    (Control.DeepSeq.deepseq (_CreateExtensionStmt'options x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.fdwname' @:: Lens' CreateFdwStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.funcOptions' @:: Lens' CreateFdwStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'funcOptions' @:: Lens' CreateFdwStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateFdwStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateFdwStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fdwname' @:: Lens' CreateFdwStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcOptions' @:: Lens' CreateFdwStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funcOptions' @:: Lens' CreateFdwStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateFdwStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateFdwStmt (Data.Vector.Vector Node)@ -}
 data CreateFdwStmt
   = CreateFdwStmt'_constructor {_CreateFdwStmt'fdwname :: !Data.Text.Text,
                                 _CreateFdwStmt'funcOptions :: !(Data.Vector.Vector Node),
@@ -27467,13 +27467,13 @@ instance Control.DeepSeq.NFData CreateFdwStmt where
                    (Control.DeepSeq.deepseq (_CreateFdwStmt'options x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.servername' @:: Lens' CreateForeignServerStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.servertype' @:: Lens' CreateForeignServerStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.version' @:: Lens' CreateForeignServerStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.fdwname' @:: Lens' CreateForeignServerStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateForeignServerStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateForeignServerStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateForeignServerStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.servername' @:: Lens' CreateForeignServerStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.servertype' @:: Lens' CreateForeignServerStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.version' @:: Lens' CreateForeignServerStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fdwname' @:: Lens' CreateForeignServerStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateForeignServerStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateForeignServerStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateForeignServerStmt (Data.Vector.Vector Node)@ -}
 data CreateForeignServerStmt
   = CreateForeignServerStmt'_constructor {_CreateForeignServerStmt'servername :: !Data.Text.Text,
                                           _CreateForeignServerStmt'servertype :: !Data.Text.Text,
@@ -27842,11 +27842,11 @@ instance Control.DeepSeq.NFData CreateForeignServerStmt where
                                (_CreateForeignServerStmt'options x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.baseStmt' @:: Lens' CreateForeignTableStmt CreateStmt@
-         * 'Proto.PgQuery_Fields.maybe'baseStmt' @:: Lens' CreateForeignTableStmt (Prelude.Maybe CreateStmt)@
-         * 'Proto.PgQuery_Fields.servername' @:: Lens' CreateForeignTableStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateForeignTableStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateForeignTableStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.baseStmt' @:: Lens' CreateForeignTableStmt CreateStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'baseStmt' @:: Lens' CreateForeignTableStmt (Prelude.Maybe CreateStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.servername' @:: Lens' CreateForeignTableStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateForeignTableStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateForeignTableStmt (Data.Vector.Vector Node)@ -}
 data CreateForeignTableStmt
   = CreateForeignTableStmt'_constructor {_CreateForeignTableStmt'baseStmt :: !(Prelude.Maybe CreateStmt),
                                          _CreateForeignTableStmt'servername :: !Data.Text.Text,
@@ -28081,18 +28081,18 @@ instance Control.DeepSeq.NFData CreateForeignTableStmt where
                       (_CreateForeignTableStmt'options x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.isProcedure' @:: Lens' CreateFunctionStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.replace' @:: Lens' CreateFunctionStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.funcname' @:: Lens' CreateFunctionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'funcname' @:: Lens' CreateFunctionStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.parameters' @:: Lens' CreateFunctionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'parameters' @:: Lens' CreateFunctionStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.returnType' @:: Lens' CreateFunctionStmt TypeName@
-         * 'Proto.PgQuery_Fields.maybe'returnType' @:: Lens' CreateFunctionStmt (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateFunctionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateFunctionStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.sqlBody' @:: Lens' CreateFunctionStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'sqlBody' @:: Lens' CreateFunctionStmt (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isProcedure' @:: Lens' CreateFunctionStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.replace' @:: Lens' CreateFunctionStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcname' @:: Lens' CreateFunctionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funcname' @:: Lens' CreateFunctionStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.parameters' @:: Lens' CreateFunctionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'parameters' @:: Lens' CreateFunctionStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.returnType' @:: Lens' CreateFunctionStmt TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'returnType' @:: Lens' CreateFunctionStmt (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateFunctionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateFunctionStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sqlBody' @:: Lens' CreateFunctionStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'sqlBody' @:: Lens' CreateFunctionStmt (Prelude.Maybe Node)@ -}
 data CreateFunctionStmt
   = CreateFunctionStmt'_constructor {_CreateFunctionStmt'isProcedure :: !Prelude.Bool,
                                      _CreateFunctionStmt'replace :: !Prelude.Bool,
@@ -28548,16 +28548,16 @@ instance Control.DeepSeq.NFData CreateFunctionStmt where
                                   (_CreateFunctionStmt'sqlBody x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.itemtype' @:: Lens' CreateOpClassItem Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' CreateOpClassItem ObjectWithArgs@
-         * 'Proto.PgQuery_Fields.maybe'name' @:: Lens' CreateOpClassItem (Prelude.Maybe ObjectWithArgs)@
-         * 'Proto.PgQuery_Fields.number' @:: Lens' CreateOpClassItem Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.orderFamily' @:: Lens' CreateOpClassItem [Node]@
-         * 'Proto.PgQuery_Fields.vec'orderFamily' @:: Lens' CreateOpClassItem (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.classArgs' @:: Lens' CreateOpClassItem [Node]@
-         * 'Proto.PgQuery_Fields.vec'classArgs' @:: Lens' CreateOpClassItem (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.storedtype' @:: Lens' CreateOpClassItem TypeName@
-         * 'Proto.PgQuery_Fields.maybe'storedtype' @:: Lens' CreateOpClassItem (Prelude.Maybe TypeName)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.itemtype' @:: Lens' CreateOpClassItem Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' CreateOpClassItem ObjectWithArgs@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'name' @:: Lens' CreateOpClassItem (Prelude.Maybe ObjectWithArgs)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.number' @:: Lens' CreateOpClassItem Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.orderFamily' @:: Lens' CreateOpClassItem [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'orderFamily' @:: Lens' CreateOpClassItem (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.classArgs' @:: Lens' CreateOpClassItem [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'classArgs' @:: Lens' CreateOpClassItem (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.storedtype' @:: Lens' CreateOpClassItem TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'storedtype' @:: Lens' CreateOpClassItem (Prelude.Maybe TypeName)@ -}
 data CreateOpClassItem
   = CreateOpClassItem'_constructor {_CreateOpClassItem'itemtype :: !Data.Int.Int32,
                                     _CreateOpClassItem'name :: !(Prelude.Maybe ObjectWithArgs),
@@ -28951,16 +28951,16 @@ instance Control.DeepSeq.NFData CreateOpClassItem where
                                (_CreateOpClassItem'storedtype x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.opclassname' @:: Lens' CreateOpClassStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'opclassname' @:: Lens' CreateOpClassStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.opfamilyname' @:: Lens' CreateOpClassStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'opfamilyname' @:: Lens' CreateOpClassStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.amname' @:: Lens' CreateOpClassStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.datatype' @:: Lens' CreateOpClassStmt TypeName@
-         * 'Proto.PgQuery_Fields.maybe'datatype' @:: Lens' CreateOpClassStmt (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.items' @:: Lens' CreateOpClassStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'items' @:: Lens' CreateOpClassStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.isDefault' @:: Lens' CreateOpClassStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opclassname' @:: Lens' CreateOpClassStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opclassname' @:: Lens' CreateOpClassStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opfamilyname' @:: Lens' CreateOpClassStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opfamilyname' @:: Lens' CreateOpClassStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.amname' @:: Lens' CreateOpClassStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.datatype' @:: Lens' CreateOpClassStmt TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'datatype' @:: Lens' CreateOpClassStmt (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.items' @:: Lens' CreateOpClassStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'items' @:: Lens' CreateOpClassStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isDefault' @:: Lens' CreateOpClassStmt Prelude.Bool@ -}
 data CreateOpClassStmt
   = CreateOpClassStmt'_constructor {_CreateOpClassStmt'opclassname :: !(Data.Vector.Vector Node),
                                     _CreateOpClassStmt'opfamilyname :: !(Data.Vector.Vector Node),
@@ -29365,9 +29365,9 @@ instance Control.DeepSeq.NFData CreateOpClassStmt where
                                (_CreateOpClassStmt'isDefault x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.opfamilyname' @:: Lens' CreateOpFamilyStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'opfamilyname' @:: Lens' CreateOpFamilyStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.amname' @:: Lens' CreateOpFamilyStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opfamilyname' @:: Lens' CreateOpFamilyStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opfamilyname' @:: Lens' CreateOpFamilyStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.amname' @:: Lens' CreateOpFamilyStmt Data.Text.Text@ -}
 data CreateOpFamilyStmt
   = CreateOpFamilyStmt'_constructor {_CreateOpFamilyStmt'opfamilyname :: !(Data.Vector.Vector Node),
                                      _CreateOpFamilyStmt'amname :: !Data.Text.Text,
@@ -29549,15 +29549,15 @@ instance Control.DeepSeq.NFData CreateOpFamilyStmt where
                 (Control.DeepSeq.deepseq (_CreateOpFamilyStmt'amname x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.replace' @:: Lens' CreatePLangStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.plname' @:: Lens' CreatePLangStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.plhandler' @:: Lens' CreatePLangStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'plhandler' @:: Lens' CreatePLangStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.plinline' @:: Lens' CreatePLangStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'plinline' @:: Lens' CreatePLangStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.plvalidator' @:: Lens' CreatePLangStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'plvalidator' @:: Lens' CreatePLangStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.pltrusted' @:: Lens' CreatePLangStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.replace' @:: Lens' CreatePLangStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.plname' @:: Lens' CreatePLangStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.plhandler' @:: Lens' CreatePLangStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'plhandler' @:: Lens' CreatePLangStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.plinline' @:: Lens' CreatePLangStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'plinline' @:: Lens' CreatePLangStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.plvalidator' @:: Lens' CreatePLangStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'plvalidator' @:: Lens' CreatePLangStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pltrusted' @:: Lens' CreatePLangStmt Prelude.Bool@ -}
 data CreatePLangStmt
   = CreatePLangStmt'_constructor {_CreatePLangStmt'replace :: !Prelude.Bool,
                                   _CreatePLangStmt'plname :: !Data.Text.Text,
@@ -29950,17 +29950,17 @@ instance Control.DeepSeq.NFData CreatePLangStmt where
                             (Control.DeepSeq.deepseq (_CreatePLangStmt'pltrusted x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.policyName' @:: Lens' CreatePolicyStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.table' @:: Lens' CreatePolicyStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'table' @:: Lens' CreatePolicyStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.cmdName' @:: Lens' CreatePolicyStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.permissive' @:: Lens' CreatePolicyStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.roles' @:: Lens' CreatePolicyStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'roles' @:: Lens' CreatePolicyStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.qual' @:: Lens' CreatePolicyStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'qual' @:: Lens' CreatePolicyStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.withCheck' @:: Lens' CreatePolicyStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'withCheck' @:: Lens' CreatePolicyStmt (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.policyName' @:: Lens' CreatePolicyStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.table' @:: Lens' CreatePolicyStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'table' @:: Lens' CreatePolicyStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cmdName' @:: Lens' CreatePolicyStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.permissive' @:: Lens' CreatePolicyStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.roles' @:: Lens' CreatePolicyStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'roles' @:: Lens' CreatePolicyStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.qual' @:: Lens' CreatePolicyStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'qual' @:: Lens' CreatePolicyStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withCheck' @:: Lens' CreatePolicyStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'withCheck' @:: Lens' CreatePolicyStmt (Prelude.Maybe Node)@ -}
 data CreatePolicyStmt
   = CreatePolicyStmt'_constructor {_CreatePolicyStmt'policyName :: !Data.Text.Text,
                                    _CreatePolicyStmt'table :: !(Prelude.Maybe RangeVar),
@@ -30393,12 +30393,12 @@ instance Control.DeepSeq.NFData CreatePolicyStmt where
                                   (_CreatePolicyStmt'withCheck x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.pubname' @:: Lens' CreatePublicationStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreatePublicationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreatePublicationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.pubobjects' @:: Lens' CreatePublicationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'pubobjects' @:: Lens' CreatePublicationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.forAllTables' @:: Lens' CreatePublicationStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pubname' @:: Lens' CreatePublicationStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreatePublicationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreatePublicationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pubobjects' @:: Lens' CreatePublicationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'pubobjects' @:: Lens' CreatePublicationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.forAllTables' @:: Lens' CreatePublicationStmt Prelude.Bool@ -}
 data CreatePublicationStmt
   = CreatePublicationStmt'_constructor {_CreatePublicationStmt'pubname :: !Data.Text.Text,
                                         _CreatePublicationStmt'options :: !(Data.Vector.Vector Node),
@@ -30687,10 +30687,10 @@ instance Control.DeepSeq.NFData CreatePublicationStmt where
                          (_CreatePublicationStmt'forAllTables x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' CreateRangeStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'typeName' @:: Lens' CreateRangeStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.params' @:: Lens' CreateRangeStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'params' @:: Lens' CreateRangeStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' CreateRangeStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'typeName' @:: Lens' CreateRangeStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.params' @:: Lens' CreateRangeStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'params' @:: Lens' CreateRangeStmt (Data.Vector.Vector Node)@ -}
 data CreateRangeStmt
   = CreateRangeStmt'_constructor {_CreateRangeStmt'typeName :: !(Data.Vector.Vector Node),
                                   _CreateRangeStmt'params :: !(Data.Vector.Vector Node),
@@ -30885,10 +30885,10 @@ instance Control.DeepSeq.NFData CreateRangeStmt where
                 (Control.DeepSeq.deepseq (_CreateRangeStmt'params x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.stmtType' @:: Lens' CreateRoleStmt RoleStmtType@
-         * 'Proto.PgQuery_Fields.role' @:: Lens' CreateRoleStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateRoleStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateRoleStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.stmtType' @:: Lens' CreateRoleStmt RoleStmtType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.role' @:: Lens' CreateRoleStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateRoleStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateRoleStmt (Data.Vector.Vector Node)@ -}
 data CreateRoleStmt
   = CreateRoleStmt'_constructor {_CreateRoleStmt'stmtType :: !RoleStmtType,
                                  _CreateRoleStmt'role :: !Data.Text.Text,
@@ -31110,12 +31110,12 @@ instance Control.DeepSeq.NFData CreateRoleStmt where
                    (Control.DeepSeq.deepseq (_CreateRoleStmt'options x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.schemaname' @:: Lens' CreateSchemaStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.authrole' @:: Lens' CreateSchemaStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'authrole' @:: Lens' CreateSchemaStmt (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.schemaElts' @:: Lens' CreateSchemaStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'schemaElts' @:: Lens' CreateSchemaStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateSchemaStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.schemaname' @:: Lens' CreateSchemaStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.authrole' @:: Lens' CreateSchemaStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'authrole' @:: Lens' CreateSchemaStmt (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.schemaElts' @:: Lens' CreateSchemaStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'schemaElts' @:: Lens' CreateSchemaStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateSchemaStmt Prelude.Bool@ -}
 data CreateSchemaStmt
   = CreateSchemaStmt'_constructor {_CreateSchemaStmt'schemaname :: !Data.Text.Text,
                                    _CreateSchemaStmt'authrole :: !(Prelude.Maybe RoleSpec),
@@ -31396,13 +31396,13 @@ instance Control.DeepSeq.NFData CreateSchemaStmt where
                       (Control.DeepSeq.deepseq (_CreateSchemaStmt'ifNotExists x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.sequence' @:: Lens' CreateSeqStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'sequence' @:: Lens' CreateSeqStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateSeqStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateSeqStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.ownerId' @:: Lens' CreateSeqStmt Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.forIdentity' @:: Lens' CreateSeqStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateSeqStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sequence' @:: Lens' CreateSeqStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'sequence' @:: Lens' CreateSeqStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateSeqStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateSeqStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ownerId' @:: Lens' CreateSeqStmt Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.forIdentity' @:: Lens' CreateSeqStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateSeqStmt Prelude.Bool@ -}
 data CreateSeqStmt
   = CreateSeqStmt'_constructor {_CreateSeqStmt'sequence :: !(Prelude.Maybe RangeVar),
                                 _CreateSeqStmt'options :: !(Data.Vector.Vector Node),
@@ -31713,17 +31713,17 @@ instance Control.DeepSeq.NFData CreateSeqStmt where
                          (Control.DeepSeq.deepseq (_CreateSeqStmt'ifNotExists x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.defnames' @:: Lens' CreateStatsStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'defnames' @:: Lens' CreateStatsStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.statTypes' @:: Lens' CreateStatsStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'statTypes' @:: Lens' CreateStatsStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.exprs' @:: Lens' CreateStatsStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'exprs' @:: Lens' CreateStatsStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.relations' @:: Lens' CreateStatsStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'relations' @:: Lens' CreateStatsStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.stxcomment' @:: Lens' CreateStatsStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.transformed' @:: Lens' CreateStatsStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateStatsStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defnames' @:: Lens' CreateStatsStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'defnames' @:: Lens' CreateStatsStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.statTypes' @:: Lens' CreateStatsStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'statTypes' @:: Lens' CreateStatsStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.exprs' @:: Lens' CreateStatsStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'exprs' @:: Lens' CreateStatsStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relations' @:: Lens' CreateStatsStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'relations' @:: Lens' CreateStatsStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.stxcomment' @:: Lens' CreateStatsStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.transformed' @:: Lens' CreateStatsStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateStatsStmt Prelude.Bool@ -}
 data CreateStatsStmt
   = CreateStatsStmt'_constructor {_CreateStatsStmt'defnames :: !(Data.Vector.Vector Node),
                                   _CreateStatsStmt'statTypes :: !(Data.Vector.Vector Node),
@@ -32191,26 +32191,26 @@ instance Control.DeepSeq.NFData CreateStatsStmt where
                                   (_CreateStatsStmt'ifNotExists x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' CreateStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' CreateStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.tableElts' @:: Lens' CreateStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'tableElts' @:: Lens' CreateStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.inhRelations' @:: Lens' CreateStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'inhRelations' @:: Lens' CreateStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.partbound' @:: Lens' CreateStmt PartitionBoundSpec@
-         * 'Proto.PgQuery_Fields.maybe'partbound' @:: Lens' CreateStmt (Prelude.Maybe PartitionBoundSpec)@
-         * 'Proto.PgQuery_Fields.partspec' @:: Lens' CreateStmt PartitionSpec@
-         * 'Proto.PgQuery_Fields.maybe'partspec' @:: Lens' CreateStmt (Prelude.Maybe PartitionSpec)@
-         * 'Proto.PgQuery_Fields.ofTypename' @:: Lens' CreateStmt TypeName@
-         * 'Proto.PgQuery_Fields.maybe'ofTypename' @:: Lens' CreateStmt (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.constraints' @:: Lens' CreateStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'constraints' @:: Lens' CreateStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.oncommit' @:: Lens' CreateStmt OnCommitAction@
-         * 'Proto.PgQuery_Fields.tablespacename' @:: Lens' CreateStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.accessMethod' @:: Lens' CreateStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' CreateStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' CreateStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tableElts' @:: Lens' CreateStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'tableElts' @:: Lens' CreateStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inhRelations' @:: Lens' CreateStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'inhRelations' @:: Lens' CreateStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partbound' @:: Lens' CreateStmt PartitionBoundSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'partbound' @:: Lens' CreateStmt (Prelude.Maybe PartitionBoundSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partspec' @:: Lens' CreateStmt PartitionSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'partspec' @:: Lens' CreateStmt (Prelude.Maybe PartitionSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ofTypename' @:: Lens' CreateStmt TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'ofTypename' @:: Lens' CreateStmt (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constraints' @:: Lens' CreateStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'constraints' @:: Lens' CreateStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oncommit' @:: Lens' CreateStmt OnCommitAction@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tablespacename' @:: Lens' CreateStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.accessMethod' @:: Lens' CreateStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateStmt Prelude.Bool@ -}
 data CreateStmt
   = CreateStmt'_constructor {_CreateStmt'relation :: !(Prelude.Maybe RangeVar),
                              _CreateStmt'tableElts :: !(Data.Vector.Vector Node),
@@ -32967,12 +32967,12 @@ instance Control.DeepSeq.NFData CreateStmt where
                                                  (_CreateStmt'ifNotExists x__) ()))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.subname' @:: Lens' CreateSubscriptionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.conninfo' @:: Lens' CreateSubscriptionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.publication' @:: Lens' CreateSubscriptionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'publication' @:: Lens' CreateSubscriptionStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateSubscriptionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateSubscriptionStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subname' @:: Lens' CreateSubscriptionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.conninfo' @:: Lens' CreateSubscriptionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.publication' @:: Lens' CreateSubscriptionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'publication' @:: Lens' CreateSubscriptionStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateSubscriptionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateSubscriptionStmt (Data.Vector.Vector Node)@ -}
 data CreateSubscriptionStmt
   = CreateSubscriptionStmt'_constructor {_CreateSubscriptionStmt'subname :: !Data.Text.Text,
                                          _CreateSubscriptionStmt'conninfo :: !Data.Text.Text,
@@ -33263,13 +33263,13 @@ instance Control.DeepSeq.NFData CreateSubscriptionStmt where
                          (_CreateSubscriptionStmt'options x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.query' @:: Lens' CreateTableAsStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'query' @:: Lens' CreateTableAsStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.into' @:: Lens' CreateTableAsStmt IntoClause@
-         * 'Proto.PgQuery_Fields.maybe'into' @:: Lens' CreateTableAsStmt (Prelude.Maybe IntoClause)@
-         * 'Proto.PgQuery_Fields.objtype' @:: Lens' CreateTableAsStmt ObjectType@
-         * 'Proto.PgQuery_Fields.isSelectInto' @:: Lens' CreateTableAsStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateTableAsStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.query' @:: Lens' CreateTableAsStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'query' @:: Lens' CreateTableAsStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.into' @:: Lens' CreateTableAsStmt IntoClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'into' @:: Lens' CreateTableAsStmt (Prelude.Maybe IntoClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objtype' @:: Lens' CreateTableAsStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isSelectInto' @:: Lens' CreateTableAsStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateTableAsStmt Prelude.Bool@ -}
 data CreateTableAsStmt
   = CreateTableAsStmt'_constructor {_CreateTableAsStmt'query :: !(Prelude.Maybe Node),
                                     _CreateTableAsStmt'into :: !(Prelude.Maybe IntoClause),
@@ -33567,12 +33567,12 @@ instance Control.DeepSeq.NFData CreateTableAsStmt where
                             (_CreateTableAsStmt'ifNotExists x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.tablespacename' @:: Lens' CreateTableSpaceStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.owner' @:: Lens' CreateTableSpaceStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'owner' @:: Lens' CreateTableSpaceStmt (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' CreateTableSpaceStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateTableSpaceStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateTableSpaceStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tablespacename' @:: Lens' CreateTableSpaceStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.owner' @:: Lens' CreateTableSpaceStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'owner' @:: Lens' CreateTableSpaceStmt (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' CreateTableSpaceStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateTableSpaceStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateTableSpaceStmt (Data.Vector.Vector Node)@ -}
 data CreateTableSpaceStmt
   = CreateTableSpaceStmt'_constructor {_CreateTableSpaceStmt'tablespacename :: !Data.Text.Text,
                                        _CreateTableSpaceStmt'owner :: !(Prelude.Maybe RoleSpec),
@@ -33853,14 +33853,14 @@ instance Control.DeepSeq.NFData CreateTableSpaceStmt where
                       (Control.DeepSeq.deepseq (_CreateTableSpaceStmt'options x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.replace' @:: Lens' CreateTransformStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' CreateTransformStmt TypeName@
-         * 'Proto.PgQuery_Fields.maybe'typeName' @:: Lens' CreateTransformStmt (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.lang' @:: Lens' CreateTransformStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.fromsql' @:: Lens' CreateTransformStmt ObjectWithArgs@
-         * 'Proto.PgQuery_Fields.maybe'fromsql' @:: Lens' CreateTransformStmt (Prelude.Maybe ObjectWithArgs)@
-         * 'Proto.PgQuery_Fields.tosql' @:: Lens' CreateTransformStmt ObjectWithArgs@
-         * 'Proto.PgQuery_Fields.maybe'tosql' @:: Lens' CreateTransformStmt (Prelude.Maybe ObjectWithArgs)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.replace' @:: Lens' CreateTransformStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' CreateTransformStmt TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typeName' @:: Lens' CreateTransformStmt (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lang' @:: Lens' CreateTransformStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fromsql' @:: Lens' CreateTransformStmt ObjectWithArgs@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'fromsql' @:: Lens' CreateTransformStmt (Prelude.Maybe ObjectWithArgs)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tosql' @:: Lens' CreateTransformStmt ObjectWithArgs@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'tosql' @:: Lens' CreateTransformStmt (Prelude.Maybe ObjectWithArgs)@ -}
 data CreateTransformStmt
   = CreateTransformStmt'_constructor {_CreateTransformStmt'replace :: !Prelude.Bool,
                                       _CreateTransformStmt'typeName :: !(Prelude.Maybe TypeName),
@@ -34161,28 +34161,28 @@ instance Control.DeepSeq.NFData CreateTransformStmt where
                          (Control.DeepSeq.deepseq (_CreateTransformStmt'tosql x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.replace' @:: Lens' CreateTrigStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.isconstraint' @:: Lens' CreateTrigStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.trigname' @:: Lens' CreateTrigStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' CreateTrigStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' CreateTrigStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.funcname' @:: Lens' CreateTrigStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'funcname' @:: Lens' CreateTrigStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' CreateTrigStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' CreateTrigStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.row' @:: Lens' CreateTrigStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.timing' @:: Lens' CreateTrigStmt Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.events' @:: Lens' CreateTrigStmt Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.columns' @:: Lens' CreateTrigStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'columns' @:: Lens' CreateTrigStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.whenClause' @:: Lens' CreateTrigStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'whenClause' @:: Lens' CreateTrigStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.transitionRels' @:: Lens' CreateTrigStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'transitionRels' @:: Lens' CreateTrigStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.deferrable' @:: Lens' CreateTrigStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.initdeferred' @:: Lens' CreateTrigStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.constrrel' @:: Lens' CreateTrigStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'constrrel' @:: Lens' CreateTrigStmt (Prelude.Maybe RangeVar)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.replace' @:: Lens' CreateTrigStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isconstraint' @:: Lens' CreateTrigStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.trigname' @:: Lens' CreateTrigStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' CreateTrigStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' CreateTrigStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcname' @:: Lens' CreateTrigStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funcname' @:: Lens' CreateTrigStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' CreateTrigStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' CreateTrigStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.row' @:: Lens' CreateTrigStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.timing' @:: Lens' CreateTrigStmt Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.events' @:: Lens' CreateTrigStmt Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.columns' @:: Lens' CreateTrigStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'columns' @:: Lens' CreateTrigStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whenClause' @:: Lens' CreateTrigStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whenClause' @:: Lens' CreateTrigStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.transitionRels' @:: Lens' CreateTrigStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'transitionRels' @:: Lens' CreateTrigStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.deferrable' @:: Lens' CreateTrigStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.initdeferred' @:: Lens' CreateTrigStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constrrel' @:: Lens' CreateTrigStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'constrrel' @:: Lens' CreateTrigStmt (Prelude.Maybe RangeVar)@ -}
 data CreateTrigStmt
   = CreateTrigStmt'_constructor {_CreateTrigStmt'replace :: !Prelude.Bool,
                                  _CreateTrigStmt'isconstraint :: !Prelude.Bool,
@@ -35061,12 +35061,12 @@ instance Control.DeepSeq.NFData CreateTrigStmt where
                                                           ())))))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.user' @:: Lens' CreateUserMappingStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'user' @:: Lens' CreateUserMappingStmt (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.servername' @:: Lens' CreateUserMappingStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateUserMappingStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreateUserMappingStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreateUserMappingStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.user' @:: Lens' CreateUserMappingStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'user' @:: Lens' CreateUserMappingStmt (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.servername' @:: Lens' CreateUserMappingStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' CreateUserMappingStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreateUserMappingStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreateUserMappingStmt (Data.Vector.Vector Node)@ -}
 data CreateUserMappingStmt
   = CreateUserMappingStmt'_constructor {_CreateUserMappingStmt'user :: !(Prelude.Maybe RoleSpec),
                                         _CreateUserMappingStmt'servername :: !Data.Text.Text,
@@ -35344,9 +35344,9 @@ instance Control.DeepSeq.NFData CreateUserMappingStmt where
                          (_CreateUserMappingStmt'options x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.dbname' @:: Lens' CreatedbStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' CreatedbStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' CreatedbStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dbname' @:: Lens' CreatedbStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' CreatedbStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' CreatedbStmt (Data.Vector.Vector Node)@ -}
 data CreatedbStmt
   = CreatedbStmt'_constructor {_CreatedbStmt'dbname :: !Data.Text.Text,
                                _CreatedbStmt'options :: !(Data.Vector.Vector Node),
@@ -35524,11 +35524,11 @@ instance Control.DeepSeq.NFData CreatedbStmt where
                 (Control.DeepSeq.deepseq (_CreatedbStmt'options x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' CurrentOfExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CurrentOfExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.cvarno' @:: Lens' CurrentOfExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.cursorName' @:: Lens' CurrentOfExpr Data.Text.Text@
-         * 'Proto.PgQuery_Fields.cursorParam' @:: Lens' CurrentOfExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' CurrentOfExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' CurrentOfExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cvarno' @:: Lens' CurrentOfExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cursorName' @:: Lens' CurrentOfExpr Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cursorParam' @:: Lens' CurrentOfExpr Data.Int.Int32@ -}
 data CurrentOfExpr
   = CurrentOfExpr'_constructor {_CurrentOfExpr'xpr :: !(Prelude.Maybe Node),
                                 _CurrentOfExpr'cvarno :: !Data.Word.Word32,
@@ -35772,7 +35772,7 @@ instance Control.DeepSeq.NFData CurrentOfExpr where
                       (Control.DeepSeq.deepseq (_CurrentOfExpr'cursorParam x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' DeallocateStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' DeallocateStmt Data.Text.Text@ -}
 data DeallocateStmt
   = DeallocateStmt'_constructor {_DeallocateStmt'name :: !Data.Text.Text,
                                  _DeallocateStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -35883,10 +35883,10 @@ instance Control.DeepSeq.NFData DeallocateStmt where
              (Control.DeepSeq.deepseq (_DeallocateStmt'name x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.portalname' @:: Lens' DeclareCursorStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' DeclareCursorStmt Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.query' @:: Lens' DeclareCursorStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'query' @:: Lens' DeclareCursorStmt (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.portalname' @:: Lens' DeclareCursorStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' DeclareCursorStmt Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.query' @:: Lens' DeclareCursorStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'query' @:: Lens' DeclareCursorStmt (Prelude.Maybe Node)@ -}
 data DeclareCursorStmt
   = DeclareCursorStmt'_constructor {_DeclareCursorStmt'portalname :: !Data.Text.Text,
                                     _DeclareCursorStmt'options :: !Data.Int.Int32,
@@ -36093,12 +36093,12 @@ instance Control.DeepSeq.NFData DeclareCursorStmt where
                    (Control.DeepSeq.deepseq (_DeclareCursorStmt'query x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.defnamespace' @:: Lens' DefElem Data.Text.Text@
-         * 'Proto.PgQuery_Fields.defname' @:: Lens' DefElem Data.Text.Text@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' DefElem Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' DefElem (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.defaction' @:: Lens' DefElem DefElemAction@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' DefElem Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defnamespace' @:: Lens' DefElem Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defname' @:: Lens' DefElem Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' DefElem Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' DefElem (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defaction' @:: Lens' DefElem DefElemAction@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' DefElem Data.Int.Int32@ -}
 data DefElem
   = DefElem'_constructor {_DefElem'defnamespace :: !Data.Text.Text,
                           _DefElem'defname :: !Data.Text.Text,
@@ -36474,16 +36474,16 @@ instance Control.DeepSeq.NFData DefElemAction where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' DefineStmt ObjectType@
-         * 'Proto.PgQuery_Fields.oldstyle' @:: Lens' DefineStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.defnames' @:: Lens' DefineStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'defnames' @:: Lens' DefineStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' DefineStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' DefineStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.definition' @:: Lens' DefineStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'definition' @:: Lens' DefineStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' DefineStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.replace' @:: Lens' DefineStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' DefineStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oldstyle' @:: Lens' DefineStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defnames' @:: Lens' DefineStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'defnames' @:: Lens' DefineStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' DefineStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' DefineStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.definition' @:: Lens' DefineStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'definition' @:: Lens' DefineStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' DefineStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.replace' @:: Lens' DefineStmt Prelude.Bool@ -}
 data DefineStmt
   = DefineStmt'_constructor {_DefineStmt'kind :: !ObjectType,
                              _DefineStmt'oldstyle :: !Prelude.Bool,
@@ -36912,16 +36912,16 @@ instance Control.DeepSeq.NFData DefineStmt where
                                (Control.DeepSeq.deepseq (_DefineStmt'replace x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' DeleteStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' DeleteStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.usingClause' @:: Lens' DeleteStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'usingClause' @:: Lens' DeleteStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' DeleteStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' DeleteStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.returningList' @:: Lens' DeleteStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'returningList' @:: Lens' DeleteStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.withClause' @:: Lens' DeleteStmt WithClause@
-         * 'Proto.PgQuery_Fields.maybe'withClause' @:: Lens' DeleteStmt (Prelude.Maybe WithClause)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' DeleteStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' DeleteStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.usingClause' @:: Lens' DeleteStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'usingClause' @:: Lens' DeleteStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' DeleteStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' DeleteStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.returningList' @:: Lens' DeleteStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'returningList' @:: Lens' DeleteStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withClause' @:: Lens' DeleteStmt WithClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'withClause' @:: Lens' DeleteStmt (Prelude.Maybe WithClause)@ -}
 data DeleteStmt
   = DeleteStmt'_constructor {_DeleteStmt'relation :: !(Prelude.Maybe RangeVar),
                              _DeleteStmt'usingClause :: !(Data.Vector.Vector Node),
@@ -37369,7 +37369,7 @@ instance Control.DeepSeq.NFData DiscardMode where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.target' @:: Lens' DiscardStmt DiscardMode@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.target' @:: Lens' DiscardStmt DiscardMode@ -}
 data DiscardStmt
   = DiscardStmt'_constructor {_DiscardStmt'target :: !DiscardMode,
                               _DiscardStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -37478,16 +37478,16 @@ instance Control.DeepSeq.NFData DiscardStmt where
              (Control.DeepSeq.deepseq (_DiscardStmt'target x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' DistinctExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' DistinctExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.opno' @:: Lens' DistinctExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.opresulttype' @:: Lens' DistinctExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.opretset' @:: Lens' DistinctExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.opcollid' @:: Lens' DistinctExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inputcollid' @:: Lens' DistinctExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' DistinctExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' DistinctExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' DistinctExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' DistinctExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' DistinctExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opno' @:: Lens' DistinctExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opresulttype' @:: Lens' DistinctExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opretset' @:: Lens' DistinctExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opcollid' @:: Lens' DistinctExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inputcollid' @:: Lens' DistinctExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' DistinctExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' DistinctExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' DistinctExpr Data.Int.Int32@ -}
 data DistinctExpr
   = DistinctExpr'_constructor {_DistinctExpr'xpr :: !(Prelude.Maybe Node),
                                _DistinctExpr'opno :: !Data.Word.Word32,
@@ -37924,8 +37924,8 @@ instance Control.DeepSeq.NFData DistinctExpr where
                                   (Control.DeepSeq.deepseq (_DistinctExpr'location x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.args' @:: Lens' DoStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' DoStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' DoStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' DoStmt (Data.Vector.Vector Node)@ -}
 data DoStmt
   = DoStmt'_constructor {_DoStmt'args :: !(Data.Vector.Vector Node),
                          _DoStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -38124,9 +38124,9 @@ instance Control.DeepSeq.NFData DropBehavior where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.roles' @:: Lens' DropOwnedStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'roles' @:: Lens' DropOwnedStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.behavior' @:: Lens' DropOwnedStmt DropBehavior@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.roles' @:: Lens' DropOwnedStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'roles' @:: Lens' DropOwnedStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.behavior' @:: Lens' DropOwnedStmt DropBehavior@ -}
 data DropOwnedStmt
   = DropOwnedStmt'_constructor {_DropOwnedStmt'roles :: !(Data.Vector.Vector Node),
                                 _DropOwnedStmt'behavior :: !DropBehavior,
@@ -38303,9 +38303,9 @@ instance Control.DeepSeq.NFData DropOwnedStmt where
                 (Control.DeepSeq.deepseq (_DropOwnedStmt'behavior x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.roles' @:: Lens' DropRoleStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'roles' @:: Lens' DropRoleStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' DropRoleStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.roles' @:: Lens' DropRoleStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'roles' @:: Lens' DropRoleStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' DropRoleStmt Prelude.Bool@ -}
 data DropRoleStmt
   = DropRoleStmt'_constructor {_DropRoleStmt'roles :: !(Data.Vector.Vector Node),
                                _DropRoleStmt'missingOk :: !Prelude.Bool,
@@ -38478,12 +38478,12 @@ instance Control.DeepSeq.NFData DropRoleStmt where
                 (Control.DeepSeq.deepseq (_DropRoleStmt'missingOk x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.objects' @:: Lens' DropStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'objects' @:: Lens' DropStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.removeType' @:: Lens' DropStmt ObjectType@
-         * 'Proto.PgQuery_Fields.behavior' @:: Lens' DropStmt DropBehavior@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' DropStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.concurrent' @:: Lens' DropStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objects' @:: Lens' DropStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'objects' @:: Lens' DropStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.removeType' @:: Lens' DropStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.behavior' @:: Lens' DropStmt DropBehavior@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' DropStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.concurrent' @:: Lens' DropStmt Prelude.Bool@ -}
 data DropStmt
   = DropStmt'_constructor {_DropStmt'objects :: !(Data.Vector.Vector Node),
                            _DropStmt'removeType :: !ObjectType,
@@ -38794,9 +38794,9 @@ instance Control.DeepSeq.NFData DropStmt where
                          (Control.DeepSeq.deepseq (_DropStmt'concurrent x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.subname' @:: Lens' DropSubscriptionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' DropSubscriptionStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.behavior' @:: Lens' DropSubscriptionStmt DropBehavior@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subname' @:: Lens' DropSubscriptionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' DropSubscriptionStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.behavior' @:: Lens' DropSubscriptionStmt DropBehavior@ -}
 data DropSubscriptionStmt
   = DropSubscriptionStmt'_constructor {_DropSubscriptionStmt'subname :: !Data.Text.Text,
                                        _DropSubscriptionStmt'missingOk :: !Prelude.Bool,
@@ -38997,8 +38997,8 @@ instance Control.DeepSeq.NFData DropSubscriptionStmt where
                    (Control.DeepSeq.deepseq (_DropSubscriptionStmt'behavior x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.tablespacename' @:: Lens' DropTableSpaceStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' DropTableSpaceStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tablespacename' @:: Lens' DropTableSpaceStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' DropTableSpaceStmt Prelude.Bool@ -}
 data DropTableSpaceStmt
   = DropTableSpaceStmt'_constructor {_DropTableSpaceStmt'tablespacename :: !Data.Text.Text,
                                      _DropTableSpaceStmt'missingOk :: !Prelude.Bool,
@@ -39159,10 +39159,10 @@ instance Control.DeepSeq.NFData DropTableSpaceStmt where
                 (Control.DeepSeq.deepseq (_DropTableSpaceStmt'missingOk x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.user' @:: Lens' DropUserMappingStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'user' @:: Lens' DropUserMappingStmt (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.servername' @:: Lens' DropUserMappingStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' DropUserMappingStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.user' @:: Lens' DropUserMappingStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'user' @:: Lens' DropUserMappingStmt (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.servername' @:: Lens' DropUserMappingStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' DropUserMappingStmt Prelude.Bool@ -}
 data DropUserMappingStmt
   = DropUserMappingStmt'_constructor {_DropUserMappingStmt'user :: !(Prelude.Maybe RoleSpec),
                                       _DropUserMappingStmt'servername :: !Data.Text.Text,
@@ -39373,10 +39373,10 @@ instance Control.DeepSeq.NFData DropUserMappingStmt where
                    (Control.DeepSeq.deepseq (_DropUserMappingStmt'missingOk x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.dbname' @:: Lens' DropdbStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' DropdbStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' DropdbStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' DropdbStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dbname' @:: Lens' DropdbStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' DropdbStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' DropdbStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' DropdbStmt (Data.Vector.Vector Node)@ -}
 data DropdbStmt
   = DropdbStmt'_constructor {_DropdbStmt'dbname :: !Data.Text.Text,
                              _DropdbStmt'missingOk :: !Prelude.Bool,
@@ -39596,9 +39596,9 @@ instance Control.DeepSeq.NFData DropdbStmt where
                    (Control.DeepSeq.deepseq (_DropdbStmt'options x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' ExecuteStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.params' @:: Lens' ExecuteStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'params' @:: Lens' ExecuteStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' ExecuteStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.params' @:: Lens' ExecuteStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'params' @:: Lens' ExecuteStmt (Data.Vector.Vector Node)@ -}
 data ExecuteStmt
   = ExecuteStmt'_constructor {_ExecuteStmt'name :: !Data.Text.Text,
                               _ExecuteStmt'params :: !(Data.Vector.Vector Node),
@@ -39772,10 +39772,10 @@ instance Control.DeepSeq.NFData ExecuteStmt where
                 (Control.DeepSeq.deepseq (_ExecuteStmt'params x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.query' @:: Lens' ExplainStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'query' @:: Lens' ExplainStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' ExplainStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' ExplainStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.query' @:: Lens' ExplainStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'query' @:: Lens' ExplainStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' ExplainStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' ExplainStmt (Data.Vector.Vector Node)@ -}
 data ExplainStmt
   = ExplainStmt'_constructor {_ExplainStmt'query :: !(Prelude.Maybe Node),
                               _ExplainStmt'options :: !(Data.Vector.Vector Node),
@@ -40042,10 +40042,10 @@ instance Control.DeepSeq.NFData FetchDirection where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.direction' @:: Lens' FetchStmt FetchDirection@
-         * 'Proto.PgQuery_Fields.howMany' @:: Lens' FetchStmt Data.Int.Int64@
-         * 'Proto.PgQuery_Fields.portalname' @:: Lens' FetchStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.ismove' @:: Lens' FetchStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.direction' @:: Lens' FetchStmt FetchDirection@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.howMany' @:: Lens' FetchStmt Data.Int.Int64@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.portalname' @:: Lens' FetchStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ismove' @:: Lens' FetchStmt Prelude.Bool@ -}
 data FetchStmt
   = FetchStmt'_constructor {_FetchStmt'direction :: !FetchDirection,
                             _FetchStmt'howMany :: !Data.Int.Int64,
@@ -40281,14 +40281,14 @@ instance Control.DeepSeq.NFData FetchStmt where
                       (Control.DeepSeq.deepseq (_FetchStmt'ismove x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' FieldSelect Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' FieldSelect (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' FieldSelect Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' FieldSelect (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.fieldnum' @:: Lens' FieldSelect Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.resulttype' @:: Lens' FieldSelect Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.resulttypmod' @:: Lens' FieldSelect Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.resultcollid' @:: Lens' FieldSelect Data.Word.Word32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' FieldSelect Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' FieldSelect (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' FieldSelect Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' FieldSelect (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fieldnum' @:: Lens' FieldSelect Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttype' @:: Lens' FieldSelect Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttypmod' @:: Lens' FieldSelect Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resultcollid' @:: Lens' FieldSelect Data.Word.Word32@ -}
 data FieldSelect
   = FieldSelect'_constructor {_FieldSelect'xpr :: !(Prelude.Maybe Node),
                               _FieldSelect'arg :: !(Prelude.Maybe Node),
@@ -40625,15 +40625,15 @@ instance Control.DeepSeq.NFData FieldSelect where
                             (Control.DeepSeq.deepseq (_FieldSelect'resultcollid x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' FieldStore Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' FieldStore (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' FieldStore Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' FieldStore (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.newvals' @:: Lens' FieldStore [Node]@
-         * 'Proto.PgQuery_Fields.vec'newvals' @:: Lens' FieldStore (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.fieldnums' @:: Lens' FieldStore [Node]@
-         * 'Proto.PgQuery_Fields.vec'fieldnums' @:: Lens' FieldStore (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.resulttype' @:: Lens' FieldStore Data.Word.Word32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' FieldStore Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' FieldStore (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' FieldStore Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' FieldStore (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newvals' @:: Lens' FieldStore [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'newvals' @:: Lens' FieldStore (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fieldnums' @:: Lens' FieldStore [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'fieldnums' @:: Lens' FieldStore (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttype' @:: Lens' FieldStore Data.Word.Word32@ -}
 data FieldStore
   = FieldStore'_constructor {_FieldStore'xpr :: !(Prelude.Maybe Node),
                              _FieldStore'arg :: !(Prelude.Maybe Node),
@@ -40973,7 +40973,7 @@ instance Control.DeepSeq.NFData FieldStore where
                          (Control.DeepSeq.deepseq (_FieldStore'resulttype x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.fval' @:: Lens' Float Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fval' @:: Lens' Float Data.Text.Text@ -}
 data Float
   = Float'_constructor {_Float'fval :: !Data.Text.Text,
                         _Float'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -41081,10 +41081,10 @@ instance Control.DeepSeq.NFData Float where
              (Control.DeepSeq.deepseq (_Float'fval x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.fromlist' @:: Lens' FromExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'fromlist' @:: Lens' FromExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.quals' @:: Lens' FromExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'quals' @:: Lens' FromExpr (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fromlist' @:: Lens' FromExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'fromlist' @:: Lens' FromExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.quals' @:: Lens' FromExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'quals' @:: Lens' FromExpr (Prelude.Maybe Node)@ -}
 data FromExpr
   = FromExpr'_constructor {_FromExpr'fromlist :: !(Data.Vector.Vector Node),
                            _FromExpr'quals :: !(Prelude.Maybe Node),
@@ -41265,22 +41265,22 @@ instance Control.DeepSeq.NFData FromExpr where
                 (Control.DeepSeq.deepseq (_FromExpr'quals x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.funcname' @:: Lens' FuncCall [Node]@
-         * 'Proto.PgQuery_Fields.vec'funcname' @:: Lens' FuncCall (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' FuncCall [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' FuncCall (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.aggOrder' @:: Lens' FuncCall [Node]@
-         * 'Proto.PgQuery_Fields.vec'aggOrder' @:: Lens' FuncCall (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.aggFilter' @:: Lens' FuncCall Node@
-         * 'Proto.PgQuery_Fields.maybe'aggFilter' @:: Lens' FuncCall (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.over' @:: Lens' FuncCall WindowDef@
-         * 'Proto.PgQuery_Fields.maybe'over' @:: Lens' FuncCall (Prelude.Maybe WindowDef)@
-         * 'Proto.PgQuery_Fields.aggWithinGroup' @:: Lens' FuncCall Prelude.Bool@
-         * 'Proto.PgQuery_Fields.aggStar' @:: Lens' FuncCall Prelude.Bool@
-         * 'Proto.PgQuery_Fields.aggDistinct' @:: Lens' FuncCall Prelude.Bool@
-         * 'Proto.PgQuery_Fields.funcVariadic' @:: Lens' FuncCall Prelude.Bool@
-         * 'Proto.PgQuery_Fields.funcformat' @:: Lens' FuncCall CoercionForm@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' FuncCall Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcname' @:: Lens' FuncCall [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funcname' @:: Lens' FuncCall (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' FuncCall [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' FuncCall (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggOrder' @:: Lens' FuncCall [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'aggOrder' @:: Lens' FuncCall (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggFilter' @:: Lens' FuncCall Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aggFilter' @:: Lens' FuncCall (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.over' @:: Lens' FuncCall WindowDef@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'over' @:: Lens' FuncCall (Prelude.Maybe WindowDef)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggWithinGroup' @:: Lens' FuncCall Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggStar' @:: Lens' FuncCall Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggDistinct' @:: Lens' FuncCall Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcVariadic' @:: Lens' FuncCall Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcformat' @:: Lens' FuncCall CoercionForm@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' FuncCall Data.Int.Int32@ -}
 data FuncCall
   = FuncCall'_constructor {_FuncCall'funcname :: !(Data.Vector.Vector Node),
                            _FuncCall'args :: !(Data.Vector.Vector Node),
@@ -41909,18 +41909,18 @@ instance Control.DeepSeq.NFData FuncCall where
                                               (_FuncCall'location x__) ())))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' FuncExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' FuncExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.funcid' @:: Lens' FuncExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.funcresulttype' @:: Lens' FuncExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.funcretset' @:: Lens' FuncExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.funcvariadic' @:: Lens' FuncExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.funcformat' @:: Lens' FuncExpr CoercionForm@
-         * 'Proto.PgQuery_Fields.funccollid' @:: Lens' FuncExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inputcollid' @:: Lens' FuncExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' FuncExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' FuncExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' FuncExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' FuncExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' FuncExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcid' @:: Lens' FuncExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcresulttype' @:: Lens' FuncExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcretset' @:: Lens' FuncExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcvariadic' @:: Lens' FuncExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcformat' @:: Lens' FuncExpr CoercionForm@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funccollid' @:: Lens' FuncExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inputcollid' @:: Lens' FuncExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' FuncExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' FuncExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' FuncExpr Data.Int.Int32@ -}
 data FuncExpr
   = FuncExpr'_constructor {_FuncExpr'xpr :: !(Prelude.Maybe Node),
                            _FuncExpr'funcid :: !Data.Word.Word32,
@@ -42465,12 +42465,12 @@ instance Control.DeepSeq.NFData FuncExpr where
                                            (_FuncExpr'location x__) ()))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' FunctionParameter Data.Text.Text@
-         * 'Proto.PgQuery_Fields.argType' @:: Lens' FunctionParameter TypeName@
-         * 'Proto.PgQuery_Fields.maybe'argType' @:: Lens' FunctionParameter (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.mode' @:: Lens' FunctionParameter FunctionParameterMode@
-         * 'Proto.PgQuery_Fields.defexpr' @:: Lens' FunctionParameter Node@
-         * 'Proto.PgQuery_Fields.maybe'defexpr' @:: Lens' FunctionParameter (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' FunctionParameter Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.argType' @:: Lens' FunctionParameter TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'argType' @:: Lens' FunctionParameter (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.mode' @:: Lens' FunctionParameter FunctionParameterMode@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defexpr' @:: Lens' FunctionParameter Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'defexpr' @:: Lens' FunctionParameter (Prelude.Maybe Node)@ -}
 data FunctionParameter
   = FunctionParameter'_constructor {_FunctionParameter'name :: !Data.Text.Text,
                                     _FunctionParameter'argType :: !(Prelude.Maybe TypeName),
@@ -42826,16 +42826,16 @@ instance Control.DeepSeq.NFData FunctionParameterMode where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.grantedRoles' @:: Lens' GrantRoleStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'grantedRoles' @:: Lens' GrantRoleStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.granteeRoles' @:: Lens' GrantRoleStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'granteeRoles' @:: Lens' GrantRoleStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.isGrant' @:: Lens' GrantRoleStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.opt' @:: Lens' GrantRoleStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'opt' @:: Lens' GrantRoleStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.grantor' @:: Lens' GrantRoleStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'grantor' @:: Lens' GrantRoleStmt (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.behavior' @:: Lens' GrantRoleStmt DropBehavior@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.grantedRoles' @:: Lens' GrantRoleStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'grantedRoles' @:: Lens' GrantRoleStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.granteeRoles' @:: Lens' GrantRoleStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'granteeRoles' @:: Lens' GrantRoleStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isGrant' @:: Lens' GrantRoleStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opt' @:: Lens' GrantRoleStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opt' @:: Lens' GrantRoleStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.grantor' @:: Lens' GrantRoleStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'grantor' @:: Lens' GrantRoleStmt (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.behavior' @:: Lens' GrantRoleStmt DropBehavior@ -}
 data GrantRoleStmt
   = GrantRoleStmt'_constructor {_GrantRoleStmt'grantedRoles :: !(Data.Vector.Vector Node),
                                 _GrantRoleStmt'granteeRoles :: !(Data.Vector.Vector Node),
@@ -43236,19 +43236,19 @@ instance Control.DeepSeq.NFData GrantRoleStmt where
                             (Control.DeepSeq.deepseq (_GrantRoleStmt'behavior x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.isGrant' @:: Lens' GrantStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.targtype' @:: Lens' GrantStmt GrantTargetType@
-         * 'Proto.PgQuery_Fields.objtype' @:: Lens' GrantStmt ObjectType@
-         * 'Proto.PgQuery_Fields.objects' @:: Lens' GrantStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'objects' @:: Lens' GrantStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.privileges' @:: Lens' GrantStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'privileges' @:: Lens' GrantStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.grantees' @:: Lens' GrantStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'grantees' @:: Lens' GrantStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.grantOption' @:: Lens' GrantStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.grantor' @:: Lens' GrantStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'grantor' @:: Lens' GrantStmt (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.behavior' @:: Lens' GrantStmt DropBehavior@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isGrant' @:: Lens' GrantStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.targtype' @:: Lens' GrantStmt GrantTargetType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objtype' @:: Lens' GrantStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objects' @:: Lens' GrantStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'objects' @:: Lens' GrantStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.privileges' @:: Lens' GrantStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'privileges' @:: Lens' GrantStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.grantees' @:: Lens' GrantStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'grantees' @:: Lens' GrantStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.grantOption' @:: Lens' GrantStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.grantor' @:: Lens' GrantStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'grantor' @:: Lens' GrantStmt (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.behavior' @:: Lens' GrantStmt DropBehavior@ -}
 data GrantStmt
   = GrantStmt'_constructor {_GrantStmt'isGrant :: !Prelude.Bool,
                             _GrantStmt'targtype :: !GrantTargetType,
@@ -43863,14 +43863,14 @@ instance Control.DeepSeq.NFData GrantTargetType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' GroupingFunc Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' GroupingFunc (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' GroupingFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' GroupingFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.refs' @:: Lens' GroupingFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'refs' @:: Lens' GroupingFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.agglevelsup' @:: Lens' GroupingFunc Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' GroupingFunc Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' GroupingFunc Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' GroupingFunc (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' GroupingFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' GroupingFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refs' @:: Lens' GroupingFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'refs' @:: Lens' GroupingFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.agglevelsup' @:: Lens' GroupingFunc Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' GroupingFunc Data.Int.Int32@ -}
 data GroupingFunc
   = GroupingFunc'_constructor {_GroupingFunc'xpr :: !(Prelude.Maybe Node),
                                _GroupingFunc'args :: !(Data.Vector.Vector Node),
@@ -44193,10 +44193,10 @@ instance Control.DeepSeq.NFData GroupingFunc where
                          (Control.DeepSeq.deepseq (_GroupingFunc'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' GroupingSet GroupingSetKind@
-         * 'Proto.PgQuery_Fields.content' @:: Lens' GroupingSet [Node]@
-         * 'Proto.PgQuery_Fields.vec'content' @:: Lens' GroupingSet (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' GroupingSet Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' GroupingSet GroupingSetKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.content' @:: Lens' GroupingSet [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'content' @:: Lens' GroupingSet (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' GroupingSet Data.Int.Int32@ -}
 data GroupingSet
   = GroupingSet'_constructor {_GroupingSet'kind :: !GroupingSetKind,
                               _GroupingSet'content :: !(Data.Vector.Vector Node),
@@ -44510,14 +44510,14 @@ instance Control.DeepSeq.NFData GroupingSetKind where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.serverName' @:: Lens' ImportForeignSchemaStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.remoteSchema' @:: Lens' ImportForeignSchemaStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.localSchema' @:: Lens' ImportForeignSchemaStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.listType' @:: Lens' ImportForeignSchemaStmt ImportForeignSchemaType@
-         * 'Proto.PgQuery_Fields.tableList' @:: Lens' ImportForeignSchemaStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'tableList' @:: Lens' ImportForeignSchemaStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' ImportForeignSchemaStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' ImportForeignSchemaStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.serverName' @:: Lens' ImportForeignSchemaStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.remoteSchema' @:: Lens' ImportForeignSchemaStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.localSchema' @:: Lens' ImportForeignSchemaStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.listType' @:: Lens' ImportForeignSchemaStmt ImportForeignSchemaType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tableList' @:: Lens' ImportForeignSchemaStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'tableList' @:: Lens' ImportForeignSchemaStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' ImportForeignSchemaStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' ImportForeignSchemaStmt (Data.Vector.Vector Node)@ -}
 data ImportForeignSchemaStmt
   = ImportForeignSchemaStmt'_constructor {_ImportForeignSchemaStmt'serverName :: !Data.Text.Text,
                                           _ImportForeignSchemaStmt'remoteSchema :: !Data.Text.Text,
@@ -44991,18 +44991,18 @@ instance Control.DeepSeq.NFData ImportForeignSchemaType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' IndexElem Data.Text.Text@
-         * 'Proto.PgQuery_Fields.expr' @:: Lens' IndexElem Node@
-         * 'Proto.PgQuery_Fields.maybe'expr' @:: Lens' IndexElem (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.indexcolname' @:: Lens' IndexElem Data.Text.Text@
-         * 'Proto.PgQuery_Fields.collation' @:: Lens' IndexElem [Node]@
-         * 'Proto.PgQuery_Fields.vec'collation' @:: Lens' IndexElem (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.opclass' @:: Lens' IndexElem [Node]@
-         * 'Proto.PgQuery_Fields.vec'opclass' @:: Lens' IndexElem (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.opclassopts' @:: Lens' IndexElem [Node]@
-         * 'Proto.PgQuery_Fields.vec'opclassopts' @:: Lens' IndexElem (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.ordering' @:: Lens' IndexElem SortByDir@
-         * 'Proto.PgQuery_Fields.nullsOrdering' @:: Lens' IndexElem SortByNulls@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' IndexElem Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.expr' @:: Lens' IndexElem Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'expr' @:: Lens' IndexElem (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexcolname' @:: Lens' IndexElem Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collation' @:: Lens' IndexElem [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'collation' @:: Lens' IndexElem (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opclass' @:: Lens' IndexElem [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opclass' @:: Lens' IndexElem (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opclassopts' @:: Lens' IndexElem [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opclassopts' @:: Lens' IndexElem (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ordering' @:: Lens' IndexElem SortByDir@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nullsOrdering' @:: Lens' IndexElem SortByNulls@ -}
 data IndexElem
   = IndexElem'_constructor {_IndexElem'name :: !Data.Text.Text,
                             _IndexElem'expr :: !(Prelude.Maybe Node),
@@ -45503,36 +45503,36 @@ instance Control.DeepSeq.NFData IndexElem where
                                   (Control.DeepSeq.deepseq (_IndexElem'nullsOrdering x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.idxname' @:: Lens' IndexStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' IndexStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' IndexStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.accessMethod' @:: Lens' IndexStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.tableSpace' @:: Lens' IndexStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.indexParams' @:: Lens' IndexStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'indexParams' @:: Lens' IndexStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.indexIncludingParams' @:: Lens' IndexStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'indexIncludingParams' @:: Lens' IndexStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' IndexStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' IndexStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' IndexStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' IndexStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.excludeOpNames' @:: Lens' IndexStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'excludeOpNames' @:: Lens' IndexStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.idxcomment' @:: Lens' IndexStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.indexOid' @:: Lens' IndexStmt Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.oldNumber' @:: Lens' IndexStmt Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.oldCreateSubid' @:: Lens' IndexStmt Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.oldFirstRelfilelocatorSubid' @:: Lens' IndexStmt Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.unique' @:: Lens' IndexStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.nullsNotDistinct' @:: Lens' IndexStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.primary' @:: Lens' IndexStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.isconstraint' @:: Lens' IndexStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.deferrable' @:: Lens' IndexStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.initdeferred' @:: Lens' IndexStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.transformed' @:: Lens' IndexStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.concurrent' @:: Lens' IndexStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.ifNotExists' @:: Lens' IndexStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.resetDefaultTblspc' @:: Lens' IndexStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.idxname' @:: Lens' IndexStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' IndexStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' IndexStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.accessMethod' @:: Lens' IndexStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tableSpace' @:: Lens' IndexStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexParams' @:: Lens' IndexStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'indexParams' @:: Lens' IndexStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexIncludingParams' @:: Lens' IndexStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'indexIncludingParams' @:: Lens' IndexStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' IndexStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' IndexStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' IndexStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' IndexStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.excludeOpNames' @:: Lens' IndexStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'excludeOpNames' @:: Lens' IndexStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.idxcomment' @:: Lens' IndexStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexOid' @:: Lens' IndexStmt Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oldNumber' @:: Lens' IndexStmt Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oldCreateSubid' @:: Lens' IndexStmt Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oldFirstRelfilelocatorSubid' @:: Lens' IndexStmt Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.unique' @:: Lens' IndexStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nullsNotDistinct' @:: Lens' IndexStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.primary' @:: Lens' IndexStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isconstraint' @:: Lens' IndexStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.deferrable' @:: Lens' IndexStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.initdeferred' @:: Lens' IndexStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.transformed' @:: Lens' IndexStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.concurrent' @:: Lens' IndexStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ifNotExists' @:: Lens' IndexStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resetDefaultTblspc' @:: Lens' IndexStmt Prelude.Bool@ -}
 data IndexStmt
   = IndexStmt'_constructor {_IndexStmt'idxname :: !Data.Text.Text,
                             _IndexStmt'relation :: !(Prelude.Maybe RangeVar),
@@ -46930,12 +46930,12 @@ instance Control.DeepSeq.NFData IndexStmt where
                                                                                      ()))))))))))))))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.indexElems' @:: Lens' InferClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'indexElems' @:: Lens' InferClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' InferClause Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' InferClause (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.conname' @:: Lens' InferClause Data.Text.Text@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' InferClause Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexElems' @:: Lens' InferClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'indexElems' @:: Lens' InferClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' InferClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' InferClause (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.conname' @:: Lens' InferClause Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' InferClause Data.Int.Int32@ -}
 data InferClause
   = InferClause'_constructor {_InferClause'indexElems :: !(Data.Vector.Vector Node),
                               _InferClause'whereClause :: !(Prelude.Maybe Node),
@@ -47212,12 +47212,12 @@ instance Control.DeepSeq.NFData InferClause where
                       (Control.DeepSeq.deepseq (_InferClause'location x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' InferenceElem Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' InferenceElem (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.expr' @:: Lens' InferenceElem Node@
-         * 'Proto.PgQuery_Fields.maybe'expr' @:: Lens' InferenceElem (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.infercollid' @:: Lens' InferenceElem Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inferopclass' @:: Lens' InferenceElem Data.Word.Word32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' InferenceElem Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' InferenceElem (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.expr' @:: Lens' InferenceElem Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'expr' @:: Lens' InferenceElem (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.infercollid' @:: Lens' InferenceElem Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inferopclass' @:: Lens' InferenceElem Data.Word.Word32@ -}
 data InferenceElem
   = InferenceElem'_constructor {_InferenceElem'xpr :: !(Prelude.Maybe Node),
                                 _InferenceElem'expr :: !(Prelude.Maybe Node),
@@ -47466,10 +47466,10 @@ instance Control.DeepSeq.NFData InferenceElem where
                       (Control.DeepSeq.deepseq (_InferenceElem'inferopclass x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.sourceText' @:: Lens' InlineCodeBlock Data.Text.Text@
-         * 'Proto.PgQuery_Fields.langOid' @:: Lens' InlineCodeBlock Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.langIsTrusted' @:: Lens' InlineCodeBlock Prelude.Bool@
-         * 'Proto.PgQuery_Fields.atomic' @:: Lens' InlineCodeBlock Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sourceText' @:: Lens' InlineCodeBlock Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.langOid' @:: Lens' InlineCodeBlock Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.langIsTrusted' @:: Lens' InlineCodeBlock Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.atomic' @:: Lens' InlineCodeBlock Prelude.Bool@ -}
 data InlineCodeBlock
   = InlineCodeBlock'_constructor {_InlineCodeBlock'sourceText :: !Data.Text.Text,
                                   _InlineCodeBlock'langOid :: !Data.Word.Word32,
@@ -47707,19 +47707,19 @@ instance Control.DeepSeq.NFData InlineCodeBlock where
                       (Control.DeepSeq.deepseq (_InlineCodeBlock'atomic x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' InsertStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' InsertStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.cols' @:: Lens' InsertStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'cols' @:: Lens' InsertStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.selectStmt' @:: Lens' InsertStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'selectStmt' @:: Lens' InsertStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.onConflictClause' @:: Lens' InsertStmt OnConflictClause@
-         * 'Proto.PgQuery_Fields.maybe'onConflictClause' @:: Lens' InsertStmt (Prelude.Maybe OnConflictClause)@
-         * 'Proto.PgQuery_Fields.returningList' @:: Lens' InsertStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'returningList' @:: Lens' InsertStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.withClause' @:: Lens' InsertStmt WithClause@
-         * 'Proto.PgQuery_Fields.maybe'withClause' @:: Lens' InsertStmt (Prelude.Maybe WithClause)@
-         * 'Proto.PgQuery_Fields.override' @:: Lens' InsertStmt OverridingKind@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' InsertStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' InsertStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cols' @:: Lens' InsertStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'cols' @:: Lens' InsertStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.selectStmt' @:: Lens' InsertStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'selectStmt' @:: Lens' InsertStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.onConflictClause' @:: Lens' InsertStmt OnConflictClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'onConflictClause' @:: Lens' InsertStmt (Prelude.Maybe OnConflictClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.returningList' @:: Lens' InsertStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'returningList' @:: Lens' InsertStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withClause' @:: Lens' InsertStmt WithClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'withClause' @:: Lens' InsertStmt (Prelude.Maybe WithClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.override' @:: Lens' InsertStmt OverridingKind@ -}
 data InsertStmt
   = InsertStmt'_constructor {_InsertStmt'relation :: !(Prelude.Maybe RangeVar),
                              _InsertStmt'cols :: !(Data.Vector.Vector Node),
@@ -48177,8 +48177,8 @@ instance Control.DeepSeq.NFData InsertStmt where
                                (Control.DeepSeq.deepseq (_InsertStmt'override x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.items' @:: Lens' IntList [Node]@
-         * 'Proto.PgQuery_Fields.vec'items' @:: Lens' IntList (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.items' @:: Lens' IntList [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'items' @:: Lens' IntList (Data.Vector.Vector Node)@ -}
 data IntList
   = IntList'_constructor {_IntList'items :: !(Data.Vector.Vector Node),
                           _IntList'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -48306,7 +48306,7 @@ instance Control.DeepSeq.NFData IntList where
              (Control.DeepSeq.deepseq (_IntList'items x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.ival' @:: Lens' Integer Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ival' @:: Lens' Integer Data.Int.Int32@ -}
 data Integer
   = Integer'_constructor {_Integer'ival :: !Data.Int.Int32,
                           _Integer'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -48408,18 +48408,18 @@ instance Control.DeepSeq.NFData Integer where
              (Control.DeepSeq.deepseq (_Integer'ival x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.rel' @:: Lens' IntoClause RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'rel' @:: Lens' IntoClause (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.colNames' @:: Lens' IntoClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'colNames' @:: Lens' IntoClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.accessMethod' @:: Lens' IntoClause Data.Text.Text@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' IntoClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' IntoClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.onCommit' @:: Lens' IntoClause OnCommitAction@
-         * 'Proto.PgQuery_Fields.tableSpaceName' @:: Lens' IntoClause Data.Text.Text@
-         * 'Proto.PgQuery_Fields.viewQuery' @:: Lens' IntoClause Node@
-         * 'Proto.PgQuery_Fields.maybe'viewQuery' @:: Lens' IntoClause (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.skipData' @:: Lens' IntoClause Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rel' @:: Lens' IntoClause RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rel' @:: Lens' IntoClause (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colNames' @:: Lens' IntoClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colNames' @:: Lens' IntoClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.accessMethod' @:: Lens' IntoClause Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' IntoClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' IntoClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.onCommit' @:: Lens' IntoClause OnCommitAction@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tableSpaceName' @:: Lens' IntoClause Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.viewQuery' @:: Lens' IntoClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'viewQuery' @:: Lens' IntoClause (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.skipData' @:: Lens' IntoClause Prelude.Bool@ -}
 data IntoClause
   = IntoClause'_constructor {_IntoClause'rel :: !(Prelude.Maybe RangeVar),
                              _IntoClause'colNames :: !(Data.Vector.Vector Node),
@@ -48909,21 +48909,21 @@ instance Control.DeepSeq.NFData IntoClause where
                                   (Control.DeepSeq.deepseq (_IntoClause'skipData x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.jointype' @:: Lens' JoinExpr JoinType@
-         * 'Proto.PgQuery_Fields.isNatural' @:: Lens' JoinExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.larg' @:: Lens' JoinExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'larg' @:: Lens' JoinExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.rarg' @:: Lens' JoinExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'rarg' @:: Lens' JoinExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.usingClause' @:: Lens' JoinExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'usingClause' @:: Lens' JoinExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.joinUsingAlias' @:: Lens' JoinExpr Alias@
-         * 'Proto.PgQuery_Fields.maybe'joinUsingAlias' @:: Lens' JoinExpr (Prelude.Maybe Alias)@
-         * 'Proto.PgQuery_Fields.quals' @:: Lens' JoinExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'quals' @:: Lens' JoinExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.alias' @:: Lens' JoinExpr Alias@
-         * 'Proto.PgQuery_Fields.maybe'alias' @:: Lens' JoinExpr (Prelude.Maybe Alias)@
-         * 'Proto.PgQuery_Fields.rtindex' @:: Lens' JoinExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jointype' @:: Lens' JoinExpr JoinType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isNatural' @:: Lens' JoinExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.larg' @:: Lens' JoinExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'larg' @:: Lens' JoinExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rarg' @:: Lens' JoinExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rarg' @:: Lens' JoinExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.usingClause' @:: Lens' JoinExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'usingClause' @:: Lens' JoinExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.joinUsingAlias' @:: Lens' JoinExpr Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'joinUsingAlias' @:: Lens' JoinExpr (Prelude.Maybe Alias)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.quals' @:: Lens' JoinExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'quals' @:: Lens' JoinExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alias' @:: Lens' JoinExpr Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alias' @:: Lens' JoinExpr (Prelude.Maybe Alias)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rtindex' @:: Lens' JoinExpr Data.Int.Int32@ -}
 data JoinExpr
   = JoinExpr'_constructor {_JoinExpr'jointype :: !JoinType,
                            _JoinExpr'isNatural :: !Prelude.Bool,
@@ -49563,15 +49563,15 @@ instance Control.DeepSeq.NFData JoinType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.output' @:: Lens' JsonAggConstructor JsonOutput@
-         * 'Proto.PgQuery_Fields.maybe'output' @:: Lens' JsonAggConstructor (Prelude.Maybe JsonOutput)@
-         * 'Proto.PgQuery_Fields.aggFilter' @:: Lens' JsonAggConstructor Node@
-         * 'Proto.PgQuery_Fields.maybe'aggFilter' @:: Lens' JsonAggConstructor (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.aggOrder' @:: Lens' JsonAggConstructor [Node]@
-         * 'Proto.PgQuery_Fields.vec'aggOrder' @:: Lens' JsonAggConstructor (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.over' @:: Lens' JsonAggConstructor WindowDef@
-         * 'Proto.PgQuery_Fields.maybe'over' @:: Lens' JsonAggConstructor (Prelude.Maybe WindowDef)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' JsonAggConstructor Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.output' @:: Lens' JsonAggConstructor JsonOutput@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'output' @:: Lens' JsonAggConstructor (Prelude.Maybe JsonOutput)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggFilter' @:: Lens' JsonAggConstructor Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aggFilter' @:: Lens' JsonAggConstructor (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggOrder' @:: Lens' JsonAggConstructor [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'aggOrder' @:: Lens' JsonAggConstructor (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.over' @:: Lens' JsonAggConstructor WindowDef@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'over' @:: Lens' JsonAggConstructor (Prelude.Maybe WindowDef)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' JsonAggConstructor Data.Int.Int32@ -}
 data JsonAggConstructor
   = JsonAggConstructor'_constructor {_JsonAggConstructor'output :: !(Prelude.Maybe JsonOutput),
                                      _JsonAggConstructor'aggFilter :: !(Prelude.Maybe Node),
@@ -49907,11 +49907,11 @@ instance Control.DeepSeq.NFData JsonAggConstructor where
                          (Control.DeepSeq.deepseq (_JsonAggConstructor'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.constructor' @:: Lens' JsonArrayAgg JsonAggConstructor@
-         * 'Proto.PgQuery_Fields.maybe'constructor' @:: Lens' JsonArrayAgg (Prelude.Maybe JsonAggConstructor)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' JsonArrayAgg JsonValueExpr@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' JsonArrayAgg (Prelude.Maybe JsonValueExpr)@
-         * 'Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonArrayAgg Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constructor' @:: Lens' JsonArrayAgg JsonAggConstructor@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'constructor' @:: Lens' JsonArrayAgg (Prelude.Maybe JsonAggConstructor)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' JsonArrayAgg JsonValueExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' JsonArrayAgg (Prelude.Maybe JsonValueExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonArrayAgg Prelude.Bool@ -}
 data JsonArrayAgg
   = JsonArrayAgg'_constructor {_JsonArrayAgg'constructor :: !(Prelude.Maybe JsonAggConstructor),
                                _JsonArrayAgg'arg :: !(Prelude.Maybe JsonValueExpr),
@@ -50122,12 +50122,12 @@ instance Control.DeepSeq.NFData JsonArrayAgg where
                    (Control.DeepSeq.deepseq (_JsonArrayAgg'absentOnNull x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.exprs' @:: Lens' JsonArrayConstructor [Node]@
-         * 'Proto.PgQuery_Fields.vec'exprs' @:: Lens' JsonArrayConstructor (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.output' @:: Lens' JsonArrayConstructor JsonOutput@
-         * 'Proto.PgQuery_Fields.maybe'output' @:: Lens' JsonArrayConstructor (Prelude.Maybe JsonOutput)@
-         * 'Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonArrayConstructor Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' JsonArrayConstructor Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.exprs' @:: Lens' JsonArrayConstructor [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'exprs' @:: Lens' JsonArrayConstructor (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.output' @:: Lens' JsonArrayConstructor JsonOutput@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'output' @:: Lens' JsonArrayConstructor (Prelude.Maybe JsonOutput)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonArrayConstructor Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' JsonArrayConstructor Data.Int.Int32@ -}
 data JsonArrayConstructor
   = JsonArrayConstructor'_constructor {_JsonArrayConstructor'exprs :: !(Data.Vector.Vector Node),
                                        _JsonArrayConstructor'output :: !(Prelude.Maybe JsonOutput),
@@ -50397,14 +50397,14 @@ instance Control.DeepSeq.NFData JsonArrayConstructor where
                          (_JsonArrayConstructor'location x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.query' @:: Lens' JsonArrayQueryConstructor Node@
-         * 'Proto.PgQuery_Fields.maybe'query' @:: Lens' JsonArrayQueryConstructor (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.output' @:: Lens' JsonArrayQueryConstructor JsonOutput@
-         * 'Proto.PgQuery_Fields.maybe'output' @:: Lens' JsonArrayQueryConstructor (Prelude.Maybe JsonOutput)@
-         * 'Proto.PgQuery_Fields.format' @:: Lens' JsonArrayQueryConstructor JsonFormat@
-         * 'Proto.PgQuery_Fields.maybe'format' @:: Lens' JsonArrayQueryConstructor (Prelude.Maybe JsonFormat)@
-         * 'Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonArrayQueryConstructor Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' JsonArrayQueryConstructor Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.query' @:: Lens' JsonArrayQueryConstructor Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'query' @:: Lens' JsonArrayQueryConstructor (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.output' @:: Lens' JsonArrayQueryConstructor JsonOutput@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'output' @:: Lens' JsonArrayQueryConstructor (Prelude.Maybe JsonOutput)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.format' @:: Lens' JsonArrayQueryConstructor JsonFormat@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'format' @:: Lens' JsonArrayQueryConstructor (Prelude.Maybe JsonFormat)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonArrayQueryConstructor Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' JsonArrayQueryConstructor Data.Int.Int32@ -}
 data JsonArrayQueryConstructor
   = JsonArrayQueryConstructor'_constructor {_JsonArrayQueryConstructor'query :: !(Prelude.Maybe Node),
                                             _JsonArrayQueryConstructor'output :: !(Prelude.Maybe JsonOutput),
@@ -50710,20 +50710,20 @@ instance Control.DeepSeq.NFData JsonArrayQueryConstructor where
                             (_JsonArrayQueryConstructor'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' JsonConstructorExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' JsonConstructorExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.type'' @:: Lens' JsonConstructorExpr JsonConstructorType@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' JsonConstructorExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' JsonConstructorExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.func' @:: Lens' JsonConstructorExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'func' @:: Lens' JsonConstructorExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.coercion' @:: Lens' JsonConstructorExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'coercion' @:: Lens' JsonConstructorExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.returning' @:: Lens' JsonConstructorExpr JsonReturning@
-         * 'Proto.PgQuery_Fields.maybe'returning' @:: Lens' JsonConstructorExpr (Prelude.Maybe JsonReturning)@
-         * 'Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonConstructorExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.unique' @:: Lens' JsonConstructorExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' JsonConstructorExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' JsonConstructorExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' JsonConstructorExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.type'' @:: Lens' JsonConstructorExpr JsonConstructorType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' JsonConstructorExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' JsonConstructorExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.func' @:: Lens' JsonConstructorExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'func' @:: Lens' JsonConstructorExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coercion' @:: Lens' JsonConstructorExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'coercion' @:: Lens' JsonConstructorExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.returning' @:: Lens' JsonConstructorExpr JsonReturning@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'returning' @:: Lens' JsonConstructorExpr (Prelude.Maybe JsonReturning)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonConstructorExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.unique' @:: Lens' JsonConstructorExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' JsonConstructorExpr Data.Int.Int32@ -}
 data JsonConstructorExpr
   = JsonConstructorExpr'_constructor {_JsonConstructorExpr'xpr :: !(Prelude.Maybe Node),
                                       _JsonConstructorExpr'type' :: !JsonConstructorType,
@@ -51417,9 +51417,9 @@ instance Control.DeepSeq.NFData JsonEncoding where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.formatType' @:: Lens' JsonFormat JsonFormatType@
-         * 'Proto.PgQuery_Fields.encoding' @:: Lens' JsonFormat JsonEncoding@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' JsonFormat Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.formatType' @:: Lens' JsonFormat JsonFormatType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.encoding' @:: Lens' JsonFormat JsonEncoding@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' JsonFormat Data.Int.Int32@ -}
 data JsonFormat
   = JsonFormat'_constructor {_JsonFormat'formatType :: !JsonFormatType,
                              _JsonFormat'encoding :: !JsonEncoding,
@@ -51698,13 +51698,13 @@ instance Control.DeepSeq.NFData JsonFormatType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.expr' @:: Lens' JsonIsPredicate Node@
-         * 'Proto.PgQuery_Fields.maybe'expr' @:: Lens' JsonIsPredicate (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.format' @:: Lens' JsonIsPredicate JsonFormat@
-         * 'Proto.PgQuery_Fields.maybe'format' @:: Lens' JsonIsPredicate (Prelude.Maybe JsonFormat)@
-         * 'Proto.PgQuery_Fields.itemType' @:: Lens' JsonIsPredicate JsonValueType@
-         * 'Proto.PgQuery_Fields.uniqueKeys' @:: Lens' JsonIsPredicate Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' JsonIsPredicate Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.expr' @:: Lens' JsonIsPredicate Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'expr' @:: Lens' JsonIsPredicate (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.format' @:: Lens' JsonIsPredicate JsonFormat@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'format' @:: Lens' JsonIsPredicate (Prelude.Maybe JsonFormat)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.itemType' @:: Lens' JsonIsPredicate JsonValueType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.uniqueKeys' @:: Lens' JsonIsPredicate Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' JsonIsPredicate Data.Int.Int32@ -}
 data JsonIsPredicate
   = JsonIsPredicate'_constructor {_JsonIsPredicate'expr :: !(Prelude.Maybe Node),
                                   _JsonIsPredicate'format :: !(Prelude.Maybe JsonFormat),
@@ -52002,10 +52002,10 @@ instance Control.DeepSeq.NFData JsonIsPredicate where
                          (Control.DeepSeq.deepseq (_JsonIsPredicate'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.key' @:: Lens' JsonKeyValue Node@
-         * 'Proto.PgQuery_Fields.maybe'key' @:: Lens' JsonKeyValue (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.value' @:: Lens' JsonKeyValue JsonValueExpr@
-         * 'Proto.PgQuery_Fields.maybe'value' @:: Lens' JsonKeyValue (Prelude.Maybe JsonValueExpr)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.key' @:: Lens' JsonKeyValue Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'key' @:: Lens' JsonKeyValue (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.value' @:: Lens' JsonKeyValue JsonValueExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'value' @:: Lens' JsonKeyValue (Prelude.Maybe JsonValueExpr)@ -}
 data JsonKeyValue
   = JsonKeyValue'_constructor {_JsonKeyValue'key :: !(Prelude.Maybe Node),
                                _JsonKeyValue'value :: !(Prelude.Maybe JsonValueExpr),
@@ -52169,12 +52169,12 @@ instance Control.DeepSeq.NFData JsonKeyValue where
                 (Control.DeepSeq.deepseq (_JsonKeyValue'value x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.constructor' @:: Lens' JsonObjectAgg JsonAggConstructor@
-         * 'Proto.PgQuery_Fields.maybe'constructor' @:: Lens' JsonObjectAgg (Prelude.Maybe JsonAggConstructor)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' JsonObjectAgg JsonKeyValue@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' JsonObjectAgg (Prelude.Maybe JsonKeyValue)@
-         * 'Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonObjectAgg Prelude.Bool@
-         * 'Proto.PgQuery_Fields.unique' @:: Lens' JsonObjectAgg Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constructor' @:: Lens' JsonObjectAgg JsonAggConstructor@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'constructor' @:: Lens' JsonObjectAgg (Prelude.Maybe JsonAggConstructor)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' JsonObjectAgg JsonKeyValue@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' JsonObjectAgg (Prelude.Maybe JsonKeyValue)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonObjectAgg Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.unique' @:: Lens' JsonObjectAgg Prelude.Bool@ -}
 data JsonObjectAgg
   = JsonObjectAgg'_constructor {_JsonObjectAgg'constructor :: !(Prelude.Maybe JsonAggConstructor),
                                 _JsonObjectAgg'arg :: !(Prelude.Maybe JsonKeyValue),
@@ -52424,13 +52424,13 @@ instance Control.DeepSeq.NFData JsonObjectAgg where
                       (Control.DeepSeq.deepseq (_JsonObjectAgg'unique x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.exprs' @:: Lens' JsonObjectConstructor [Node]@
-         * 'Proto.PgQuery_Fields.vec'exprs' @:: Lens' JsonObjectConstructor (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.output' @:: Lens' JsonObjectConstructor JsonOutput@
-         * 'Proto.PgQuery_Fields.maybe'output' @:: Lens' JsonObjectConstructor (Prelude.Maybe JsonOutput)@
-         * 'Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonObjectConstructor Prelude.Bool@
-         * 'Proto.PgQuery_Fields.unique' @:: Lens' JsonObjectConstructor Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' JsonObjectConstructor Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.exprs' @:: Lens' JsonObjectConstructor [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'exprs' @:: Lens' JsonObjectConstructor (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.output' @:: Lens' JsonObjectConstructor JsonOutput@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'output' @:: Lens' JsonObjectConstructor (Prelude.Maybe JsonOutput)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.absentOnNull' @:: Lens' JsonObjectConstructor Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.unique' @:: Lens' JsonObjectConstructor Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' JsonObjectConstructor Data.Int.Int32@ -}
 data JsonObjectConstructor
   = JsonObjectConstructor'_constructor {_JsonObjectConstructor'exprs :: !(Data.Vector.Vector Node),
                                         _JsonObjectConstructor'output :: !(Prelude.Maybe JsonOutput),
@@ -52742,10 +52742,10 @@ instance Control.DeepSeq.NFData JsonObjectConstructor where
                             (_JsonObjectConstructor'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' JsonOutput TypeName@
-         * 'Proto.PgQuery_Fields.maybe'typeName' @:: Lens' JsonOutput (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.returning' @:: Lens' JsonOutput JsonReturning@
-         * 'Proto.PgQuery_Fields.maybe'returning' @:: Lens' JsonOutput (Prelude.Maybe JsonReturning)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' JsonOutput TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typeName' @:: Lens' JsonOutput (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.returning' @:: Lens' JsonOutput JsonReturning@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'returning' @:: Lens' JsonOutput (Prelude.Maybe JsonReturning)@ -}
 data JsonOutput
   = JsonOutput'_constructor {_JsonOutput'typeName :: !(Prelude.Maybe TypeName),
                              _JsonOutput'returning :: !(Prelude.Maybe JsonReturning),
@@ -52917,10 +52917,10 @@ instance Control.DeepSeq.NFData JsonOutput where
                 (Control.DeepSeq.deepseq (_JsonOutput'returning x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.format' @:: Lens' JsonReturning JsonFormat@
-         * 'Proto.PgQuery_Fields.maybe'format' @:: Lens' JsonReturning (Prelude.Maybe JsonFormat)@
-         * 'Proto.PgQuery_Fields.typid' @:: Lens' JsonReturning Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.typmod' @:: Lens' JsonReturning Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.format' @:: Lens' JsonReturning JsonFormat@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'format' @:: Lens' JsonReturning (Prelude.Maybe JsonFormat)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typid' @:: Lens' JsonReturning Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typmod' @:: Lens' JsonReturning Data.Int.Int32@ -}
 data JsonReturning
   = JsonReturning'_constructor {_JsonReturning'format :: !(Prelude.Maybe JsonFormat),
                                 _JsonReturning'typid :: !Data.Word.Word32,
@@ -53116,12 +53116,12 @@ instance Control.DeepSeq.NFData JsonReturning where
                    (Control.DeepSeq.deepseq (_JsonReturning'typmod x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.rawExpr' @:: Lens' JsonValueExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'rawExpr' @:: Lens' JsonValueExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.formattedExpr' @:: Lens' JsonValueExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'formattedExpr' @:: Lens' JsonValueExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.format' @:: Lens' JsonValueExpr JsonFormat@
-         * 'Proto.PgQuery_Fields.maybe'format' @:: Lens' JsonValueExpr (Prelude.Maybe JsonFormat)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rawExpr' @:: Lens' JsonValueExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rawExpr' @:: Lens' JsonValueExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.formattedExpr' @:: Lens' JsonValueExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'formattedExpr' @:: Lens' JsonValueExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.format' @:: Lens' JsonValueExpr JsonFormat@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'format' @:: Lens' JsonValueExpr (Prelude.Maybe JsonFormat)@ -}
 data JsonValueExpr
   = JsonValueExpr'_constructor {_JsonValueExpr'rawExpr :: !(Prelude.Maybe Node),
                                 _JsonValueExpr'formattedExpr :: !(Prelude.Maybe Node),
@@ -53592,8 +53592,8 @@ instance Control.DeepSeq.NFData LimitOption where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.items' @:: Lens' List [Node]@
-         * 'Proto.PgQuery_Fields.vec'items' @:: Lens' List (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.items' @:: Lens' List [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'items' @:: Lens' List (Data.Vector.Vector Node)@ -}
 data List
   = List'_constructor {_List'items :: !(Data.Vector.Vector Node),
                        _List'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -53721,7 +53721,7 @@ instance Control.DeepSeq.NFData List where
              (Control.DeepSeq.deepseq (_List'items x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.conditionname' @:: Lens' ListenStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.conditionname' @:: Lens' ListenStmt Data.Text.Text@ -}
 data ListenStmt
   = ListenStmt'_constructor {_ListenStmt'conditionname :: !Data.Text.Text,
                              _ListenStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -53839,7 +53839,7 @@ instance Control.DeepSeq.NFData ListenStmt where
              (Control.DeepSeq.deepseq (_ListenStmt'conditionname x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.filename' @:: Lens' LoadStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.filename' @:: Lens' LoadStmt Data.Text.Text@ -}
 data LoadStmt
   = LoadStmt'_constructor {_LoadStmt'filename :: !Data.Text.Text,
                            _LoadStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -54045,10 +54045,10 @@ instance Control.DeepSeq.NFData LockClauseStrength where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relations' @:: Lens' LockStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'relations' @:: Lens' LockStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.mode' @:: Lens' LockStmt Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.nowait' @:: Lens' LockStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relations' @:: Lens' LockStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'relations' @:: Lens' LockStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.mode' @:: Lens' LockStmt Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nowait' @:: Lens' LockStmt Prelude.Bool@ -}
 data LockStmt
   = LockStmt'_constructor {_LockStmt'relations :: !(Data.Vector.Vector Node),
                            _LockStmt'mode :: !Data.Int.Int32,
@@ -54425,10 +54425,10 @@ instance Control.DeepSeq.NFData LockWaitPolicy where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.lockedRels' @:: Lens' LockingClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'lockedRels' @:: Lens' LockingClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.strength' @:: Lens' LockingClause LockClauseStrength@
-         * 'Proto.PgQuery_Fields.waitPolicy' @:: Lens' LockingClause LockWaitPolicy@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lockedRels' @:: Lens' LockingClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'lockedRels' @:: Lens' LockingClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.strength' @:: Lens' LockingClause LockClauseStrength@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.waitPolicy' @:: Lens' LockingClause LockWaitPolicy@ -}
 data LockingClause
   = LockingClause'_constructor {_LockingClause'lockedRels :: !(Data.Vector.Vector Node),
                                 _LockingClause'strength :: !LockClauseStrength,
@@ -54658,15 +54658,15 @@ instance Control.DeepSeq.NFData LockingClause where
                    (Control.DeepSeq.deepseq (_LockingClause'waitPolicy x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.matched' @:: Lens' MergeAction Prelude.Bool@
-         * 'Proto.PgQuery_Fields.commandType' @:: Lens' MergeAction CmdType@
-         * 'Proto.PgQuery_Fields.override' @:: Lens' MergeAction OverridingKind@
-         * 'Proto.PgQuery_Fields.qual' @:: Lens' MergeAction Node@
-         * 'Proto.PgQuery_Fields.maybe'qual' @:: Lens' MergeAction (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.targetList' @:: Lens' MergeAction [Node]@
-         * 'Proto.PgQuery_Fields.vec'targetList' @:: Lens' MergeAction (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.updateColnos' @:: Lens' MergeAction [Node]@
-         * 'Proto.PgQuery_Fields.vec'updateColnos' @:: Lens' MergeAction (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.matched' @:: Lens' MergeAction Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.commandType' @:: Lens' MergeAction CmdType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.override' @:: Lens' MergeAction OverridingKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.qual' @:: Lens' MergeAction Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'qual' @:: Lens' MergeAction (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.targetList' @:: Lens' MergeAction [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'targetList' @:: Lens' MergeAction (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.updateColnos' @:: Lens' MergeAction [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'updateColnos' @:: Lens' MergeAction (Data.Vector.Vector Node)@ -}
 data MergeAction
   = MergeAction'_constructor {_MergeAction'matched :: !Prelude.Bool,
                               _MergeAction'commandType :: !CmdType,
@@ -55052,16 +55052,16 @@ instance Control.DeepSeq.NFData MergeAction where
                             (Control.DeepSeq.deepseq (_MergeAction'updateColnos x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' MergeStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' MergeStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.sourceRelation' @:: Lens' MergeStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'sourceRelation' @:: Lens' MergeStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.joinCondition' @:: Lens' MergeStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'joinCondition' @:: Lens' MergeStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.mergeWhenClauses' @:: Lens' MergeStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'mergeWhenClauses' @:: Lens' MergeStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.withClause' @:: Lens' MergeStmt WithClause@
-         * 'Proto.PgQuery_Fields.maybe'withClause' @:: Lens' MergeStmt (Prelude.Maybe WithClause)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' MergeStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' MergeStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sourceRelation' @:: Lens' MergeStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'sourceRelation' @:: Lens' MergeStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.joinCondition' @:: Lens' MergeStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'joinCondition' @:: Lens' MergeStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.mergeWhenClauses' @:: Lens' MergeStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'mergeWhenClauses' @:: Lens' MergeStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withClause' @:: Lens' MergeStmt WithClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'withClause' @:: Lens' MergeStmt (Prelude.Maybe WithClause)@ -}
 data MergeStmt
   = MergeStmt'_constructor {_MergeStmt'relation :: !(Prelude.Maybe RangeVar),
                             _MergeStmt'sourceRelation :: !(Prelude.Maybe Node),
@@ -55409,15 +55409,15 @@ instance Control.DeepSeq.NFData MergeStmt where
                          (Control.DeepSeq.deepseq (_MergeStmt'withClause x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.matched' @:: Lens' MergeWhenClause Prelude.Bool@
-         * 'Proto.PgQuery_Fields.commandType' @:: Lens' MergeWhenClause CmdType@
-         * 'Proto.PgQuery_Fields.override' @:: Lens' MergeWhenClause OverridingKind@
-         * 'Proto.PgQuery_Fields.condition' @:: Lens' MergeWhenClause Node@
-         * 'Proto.PgQuery_Fields.maybe'condition' @:: Lens' MergeWhenClause (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.targetList' @:: Lens' MergeWhenClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'targetList' @:: Lens' MergeWhenClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.values' @:: Lens' MergeWhenClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'values' @:: Lens' MergeWhenClause (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.matched' @:: Lens' MergeWhenClause Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.commandType' @:: Lens' MergeWhenClause CmdType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.override' @:: Lens' MergeWhenClause OverridingKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.condition' @:: Lens' MergeWhenClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'condition' @:: Lens' MergeWhenClause (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.targetList' @:: Lens' MergeWhenClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'targetList' @:: Lens' MergeWhenClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.values' @:: Lens' MergeWhenClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'values' @:: Lens' MergeWhenClause (Data.Vector.Vector Node)@ -}
 data MergeWhenClause
   = MergeWhenClause'_constructor {_MergeWhenClause'matched :: !Prelude.Bool,
                                   _MergeWhenClause'commandType :: !CmdType,
@@ -55801,15 +55801,15 @@ instance Control.DeepSeq.NFData MergeWhenClause where
                             (Control.DeepSeq.deepseq (_MergeWhenClause'values x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' MinMaxExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' MinMaxExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.minmaxtype' @:: Lens' MinMaxExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.minmaxcollid' @:: Lens' MinMaxExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inputcollid' @:: Lens' MinMaxExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.op' @:: Lens' MinMaxExpr MinMaxOp@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' MinMaxExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' MinMaxExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' MinMaxExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' MinMaxExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' MinMaxExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.minmaxtype' @:: Lens' MinMaxExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.minmaxcollid' @:: Lens' MinMaxExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inputcollid' @:: Lens' MinMaxExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.op' @:: Lens' MinMaxExpr MinMaxOp@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' MinMaxExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' MinMaxExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' MinMaxExpr Data.Int.Int32@ -}
 data MinMaxExpr
   = MinMaxExpr'_constructor {_MinMaxExpr'xpr :: !(Prelude.Maybe Node),
                              _MinMaxExpr'minmaxtype :: !Data.Word.Word32,
@@ -56275,10 +56275,10 @@ instance Control.DeepSeq.NFData MinMaxOp where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.source' @:: Lens' MultiAssignRef Node@
-         * 'Proto.PgQuery_Fields.maybe'source' @:: Lens' MultiAssignRef (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.colno' @:: Lens' MultiAssignRef Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.ncolumns' @:: Lens' MultiAssignRef Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.source' @:: Lens' MultiAssignRef Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'source' @:: Lens' MultiAssignRef (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colno' @:: Lens' MultiAssignRef Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ncolumns' @:: Lens' MultiAssignRef Data.Int.Int32@ -}
 data MultiAssignRef
   = MultiAssignRef'_constructor {_MultiAssignRef'source :: !(Prelude.Maybe Node),
                                  _MultiAssignRef'colno :: !Data.Int.Int32,
@@ -56477,13 +56477,13 @@ instance Control.DeepSeq.NFData MultiAssignRef where
                    (Control.DeepSeq.deepseq (_MultiAssignRef'ncolumns x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' NamedArgExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' NamedArgExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' NamedArgExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' NamedArgExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' NamedArgExpr Data.Text.Text@
-         * 'Proto.PgQuery_Fields.argnumber' @:: Lens' NamedArgExpr Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' NamedArgExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' NamedArgExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' NamedArgExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' NamedArgExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' NamedArgExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' NamedArgExpr Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.argnumber' @:: Lens' NamedArgExpr Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' NamedArgExpr Data.Int.Int32@ -}
 data NamedArgExpr
   = NamedArgExpr'_constructor {_NamedArgExpr'xpr :: !(Prelude.Maybe Node),
                                _NamedArgExpr'arg :: !(Prelude.Maybe Node),
@@ -56772,10 +56772,10 @@ instance Control.DeepSeq.NFData NamedArgExpr where
                          (Control.DeepSeq.deepseq (_NamedArgExpr'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' NextValueExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' NextValueExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.seqid' @:: Lens' NextValueExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.typeId' @:: Lens' NextValueExpr Data.Word.Word32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' NextValueExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' NextValueExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.seqid' @:: Lens' NextValueExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeId' @:: Lens' NextValueExpr Data.Word.Word32@ -}
 data NextValueExpr
   = NextValueExpr'_constructor {_NextValueExpr'xpr :: !(Prelude.Maybe Node),
                                 _NextValueExpr'seqid :: !Data.Word.Word32,
@@ -56969,511 +56969,511 @@ instance Control.DeepSeq.NFData NextValueExpr where
                    (Control.DeepSeq.deepseq (_NextValueExpr'typeId x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.maybe'node' @:: Lens' Node (Prelude.Maybe Node'Node)@
-         * 'Proto.PgQuery_Fields.maybe'alias' @:: Lens' Node (Prelude.Maybe Alias)@
-         * 'Proto.PgQuery_Fields.alias' @:: Lens' Node Alias@
-         * 'Proto.PgQuery_Fields.maybe'rangeVar' @:: Lens' Node (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.rangeVar' @:: Lens' Node RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'tableFunc' @:: Lens' Node (Prelude.Maybe TableFunc)@
-         * 'Proto.PgQuery_Fields.tableFunc' @:: Lens' Node TableFunc@
-         * 'Proto.PgQuery_Fields.maybe'intoClause' @:: Lens' Node (Prelude.Maybe IntoClause)@
-         * 'Proto.PgQuery_Fields.intoClause' @:: Lens' Node IntoClause@
-         * 'Proto.PgQuery_Fields.maybe'var' @:: Lens' Node (Prelude.Maybe Var)@
-         * 'Proto.PgQuery_Fields.var' @:: Lens' Node Var@
-         * 'Proto.PgQuery_Fields.maybe'param' @:: Lens' Node (Prelude.Maybe Param)@
-         * 'Proto.PgQuery_Fields.param' @:: Lens' Node Param@
-         * 'Proto.PgQuery_Fields.maybe'aggref' @:: Lens' Node (Prelude.Maybe Aggref)@
-         * 'Proto.PgQuery_Fields.aggref' @:: Lens' Node Aggref@
-         * 'Proto.PgQuery_Fields.maybe'groupingFunc' @:: Lens' Node (Prelude.Maybe GroupingFunc)@
-         * 'Proto.PgQuery_Fields.groupingFunc' @:: Lens' Node GroupingFunc@
-         * 'Proto.PgQuery_Fields.maybe'windowFunc' @:: Lens' Node (Prelude.Maybe WindowFunc)@
-         * 'Proto.PgQuery_Fields.windowFunc' @:: Lens' Node WindowFunc@
-         * 'Proto.PgQuery_Fields.maybe'subscriptingRef' @:: Lens' Node (Prelude.Maybe SubscriptingRef)@
-         * 'Proto.PgQuery_Fields.subscriptingRef' @:: Lens' Node SubscriptingRef@
-         * 'Proto.PgQuery_Fields.maybe'funcExpr' @:: Lens' Node (Prelude.Maybe FuncExpr)@
-         * 'Proto.PgQuery_Fields.funcExpr' @:: Lens' Node FuncExpr@
-         * 'Proto.PgQuery_Fields.maybe'namedArgExpr' @:: Lens' Node (Prelude.Maybe NamedArgExpr)@
-         * 'Proto.PgQuery_Fields.namedArgExpr' @:: Lens' Node NamedArgExpr@
-         * 'Proto.PgQuery_Fields.maybe'opExpr' @:: Lens' Node (Prelude.Maybe OpExpr)@
-         * 'Proto.PgQuery_Fields.opExpr' @:: Lens' Node OpExpr@
-         * 'Proto.PgQuery_Fields.maybe'distinctExpr' @:: Lens' Node (Prelude.Maybe DistinctExpr)@
-         * 'Proto.PgQuery_Fields.distinctExpr' @:: Lens' Node DistinctExpr@
-         * 'Proto.PgQuery_Fields.maybe'nullIfExpr' @:: Lens' Node (Prelude.Maybe NullIfExpr)@
-         * 'Proto.PgQuery_Fields.nullIfExpr' @:: Lens' Node NullIfExpr@
-         * 'Proto.PgQuery_Fields.maybe'scalarArrayOpExpr' @:: Lens' Node (Prelude.Maybe ScalarArrayOpExpr)@
-         * 'Proto.PgQuery_Fields.scalarArrayOpExpr' @:: Lens' Node ScalarArrayOpExpr@
-         * 'Proto.PgQuery_Fields.maybe'boolExpr' @:: Lens' Node (Prelude.Maybe BoolExpr)@
-         * 'Proto.PgQuery_Fields.boolExpr' @:: Lens' Node BoolExpr@
-         * 'Proto.PgQuery_Fields.maybe'subLink' @:: Lens' Node (Prelude.Maybe SubLink)@
-         * 'Proto.PgQuery_Fields.subLink' @:: Lens' Node SubLink@
-         * 'Proto.PgQuery_Fields.maybe'subPlan' @:: Lens' Node (Prelude.Maybe SubPlan)@
-         * 'Proto.PgQuery_Fields.subPlan' @:: Lens' Node SubPlan@
-         * 'Proto.PgQuery_Fields.maybe'alternativeSubPlan' @:: Lens' Node (Prelude.Maybe AlternativeSubPlan)@
-         * 'Proto.PgQuery_Fields.alternativeSubPlan' @:: Lens' Node AlternativeSubPlan@
-         * 'Proto.PgQuery_Fields.maybe'fieldSelect' @:: Lens' Node (Prelude.Maybe FieldSelect)@
-         * 'Proto.PgQuery_Fields.fieldSelect' @:: Lens' Node FieldSelect@
-         * 'Proto.PgQuery_Fields.maybe'fieldStore' @:: Lens' Node (Prelude.Maybe FieldStore)@
-         * 'Proto.PgQuery_Fields.fieldStore' @:: Lens' Node FieldStore@
-         * 'Proto.PgQuery_Fields.maybe'relabelType' @:: Lens' Node (Prelude.Maybe RelabelType)@
-         * 'Proto.PgQuery_Fields.relabelType' @:: Lens' Node RelabelType@
-         * 'Proto.PgQuery_Fields.maybe'coerceViaIo' @:: Lens' Node (Prelude.Maybe CoerceViaIO)@
-         * 'Proto.PgQuery_Fields.coerceViaIo' @:: Lens' Node CoerceViaIO@
-         * 'Proto.PgQuery_Fields.maybe'arrayCoerceExpr' @:: Lens' Node (Prelude.Maybe ArrayCoerceExpr)@
-         * 'Proto.PgQuery_Fields.arrayCoerceExpr' @:: Lens' Node ArrayCoerceExpr@
-         * 'Proto.PgQuery_Fields.maybe'convertRowtypeExpr' @:: Lens' Node (Prelude.Maybe ConvertRowtypeExpr)@
-         * 'Proto.PgQuery_Fields.convertRowtypeExpr' @:: Lens' Node ConvertRowtypeExpr@
-         * 'Proto.PgQuery_Fields.maybe'collateExpr' @:: Lens' Node (Prelude.Maybe CollateExpr)@
-         * 'Proto.PgQuery_Fields.collateExpr' @:: Lens' Node CollateExpr@
-         * 'Proto.PgQuery_Fields.maybe'caseExpr' @:: Lens' Node (Prelude.Maybe CaseExpr)@
-         * 'Proto.PgQuery_Fields.caseExpr' @:: Lens' Node CaseExpr@
-         * 'Proto.PgQuery_Fields.maybe'caseWhen' @:: Lens' Node (Prelude.Maybe CaseWhen)@
-         * 'Proto.PgQuery_Fields.caseWhen' @:: Lens' Node CaseWhen@
-         * 'Proto.PgQuery_Fields.maybe'caseTestExpr' @:: Lens' Node (Prelude.Maybe CaseTestExpr)@
-         * 'Proto.PgQuery_Fields.caseTestExpr' @:: Lens' Node CaseTestExpr@
-         * 'Proto.PgQuery_Fields.maybe'arrayExpr' @:: Lens' Node (Prelude.Maybe ArrayExpr)@
-         * 'Proto.PgQuery_Fields.arrayExpr' @:: Lens' Node ArrayExpr@
-         * 'Proto.PgQuery_Fields.maybe'rowExpr' @:: Lens' Node (Prelude.Maybe RowExpr)@
-         * 'Proto.PgQuery_Fields.rowExpr' @:: Lens' Node RowExpr@
-         * 'Proto.PgQuery_Fields.maybe'rowCompareExpr' @:: Lens' Node (Prelude.Maybe RowCompareExpr)@
-         * 'Proto.PgQuery_Fields.rowCompareExpr' @:: Lens' Node RowCompareExpr@
-         * 'Proto.PgQuery_Fields.maybe'coalesceExpr' @:: Lens' Node (Prelude.Maybe CoalesceExpr)@
-         * 'Proto.PgQuery_Fields.coalesceExpr' @:: Lens' Node CoalesceExpr@
-         * 'Proto.PgQuery_Fields.maybe'minMaxExpr' @:: Lens' Node (Prelude.Maybe MinMaxExpr)@
-         * 'Proto.PgQuery_Fields.minMaxExpr' @:: Lens' Node MinMaxExpr@
-         * 'Proto.PgQuery_Fields.maybe'sqlvalueFunction' @:: Lens' Node (Prelude.Maybe SQLValueFunction)@
-         * 'Proto.PgQuery_Fields.sqlvalueFunction' @:: Lens' Node SQLValueFunction@
-         * 'Proto.PgQuery_Fields.maybe'xmlExpr' @:: Lens' Node (Prelude.Maybe XmlExpr)@
-         * 'Proto.PgQuery_Fields.xmlExpr' @:: Lens' Node XmlExpr@
-         * 'Proto.PgQuery_Fields.maybe'jsonFormat' @:: Lens' Node (Prelude.Maybe JsonFormat)@
-         * 'Proto.PgQuery_Fields.jsonFormat' @:: Lens' Node JsonFormat@
-         * 'Proto.PgQuery_Fields.maybe'jsonReturning' @:: Lens' Node (Prelude.Maybe JsonReturning)@
-         * 'Proto.PgQuery_Fields.jsonReturning' @:: Lens' Node JsonReturning@
-         * 'Proto.PgQuery_Fields.maybe'jsonValueExpr' @:: Lens' Node (Prelude.Maybe JsonValueExpr)@
-         * 'Proto.PgQuery_Fields.jsonValueExpr' @:: Lens' Node JsonValueExpr@
-         * 'Proto.PgQuery_Fields.maybe'jsonConstructorExpr' @:: Lens' Node (Prelude.Maybe JsonConstructorExpr)@
-         * 'Proto.PgQuery_Fields.jsonConstructorExpr' @:: Lens' Node JsonConstructorExpr@
-         * 'Proto.PgQuery_Fields.maybe'jsonIsPredicate' @:: Lens' Node (Prelude.Maybe JsonIsPredicate)@
-         * 'Proto.PgQuery_Fields.jsonIsPredicate' @:: Lens' Node JsonIsPredicate@
-         * 'Proto.PgQuery_Fields.maybe'nullTest' @:: Lens' Node (Prelude.Maybe NullTest)@
-         * 'Proto.PgQuery_Fields.nullTest' @:: Lens' Node NullTest@
-         * 'Proto.PgQuery_Fields.maybe'booleanTest' @:: Lens' Node (Prelude.Maybe BooleanTest)@
-         * 'Proto.PgQuery_Fields.booleanTest' @:: Lens' Node BooleanTest@
-         * 'Proto.PgQuery_Fields.maybe'coerceToDomain' @:: Lens' Node (Prelude.Maybe CoerceToDomain)@
-         * 'Proto.PgQuery_Fields.coerceToDomain' @:: Lens' Node CoerceToDomain@
-         * 'Proto.PgQuery_Fields.maybe'coerceToDomainValue' @:: Lens' Node (Prelude.Maybe CoerceToDomainValue)@
-         * 'Proto.PgQuery_Fields.coerceToDomainValue' @:: Lens' Node CoerceToDomainValue@
-         * 'Proto.PgQuery_Fields.maybe'setToDefault' @:: Lens' Node (Prelude.Maybe SetToDefault)@
-         * 'Proto.PgQuery_Fields.setToDefault' @:: Lens' Node SetToDefault@
-         * 'Proto.PgQuery_Fields.maybe'currentOfExpr' @:: Lens' Node (Prelude.Maybe CurrentOfExpr)@
-         * 'Proto.PgQuery_Fields.currentOfExpr' @:: Lens' Node CurrentOfExpr@
-         * 'Proto.PgQuery_Fields.maybe'nextValueExpr' @:: Lens' Node (Prelude.Maybe NextValueExpr)@
-         * 'Proto.PgQuery_Fields.nextValueExpr' @:: Lens' Node NextValueExpr@
-         * 'Proto.PgQuery_Fields.maybe'inferenceElem' @:: Lens' Node (Prelude.Maybe InferenceElem)@
-         * 'Proto.PgQuery_Fields.inferenceElem' @:: Lens' Node InferenceElem@
-         * 'Proto.PgQuery_Fields.maybe'targetEntry' @:: Lens' Node (Prelude.Maybe TargetEntry)@
-         * 'Proto.PgQuery_Fields.targetEntry' @:: Lens' Node TargetEntry@
-         * 'Proto.PgQuery_Fields.maybe'rangeTblRef' @:: Lens' Node (Prelude.Maybe RangeTblRef)@
-         * 'Proto.PgQuery_Fields.rangeTblRef' @:: Lens' Node RangeTblRef@
-         * 'Proto.PgQuery_Fields.maybe'joinExpr' @:: Lens' Node (Prelude.Maybe JoinExpr)@
-         * 'Proto.PgQuery_Fields.joinExpr' @:: Lens' Node JoinExpr@
-         * 'Proto.PgQuery_Fields.maybe'fromExpr' @:: Lens' Node (Prelude.Maybe FromExpr)@
-         * 'Proto.PgQuery_Fields.fromExpr' @:: Lens' Node FromExpr@
-         * 'Proto.PgQuery_Fields.maybe'onConflictExpr' @:: Lens' Node (Prelude.Maybe OnConflictExpr)@
-         * 'Proto.PgQuery_Fields.onConflictExpr' @:: Lens' Node OnConflictExpr@
-         * 'Proto.PgQuery_Fields.maybe'query' @:: Lens' Node (Prelude.Maybe Query)@
-         * 'Proto.PgQuery_Fields.query' @:: Lens' Node Query@
-         * 'Proto.PgQuery_Fields.maybe'typeName' @:: Lens' Node (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' Node TypeName@
-         * 'Proto.PgQuery_Fields.maybe'columnRef' @:: Lens' Node (Prelude.Maybe ColumnRef)@
-         * 'Proto.PgQuery_Fields.columnRef' @:: Lens' Node ColumnRef@
-         * 'Proto.PgQuery_Fields.maybe'paramRef' @:: Lens' Node (Prelude.Maybe ParamRef)@
-         * 'Proto.PgQuery_Fields.paramRef' @:: Lens' Node ParamRef@
-         * 'Proto.PgQuery_Fields.maybe'aExpr' @:: Lens' Node (Prelude.Maybe A_Expr)@
-         * 'Proto.PgQuery_Fields.aExpr' @:: Lens' Node A_Expr@
-         * 'Proto.PgQuery_Fields.maybe'typeCast' @:: Lens' Node (Prelude.Maybe TypeCast)@
-         * 'Proto.PgQuery_Fields.typeCast' @:: Lens' Node TypeCast@
-         * 'Proto.PgQuery_Fields.maybe'collateClause' @:: Lens' Node (Prelude.Maybe CollateClause)@
-         * 'Proto.PgQuery_Fields.collateClause' @:: Lens' Node CollateClause@
-         * 'Proto.PgQuery_Fields.maybe'roleSpec' @:: Lens' Node (Prelude.Maybe RoleSpec)@
-         * 'Proto.PgQuery_Fields.roleSpec' @:: Lens' Node RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'funcCall' @:: Lens' Node (Prelude.Maybe FuncCall)@
-         * 'Proto.PgQuery_Fields.funcCall' @:: Lens' Node FuncCall@
-         * 'Proto.PgQuery_Fields.maybe'aStar' @:: Lens' Node (Prelude.Maybe A_Star)@
-         * 'Proto.PgQuery_Fields.aStar' @:: Lens' Node A_Star@
-         * 'Proto.PgQuery_Fields.maybe'aIndices' @:: Lens' Node (Prelude.Maybe A_Indices)@
-         * 'Proto.PgQuery_Fields.aIndices' @:: Lens' Node A_Indices@
-         * 'Proto.PgQuery_Fields.maybe'aIndirection' @:: Lens' Node (Prelude.Maybe A_Indirection)@
-         * 'Proto.PgQuery_Fields.aIndirection' @:: Lens' Node A_Indirection@
-         * 'Proto.PgQuery_Fields.maybe'aArrayExpr' @:: Lens' Node (Prelude.Maybe A_ArrayExpr)@
-         * 'Proto.PgQuery_Fields.aArrayExpr' @:: Lens' Node A_ArrayExpr@
-         * 'Proto.PgQuery_Fields.maybe'resTarget' @:: Lens' Node (Prelude.Maybe ResTarget)@
-         * 'Proto.PgQuery_Fields.resTarget' @:: Lens' Node ResTarget@
-         * 'Proto.PgQuery_Fields.maybe'multiAssignRef' @:: Lens' Node (Prelude.Maybe MultiAssignRef)@
-         * 'Proto.PgQuery_Fields.multiAssignRef' @:: Lens' Node MultiAssignRef@
-         * 'Proto.PgQuery_Fields.maybe'sortBy' @:: Lens' Node (Prelude.Maybe SortBy)@
-         * 'Proto.PgQuery_Fields.sortBy' @:: Lens' Node SortBy@
-         * 'Proto.PgQuery_Fields.maybe'windowDef' @:: Lens' Node (Prelude.Maybe WindowDef)@
-         * 'Proto.PgQuery_Fields.windowDef' @:: Lens' Node WindowDef@
-         * 'Proto.PgQuery_Fields.maybe'rangeSubselect' @:: Lens' Node (Prelude.Maybe RangeSubselect)@
-         * 'Proto.PgQuery_Fields.rangeSubselect' @:: Lens' Node RangeSubselect@
-         * 'Proto.PgQuery_Fields.maybe'rangeFunction' @:: Lens' Node (Prelude.Maybe RangeFunction)@
-         * 'Proto.PgQuery_Fields.rangeFunction' @:: Lens' Node RangeFunction@
-         * 'Proto.PgQuery_Fields.maybe'rangeTableFunc' @:: Lens' Node (Prelude.Maybe RangeTableFunc)@
-         * 'Proto.PgQuery_Fields.rangeTableFunc' @:: Lens' Node RangeTableFunc@
-         * 'Proto.PgQuery_Fields.maybe'rangeTableFuncCol' @:: Lens' Node (Prelude.Maybe RangeTableFuncCol)@
-         * 'Proto.PgQuery_Fields.rangeTableFuncCol' @:: Lens' Node RangeTableFuncCol@
-         * 'Proto.PgQuery_Fields.maybe'rangeTableSample' @:: Lens' Node (Prelude.Maybe RangeTableSample)@
-         * 'Proto.PgQuery_Fields.rangeTableSample' @:: Lens' Node RangeTableSample@
-         * 'Proto.PgQuery_Fields.maybe'columnDef' @:: Lens' Node (Prelude.Maybe ColumnDef)@
-         * 'Proto.PgQuery_Fields.columnDef' @:: Lens' Node ColumnDef@
-         * 'Proto.PgQuery_Fields.maybe'tableLikeClause' @:: Lens' Node (Prelude.Maybe TableLikeClause)@
-         * 'Proto.PgQuery_Fields.tableLikeClause' @:: Lens' Node TableLikeClause@
-         * 'Proto.PgQuery_Fields.maybe'indexElem' @:: Lens' Node (Prelude.Maybe IndexElem)@
-         * 'Proto.PgQuery_Fields.indexElem' @:: Lens' Node IndexElem@
-         * 'Proto.PgQuery_Fields.maybe'defElem' @:: Lens' Node (Prelude.Maybe DefElem)@
-         * 'Proto.PgQuery_Fields.defElem' @:: Lens' Node DefElem@
-         * 'Proto.PgQuery_Fields.maybe'lockingClause' @:: Lens' Node (Prelude.Maybe LockingClause)@
-         * 'Proto.PgQuery_Fields.lockingClause' @:: Lens' Node LockingClause@
-         * 'Proto.PgQuery_Fields.maybe'xmlSerialize' @:: Lens' Node (Prelude.Maybe XmlSerialize)@
-         * 'Proto.PgQuery_Fields.xmlSerialize' @:: Lens' Node XmlSerialize@
-         * 'Proto.PgQuery_Fields.maybe'partitionElem' @:: Lens' Node (Prelude.Maybe PartitionElem)@
-         * 'Proto.PgQuery_Fields.partitionElem' @:: Lens' Node PartitionElem@
-         * 'Proto.PgQuery_Fields.maybe'partitionSpec' @:: Lens' Node (Prelude.Maybe PartitionSpec)@
-         * 'Proto.PgQuery_Fields.partitionSpec' @:: Lens' Node PartitionSpec@
-         * 'Proto.PgQuery_Fields.maybe'partitionBoundSpec' @:: Lens' Node (Prelude.Maybe PartitionBoundSpec)@
-         * 'Proto.PgQuery_Fields.partitionBoundSpec' @:: Lens' Node PartitionBoundSpec@
-         * 'Proto.PgQuery_Fields.maybe'partitionRangeDatum' @:: Lens' Node (Prelude.Maybe PartitionRangeDatum)@
-         * 'Proto.PgQuery_Fields.partitionRangeDatum' @:: Lens' Node PartitionRangeDatum@
-         * 'Proto.PgQuery_Fields.maybe'partitionCmd' @:: Lens' Node (Prelude.Maybe PartitionCmd)@
-         * 'Proto.PgQuery_Fields.partitionCmd' @:: Lens' Node PartitionCmd@
-         * 'Proto.PgQuery_Fields.maybe'rangeTblEntry' @:: Lens' Node (Prelude.Maybe RangeTblEntry)@
-         * 'Proto.PgQuery_Fields.rangeTblEntry' @:: Lens' Node RangeTblEntry@
-         * 'Proto.PgQuery_Fields.maybe'rtepermissionInfo' @:: Lens' Node (Prelude.Maybe RTEPermissionInfo)@
-         * 'Proto.PgQuery_Fields.rtepermissionInfo' @:: Lens' Node RTEPermissionInfo@
-         * 'Proto.PgQuery_Fields.maybe'rangeTblFunction' @:: Lens' Node (Prelude.Maybe RangeTblFunction)@
-         * 'Proto.PgQuery_Fields.rangeTblFunction' @:: Lens' Node RangeTblFunction@
-         * 'Proto.PgQuery_Fields.maybe'tableSampleClause' @:: Lens' Node (Prelude.Maybe TableSampleClause)@
-         * 'Proto.PgQuery_Fields.tableSampleClause' @:: Lens' Node TableSampleClause@
-         * 'Proto.PgQuery_Fields.maybe'withCheckOption' @:: Lens' Node (Prelude.Maybe WithCheckOption)@
-         * 'Proto.PgQuery_Fields.withCheckOption' @:: Lens' Node WithCheckOption@
-         * 'Proto.PgQuery_Fields.maybe'sortGroupClause' @:: Lens' Node (Prelude.Maybe SortGroupClause)@
-         * 'Proto.PgQuery_Fields.sortGroupClause' @:: Lens' Node SortGroupClause@
-         * 'Proto.PgQuery_Fields.maybe'groupingSet' @:: Lens' Node (Prelude.Maybe GroupingSet)@
-         * 'Proto.PgQuery_Fields.groupingSet' @:: Lens' Node GroupingSet@
-         * 'Proto.PgQuery_Fields.maybe'windowClause' @:: Lens' Node (Prelude.Maybe WindowClause)@
-         * 'Proto.PgQuery_Fields.windowClause' @:: Lens' Node WindowClause@
-         * 'Proto.PgQuery_Fields.maybe'rowMarkClause' @:: Lens' Node (Prelude.Maybe RowMarkClause)@
-         * 'Proto.PgQuery_Fields.rowMarkClause' @:: Lens' Node RowMarkClause@
-         * 'Proto.PgQuery_Fields.maybe'withClause' @:: Lens' Node (Prelude.Maybe WithClause)@
-         * 'Proto.PgQuery_Fields.withClause' @:: Lens' Node WithClause@
-         * 'Proto.PgQuery_Fields.maybe'inferClause' @:: Lens' Node (Prelude.Maybe InferClause)@
-         * 'Proto.PgQuery_Fields.inferClause' @:: Lens' Node InferClause@
-         * 'Proto.PgQuery_Fields.maybe'onConflictClause' @:: Lens' Node (Prelude.Maybe OnConflictClause)@
-         * 'Proto.PgQuery_Fields.onConflictClause' @:: Lens' Node OnConflictClause@
-         * 'Proto.PgQuery_Fields.maybe'ctesearchClause' @:: Lens' Node (Prelude.Maybe CTESearchClause)@
-         * 'Proto.PgQuery_Fields.ctesearchClause' @:: Lens' Node CTESearchClause@
-         * 'Proto.PgQuery_Fields.maybe'ctecycleClause' @:: Lens' Node (Prelude.Maybe CTECycleClause)@
-         * 'Proto.PgQuery_Fields.ctecycleClause' @:: Lens' Node CTECycleClause@
-         * 'Proto.PgQuery_Fields.maybe'commonTableExpr' @:: Lens' Node (Prelude.Maybe CommonTableExpr)@
-         * 'Proto.PgQuery_Fields.commonTableExpr' @:: Lens' Node CommonTableExpr@
-         * 'Proto.PgQuery_Fields.maybe'mergeWhenClause' @:: Lens' Node (Prelude.Maybe MergeWhenClause)@
-         * 'Proto.PgQuery_Fields.mergeWhenClause' @:: Lens' Node MergeWhenClause@
-         * 'Proto.PgQuery_Fields.maybe'mergeAction' @:: Lens' Node (Prelude.Maybe MergeAction)@
-         * 'Proto.PgQuery_Fields.mergeAction' @:: Lens' Node MergeAction@
-         * 'Proto.PgQuery_Fields.maybe'triggerTransition' @:: Lens' Node (Prelude.Maybe TriggerTransition)@
-         * 'Proto.PgQuery_Fields.triggerTransition' @:: Lens' Node TriggerTransition@
-         * 'Proto.PgQuery_Fields.maybe'jsonOutput' @:: Lens' Node (Prelude.Maybe JsonOutput)@
-         * 'Proto.PgQuery_Fields.jsonOutput' @:: Lens' Node JsonOutput@
-         * 'Proto.PgQuery_Fields.maybe'jsonKeyValue' @:: Lens' Node (Prelude.Maybe JsonKeyValue)@
-         * 'Proto.PgQuery_Fields.jsonKeyValue' @:: Lens' Node JsonKeyValue@
-         * 'Proto.PgQuery_Fields.maybe'jsonObjectConstructor' @:: Lens' Node (Prelude.Maybe JsonObjectConstructor)@
-         * 'Proto.PgQuery_Fields.jsonObjectConstructor' @:: Lens' Node JsonObjectConstructor@
-         * 'Proto.PgQuery_Fields.maybe'jsonArrayConstructor' @:: Lens' Node (Prelude.Maybe JsonArrayConstructor)@
-         * 'Proto.PgQuery_Fields.jsonArrayConstructor' @:: Lens' Node JsonArrayConstructor@
-         * 'Proto.PgQuery_Fields.maybe'jsonArrayQueryConstructor' @:: Lens' Node (Prelude.Maybe JsonArrayQueryConstructor)@
-         * 'Proto.PgQuery_Fields.jsonArrayQueryConstructor' @:: Lens' Node JsonArrayQueryConstructor@
-         * 'Proto.PgQuery_Fields.maybe'jsonAggConstructor' @:: Lens' Node (Prelude.Maybe JsonAggConstructor)@
-         * 'Proto.PgQuery_Fields.jsonAggConstructor' @:: Lens' Node JsonAggConstructor@
-         * 'Proto.PgQuery_Fields.maybe'jsonObjectAgg' @:: Lens' Node (Prelude.Maybe JsonObjectAgg)@
-         * 'Proto.PgQuery_Fields.jsonObjectAgg' @:: Lens' Node JsonObjectAgg@
-         * 'Proto.PgQuery_Fields.maybe'jsonArrayAgg' @:: Lens' Node (Prelude.Maybe JsonArrayAgg)@
-         * 'Proto.PgQuery_Fields.jsonArrayAgg' @:: Lens' Node JsonArrayAgg@
-         * 'Proto.PgQuery_Fields.maybe'rawStmt' @:: Lens' Node (Prelude.Maybe RawStmt)@
-         * 'Proto.PgQuery_Fields.rawStmt' @:: Lens' Node RawStmt@
-         * 'Proto.PgQuery_Fields.maybe'insertStmt' @:: Lens' Node (Prelude.Maybe InsertStmt)@
-         * 'Proto.PgQuery_Fields.insertStmt' @:: Lens' Node InsertStmt@
-         * 'Proto.PgQuery_Fields.maybe'deleteStmt' @:: Lens' Node (Prelude.Maybe DeleteStmt)@
-         * 'Proto.PgQuery_Fields.deleteStmt' @:: Lens' Node DeleteStmt@
-         * 'Proto.PgQuery_Fields.maybe'updateStmt' @:: Lens' Node (Prelude.Maybe UpdateStmt)@
-         * 'Proto.PgQuery_Fields.updateStmt' @:: Lens' Node UpdateStmt@
-         * 'Proto.PgQuery_Fields.maybe'mergeStmt' @:: Lens' Node (Prelude.Maybe MergeStmt)@
-         * 'Proto.PgQuery_Fields.mergeStmt' @:: Lens' Node MergeStmt@
-         * 'Proto.PgQuery_Fields.maybe'selectStmt' @:: Lens' Node (Prelude.Maybe SelectStmt)@
-         * 'Proto.PgQuery_Fields.selectStmt' @:: Lens' Node SelectStmt@
-         * 'Proto.PgQuery_Fields.maybe'setOperationStmt' @:: Lens' Node (Prelude.Maybe SetOperationStmt)@
-         * 'Proto.PgQuery_Fields.setOperationStmt' @:: Lens' Node SetOperationStmt@
-         * 'Proto.PgQuery_Fields.maybe'returnStmt' @:: Lens' Node (Prelude.Maybe ReturnStmt)@
-         * 'Proto.PgQuery_Fields.returnStmt' @:: Lens' Node ReturnStmt@
-         * 'Proto.PgQuery_Fields.maybe'plassignStmt' @:: Lens' Node (Prelude.Maybe PLAssignStmt)@
-         * 'Proto.PgQuery_Fields.plassignStmt' @:: Lens' Node PLAssignStmt@
-         * 'Proto.PgQuery_Fields.maybe'createSchemaStmt' @:: Lens' Node (Prelude.Maybe CreateSchemaStmt)@
-         * 'Proto.PgQuery_Fields.createSchemaStmt' @:: Lens' Node CreateSchemaStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterTableStmt' @:: Lens' Node (Prelude.Maybe AlterTableStmt)@
-         * 'Proto.PgQuery_Fields.alterTableStmt' @:: Lens' Node AlterTableStmt@
-         * 'Proto.PgQuery_Fields.maybe'replicaIdentityStmt' @:: Lens' Node (Prelude.Maybe ReplicaIdentityStmt)@
-         * 'Proto.PgQuery_Fields.replicaIdentityStmt' @:: Lens' Node ReplicaIdentityStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterTableCmd' @:: Lens' Node (Prelude.Maybe AlterTableCmd)@
-         * 'Proto.PgQuery_Fields.alterTableCmd' @:: Lens' Node AlterTableCmd@
-         * 'Proto.PgQuery_Fields.maybe'alterCollationStmt' @:: Lens' Node (Prelude.Maybe AlterCollationStmt)@
-         * 'Proto.PgQuery_Fields.alterCollationStmt' @:: Lens' Node AlterCollationStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterDomainStmt' @:: Lens' Node (Prelude.Maybe AlterDomainStmt)@
-         * 'Proto.PgQuery_Fields.alterDomainStmt' @:: Lens' Node AlterDomainStmt@
-         * 'Proto.PgQuery_Fields.maybe'grantStmt' @:: Lens' Node (Prelude.Maybe GrantStmt)@
-         * 'Proto.PgQuery_Fields.grantStmt' @:: Lens' Node GrantStmt@
-         * 'Proto.PgQuery_Fields.maybe'objectWithArgs' @:: Lens' Node (Prelude.Maybe ObjectWithArgs)@
-         * 'Proto.PgQuery_Fields.objectWithArgs' @:: Lens' Node ObjectWithArgs@
-         * 'Proto.PgQuery_Fields.maybe'accessPriv' @:: Lens' Node (Prelude.Maybe AccessPriv)@
-         * 'Proto.PgQuery_Fields.accessPriv' @:: Lens' Node AccessPriv@
-         * 'Proto.PgQuery_Fields.maybe'grantRoleStmt' @:: Lens' Node (Prelude.Maybe GrantRoleStmt)@
-         * 'Proto.PgQuery_Fields.grantRoleStmt' @:: Lens' Node GrantRoleStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterDefaultPrivilegesStmt' @:: Lens' Node (Prelude.Maybe AlterDefaultPrivilegesStmt)@
-         * 'Proto.PgQuery_Fields.alterDefaultPrivilegesStmt' @:: Lens' Node AlterDefaultPrivilegesStmt@
-         * 'Proto.PgQuery_Fields.maybe'copyStmt' @:: Lens' Node (Prelude.Maybe CopyStmt)@
-         * 'Proto.PgQuery_Fields.copyStmt' @:: Lens' Node CopyStmt@
-         * 'Proto.PgQuery_Fields.maybe'variableSetStmt' @:: Lens' Node (Prelude.Maybe VariableSetStmt)@
-         * 'Proto.PgQuery_Fields.variableSetStmt' @:: Lens' Node VariableSetStmt@
-         * 'Proto.PgQuery_Fields.maybe'variableShowStmt' @:: Lens' Node (Prelude.Maybe VariableShowStmt)@
-         * 'Proto.PgQuery_Fields.variableShowStmt' @:: Lens' Node VariableShowStmt@
-         * 'Proto.PgQuery_Fields.maybe'createStmt' @:: Lens' Node (Prelude.Maybe CreateStmt)@
-         * 'Proto.PgQuery_Fields.createStmt' @:: Lens' Node CreateStmt@
-         * 'Proto.PgQuery_Fields.maybe'constraint' @:: Lens' Node (Prelude.Maybe Constraint)@
-         * 'Proto.PgQuery_Fields.constraint' @:: Lens' Node Constraint@
-         * 'Proto.PgQuery_Fields.maybe'createTableSpaceStmt' @:: Lens' Node (Prelude.Maybe CreateTableSpaceStmt)@
-         * 'Proto.PgQuery_Fields.createTableSpaceStmt' @:: Lens' Node CreateTableSpaceStmt@
-         * 'Proto.PgQuery_Fields.maybe'dropTableSpaceStmt' @:: Lens' Node (Prelude.Maybe DropTableSpaceStmt)@
-         * 'Proto.PgQuery_Fields.dropTableSpaceStmt' @:: Lens' Node DropTableSpaceStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterTableSpaceOptionsStmt' @:: Lens' Node (Prelude.Maybe AlterTableSpaceOptionsStmt)@
-         * 'Proto.PgQuery_Fields.alterTableSpaceOptionsStmt' @:: Lens' Node AlterTableSpaceOptionsStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterTableMoveAllStmt' @:: Lens' Node (Prelude.Maybe AlterTableMoveAllStmt)@
-         * 'Proto.PgQuery_Fields.alterTableMoveAllStmt' @:: Lens' Node AlterTableMoveAllStmt@
-         * 'Proto.PgQuery_Fields.maybe'createExtensionStmt' @:: Lens' Node (Prelude.Maybe CreateExtensionStmt)@
-         * 'Proto.PgQuery_Fields.createExtensionStmt' @:: Lens' Node CreateExtensionStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterExtensionStmt' @:: Lens' Node (Prelude.Maybe AlterExtensionStmt)@
-         * 'Proto.PgQuery_Fields.alterExtensionStmt' @:: Lens' Node AlterExtensionStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterExtensionContentsStmt' @:: Lens' Node (Prelude.Maybe AlterExtensionContentsStmt)@
-         * 'Proto.PgQuery_Fields.alterExtensionContentsStmt' @:: Lens' Node AlterExtensionContentsStmt@
-         * 'Proto.PgQuery_Fields.maybe'createFdwStmt' @:: Lens' Node (Prelude.Maybe CreateFdwStmt)@
-         * 'Proto.PgQuery_Fields.createFdwStmt' @:: Lens' Node CreateFdwStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterFdwStmt' @:: Lens' Node (Prelude.Maybe AlterFdwStmt)@
-         * 'Proto.PgQuery_Fields.alterFdwStmt' @:: Lens' Node AlterFdwStmt@
-         * 'Proto.PgQuery_Fields.maybe'createForeignServerStmt' @:: Lens' Node (Prelude.Maybe CreateForeignServerStmt)@
-         * 'Proto.PgQuery_Fields.createForeignServerStmt' @:: Lens' Node CreateForeignServerStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterForeignServerStmt' @:: Lens' Node (Prelude.Maybe AlterForeignServerStmt)@
-         * 'Proto.PgQuery_Fields.alterForeignServerStmt' @:: Lens' Node AlterForeignServerStmt@
-         * 'Proto.PgQuery_Fields.maybe'createForeignTableStmt' @:: Lens' Node (Prelude.Maybe CreateForeignTableStmt)@
-         * 'Proto.PgQuery_Fields.createForeignTableStmt' @:: Lens' Node CreateForeignTableStmt@
-         * 'Proto.PgQuery_Fields.maybe'createUserMappingStmt' @:: Lens' Node (Prelude.Maybe CreateUserMappingStmt)@
-         * 'Proto.PgQuery_Fields.createUserMappingStmt' @:: Lens' Node CreateUserMappingStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterUserMappingStmt' @:: Lens' Node (Prelude.Maybe AlterUserMappingStmt)@
-         * 'Proto.PgQuery_Fields.alterUserMappingStmt' @:: Lens' Node AlterUserMappingStmt@
-         * 'Proto.PgQuery_Fields.maybe'dropUserMappingStmt' @:: Lens' Node (Prelude.Maybe DropUserMappingStmt)@
-         * 'Proto.PgQuery_Fields.dropUserMappingStmt' @:: Lens' Node DropUserMappingStmt@
-         * 'Proto.PgQuery_Fields.maybe'importForeignSchemaStmt' @:: Lens' Node (Prelude.Maybe ImportForeignSchemaStmt)@
-         * 'Proto.PgQuery_Fields.importForeignSchemaStmt' @:: Lens' Node ImportForeignSchemaStmt@
-         * 'Proto.PgQuery_Fields.maybe'createPolicyStmt' @:: Lens' Node (Prelude.Maybe CreatePolicyStmt)@
-         * 'Proto.PgQuery_Fields.createPolicyStmt' @:: Lens' Node CreatePolicyStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterPolicyStmt' @:: Lens' Node (Prelude.Maybe AlterPolicyStmt)@
-         * 'Proto.PgQuery_Fields.alterPolicyStmt' @:: Lens' Node AlterPolicyStmt@
-         * 'Proto.PgQuery_Fields.maybe'createAmStmt' @:: Lens' Node (Prelude.Maybe CreateAmStmt)@
-         * 'Proto.PgQuery_Fields.createAmStmt' @:: Lens' Node CreateAmStmt@
-         * 'Proto.PgQuery_Fields.maybe'createTrigStmt' @:: Lens' Node (Prelude.Maybe CreateTrigStmt)@
-         * 'Proto.PgQuery_Fields.createTrigStmt' @:: Lens' Node CreateTrigStmt@
-         * 'Proto.PgQuery_Fields.maybe'createEventTrigStmt' @:: Lens' Node (Prelude.Maybe CreateEventTrigStmt)@
-         * 'Proto.PgQuery_Fields.createEventTrigStmt' @:: Lens' Node CreateEventTrigStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterEventTrigStmt' @:: Lens' Node (Prelude.Maybe AlterEventTrigStmt)@
-         * 'Proto.PgQuery_Fields.alterEventTrigStmt' @:: Lens' Node AlterEventTrigStmt@
-         * 'Proto.PgQuery_Fields.maybe'createPlangStmt' @:: Lens' Node (Prelude.Maybe CreatePLangStmt)@
-         * 'Proto.PgQuery_Fields.createPlangStmt' @:: Lens' Node CreatePLangStmt@
-         * 'Proto.PgQuery_Fields.maybe'createRoleStmt' @:: Lens' Node (Prelude.Maybe CreateRoleStmt)@
-         * 'Proto.PgQuery_Fields.createRoleStmt' @:: Lens' Node CreateRoleStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterRoleStmt' @:: Lens' Node (Prelude.Maybe AlterRoleStmt)@
-         * 'Proto.PgQuery_Fields.alterRoleStmt' @:: Lens' Node AlterRoleStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterRoleSetStmt' @:: Lens' Node (Prelude.Maybe AlterRoleSetStmt)@
-         * 'Proto.PgQuery_Fields.alterRoleSetStmt' @:: Lens' Node AlterRoleSetStmt@
-         * 'Proto.PgQuery_Fields.maybe'dropRoleStmt' @:: Lens' Node (Prelude.Maybe DropRoleStmt)@
-         * 'Proto.PgQuery_Fields.dropRoleStmt' @:: Lens' Node DropRoleStmt@
-         * 'Proto.PgQuery_Fields.maybe'createSeqStmt' @:: Lens' Node (Prelude.Maybe CreateSeqStmt)@
-         * 'Proto.PgQuery_Fields.createSeqStmt' @:: Lens' Node CreateSeqStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterSeqStmt' @:: Lens' Node (Prelude.Maybe AlterSeqStmt)@
-         * 'Proto.PgQuery_Fields.alterSeqStmt' @:: Lens' Node AlterSeqStmt@
-         * 'Proto.PgQuery_Fields.maybe'defineStmt' @:: Lens' Node (Prelude.Maybe DefineStmt)@
-         * 'Proto.PgQuery_Fields.defineStmt' @:: Lens' Node DefineStmt@
-         * 'Proto.PgQuery_Fields.maybe'createDomainStmt' @:: Lens' Node (Prelude.Maybe CreateDomainStmt)@
-         * 'Proto.PgQuery_Fields.createDomainStmt' @:: Lens' Node CreateDomainStmt@
-         * 'Proto.PgQuery_Fields.maybe'createOpClassStmt' @:: Lens' Node (Prelude.Maybe CreateOpClassStmt)@
-         * 'Proto.PgQuery_Fields.createOpClassStmt' @:: Lens' Node CreateOpClassStmt@
-         * 'Proto.PgQuery_Fields.maybe'createOpClassItem' @:: Lens' Node (Prelude.Maybe CreateOpClassItem)@
-         * 'Proto.PgQuery_Fields.createOpClassItem' @:: Lens' Node CreateOpClassItem@
-         * 'Proto.PgQuery_Fields.maybe'createOpFamilyStmt' @:: Lens' Node (Prelude.Maybe CreateOpFamilyStmt)@
-         * 'Proto.PgQuery_Fields.createOpFamilyStmt' @:: Lens' Node CreateOpFamilyStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterOpFamilyStmt' @:: Lens' Node (Prelude.Maybe AlterOpFamilyStmt)@
-         * 'Proto.PgQuery_Fields.alterOpFamilyStmt' @:: Lens' Node AlterOpFamilyStmt@
-         * 'Proto.PgQuery_Fields.maybe'dropStmt' @:: Lens' Node (Prelude.Maybe DropStmt)@
-         * 'Proto.PgQuery_Fields.dropStmt' @:: Lens' Node DropStmt@
-         * 'Proto.PgQuery_Fields.maybe'truncateStmt' @:: Lens' Node (Prelude.Maybe TruncateStmt)@
-         * 'Proto.PgQuery_Fields.truncateStmt' @:: Lens' Node TruncateStmt@
-         * 'Proto.PgQuery_Fields.maybe'commentStmt' @:: Lens' Node (Prelude.Maybe CommentStmt)@
-         * 'Proto.PgQuery_Fields.commentStmt' @:: Lens' Node CommentStmt@
-         * 'Proto.PgQuery_Fields.maybe'secLabelStmt' @:: Lens' Node (Prelude.Maybe SecLabelStmt)@
-         * 'Proto.PgQuery_Fields.secLabelStmt' @:: Lens' Node SecLabelStmt@
-         * 'Proto.PgQuery_Fields.maybe'declareCursorStmt' @:: Lens' Node (Prelude.Maybe DeclareCursorStmt)@
-         * 'Proto.PgQuery_Fields.declareCursorStmt' @:: Lens' Node DeclareCursorStmt@
-         * 'Proto.PgQuery_Fields.maybe'closePortalStmt' @:: Lens' Node (Prelude.Maybe ClosePortalStmt)@
-         * 'Proto.PgQuery_Fields.closePortalStmt' @:: Lens' Node ClosePortalStmt@
-         * 'Proto.PgQuery_Fields.maybe'fetchStmt' @:: Lens' Node (Prelude.Maybe FetchStmt)@
-         * 'Proto.PgQuery_Fields.fetchStmt' @:: Lens' Node FetchStmt@
-         * 'Proto.PgQuery_Fields.maybe'indexStmt' @:: Lens' Node (Prelude.Maybe IndexStmt)@
-         * 'Proto.PgQuery_Fields.indexStmt' @:: Lens' Node IndexStmt@
-         * 'Proto.PgQuery_Fields.maybe'createStatsStmt' @:: Lens' Node (Prelude.Maybe CreateStatsStmt)@
-         * 'Proto.PgQuery_Fields.createStatsStmt' @:: Lens' Node CreateStatsStmt@
-         * 'Proto.PgQuery_Fields.maybe'statsElem' @:: Lens' Node (Prelude.Maybe StatsElem)@
-         * 'Proto.PgQuery_Fields.statsElem' @:: Lens' Node StatsElem@
-         * 'Proto.PgQuery_Fields.maybe'alterStatsStmt' @:: Lens' Node (Prelude.Maybe AlterStatsStmt)@
-         * 'Proto.PgQuery_Fields.alterStatsStmt' @:: Lens' Node AlterStatsStmt@
-         * 'Proto.PgQuery_Fields.maybe'createFunctionStmt' @:: Lens' Node (Prelude.Maybe CreateFunctionStmt)@
-         * 'Proto.PgQuery_Fields.createFunctionStmt' @:: Lens' Node CreateFunctionStmt@
-         * 'Proto.PgQuery_Fields.maybe'functionParameter' @:: Lens' Node (Prelude.Maybe FunctionParameter)@
-         * 'Proto.PgQuery_Fields.functionParameter' @:: Lens' Node FunctionParameter@
-         * 'Proto.PgQuery_Fields.maybe'alterFunctionStmt' @:: Lens' Node (Prelude.Maybe AlterFunctionStmt)@
-         * 'Proto.PgQuery_Fields.alterFunctionStmt' @:: Lens' Node AlterFunctionStmt@
-         * 'Proto.PgQuery_Fields.maybe'doStmt' @:: Lens' Node (Prelude.Maybe DoStmt)@
-         * 'Proto.PgQuery_Fields.doStmt' @:: Lens' Node DoStmt@
-         * 'Proto.PgQuery_Fields.maybe'inlineCodeBlock' @:: Lens' Node (Prelude.Maybe InlineCodeBlock)@
-         * 'Proto.PgQuery_Fields.inlineCodeBlock' @:: Lens' Node InlineCodeBlock@
-         * 'Proto.PgQuery_Fields.maybe'callStmt' @:: Lens' Node (Prelude.Maybe CallStmt)@
-         * 'Proto.PgQuery_Fields.callStmt' @:: Lens' Node CallStmt@
-         * 'Proto.PgQuery_Fields.maybe'callContext' @:: Lens' Node (Prelude.Maybe CallContext)@
-         * 'Proto.PgQuery_Fields.callContext' @:: Lens' Node CallContext@
-         * 'Proto.PgQuery_Fields.maybe'renameStmt' @:: Lens' Node (Prelude.Maybe RenameStmt)@
-         * 'Proto.PgQuery_Fields.renameStmt' @:: Lens' Node RenameStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterObjectDependsStmt' @:: Lens' Node (Prelude.Maybe AlterObjectDependsStmt)@
-         * 'Proto.PgQuery_Fields.alterObjectDependsStmt' @:: Lens' Node AlterObjectDependsStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterObjectSchemaStmt' @:: Lens' Node (Prelude.Maybe AlterObjectSchemaStmt)@
-         * 'Proto.PgQuery_Fields.alterObjectSchemaStmt' @:: Lens' Node AlterObjectSchemaStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterOwnerStmt' @:: Lens' Node (Prelude.Maybe AlterOwnerStmt)@
-         * 'Proto.PgQuery_Fields.alterOwnerStmt' @:: Lens' Node AlterOwnerStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterOperatorStmt' @:: Lens' Node (Prelude.Maybe AlterOperatorStmt)@
-         * 'Proto.PgQuery_Fields.alterOperatorStmt' @:: Lens' Node AlterOperatorStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterTypeStmt' @:: Lens' Node (Prelude.Maybe AlterTypeStmt)@
-         * 'Proto.PgQuery_Fields.alterTypeStmt' @:: Lens' Node AlterTypeStmt@
-         * 'Proto.PgQuery_Fields.maybe'ruleStmt' @:: Lens' Node (Prelude.Maybe RuleStmt)@
-         * 'Proto.PgQuery_Fields.ruleStmt' @:: Lens' Node RuleStmt@
-         * 'Proto.PgQuery_Fields.maybe'notifyStmt' @:: Lens' Node (Prelude.Maybe NotifyStmt)@
-         * 'Proto.PgQuery_Fields.notifyStmt' @:: Lens' Node NotifyStmt@
-         * 'Proto.PgQuery_Fields.maybe'listenStmt' @:: Lens' Node (Prelude.Maybe ListenStmt)@
-         * 'Proto.PgQuery_Fields.listenStmt' @:: Lens' Node ListenStmt@
-         * 'Proto.PgQuery_Fields.maybe'unlistenStmt' @:: Lens' Node (Prelude.Maybe UnlistenStmt)@
-         * 'Proto.PgQuery_Fields.unlistenStmt' @:: Lens' Node UnlistenStmt@
-         * 'Proto.PgQuery_Fields.maybe'transactionStmt' @:: Lens' Node (Prelude.Maybe TransactionStmt)@
-         * 'Proto.PgQuery_Fields.transactionStmt' @:: Lens' Node TransactionStmt@
-         * 'Proto.PgQuery_Fields.maybe'compositeTypeStmt' @:: Lens' Node (Prelude.Maybe CompositeTypeStmt)@
-         * 'Proto.PgQuery_Fields.compositeTypeStmt' @:: Lens' Node CompositeTypeStmt@
-         * 'Proto.PgQuery_Fields.maybe'createEnumStmt' @:: Lens' Node (Prelude.Maybe CreateEnumStmt)@
-         * 'Proto.PgQuery_Fields.createEnumStmt' @:: Lens' Node CreateEnumStmt@
-         * 'Proto.PgQuery_Fields.maybe'createRangeStmt' @:: Lens' Node (Prelude.Maybe CreateRangeStmt)@
-         * 'Proto.PgQuery_Fields.createRangeStmt' @:: Lens' Node CreateRangeStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterEnumStmt' @:: Lens' Node (Prelude.Maybe AlterEnumStmt)@
-         * 'Proto.PgQuery_Fields.alterEnumStmt' @:: Lens' Node AlterEnumStmt@
-         * 'Proto.PgQuery_Fields.maybe'viewStmt' @:: Lens' Node (Prelude.Maybe ViewStmt)@
-         * 'Proto.PgQuery_Fields.viewStmt' @:: Lens' Node ViewStmt@
-         * 'Proto.PgQuery_Fields.maybe'loadStmt' @:: Lens' Node (Prelude.Maybe LoadStmt)@
-         * 'Proto.PgQuery_Fields.loadStmt' @:: Lens' Node LoadStmt@
-         * 'Proto.PgQuery_Fields.maybe'createdbStmt' @:: Lens' Node (Prelude.Maybe CreatedbStmt)@
-         * 'Proto.PgQuery_Fields.createdbStmt' @:: Lens' Node CreatedbStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterDatabaseStmt' @:: Lens' Node (Prelude.Maybe AlterDatabaseStmt)@
-         * 'Proto.PgQuery_Fields.alterDatabaseStmt' @:: Lens' Node AlterDatabaseStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterDatabaseRefreshCollStmt' @:: Lens' Node (Prelude.Maybe AlterDatabaseRefreshCollStmt)@
-         * 'Proto.PgQuery_Fields.alterDatabaseRefreshCollStmt' @:: Lens' Node AlterDatabaseRefreshCollStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterDatabaseSetStmt' @:: Lens' Node (Prelude.Maybe AlterDatabaseSetStmt)@
-         * 'Proto.PgQuery_Fields.alterDatabaseSetStmt' @:: Lens' Node AlterDatabaseSetStmt@
-         * 'Proto.PgQuery_Fields.maybe'dropdbStmt' @:: Lens' Node (Prelude.Maybe DropdbStmt)@
-         * 'Proto.PgQuery_Fields.dropdbStmt' @:: Lens' Node DropdbStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterSystemStmt' @:: Lens' Node (Prelude.Maybe AlterSystemStmt)@
-         * 'Proto.PgQuery_Fields.alterSystemStmt' @:: Lens' Node AlterSystemStmt@
-         * 'Proto.PgQuery_Fields.maybe'clusterStmt' @:: Lens' Node (Prelude.Maybe ClusterStmt)@
-         * 'Proto.PgQuery_Fields.clusterStmt' @:: Lens' Node ClusterStmt@
-         * 'Proto.PgQuery_Fields.maybe'vacuumStmt' @:: Lens' Node (Prelude.Maybe VacuumStmt)@
-         * 'Proto.PgQuery_Fields.vacuumStmt' @:: Lens' Node VacuumStmt@
-         * 'Proto.PgQuery_Fields.maybe'vacuumRelation' @:: Lens' Node (Prelude.Maybe VacuumRelation)@
-         * 'Proto.PgQuery_Fields.vacuumRelation' @:: Lens' Node VacuumRelation@
-         * 'Proto.PgQuery_Fields.maybe'explainStmt' @:: Lens' Node (Prelude.Maybe ExplainStmt)@
-         * 'Proto.PgQuery_Fields.explainStmt' @:: Lens' Node ExplainStmt@
-         * 'Proto.PgQuery_Fields.maybe'createTableAsStmt' @:: Lens' Node (Prelude.Maybe CreateTableAsStmt)@
-         * 'Proto.PgQuery_Fields.createTableAsStmt' @:: Lens' Node CreateTableAsStmt@
-         * 'Proto.PgQuery_Fields.maybe'refreshMatViewStmt' @:: Lens' Node (Prelude.Maybe RefreshMatViewStmt)@
-         * 'Proto.PgQuery_Fields.refreshMatViewStmt' @:: Lens' Node RefreshMatViewStmt@
-         * 'Proto.PgQuery_Fields.maybe'checkPointStmt' @:: Lens' Node (Prelude.Maybe CheckPointStmt)@
-         * 'Proto.PgQuery_Fields.checkPointStmt' @:: Lens' Node CheckPointStmt@
-         * 'Proto.PgQuery_Fields.maybe'discardStmt' @:: Lens' Node (Prelude.Maybe DiscardStmt)@
-         * 'Proto.PgQuery_Fields.discardStmt' @:: Lens' Node DiscardStmt@
-         * 'Proto.PgQuery_Fields.maybe'lockStmt' @:: Lens' Node (Prelude.Maybe LockStmt)@
-         * 'Proto.PgQuery_Fields.lockStmt' @:: Lens' Node LockStmt@
-         * 'Proto.PgQuery_Fields.maybe'constraintsSetStmt' @:: Lens' Node (Prelude.Maybe ConstraintsSetStmt)@
-         * 'Proto.PgQuery_Fields.constraintsSetStmt' @:: Lens' Node ConstraintsSetStmt@
-         * 'Proto.PgQuery_Fields.maybe'reindexStmt' @:: Lens' Node (Prelude.Maybe ReindexStmt)@
-         * 'Proto.PgQuery_Fields.reindexStmt' @:: Lens' Node ReindexStmt@
-         * 'Proto.PgQuery_Fields.maybe'createConversionStmt' @:: Lens' Node (Prelude.Maybe CreateConversionStmt)@
-         * 'Proto.PgQuery_Fields.createConversionStmt' @:: Lens' Node CreateConversionStmt@
-         * 'Proto.PgQuery_Fields.maybe'createCastStmt' @:: Lens' Node (Prelude.Maybe CreateCastStmt)@
-         * 'Proto.PgQuery_Fields.createCastStmt' @:: Lens' Node CreateCastStmt@
-         * 'Proto.PgQuery_Fields.maybe'createTransformStmt' @:: Lens' Node (Prelude.Maybe CreateTransformStmt)@
-         * 'Proto.PgQuery_Fields.createTransformStmt' @:: Lens' Node CreateTransformStmt@
-         * 'Proto.PgQuery_Fields.maybe'prepareStmt' @:: Lens' Node (Prelude.Maybe PrepareStmt)@
-         * 'Proto.PgQuery_Fields.prepareStmt' @:: Lens' Node PrepareStmt@
-         * 'Proto.PgQuery_Fields.maybe'executeStmt' @:: Lens' Node (Prelude.Maybe ExecuteStmt)@
-         * 'Proto.PgQuery_Fields.executeStmt' @:: Lens' Node ExecuteStmt@
-         * 'Proto.PgQuery_Fields.maybe'deallocateStmt' @:: Lens' Node (Prelude.Maybe DeallocateStmt)@
-         * 'Proto.PgQuery_Fields.deallocateStmt' @:: Lens' Node DeallocateStmt@
-         * 'Proto.PgQuery_Fields.maybe'dropOwnedStmt' @:: Lens' Node (Prelude.Maybe DropOwnedStmt)@
-         * 'Proto.PgQuery_Fields.dropOwnedStmt' @:: Lens' Node DropOwnedStmt@
-         * 'Proto.PgQuery_Fields.maybe'reassignOwnedStmt' @:: Lens' Node (Prelude.Maybe ReassignOwnedStmt)@
-         * 'Proto.PgQuery_Fields.reassignOwnedStmt' @:: Lens' Node ReassignOwnedStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterTsdictionaryStmt' @:: Lens' Node (Prelude.Maybe AlterTSDictionaryStmt)@
-         * 'Proto.PgQuery_Fields.alterTsdictionaryStmt' @:: Lens' Node AlterTSDictionaryStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterTsconfigurationStmt' @:: Lens' Node (Prelude.Maybe AlterTSConfigurationStmt)@
-         * 'Proto.PgQuery_Fields.alterTsconfigurationStmt' @:: Lens' Node AlterTSConfigurationStmt@
-         * 'Proto.PgQuery_Fields.maybe'publicationTable' @:: Lens' Node (Prelude.Maybe PublicationTable)@
-         * 'Proto.PgQuery_Fields.publicationTable' @:: Lens' Node PublicationTable@
-         * 'Proto.PgQuery_Fields.maybe'publicationObjSpec' @:: Lens' Node (Prelude.Maybe PublicationObjSpec)@
-         * 'Proto.PgQuery_Fields.publicationObjSpec' @:: Lens' Node PublicationObjSpec@
-         * 'Proto.PgQuery_Fields.maybe'createPublicationStmt' @:: Lens' Node (Prelude.Maybe CreatePublicationStmt)@
-         * 'Proto.PgQuery_Fields.createPublicationStmt' @:: Lens' Node CreatePublicationStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterPublicationStmt' @:: Lens' Node (Prelude.Maybe AlterPublicationStmt)@
-         * 'Proto.PgQuery_Fields.alterPublicationStmt' @:: Lens' Node AlterPublicationStmt@
-         * 'Proto.PgQuery_Fields.maybe'createSubscriptionStmt' @:: Lens' Node (Prelude.Maybe CreateSubscriptionStmt)@
-         * 'Proto.PgQuery_Fields.createSubscriptionStmt' @:: Lens' Node CreateSubscriptionStmt@
-         * 'Proto.PgQuery_Fields.maybe'alterSubscriptionStmt' @:: Lens' Node (Prelude.Maybe AlterSubscriptionStmt)@
-         * 'Proto.PgQuery_Fields.alterSubscriptionStmt' @:: Lens' Node AlterSubscriptionStmt@
-         * 'Proto.PgQuery_Fields.maybe'dropSubscriptionStmt' @:: Lens' Node (Prelude.Maybe DropSubscriptionStmt)@
-         * 'Proto.PgQuery_Fields.dropSubscriptionStmt' @:: Lens' Node DropSubscriptionStmt@
-         * 'Proto.PgQuery_Fields.maybe'integer' @:: Lens' Node (Prelude.Maybe Integer)@
-         * 'Proto.PgQuery_Fields.integer' @:: Lens' Node Integer@
-         * 'Proto.PgQuery_Fields.maybe'float' @:: Lens' Node (Prelude.Maybe Float)@
-         * 'Proto.PgQuery_Fields.float' @:: Lens' Node Float@
-         * 'Proto.PgQuery_Fields.maybe'boolean' @:: Lens' Node (Prelude.Maybe Boolean)@
-         * 'Proto.PgQuery_Fields.boolean' @:: Lens' Node Boolean@
-         * 'Proto.PgQuery_Fields.maybe'string' @:: Lens' Node (Prelude.Maybe String)@
-         * 'Proto.PgQuery_Fields.string' @:: Lens' Node String@
-         * 'Proto.PgQuery_Fields.maybe'bitString' @:: Lens' Node (Prelude.Maybe BitString)@
-         * 'Proto.PgQuery_Fields.bitString' @:: Lens' Node BitString@
-         * 'Proto.PgQuery_Fields.maybe'list' @:: Lens' Node (Prelude.Maybe List)@
-         * 'Proto.PgQuery_Fields.list' @:: Lens' Node List@
-         * 'Proto.PgQuery_Fields.maybe'intList' @:: Lens' Node (Prelude.Maybe IntList)@
-         * 'Proto.PgQuery_Fields.intList' @:: Lens' Node IntList@
-         * 'Proto.PgQuery_Fields.maybe'oidList' @:: Lens' Node (Prelude.Maybe OidList)@
-         * 'Proto.PgQuery_Fields.oidList' @:: Lens' Node OidList@
-         * 'Proto.PgQuery_Fields.maybe'aConst' @:: Lens' Node (Prelude.Maybe A_Const)@
-         * 'Proto.PgQuery_Fields.aConst' @:: Lens' Node A_Const@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'node' @:: Lens' Node (Prelude.Maybe Node'Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alias' @:: Lens' Node (Prelude.Maybe Alias)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alias' @:: Lens' Node Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rangeVar' @:: Lens' Node (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rangeVar' @:: Lens' Node RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'tableFunc' @:: Lens' Node (Prelude.Maybe TableFunc)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tableFunc' @:: Lens' Node TableFunc@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'intoClause' @:: Lens' Node (Prelude.Maybe IntoClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.intoClause' @:: Lens' Node IntoClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'var' @:: Lens' Node (Prelude.Maybe Var)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.var' @:: Lens' Node Var@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'param' @:: Lens' Node (Prelude.Maybe Param)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.param' @:: Lens' Node Param@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aggref' @:: Lens' Node (Prelude.Maybe Aggref)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggref' @:: Lens' Node Aggref@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'groupingFunc' @:: Lens' Node (Prelude.Maybe GroupingFunc)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.groupingFunc' @:: Lens' Node GroupingFunc@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'windowFunc' @:: Lens' Node (Prelude.Maybe WindowFunc)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.windowFunc' @:: Lens' Node WindowFunc@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'subscriptingRef' @:: Lens' Node (Prelude.Maybe SubscriptingRef)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subscriptingRef' @:: Lens' Node SubscriptingRef@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'funcExpr' @:: Lens' Node (Prelude.Maybe FuncExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcExpr' @:: Lens' Node FuncExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'namedArgExpr' @:: Lens' Node (Prelude.Maybe NamedArgExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.namedArgExpr' @:: Lens' Node NamedArgExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'opExpr' @:: Lens' Node (Prelude.Maybe OpExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opExpr' @:: Lens' Node OpExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'distinctExpr' @:: Lens' Node (Prelude.Maybe DistinctExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.distinctExpr' @:: Lens' Node DistinctExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'nullIfExpr' @:: Lens' Node (Prelude.Maybe NullIfExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nullIfExpr' @:: Lens' Node NullIfExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'scalarArrayOpExpr' @:: Lens' Node (Prelude.Maybe ScalarArrayOpExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.scalarArrayOpExpr' @:: Lens' Node ScalarArrayOpExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'boolExpr' @:: Lens' Node (Prelude.Maybe BoolExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.boolExpr' @:: Lens' Node BoolExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'subLink' @:: Lens' Node (Prelude.Maybe SubLink)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subLink' @:: Lens' Node SubLink@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'subPlan' @:: Lens' Node (Prelude.Maybe SubPlan)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subPlan' @:: Lens' Node SubPlan@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alternativeSubPlan' @:: Lens' Node (Prelude.Maybe AlternativeSubPlan)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alternativeSubPlan' @:: Lens' Node AlternativeSubPlan@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'fieldSelect' @:: Lens' Node (Prelude.Maybe FieldSelect)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fieldSelect' @:: Lens' Node FieldSelect@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'fieldStore' @:: Lens' Node (Prelude.Maybe FieldStore)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fieldStore' @:: Lens' Node FieldStore@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relabelType' @:: Lens' Node (Prelude.Maybe RelabelType)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relabelType' @:: Lens' Node RelabelType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'coerceViaIo' @:: Lens' Node (Prelude.Maybe CoerceViaIO)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coerceViaIo' @:: Lens' Node CoerceViaIO@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arrayCoerceExpr' @:: Lens' Node (Prelude.Maybe ArrayCoerceExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arrayCoerceExpr' @:: Lens' Node ArrayCoerceExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'convertRowtypeExpr' @:: Lens' Node (Prelude.Maybe ConvertRowtypeExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.convertRowtypeExpr' @:: Lens' Node ConvertRowtypeExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'collateExpr' @:: Lens' Node (Prelude.Maybe CollateExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collateExpr' @:: Lens' Node CollateExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'caseExpr' @:: Lens' Node (Prelude.Maybe CaseExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.caseExpr' @:: Lens' Node CaseExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'caseWhen' @:: Lens' Node (Prelude.Maybe CaseWhen)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.caseWhen' @:: Lens' Node CaseWhen@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'caseTestExpr' @:: Lens' Node (Prelude.Maybe CaseTestExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.caseTestExpr' @:: Lens' Node CaseTestExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arrayExpr' @:: Lens' Node (Prelude.Maybe ArrayExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arrayExpr' @:: Lens' Node ArrayExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rowExpr' @:: Lens' Node (Prelude.Maybe RowExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rowExpr' @:: Lens' Node RowExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rowCompareExpr' @:: Lens' Node (Prelude.Maybe RowCompareExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rowCompareExpr' @:: Lens' Node RowCompareExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'coalesceExpr' @:: Lens' Node (Prelude.Maybe CoalesceExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coalesceExpr' @:: Lens' Node CoalesceExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'minMaxExpr' @:: Lens' Node (Prelude.Maybe MinMaxExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.minMaxExpr' @:: Lens' Node MinMaxExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'sqlvalueFunction' @:: Lens' Node (Prelude.Maybe SQLValueFunction)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sqlvalueFunction' @:: Lens' Node SQLValueFunction@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xmlExpr' @:: Lens' Node (Prelude.Maybe XmlExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xmlExpr' @:: Lens' Node XmlExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonFormat' @:: Lens' Node (Prelude.Maybe JsonFormat)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonFormat' @:: Lens' Node JsonFormat@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonReturning' @:: Lens' Node (Prelude.Maybe JsonReturning)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonReturning' @:: Lens' Node JsonReturning@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonValueExpr' @:: Lens' Node (Prelude.Maybe JsonValueExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonValueExpr' @:: Lens' Node JsonValueExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonConstructorExpr' @:: Lens' Node (Prelude.Maybe JsonConstructorExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonConstructorExpr' @:: Lens' Node JsonConstructorExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonIsPredicate' @:: Lens' Node (Prelude.Maybe JsonIsPredicate)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonIsPredicate' @:: Lens' Node JsonIsPredicate@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'nullTest' @:: Lens' Node (Prelude.Maybe NullTest)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nullTest' @:: Lens' Node NullTest@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'booleanTest' @:: Lens' Node (Prelude.Maybe BooleanTest)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.booleanTest' @:: Lens' Node BooleanTest@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'coerceToDomain' @:: Lens' Node (Prelude.Maybe CoerceToDomain)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coerceToDomain' @:: Lens' Node CoerceToDomain@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'coerceToDomainValue' @:: Lens' Node (Prelude.Maybe CoerceToDomainValue)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coerceToDomainValue' @:: Lens' Node CoerceToDomainValue@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'setToDefault' @:: Lens' Node (Prelude.Maybe SetToDefault)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.setToDefault' @:: Lens' Node SetToDefault@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'currentOfExpr' @:: Lens' Node (Prelude.Maybe CurrentOfExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.currentOfExpr' @:: Lens' Node CurrentOfExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'nextValueExpr' @:: Lens' Node (Prelude.Maybe NextValueExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nextValueExpr' @:: Lens' Node NextValueExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'inferenceElem' @:: Lens' Node (Prelude.Maybe InferenceElem)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inferenceElem' @:: Lens' Node InferenceElem@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'targetEntry' @:: Lens' Node (Prelude.Maybe TargetEntry)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.targetEntry' @:: Lens' Node TargetEntry@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rangeTblRef' @:: Lens' Node (Prelude.Maybe RangeTblRef)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rangeTblRef' @:: Lens' Node RangeTblRef@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'joinExpr' @:: Lens' Node (Prelude.Maybe JoinExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.joinExpr' @:: Lens' Node JoinExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'fromExpr' @:: Lens' Node (Prelude.Maybe FromExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fromExpr' @:: Lens' Node FromExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'onConflictExpr' @:: Lens' Node (Prelude.Maybe OnConflictExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.onConflictExpr' @:: Lens' Node OnConflictExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'query' @:: Lens' Node (Prelude.Maybe Query)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.query' @:: Lens' Node Query@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typeName' @:: Lens' Node (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' Node TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'columnRef' @:: Lens' Node (Prelude.Maybe ColumnRef)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.columnRef' @:: Lens' Node ColumnRef@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'paramRef' @:: Lens' Node (Prelude.Maybe ParamRef)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.paramRef' @:: Lens' Node ParamRef@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aExpr' @:: Lens' Node (Prelude.Maybe A_Expr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aExpr' @:: Lens' Node A_Expr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typeCast' @:: Lens' Node (Prelude.Maybe TypeCast)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeCast' @:: Lens' Node TypeCast@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'collateClause' @:: Lens' Node (Prelude.Maybe CollateClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collateClause' @:: Lens' Node CollateClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'roleSpec' @:: Lens' Node (Prelude.Maybe RoleSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.roleSpec' @:: Lens' Node RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'funcCall' @:: Lens' Node (Prelude.Maybe FuncCall)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcCall' @:: Lens' Node FuncCall@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aStar' @:: Lens' Node (Prelude.Maybe A_Star)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aStar' @:: Lens' Node A_Star@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aIndices' @:: Lens' Node (Prelude.Maybe A_Indices)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aIndices' @:: Lens' Node A_Indices@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aIndirection' @:: Lens' Node (Prelude.Maybe A_Indirection)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aIndirection' @:: Lens' Node A_Indirection@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aArrayExpr' @:: Lens' Node (Prelude.Maybe A_ArrayExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aArrayExpr' @:: Lens' Node A_ArrayExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'resTarget' @:: Lens' Node (Prelude.Maybe ResTarget)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resTarget' @:: Lens' Node ResTarget@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'multiAssignRef' @:: Lens' Node (Prelude.Maybe MultiAssignRef)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.multiAssignRef' @:: Lens' Node MultiAssignRef@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'sortBy' @:: Lens' Node (Prelude.Maybe SortBy)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sortBy' @:: Lens' Node SortBy@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'windowDef' @:: Lens' Node (Prelude.Maybe WindowDef)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.windowDef' @:: Lens' Node WindowDef@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rangeSubselect' @:: Lens' Node (Prelude.Maybe RangeSubselect)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rangeSubselect' @:: Lens' Node RangeSubselect@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rangeFunction' @:: Lens' Node (Prelude.Maybe RangeFunction)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rangeFunction' @:: Lens' Node RangeFunction@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rangeTableFunc' @:: Lens' Node (Prelude.Maybe RangeTableFunc)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rangeTableFunc' @:: Lens' Node RangeTableFunc@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rangeTableFuncCol' @:: Lens' Node (Prelude.Maybe RangeTableFuncCol)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rangeTableFuncCol' @:: Lens' Node RangeTableFuncCol@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rangeTableSample' @:: Lens' Node (Prelude.Maybe RangeTableSample)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rangeTableSample' @:: Lens' Node RangeTableSample@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'columnDef' @:: Lens' Node (Prelude.Maybe ColumnDef)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.columnDef' @:: Lens' Node ColumnDef@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'tableLikeClause' @:: Lens' Node (Prelude.Maybe TableLikeClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tableLikeClause' @:: Lens' Node TableLikeClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'indexElem' @:: Lens' Node (Prelude.Maybe IndexElem)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexElem' @:: Lens' Node IndexElem@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'defElem' @:: Lens' Node (Prelude.Maybe DefElem)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defElem' @:: Lens' Node DefElem@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'lockingClause' @:: Lens' Node (Prelude.Maybe LockingClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lockingClause' @:: Lens' Node LockingClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xmlSerialize' @:: Lens' Node (Prelude.Maybe XmlSerialize)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xmlSerialize' @:: Lens' Node XmlSerialize@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'partitionElem' @:: Lens' Node (Prelude.Maybe PartitionElem)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partitionElem' @:: Lens' Node PartitionElem@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'partitionSpec' @:: Lens' Node (Prelude.Maybe PartitionSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partitionSpec' @:: Lens' Node PartitionSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'partitionBoundSpec' @:: Lens' Node (Prelude.Maybe PartitionBoundSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partitionBoundSpec' @:: Lens' Node PartitionBoundSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'partitionRangeDatum' @:: Lens' Node (Prelude.Maybe PartitionRangeDatum)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partitionRangeDatum' @:: Lens' Node PartitionRangeDatum@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'partitionCmd' @:: Lens' Node (Prelude.Maybe PartitionCmd)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partitionCmd' @:: Lens' Node PartitionCmd@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rangeTblEntry' @:: Lens' Node (Prelude.Maybe RangeTblEntry)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rangeTblEntry' @:: Lens' Node RangeTblEntry@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rtepermissionInfo' @:: Lens' Node (Prelude.Maybe RTEPermissionInfo)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rtepermissionInfo' @:: Lens' Node RTEPermissionInfo@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rangeTblFunction' @:: Lens' Node (Prelude.Maybe RangeTblFunction)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rangeTblFunction' @:: Lens' Node RangeTblFunction@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'tableSampleClause' @:: Lens' Node (Prelude.Maybe TableSampleClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tableSampleClause' @:: Lens' Node TableSampleClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'withCheckOption' @:: Lens' Node (Prelude.Maybe WithCheckOption)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withCheckOption' @:: Lens' Node WithCheckOption@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'sortGroupClause' @:: Lens' Node (Prelude.Maybe SortGroupClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sortGroupClause' @:: Lens' Node SortGroupClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'groupingSet' @:: Lens' Node (Prelude.Maybe GroupingSet)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.groupingSet' @:: Lens' Node GroupingSet@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'windowClause' @:: Lens' Node (Prelude.Maybe WindowClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.windowClause' @:: Lens' Node WindowClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rowMarkClause' @:: Lens' Node (Prelude.Maybe RowMarkClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rowMarkClause' @:: Lens' Node RowMarkClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'withClause' @:: Lens' Node (Prelude.Maybe WithClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withClause' @:: Lens' Node WithClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'inferClause' @:: Lens' Node (Prelude.Maybe InferClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inferClause' @:: Lens' Node InferClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'onConflictClause' @:: Lens' Node (Prelude.Maybe OnConflictClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.onConflictClause' @:: Lens' Node OnConflictClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'ctesearchClause' @:: Lens' Node (Prelude.Maybe CTESearchClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctesearchClause' @:: Lens' Node CTESearchClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'ctecycleClause' @:: Lens' Node (Prelude.Maybe CTECycleClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctecycleClause' @:: Lens' Node CTECycleClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'commonTableExpr' @:: Lens' Node (Prelude.Maybe CommonTableExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.commonTableExpr' @:: Lens' Node CommonTableExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'mergeWhenClause' @:: Lens' Node (Prelude.Maybe MergeWhenClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.mergeWhenClause' @:: Lens' Node MergeWhenClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'mergeAction' @:: Lens' Node (Prelude.Maybe MergeAction)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.mergeAction' @:: Lens' Node MergeAction@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'triggerTransition' @:: Lens' Node (Prelude.Maybe TriggerTransition)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.triggerTransition' @:: Lens' Node TriggerTransition@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonOutput' @:: Lens' Node (Prelude.Maybe JsonOutput)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonOutput' @:: Lens' Node JsonOutput@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonKeyValue' @:: Lens' Node (Prelude.Maybe JsonKeyValue)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonKeyValue' @:: Lens' Node JsonKeyValue@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonObjectConstructor' @:: Lens' Node (Prelude.Maybe JsonObjectConstructor)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonObjectConstructor' @:: Lens' Node JsonObjectConstructor@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonArrayConstructor' @:: Lens' Node (Prelude.Maybe JsonArrayConstructor)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonArrayConstructor' @:: Lens' Node JsonArrayConstructor@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonArrayQueryConstructor' @:: Lens' Node (Prelude.Maybe JsonArrayQueryConstructor)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonArrayQueryConstructor' @:: Lens' Node JsonArrayQueryConstructor@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonAggConstructor' @:: Lens' Node (Prelude.Maybe JsonAggConstructor)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonAggConstructor' @:: Lens' Node JsonAggConstructor@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonObjectAgg' @:: Lens' Node (Prelude.Maybe JsonObjectAgg)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonObjectAgg' @:: Lens' Node JsonObjectAgg@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jsonArrayAgg' @:: Lens' Node (Prelude.Maybe JsonArrayAgg)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jsonArrayAgg' @:: Lens' Node JsonArrayAgg@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rawStmt' @:: Lens' Node (Prelude.Maybe RawStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rawStmt' @:: Lens' Node RawStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'insertStmt' @:: Lens' Node (Prelude.Maybe InsertStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.insertStmt' @:: Lens' Node InsertStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'deleteStmt' @:: Lens' Node (Prelude.Maybe DeleteStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.deleteStmt' @:: Lens' Node DeleteStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'updateStmt' @:: Lens' Node (Prelude.Maybe UpdateStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.updateStmt' @:: Lens' Node UpdateStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'mergeStmt' @:: Lens' Node (Prelude.Maybe MergeStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.mergeStmt' @:: Lens' Node MergeStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'selectStmt' @:: Lens' Node (Prelude.Maybe SelectStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.selectStmt' @:: Lens' Node SelectStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'setOperationStmt' @:: Lens' Node (Prelude.Maybe SetOperationStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.setOperationStmt' @:: Lens' Node SetOperationStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'returnStmt' @:: Lens' Node (Prelude.Maybe ReturnStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.returnStmt' @:: Lens' Node ReturnStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'plassignStmt' @:: Lens' Node (Prelude.Maybe PLAssignStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.plassignStmt' @:: Lens' Node PLAssignStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createSchemaStmt' @:: Lens' Node (Prelude.Maybe CreateSchemaStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createSchemaStmt' @:: Lens' Node CreateSchemaStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterTableStmt' @:: Lens' Node (Prelude.Maybe AlterTableStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterTableStmt' @:: Lens' Node AlterTableStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'replicaIdentityStmt' @:: Lens' Node (Prelude.Maybe ReplicaIdentityStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.replicaIdentityStmt' @:: Lens' Node ReplicaIdentityStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterTableCmd' @:: Lens' Node (Prelude.Maybe AlterTableCmd)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterTableCmd' @:: Lens' Node AlterTableCmd@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterCollationStmt' @:: Lens' Node (Prelude.Maybe AlterCollationStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterCollationStmt' @:: Lens' Node AlterCollationStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterDomainStmt' @:: Lens' Node (Prelude.Maybe AlterDomainStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterDomainStmt' @:: Lens' Node AlterDomainStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'grantStmt' @:: Lens' Node (Prelude.Maybe GrantStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.grantStmt' @:: Lens' Node GrantStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'objectWithArgs' @:: Lens' Node (Prelude.Maybe ObjectWithArgs)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objectWithArgs' @:: Lens' Node ObjectWithArgs@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'accessPriv' @:: Lens' Node (Prelude.Maybe AccessPriv)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.accessPriv' @:: Lens' Node AccessPriv@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'grantRoleStmt' @:: Lens' Node (Prelude.Maybe GrantRoleStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.grantRoleStmt' @:: Lens' Node GrantRoleStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterDefaultPrivilegesStmt' @:: Lens' Node (Prelude.Maybe AlterDefaultPrivilegesStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterDefaultPrivilegesStmt' @:: Lens' Node AlterDefaultPrivilegesStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'copyStmt' @:: Lens' Node (Prelude.Maybe CopyStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.copyStmt' @:: Lens' Node CopyStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'variableSetStmt' @:: Lens' Node (Prelude.Maybe VariableSetStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.variableSetStmt' @:: Lens' Node VariableSetStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'variableShowStmt' @:: Lens' Node (Prelude.Maybe VariableShowStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.variableShowStmt' @:: Lens' Node VariableShowStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createStmt' @:: Lens' Node (Prelude.Maybe CreateStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createStmt' @:: Lens' Node CreateStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'constraint' @:: Lens' Node (Prelude.Maybe Constraint)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constraint' @:: Lens' Node Constraint@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createTableSpaceStmt' @:: Lens' Node (Prelude.Maybe CreateTableSpaceStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createTableSpaceStmt' @:: Lens' Node CreateTableSpaceStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'dropTableSpaceStmt' @:: Lens' Node (Prelude.Maybe DropTableSpaceStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dropTableSpaceStmt' @:: Lens' Node DropTableSpaceStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterTableSpaceOptionsStmt' @:: Lens' Node (Prelude.Maybe AlterTableSpaceOptionsStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterTableSpaceOptionsStmt' @:: Lens' Node AlterTableSpaceOptionsStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterTableMoveAllStmt' @:: Lens' Node (Prelude.Maybe AlterTableMoveAllStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterTableMoveAllStmt' @:: Lens' Node AlterTableMoveAllStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createExtensionStmt' @:: Lens' Node (Prelude.Maybe CreateExtensionStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createExtensionStmt' @:: Lens' Node CreateExtensionStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterExtensionStmt' @:: Lens' Node (Prelude.Maybe AlterExtensionStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterExtensionStmt' @:: Lens' Node AlterExtensionStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterExtensionContentsStmt' @:: Lens' Node (Prelude.Maybe AlterExtensionContentsStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterExtensionContentsStmt' @:: Lens' Node AlterExtensionContentsStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createFdwStmt' @:: Lens' Node (Prelude.Maybe CreateFdwStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createFdwStmt' @:: Lens' Node CreateFdwStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterFdwStmt' @:: Lens' Node (Prelude.Maybe AlterFdwStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterFdwStmt' @:: Lens' Node AlterFdwStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createForeignServerStmt' @:: Lens' Node (Prelude.Maybe CreateForeignServerStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createForeignServerStmt' @:: Lens' Node CreateForeignServerStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterForeignServerStmt' @:: Lens' Node (Prelude.Maybe AlterForeignServerStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterForeignServerStmt' @:: Lens' Node AlterForeignServerStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createForeignTableStmt' @:: Lens' Node (Prelude.Maybe CreateForeignTableStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createForeignTableStmt' @:: Lens' Node CreateForeignTableStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createUserMappingStmt' @:: Lens' Node (Prelude.Maybe CreateUserMappingStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createUserMappingStmt' @:: Lens' Node CreateUserMappingStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterUserMappingStmt' @:: Lens' Node (Prelude.Maybe AlterUserMappingStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterUserMappingStmt' @:: Lens' Node AlterUserMappingStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'dropUserMappingStmt' @:: Lens' Node (Prelude.Maybe DropUserMappingStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dropUserMappingStmt' @:: Lens' Node DropUserMappingStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'importForeignSchemaStmt' @:: Lens' Node (Prelude.Maybe ImportForeignSchemaStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.importForeignSchemaStmt' @:: Lens' Node ImportForeignSchemaStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createPolicyStmt' @:: Lens' Node (Prelude.Maybe CreatePolicyStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createPolicyStmt' @:: Lens' Node CreatePolicyStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterPolicyStmt' @:: Lens' Node (Prelude.Maybe AlterPolicyStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterPolicyStmt' @:: Lens' Node AlterPolicyStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createAmStmt' @:: Lens' Node (Prelude.Maybe CreateAmStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createAmStmt' @:: Lens' Node CreateAmStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createTrigStmt' @:: Lens' Node (Prelude.Maybe CreateTrigStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createTrigStmt' @:: Lens' Node CreateTrigStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createEventTrigStmt' @:: Lens' Node (Prelude.Maybe CreateEventTrigStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createEventTrigStmt' @:: Lens' Node CreateEventTrigStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterEventTrigStmt' @:: Lens' Node (Prelude.Maybe AlterEventTrigStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterEventTrigStmt' @:: Lens' Node AlterEventTrigStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createPlangStmt' @:: Lens' Node (Prelude.Maybe CreatePLangStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createPlangStmt' @:: Lens' Node CreatePLangStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createRoleStmt' @:: Lens' Node (Prelude.Maybe CreateRoleStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createRoleStmt' @:: Lens' Node CreateRoleStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterRoleStmt' @:: Lens' Node (Prelude.Maybe AlterRoleStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterRoleStmt' @:: Lens' Node AlterRoleStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterRoleSetStmt' @:: Lens' Node (Prelude.Maybe AlterRoleSetStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterRoleSetStmt' @:: Lens' Node AlterRoleSetStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'dropRoleStmt' @:: Lens' Node (Prelude.Maybe DropRoleStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dropRoleStmt' @:: Lens' Node DropRoleStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createSeqStmt' @:: Lens' Node (Prelude.Maybe CreateSeqStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createSeqStmt' @:: Lens' Node CreateSeqStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterSeqStmt' @:: Lens' Node (Prelude.Maybe AlterSeqStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterSeqStmt' @:: Lens' Node AlterSeqStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'defineStmt' @:: Lens' Node (Prelude.Maybe DefineStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.defineStmt' @:: Lens' Node DefineStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createDomainStmt' @:: Lens' Node (Prelude.Maybe CreateDomainStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createDomainStmt' @:: Lens' Node CreateDomainStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createOpClassStmt' @:: Lens' Node (Prelude.Maybe CreateOpClassStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createOpClassStmt' @:: Lens' Node CreateOpClassStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createOpClassItem' @:: Lens' Node (Prelude.Maybe CreateOpClassItem)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createOpClassItem' @:: Lens' Node CreateOpClassItem@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createOpFamilyStmt' @:: Lens' Node (Prelude.Maybe CreateOpFamilyStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createOpFamilyStmt' @:: Lens' Node CreateOpFamilyStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterOpFamilyStmt' @:: Lens' Node (Prelude.Maybe AlterOpFamilyStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterOpFamilyStmt' @:: Lens' Node AlterOpFamilyStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'dropStmt' @:: Lens' Node (Prelude.Maybe DropStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dropStmt' @:: Lens' Node DropStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'truncateStmt' @:: Lens' Node (Prelude.Maybe TruncateStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.truncateStmt' @:: Lens' Node TruncateStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'commentStmt' @:: Lens' Node (Prelude.Maybe CommentStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.commentStmt' @:: Lens' Node CommentStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'secLabelStmt' @:: Lens' Node (Prelude.Maybe SecLabelStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.secLabelStmt' @:: Lens' Node SecLabelStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'declareCursorStmt' @:: Lens' Node (Prelude.Maybe DeclareCursorStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.declareCursorStmt' @:: Lens' Node DeclareCursorStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'closePortalStmt' @:: Lens' Node (Prelude.Maybe ClosePortalStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.closePortalStmt' @:: Lens' Node ClosePortalStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'fetchStmt' @:: Lens' Node (Prelude.Maybe FetchStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fetchStmt' @:: Lens' Node FetchStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'indexStmt' @:: Lens' Node (Prelude.Maybe IndexStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indexStmt' @:: Lens' Node IndexStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createStatsStmt' @:: Lens' Node (Prelude.Maybe CreateStatsStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createStatsStmt' @:: Lens' Node CreateStatsStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'statsElem' @:: Lens' Node (Prelude.Maybe StatsElem)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.statsElem' @:: Lens' Node StatsElem@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterStatsStmt' @:: Lens' Node (Prelude.Maybe AlterStatsStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterStatsStmt' @:: Lens' Node AlterStatsStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createFunctionStmt' @:: Lens' Node (Prelude.Maybe CreateFunctionStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createFunctionStmt' @:: Lens' Node CreateFunctionStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'functionParameter' @:: Lens' Node (Prelude.Maybe FunctionParameter)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.functionParameter' @:: Lens' Node FunctionParameter@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterFunctionStmt' @:: Lens' Node (Prelude.Maybe AlterFunctionStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterFunctionStmt' @:: Lens' Node AlterFunctionStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'doStmt' @:: Lens' Node (Prelude.Maybe DoStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.doStmt' @:: Lens' Node DoStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'inlineCodeBlock' @:: Lens' Node (Prelude.Maybe InlineCodeBlock)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inlineCodeBlock' @:: Lens' Node InlineCodeBlock@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'callStmt' @:: Lens' Node (Prelude.Maybe CallStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.callStmt' @:: Lens' Node CallStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'callContext' @:: Lens' Node (Prelude.Maybe CallContext)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.callContext' @:: Lens' Node CallContext@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'renameStmt' @:: Lens' Node (Prelude.Maybe RenameStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.renameStmt' @:: Lens' Node RenameStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterObjectDependsStmt' @:: Lens' Node (Prelude.Maybe AlterObjectDependsStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterObjectDependsStmt' @:: Lens' Node AlterObjectDependsStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterObjectSchemaStmt' @:: Lens' Node (Prelude.Maybe AlterObjectSchemaStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterObjectSchemaStmt' @:: Lens' Node AlterObjectSchemaStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterOwnerStmt' @:: Lens' Node (Prelude.Maybe AlterOwnerStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterOwnerStmt' @:: Lens' Node AlterOwnerStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterOperatorStmt' @:: Lens' Node (Prelude.Maybe AlterOperatorStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterOperatorStmt' @:: Lens' Node AlterOperatorStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterTypeStmt' @:: Lens' Node (Prelude.Maybe AlterTypeStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterTypeStmt' @:: Lens' Node AlterTypeStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'ruleStmt' @:: Lens' Node (Prelude.Maybe RuleStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ruleStmt' @:: Lens' Node RuleStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'notifyStmt' @:: Lens' Node (Prelude.Maybe NotifyStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.notifyStmt' @:: Lens' Node NotifyStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'listenStmt' @:: Lens' Node (Prelude.Maybe ListenStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.listenStmt' @:: Lens' Node ListenStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'unlistenStmt' @:: Lens' Node (Prelude.Maybe UnlistenStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.unlistenStmt' @:: Lens' Node UnlistenStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'transactionStmt' @:: Lens' Node (Prelude.Maybe TransactionStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.transactionStmt' @:: Lens' Node TransactionStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'compositeTypeStmt' @:: Lens' Node (Prelude.Maybe CompositeTypeStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.compositeTypeStmt' @:: Lens' Node CompositeTypeStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createEnumStmt' @:: Lens' Node (Prelude.Maybe CreateEnumStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createEnumStmt' @:: Lens' Node CreateEnumStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createRangeStmt' @:: Lens' Node (Prelude.Maybe CreateRangeStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createRangeStmt' @:: Lens' Node CreateRangeStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterEnumStmt' @:: Lens' Node (Prelude.Maybe AlterEnumStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterEnumStmt' @:: Lens' Node AlterEnumStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'viewStmt' @:: Lens' Node (Prelude.Maybe ViewStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.viewStmt' @:: Lens' Node ViewStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'loadStmt' @:: Lens' Node (Prelude.Maybe LoadStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.loadStmt' @:: Lens' Node LoadStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createdbStmt' @:: Lens' Node (Prelude.Maybe CreatedbStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createdbStmt' @:: Lens' Node CreatedbStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterDatabaseStmt' @:: Lens' Node (Prelude.Maybe AlterDatabaseStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterDatabaseStmt' @:: Lens' Node AlterDatabaseStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterDatabaseRefreshCollStmt' @:: Lens' Node (Prelude.Maybe AlterDatabaseRefreshCollStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterDatabaseRefreshCollStmt' @:: Lens' Node AlterDatabaseRefreshCollStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterDatabaseSetStmt' @:: Lens' Node (Prelude.Maybe AlterDatabaseSetStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterDatabaseSetStmt' @:: Lens' Node AlterDatabaseSetStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'dropdbStmt' @:: Lens' Node (Prelude.Maybe DropdbStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dropdbStmt' @:: Lens' Node DropdbStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterSystemStmt' @:: Lens' Node (Prelude.Maybe AlterSystemStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterSystemStmt' @:: Lens' Node AlterSystemStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'clusterStmt' @:: Lens' Node (Prelude.Maybe ClusterStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.clusterStmt' @:: Lens' Node ClusterStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'vacuumStmt' @:: Lens' Node (Prelude.Maybe VacuumStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vacuumStmt' @:: Lens' Node VacuumStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'vacuumRelation' @:: Lens' Node (Prelude.Maybe VacuumRelation)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vacuumRelation' @:: Lens' Node VacuumRelation@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'explainStmt' @:: Lens' Node (Prelude.Maybe ExplainStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.explainStmt' @:: Lens' Node ExplainStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createTableAsStmt' @:: Lens' Node (Prelude.Maybe CreateTableAsStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createTableAsStmt' @:: Lens' Node CreateTableAsStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'refreshMatViewStmt' @:: Lens' Node (Prelude.Maybe RefreshMatViewStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refreshMatViewStmt' @:: Lens' Node RefreshMatViewStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'checkPointStmt' @:: Lens' Node (Prelude.Maybe CheckPointStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.checkPointStmt' @:: Lens' Node CheckPointStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'discardStmt' @:: Lens' Node (Prelude.Maybe DiscardStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.discardStmt' @:: Lens' Node DiscardStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'lockStmt' @:: Lens' Node (Prelude.Maybe LockStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lockStmt' @:: Lens' Node LockStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'constraintsSetStmt' @:: Lens' Node (Prelude.Maybe ConstraintsSetStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constraintsSetStmt' @:: Lens' Node ConstraintsSetStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'reindexStmt' @:: Lens' Node (Prelude.Maybe ReindexStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.reindexStmt' @:: Lens' Node ReindexStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createConversionStmt' @:: Lens' Node (Prelude.Maybe CreateConversionStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createConversionStmt' @:: Lens' Node CreateConversionStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createCastStmt' @:: Lens' Node (Prelude.Maybe CreateCastStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createCastStmt' @:: Lens' Node CreateCastStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createTransformStmt' @:: Lens' Node (Prelude.Maybe CreateTransformStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createTransformStmt' @:: Lens' Node CreateTransformStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'prepareStmt' @:: Lens' Node (Prelude.Maybe PrepareStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.prepareStmt' @:: Lens' Node PrepareStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'executeStmt' @:: Lens' Node (Prelude.Maybe ExecuteStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.executeStmt' @:: Lens' Node ExecuteStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'deallocateStmt' @:: Lens' Node (Prelude.Maybe DeallocateStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.deallocateStmt' @:: Lens' Node DeallocateStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'dropOwnedStmt' @:: Lens' Node (Prelude.Maybe DropOwnedStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dropOwnedStmt' @:: Lens' Node DropOwnedStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'reassignOwnedStmt' @:: Lens' Node (Prelude.Maybe ReassignOwnedStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.reassignOwnedStmt' @:: Lens' Node ReassignOwnedStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterTsdictionaryStmt' @:: Lens' Node (Prelude.Maybe AlterTSDictionaryStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterTsdictionaryStmt' @:: Lens' Node AlterTSDictionaryStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterTsconfigurationStmt' @:: Lens' Node (Prelude.Maybe AlterTSConfigurationStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterTsconfigurationStmt' @:: Lens' Node AlterTSConfigurationStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'publicationTable' @:: Lens' Node (Prelude.Maybe PublicationTable)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.publicationTable' @:: Lens' Node PublicationTable@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'publicationObjSpec' @:: Lens' Node (Prelude.Maybe PublicationObjSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.publicationObjSpec' @:: Lens' Node PublicationObjSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createPublicationStmt' @:: Lens' Node (Prelude.Maybe CreatePublicationStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createPublicationStmt' @:: Lens' Node CreatePublicationStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterPublicationStmt' @:: Lens' Node (Prelude.Maybe AlterPublicationStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterPublicationStmt' @:: Lens' Node AlterPublicationStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'createSubscriptionStmt' @:: Lens' Node (Prelude.Maybe CreateSubscriptionStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.createSubscriptionStmt' @:: Lens' Node CreateSubscriptionStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alterSubscriptionStmt' @:: Lens' Node (Prelude.Maybe AlterSubscriptionStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alterSubscriptionStmt' @:: Lens' Node AlterSubscriptionStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'dropSubscriptionStmt' @:: Lens' Node (Prelude.Maybe DropSubscriptionStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.dropSubscriptionStmt' @:: Lens' Node DropSubscriptionStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'integer' @:: Lens' Node (Prelude.Maybe Integer)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.integer' @:: Lens' Node Integer@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'float' @:: Lens' Node (Prelude.Maybe Float)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.float' @:: Lens' Node Float@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'boolean' @:: Lens' Node (Prelude.Maybe Boolean)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.boolean' @:: Lens' Node Boolean@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'string' @:: Lens' Node (Prelude.Maybe String)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.string' @:: Lens' Node String@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'bitString' @:: Lens' Node (Prelude.Maybe BitString)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.bitString' @:: Lens' Node BitString@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'list' @:: Lens' Node (Prelude.Maybe List)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.list' @:: Lens' Node List@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'intList' @:: Lens' Node (Prelude.Maybe IntList)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.intList' @:: Lens' Node IntList@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'oidList' @:: Lens' Node (Prelude.Maybe OidList)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oidList' @:: Lens' Node OidList@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aConst' @:: Lens' Node (Prelude.Maybe A_Const)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aConst' @:: Lens' Node A_Const@ -}
 data Node
   = Node'_constructor {_Node'node :: !(Prelude.Maybe Node'Node),
                        _Node'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -73704,8 +73704,8 @@ _Node'AConst
               _otherwise -> Prelude.Nothing)
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.conditionname' @:: Lens' NotifyStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.payload' @:: Lens' NotifyStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.conditionname' @:: Lens' NotifyStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.payload' @:: Lens' NotifyStmt Data.Text.Text@ -}
 data NotifyStmt
   = NotifyStmt'_constructor {_NotifyStmt'conditionname :: !Data.Text.Text,
                              _NotifyStmt'payload :: !Data.Text.Text,
@@ -73866,16 +73866,16 @@ instance Control.DeepSeq.NFData NotifyStmt where
                 (Control.DeepSeq.deepseq (_NotifyStmt'payload x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' NullIfExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' NullIfExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.opno' @:: Lens' NullIfExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.opresulttype' @:: Lens' NullIfExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.opretset' @:: Lens' NullIfExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.opcollid' @:: Lens' NullIfExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inputcollid' @:: Lens' NullIfExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' NullIfExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' NullIfExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' NullIfExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' NullIfExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' NullIfExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opno' @:: Lens' NullIfExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opresulttype' @:: Lens' NullIfExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opretset' @:: Lens' NullIfExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opcollid' @:: Lens' NullIfExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inputcollid' @:: Lens' NullIfExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' NullIfExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' NullIfExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' NullIfExpr Data.Int.Int32@ -}
 data NullIfExpr
   = NullIfExpr'_constructor {_NullIfExpr'xpr :: !(Prelude.Maybe Node),
                              _NullIfExpr'opno :: !Data.Word.Word32,
@@ -74313,13 +74313,13 @@ instance Control.DeepSeq.NFData NullIfExpr where
                                   (Control.DeepSeq.deepseq (_NullIfExpr'location x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' NullTest Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' NullTest (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' NullTest Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' NullTest (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.nulltesttype' @:: Lens' NullTest NullTestType@
-         * 'Proto.PgQuery_Fields.argisrow' @:: Lens' NullTest Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' NullTest Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' NullTest Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' NullTest (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' NullTest Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' NullTest (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nulltesttype' @:: Lens' NullTest NullTestType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.argisrow' @:: Lens' NullTest Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' NullTest Data.Int.Int32@ -}
 data NullTest
   = NullTest'_constructor {_NullTest'xpr :: !(Prelude.Maybe Node),
                            _NullTest'arg :: !(Prelude.Maybe Node),
@@ -75116,13 +75116,13 @@ instance Control.DeepSeq.NFData ObjectType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.objname' @:: Lens' ObjectWithArgs [Node]@
-         * 'Proto.PgQuery_Fields.vec'objname' @:: Lens' ObjectWithArgs (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.objargs' @:: Lens' ObjectWithArgs [Node]@
-         * 'Proto.PgQuery_Fields.vec'objargs' @:: Lens' ObjectWithArgs (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.objfuncargs' @:: Lens' ObjectWithArgs [Node]@
-         * 'Proto.PgQuery_Fields.vec'objfuncargs' @:: Lens' ObjectWithArgs (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.argsUnspecified' @:: Lens' ObjectWithArgs Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objname' @:: Lens' ObjectWithArgs [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'objname' @:: Lens' ObjectWithArgs (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objargs' @:: Lens' ObjectWithArgs [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'objargs' @:: Lens' ObjectWithArgs (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objfuncargs' @:: Lens' ObjectWithArgs [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'objfuncargs' @:: Lens' ObjectWithArgs (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.argsUnspecified' @:: Lens' ObjectWithArgs Prelude.Bool@ -}
 data ObjectWithArgs
   = ObjectWithArgs'_constructor {_ObjectWithArgs'objname :: !(Data.Vector.Vector Node),
                                  _ObjectWithArgs'objargs :: !(Data.Vector.Vector Node),
@@ -75427,8 +75427,8 @@ instance Control.DeepSeq.NFData ObjectWithArgs where
                          (_ObjectWithArgs'argsUnspecified x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.items' @:: Lens' OidList [Node]@
-         * 'Proto.PgQuery_Fields.vec'items' @:: Lens' OidList (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.items' @:: Lens' OidList [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'items' @:: Lens' OidList (Data.Vector.Vector Node)@ -}
 data OidList
   = OidList'_constructor {_OidList'items :: !(Data.Vector.Vector Node),
                           _OidList'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -75724,14 +75724,14 @@ instance Control.DeepSeq.NFData OnConflictAction where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.action' @:: Lens' OnConflictClause OnConflictAction@
-         * 'Proto.PgQuery_Fields.infer' @:: Lens' OnConflictClause InferClause@
-         * 'Proto.PgQuery_Fields.maybe'infer' @:: Lens' OnConflictClause (Prelude.Maybe InferClause)@
-         * 'Proto.PgQuery_Fields.targetList' @:: Lens' OnConflictClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'targetList' @:: Lens' OnConflictClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' OnConflictClause Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' OnConflictClause (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' OnConflictClause Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.action' @:: Lens' OnConflictClause OnConflictAction@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.infer' @:: Lens' OnConflictClause InferClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'infer' @:: Lens' OnConflictClause (Prelude.Maybe InferClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.targetList' @:: Lens' OnConflictClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'targetList' @:: Lens' OnConflictClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' OnConflictClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' OnConflictClause (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' OnConflictClause Data.Int.Int32@ -}
 data OnConflictClause
   = OnConflictClause'_constructor {_OnConflictClause'action :: !OnConflictAction,
                                    _OnConflictClause'infer :: !(Prelude.Maybe InferClause),
@@ -76059,19 +76059,19 @@ instance Control.DeepSeq.NFData OnConflictClause where
                          (Control.DeepSeq.deepseq (_OnConflictClause'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.action' @:: Lens' OnConflictExpr OnConflictAction@
-         * 'Proto.PgQuery_Fields.arbiterElems' @:: Lens' OnConflictExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'arbiterElems' @:: Lens' OnConflictExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.arbiterWhere' @:: Lens' OnConflictExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'arbiterWhere' @:: Lens' OnConflictExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.constraint' @:: Lens' OnConflictExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.onConflictSet' @:: Lens' OnConflictExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'onConflictSet' @:: Lens' OnConflictExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.onConflictWhere' @:: Lens' OnConflictExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'onConflictWhere' @:: Lens' OnConflictExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.exclRelIndex' @:: Lens' OnConflictExpr Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.exclRelTlist' @:: Lens' OnConflictExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'exclRelTlist' @:: Lens' OnConflictExpr (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.action' @:: Lens' OnConflictExpr OnConflictAction@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arbiterElems' @:: Lens' OnConflictExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'arbiterElems' @:: Lens' OnConflictExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arbiterWhere' @:: Lens' OnConflictExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arbiterWhere' @:: Lens' OnConflictExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constraint' @:: Lens' OnConflictExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.onConflictSet' @:: Lens' OnConflictExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'onConflictSet' @:: Lens' OnConflictExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.onConflictWhere' @:: Lens' OnConflictExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'onConflictWhere' @:: Lens' OnConflictExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.exclRelIndex' @:: Lens' OnConflictExpr Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.exclRelTlist' @:: Lens' OnConflictExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'exclRelTlist' @:: Lens' OnConflictExpr (Data.Vector.Vector Node)@ -}
 data OnConflictExpr
   = OnConflictExpr'_constructor {_OnConflictExpr'action :: !OnConflictAction,
                                  _OnConflictExpr'arbiterElems :: !(Data.Vector.Vector Node),
@@ -76590,16 +76590,16 @@ instance Control.DeepSeq.NFData OnConflictExpr where
                                      (_OnConflictExpr'exclRelTlist x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' OpExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' OpExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.opno' @:: Lens' OpExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.opresulttype' @:: Lens' OpExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.opretset' @:: Lens' OpExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.opcollid' @:: Lens' OpExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inputcollid' @:: Lens' OpExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' OpExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' OpExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' OpExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' OpExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' OpExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opno' @:: Lens' OpExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opresulttype' @:: Lens' OpExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opretset' @:: Lens' OpExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opcollid' @:: Lens' OpExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inputcollid' @:: Lens' OpExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' OpExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' OpExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' OpExpr Data.Int.Int32@ -}
 data OpExpr
   = OpExpr'_constructor {_OpExpr'xpr :: !(Prelude.Maybe Node),
                          _OpExpr'opno :: !Data.Word.Word32,
@@ -77113,13 +77113,13 @@ instance Control.DeepSeq.NFData OverridingKind where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' PLAssignStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.indirection' @:: Lens' PLAssignStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'indirection' @:: Lens' PLAssignStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.nnames' @:: Lens' PLAssignStmt Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.val' @:: Lens' PLAssignStmt SelectStmt@
-         * 'Proto.PgQuery_Fields.maybe'val' @:: Lens' PLAssignStmt (Prelude.Maybe SelectStmt)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' PLAssignStmt Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' PLAssignStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indirection' @:: Lens' PLAssignStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'indirection' @:: Lens' PLAssignStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nnames' @:: Lens' PLAssignStmt Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.val' @:: Lens' PLAssignStmt SelectStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'val' @:: Lens' PLAssignStmt (Prelude.Maybe SelectStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' PLAssignStmt Data.Int.Int32@ -}
 data PLAssignStmt
   = PLAssignStmt'_constructor {_PLAssignStmt'name :: !Data.Text.Text,
                                _PLAssignStmt'indirection :: !(Data.Vector.Vector Node),
@@ -77433,14 +77433,14 @@ instance Control.DeepSeq.NFData PLAssignStmt where
                          (Control.DeepSeq.deepseq (_PLAssignStmt'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' Param Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' Param (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.paramkind' @:: Lens' Param ParamKind@
-         * 'Proto.PgQuery_Fields.paramid' @:: Lens' Param Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.paramtype' @:: Lens' Param Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.paramtypmod' @:: Lens' Param Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.paramcollid' @:: Lens' Param Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' Param Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' Param Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' Param (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.paramkind' @:: Lens' Param ParamKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.paramid' @:: Lens' Param Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.paramtype' @:: Lens' Param Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.paramtypmod' @:: Lens' Param Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.paramcollid' @:: Lens' Param Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' Param Data.Int.Int32@ -}
 data Param
   = Param'_constructor {_Param'xpr :: !(Prelude.Maybe Node),
                         _Param'paramkind :: !ParamKind,
@@ -77882,8 +77882,8 @@ instance Control.DeepSeq.NFData ParamKind where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.number' @:: Lens' ParamRef Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' ParamRef Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.number' @:: Lens' ParamRef Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' ParamRef Data.Int.Int32@ -}
 data ParamRef
   = ParamRef'_constructor {_ParamRef'number :: !Data.Int.Int32,
                            _ParamRef'location :: !Data.Int.Int32,
@@ -78027,9 +78027,9 @@ instance Control.DeepSeq.NFData ParamRef where
                 (Control.DeepSeq.deepseq (_ParamRef'location x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.version' @:: Lens' ParseResult Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.stmts' @:: Lens' ParseResult [RawStmt]@
-         * 'Proto.PgQuery_Fields.vec'stmts' @:: Lens' ParseResult (Data.Vector.Vector RawStmt)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.version' @:: Lens' ParseResult Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.stmts' @:: Lens' ParseResult [RawStmt]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'stmts' @:: Lens' ParseResult (Data.Vector.Vector RawStmt)@ -}
 data ParseResult
   = ParseResult'_constructor {_ParseResult'version :: !Data.Int.Int32,
                               _ParseResult'stmts :: !(Data.Vector.Vector RawStmt),
@@ -78198,17 +78198,17 @@ instance Control.DeepSeq.NFData ParseResult where
                 (Control.DeepSeq.deepseq (_ParseResult'stmts x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.strategy' @:: Lens' PartitionBoundSpec Data.Text.Text@
-         * 'Proto.PgQuery_Fields.isDefault' @:: Lens' PartitionBoundSpec Prelude.Bool@
-         * 'Proto.PgQuery_Fields.modulus' @:: Lens' PartitionBoundSpec Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.remainder' @:: Lens' PartitionBoundSpec Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.listdatums' @:: Lens' PartitionBoundSpec [Node]@
-         * 'Proto.PgQuery_Fields.vec'listdatums' @:: Lens' PartitionBoundSpec (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.lowerdatums' @:: Lens' PartitionBoundSpec [Node]@
-         * 'Proto.PgQuery_Fields.vec'lowerdatums' @:: Lens' PartitionBoundSpec (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.upperdatums' @:: Lens' PartitionBoundSpec [Node]@
-         * 'Proto.PgQuery_Fields.vec'upperdatums' @:: Lens' PartitionBoundSpec (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' PartitionBoundSpec Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.strategy' @:: Lens' PartitionBoundSpec Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isDefault' @:: Lens' PartitionBoundSpec Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.modulus' @:: Lens' PartitionBoundSpec Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.remainder' @:: Lens' PartitionBoundSpec Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.listdatums' @:: Lens' PartitionBoundSpec [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'listdatums' @:: Lens' PartitionBoundSpec (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lowerdatums' @:: Lens' PartitionBoundSpec [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'lowerdatums' @:: Lens' PartitionBoundSpec (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.upperdatums' @:: Lens' PartitionBoundSpec [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'upperdatums' @:: Lens' PartitionBoundSpec (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' PartitionBoundSpec Data.Int.Int32@ -}
 data PartitionBoundSpec
   = PartitionBoundSpec'_constructor {_PartitionBoundSpec'strategy :: !Data.Text.Text,
                                      _PartitionBoundSpec'isDefault :: !Prelude.Bool,
@@ -78698,11 +78698,11 @@ instance Control.DeepSeq.NFData PartitionBoundSpec where
                                      (_PartitionBoundSpec'location x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' PartitionCmd RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'name' @:: Lens' PartitionCmd (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.bound' @:: Lens' PartitionCmd PartitionBoundSpec@
-         * 'Proto.PgQuery_Fields.maybe'bound' @:: Lens' PartitionCmd (Prelude.Maybe PartitionBoundSpec)@
-         * 'Proto.PgQuery_Fields.concurrent' @:: Lens' PartitionCmd Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' PartitionCmd RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'name' @:: Lens' PartitionCmd (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.bound' @:: Lens' PartitionCmd PartitionBoundSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'bound' @:: Lens' PartitionCmd (Prelude.Maybe PartitionBoundSpec)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.concurrent' @:: Lens' PartitionCmd Prelude.Bool@ -}
 data PartitionCmd
   = PartitionCmd'_constructor {_PartitionCmd'name :: !(Prelude.Maybe RangeVar),
                                _PartitionCmd'bound :: !(Prelude.Maybe PartitionBoundSpec),
@@ -78910,14 +78910,14 @@ instance Control.DeepSeq.NFData PartitionCmd where
                    (Control.DeepSeq.deepseq (_PartitionCmd'concurrent x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' PartitionElem Data.Text.Text@
-         * 'Proto.PgQuery_Fields.expr' @:: Lens' PartitionElem Node@
-         * 'Proto.PgQuery_Fields.maybe'expr' @:: Lens' PartitionElem (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.collation' @:: Lens' PartitionElem [Node]@
-         * 'Proto.PgQuery_Fields.vec'collation' @:: Lens' PartitionElem (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.opclass' @:: Lens' PartitionElem [Node]@
-         * 'Proto.PgQuery_Fields.vec'opclass' @:: Lens' PartitionElem (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' PartitionElem Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' PartitionElem Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.expr' @:: Lens' PartitionElem Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'expr' @:: Lens' PartitionElem (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collation' @:: Lens' PartitionElem [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'collation' @:: Lens' PartitionElem (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opclass' @:: Lens' PartitionElem [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opclass' @:: Lens' PartitionElem (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' PartitionElem Data.Int.Int32@ -}
 data PartitionElem
   = PartitionElem'_constructor {_PartitionElem'name :: !Data.Text.Text,
                                 _PartitionElem'expr :: !(Prelude.Maybe Node),
@@ -79249,10 +79249,10 @@ instance Control.DeepSeq.NFData PartitionElem where
                          (Control.DeepSeq.deepseq (_PartitionElem'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' PartitionRangeDatum PartitionRangeDatumKind@
-         * 'Proto.PgQuery_Fields.value' @:: Lens' PartitionRangeDatum Node@
-         * 'Proto.PgQuery_Fields.maybe'value' @:: Lens' PartitionRangeDatum (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' PartitionRangeDatum Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' PartitionRangeDatum PartitionRangeDatumKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.value' @:: Lens' PartitionRangeDatum Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'value' @:: Lens' PartitionRangeDatum (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' PartitionRangeDatum Data.Int.Int32@ -}
 data PartitionRangeDatum
   = PartitionRangeDatum'_constructor {_PartitionRangeDatum'kind :: !PartitionRangeDatumKind,
                                       _PartitionRangeDatum'value :: !(Prelude.Maybe Node),
@@ -79541,10 +79541,10 @@ instance Control.DeepSeq.NFData PartitionRangeDatumKind where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.strategy' @:: Lens' PartitionSpec PartitionStrategy@
-         * 'Proto.PgQuery_Fields.partParams' @:: Lens' PartitionSpec [Node]@
-         * 'Proto.PgQuery_Fields.vec'partParams' @:: Lens' PartitionSpec (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' PartitionSpec Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.strategy' @:: Lens' PartitionSpec PartitionStrategy@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partParams' @:: Lens' PartitionSpec [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'partParams' @:: Lens' PartitionSpec (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' PartitionSpec Data.Int.Int32@ -}
 data PartitionSpec
   = PartitionSpec'_constructor {_PartitionSpec'strategy :: !PartitionStrategy,
                                 _PartitionSpec'partParams :: !(Data.Vector.Vector Node),
@@ -79849,11 +79849,11 @@ instance Control.DeepSeq.NFData PartitionStrategy where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' PrepareStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.argtypes' @:: Lens' PrepareStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'argtypes' @:: Lens' PrepareStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.query' @:: Lens' PrepareStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'query' @:: Lens' PrepareStmt (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' PrepareStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.argtypes' @:: Lens' PrepareStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'argtypes' @:: Lens' PrepareStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.query' @:: Lens' PrepareStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'query' @:: Lens' PrepareStmt (Prelude.Maybe Node)@ -}
 data PrepareStmt
   = PrepareStmt'_constructor {_PrepareStmt'name :: !Data.Text.Text,
                               _PrepareStmt'argtypes :: !(Data.Vector.Vector Node),
@@ -80081,11 +80081,11 @@ instance Control.DeepSeq.NFData PrepareStmt where
                    (Control.DeepSeq.deepseq (_PrepareStmt'query x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.pubobjtype' @:: Lens' PublicationObjSpec PublicationObjSpecType@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' PublicationObjSpec Data.Text.Text@
-         * 'Proto.PgQuery_Fields.pubtable' @:: Lens' PublicationObjSpec PublicationTable@
-         * 'Proto.PgQuery_Fields.maybe'pubtable' @:: Lens' PublicationObjSpec (Prelude.Maybe PublicationTable)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' PublicationObjSpec Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pubobjtype' @:: Lens' PublicationObjSpec PublicationObjSpecType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' PublicationObjSpec Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pubtable' @:: Lens' PublicationObjSpec PublicationTable@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'pubtable' @:: Lens' PublicationObjSpec (Prelude.Maybe PublicationTable)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' PublicationObjSpec Data.Int.Int32@ -}
 data PublicationObjSpec
   = PublicationObjSpec'_constructor {_PublicationObjSpec'pubobjtype :: !PublicationObjSpecType,
                                      _PublicationObjSpec'name :: !Data.Text.Text,
@@ -80434,12 +80434,12 @@ instance Control.DeepSeq.NFData PublicationObjSpecType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' PublicationTable RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' PublicationTable (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' PublicationTable Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' PublicationTable (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.columns' @:: Lens' PublicationTable [Node]@
-         * 'Proto.PgQuery_Fields.vec'columns' @:: Lens' PublicationTable (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' PublicationTable RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' PublicationTable (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' PublicationTable Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' PublicationTable (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.columns' @:: Lens' PublicationTable [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'columns' @:: Lens' PublicationTable (Data.Vector.Vector Node)@ -}
 data PublicationTable
   = PublicationTable'_constructor {_PublicationTable'relation :: !(Prelude.Maybe RangeVar),
                                    _PublicationTable'whereClause :: !(Prelude.Maybe Node),
@@ -80676,68 +80676,68 @@ instance Control.DeepSeq.NFData PublicationTable where
                    (Control.DeepSeq.deepseq (_PublicationTable'columns x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.commandType' @:: Lens' Query CmdType@
-         * 'Proto.PgQuery_Fields.querySource' @:: Lens' Query QuerySource@
-         * 'Proto.PgQuery_Fields.canSetTag' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.utilityStmt' @:: Lens' Query Node@
-         * 'Proto.PgQuery_Fields.maybe'utilityStmt' @:: Lens' Query (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.resultRelation' @:: Lens' Query Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.hasAggs' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.hasWindowFuncs' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.hasTargetSrfs' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.hasSubLinks' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.hasDistinctOn' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.hasRecursive' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.hasModifyingCte' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.hasForUpdate' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.hasRowSecurity' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.isReturn' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.cteList' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'cteList' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.rtable' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'rtable' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.rteperminfos' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'rteperminfos' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.jointree' @:: Lens' Query FromExpr@
-         * 'Proto.PgQuery_Fields.maybe'jointree' @:: Lens' Query (Prelude.Maybe FromExpr)@
-         * 'Proto.PgQuery_Fields.mergeActionList' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'mergeActionList' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.mergeUseOuterJoin' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.targetList' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'targetList' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.override' @:: Lens' Query OverridingKind@
-         * 'Proto.PgQuery_Fields.onConflict' @:: Lens' Query OnConflictExpr@
-         * 'Proto.PgQuery_Fields.maybe'onConflict' @:: Lens' Query (Prelude.Maybe OnConflictExpr)@
-         * 'Proto.PgQuery_Fields.returningList' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'returningList' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.groupClause' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'groupClause' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.groupDistinct' @:: Lens' Query Prelude.Bool@
-         * 'Proto.PgQuery_Fields.groupingSets' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'groupingSets' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.havingQual' @:: Lens' Query Node@
-         * 'Proto.PgQuery_Fields.maybe'havingQual' @:: Lens' Query (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.windowClause' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'windowClause' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.distinctClause' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'distinctClause' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.sortClause' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'sortClause' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.limitOffset' @:: Lens' Query Node@
-         * 'Proto.PgQuery_Fields.maybe'limitOffset' @:: Lens' Query (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.limitCount' @:: Lens' Query Node@
-         * 'Proto.PgQuery_Fields.maybe'limitCount' @:: Lens' Query (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.limitOption' @:: Lens' Query LimitOption@
-         * 'Proto.PgQuery_Fields.rowMarks' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'rowMarks' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.setOperations' @:: Lens' Query Node@
-         * 'Proto.PgQuery_Fields.maybe'setOperations' @:: Lens' Query (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.constraintDeps' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'constraintDeps' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.withCheckOptions' @:: Lens' Query [Node]@
-         * 'Proto.PgQuery_Fields.vec'withCheckOptions' @:: Lens' Query (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.stmtLocation' @:: Lens' Query Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.stmtLen' @:: Lens' Query Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.commandType' @:: Lens' Query CmdType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.querySource' @:: Lens' Query QuerySource@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.canSetTag' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.utilityStmt' @:: Lens' Query Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'utilityStmt' @:: Lens' Query (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resultRelation' @:: Lens' Query Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasAggs' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasWindowFuncs' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasTargetSrfs' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasSubLinks' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasDistinctOn' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasRecursive' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasModifyingCte' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasForUpdate' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hasRowSecurity' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isReturn' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cteList' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'cteList' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rtable' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'rtable' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rteperminfos' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'rteperminfos' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jointree' @:: Lens' Query FromExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'jointree' @:: Lens' Query (Prelude.Maybe FromExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.mergeActionList' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'mergeActionList' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.mergeUseOuterJoin' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.targetList' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'targetList' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.override' @:: Lens' Query OverridingKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.onConflict' @:: Lens' Query OnConflictExpr@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'onConflict' @:: Lens' Query (Prelude.Maybe OnConflictExpr)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.returningList' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'returningList' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.groupClause' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'groupClause' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.groupDistinct' @:: Lens' Query Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.groupingSets' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'groupingSets' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.havingQual' @:: Lens' Query Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'havingQual' @:: Lens' Query (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.windowClause' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'windowClause' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.distinctClause' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'distinctClause' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sortClause' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'sortClause' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.limitOffset' @:: Lens' Query Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'limitOffset' @:: Lens' Query (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.limitCount' @:: Lens' Query Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'limitCount' @:: Lens' Query (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.limitOption' @:: Lens' Query LimitOption@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rowMarks' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'rowMarks' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.setOperations' @:: Lens' Query Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'setOperations' @:: Lens' Query (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.constraintDeps' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'constraintDeps' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withCheckOptions' @:: Lens' Query [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'withCheckOptions' @:: Lens' Query (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.stmtLocation' @:: Lens' Query Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.stmtLen' @:: Lens' Query Data.Int.Int32@ -}
 data Query
   = Query'_constructor {_Query'commandType :: !CmdType,
                         _Query'querySource :: !QuerySource,
@@ -83597,16 +83597,16 @@ instance Control.DeepSeq.NFData RTEKind where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relid' @:: Lens' RTEPermissionInfo Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inh' @:: Lens' RTEPermissionInfo Prelude.Bool@
-         * 'Proto.PgQuery_Fields.requiredPerms' @:: Lens' RTEPermissionInfo Data.Word.Word64@
-         * 'Proto.PgQuery_Fields.checkAsUser' @:: Lens' RTEPermissionInfo Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.selectedCols' @:: Lens' RTEPermissionInfo [Data.Word.Word64]@
-         * 'Proto.PgQuery_Fields.vec'selectedCols' @:: Lens' RTEPermissionInfo (Data.Vector.Unboxed.Vector Data.Word.Word64)@
-         * 'Proto.PgQuery_Fields.insertedCols' @:: Lens' RTEPermissionInfo [Data.Word.Word64]@
-         * 'Proto.PgQuery_Fields.vec'insertedCols' @:: Lens' RTEPermissionInfo (Data.Vector.Unboxed.Vector Data.Word.Word64)@
-         * 'Proto.PgQuery_Fields.updatedCols' @:: Lens' RTEPermissionInfo [Data.Word.Word64]@
-         * 'Proto.PgQuery_Fields.vec'updatedCols' @:: Lens' RTEPermissionInfo (Data.Vector.Unboxed.Vector Data.Word.Word64)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relid' @:: Lens' RTEPermissionInfo Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inh' @:: Lens' RTEPermissionInfo Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.requiredPerms' @:: Lens' RTEPermissionInfo Data.Word.Word64@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.checkAsUser' @:: Lens' RTEPermissionInfo Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.selectedCols' @:: Lens' RTEPermissionInfo [Data.Word.Word64]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'selectedCols' @:: Lens' RTEPermissionInfo (Data.Vector.Unboxed.Vector Data.Word.Word64)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.insertedCols' @:: Lens' RTEPermissionInfo [Data.Word.Word64]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'insertedCols' @:: Lens' RTEPermissionInfo (Data.Vector.Unboxed.Vector Data.Word.Word64)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.updatedCols' @:: Lens' RTEPermissionInfo [Data.Word.Word64]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'updatedCols' @:: Lens' RTEPermissionInfo (Data.Vector.Unboxed.Vector Data.Word.Word64)@ -}
 data RTEPermissionInfo
   = RTEPermissionInfo'_constructor {_RTEPermissionInfo'relid :: !Data.Word.Word32,
                                     _RTEPermissionInfo'inh :: !Prelude.Bool,
@@ -84104,15 +84104,15 @@ instance Control.DeepSeq.NFData RTEPermissionInfo where
                                   (_RTEPermissionInfo'updatedCols x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.lateral' @:: Lens' RangeFunction Prelude.Bool@
-         * 'Proto.PgQuery_Fields.ordinality' @:: Lens' RangeFunction Prelude.Bool@
-         * 'Proto.PgQuery_Fields.isRowsfrom' @:: Lens' RangeFunction Prelude.Bool@
-         * 'Proto.PgQuery_Fields.functions' @:: Lens' RangeFunction [Node]@
-         * 'Proto.PgQuery_Fields.vec'functions' @:: Lens' RangeFunction (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.alias' @:: Lens' RangeFunction Alias@
-         * 'Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeFunction (Prelude.Maybe Alias)@
-         * 'Proto.PgQuery_Fields.coldeflist' @:: Lens' RangeFunction [Node]@
-         * 'Proto.PgQuery_Fields.vec'coldeflist' @:: Lens' RangeFunction (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lateral' @:: Lens' RangeFunction Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ordinality' @:: Lens' RangeFunction Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isRowsfrom' @:: Lens' RangeFunction Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.functions' @:: Lens' RangeFunction [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'functions' @:: Lens' RangeFunction (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alias' @:: Lens' RangeFunction Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeFunction (Prelude.Maybe Alias)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coldeflist' @:: Lens' RangeFunction [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'coldeflist' @:: Lens' RangeFunction (Data.Vector.Vector Node)@ -}
 data RangeFunction
   = RangeFunction'_constructor {_RangeFunction'lateral :: !Prelude.Bool,
                                 _RangeFunction'ordinality :: !Prelude.Bool,
@@ -84493,11 +84493,11 @@ instance Control.DeepSeq.NFData RangeFunction where
                             (Control.DeepSeq.deepseq (_RangeFunction'coldeflist x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.lateral' @:: Lens' RangeSubselect Prelude.Bool@
-         * 'Proto.PgQuery_Fields.subquery' @:: Lens' RangeSubselect Node@
-         * 'Proto.PgQuery_Fields.maybe'subquery' @:: Lens' RangeSubselect (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.alias' @:: Lens' RangeSubselect Alias@
-         * 'Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeSubselect (Prelude.Maybe Alias)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lateral' @:: Lens' RangeSubselect Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subquery' @:: Lens' RangeSubselect Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'subquery' @:: Lens' RangeSubselect (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alias' @:: Lens' RangeSubselect Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeSubselect (Prelude.Maybe Alias)@ -}
 data RangeSubselect
   = RangeSubselect'_constructor {_RangeSubselect'lateral :: !Prelude.Bool,
                                  _RangeSubselect'subquery :: !(Prelude.Maybe Node),
@@ -84705,18 +84705,18 @@ instance Control.DeepSeq.NFData RangeSubselect where
                    (Control.DeepSeq.deepseq (_RangeSubselect'alias x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.lateral' @:: Lens' RangeTableFunc Prelude.Bool@
-         * 'Proto.PgQuery_Fields.docexpr' @:: Lens' RangeTableFunc Node@
-         * 'Proto.PgQuery_Fields.maybe'docexpr' @:: Lens' RangeTableFunc (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.rowexpr' @:: Lens' RangeTableFunc Node@
-         * 'Proto.PgQuery_Fields.maybe'rowexpr' @:: Lens' RangeTableFunc (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.namespaces' @:: Lens' RangeTableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'namespaces' @:: Lens' RangeTableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.columns' @:: Lens' RangeTableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'columns' @:: Lens' RangeTableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.alias' @:: Lens' RangeTableFunc Alias@
-         * 'Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeTableFunc (Prelude.Maybe Alias)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' RangeTableFunc Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lateral' @:: Lens' RangeTableFunc Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.docexpr' @:: Lens' RangeTableFunc Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'docexpr' @:: Lens' RangeTableFunc (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rowexpr' @:: Lens' RangeTableFunc Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rowexpr' @:: Lens' RangeTableFunc (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.namespaces' @:: Lens' RangeTableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'namespaces' @:: Lens' RangeTableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.columns' @:: Lens' RangeTableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'columns' @:: Lens' RangeTableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alias' @:: Lens' RangeTableFunc Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeTableFunc (Prelude.Maybe Alias)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' RangeTableFunc Data.Int.Int32@ -}
 data RangeTableFunc
   = RangeTableFunc'_constructor {_RangeTableFunc'lateral :: !Prelude.Bool,
                                  _RangeTableFunc'docexpr :: !(Prelude.Maybe Node),
@@ -85155,16 +85155,16 @@ instance Control.DeepSeq.NFData RangeTableFunc where
                                (Control.DeepSeq.deepseq (_RangeTableFunc'location x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.colname' @:: Lens' RangeTableFuncCol Data.Text.Text@
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' RangeTableFuncCol TypeName@
-         * 'Proto.PgQuery_Fields.maybe'typeName' @:: Lens' RangeTableFuncCol (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.forOrdinality' @:: Lens' RangeTableFuncCol Prelude.Bool@
-         * 'Proto.PgQuery_Fields.isNotNull' @:: Lens' RangeTableFuncCol Prelude.Bool@
-         * 'Proto.PgQuery_Fields.colexpr' @:: Lens' RangeTableFuncCol Node@
-         * 'Proto.PgQuery_Fields.maybe'colexpr' @:: Lens' RangeTableFuncCol (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.coldefexpr' @:: Lens' RangeTableFuncCol Node@
-         * 'Proto.PgQuery_Fields.maybe'coldefexpr' @:: Lens' RangeTableFuncCol (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' RangeTableFuncCol Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colname' @:: Lens' RangeTableFuncCol Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' RangeTableFuncCol TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typeName' @:: Lens' RangeTableFuncCol (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.forOrdinality' @:: Lens' RangeTableFuncCol Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isNotNull' @:: Lens' RangeTableFuncCol Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colexpr' @:: Lens' RangeTableFuncCol Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'colexpr' @:: Lens' RangeTableFuncCol (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coldefexpr' @:: Lens' RangeTableFuncCol Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'coldefexpr' @:: Lens' RangeTableFuncCol (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' RangeTableFuncCol Data.Int.Int32@ -}
 data RangeTableFuncCol
   = RangeTableFuncCol'_constructor {_RangeTableFuncCol'colname :: !Data.Text.Text,
                                     _RangeTableFuncCol'typeName :: !(Prelude.Maybe TypeName),
@@ -85561,15 +85561,15 @@ instance Control.DeepSeq.NFData RangeTableFuncCol where
                                   (_RangeTableFuncCol'location x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' RangeTableSample Node@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' RangeTableSample (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.method' @:: Lens' RangeTableSample [Node]@
-         * 'Proto.PgQuery_Fields.vec'method' @:: Lens' RangeTableSample (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' RangeTableSample [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' RangeTableSample (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.repeatable' @:: Lens' RangeTableSample Node@
-         * 'Proto.PgQuery_Fields.maybe'repeatable' @:: Lens' RangeTableSample (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' RangeTableSample Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' RangeTableSample Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' RangeTableSample (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.method' @:: Lens' RangeTableSample [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'method' @:: Lens' RangeTableSample (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' RangeTableSample [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' RangeTableSample (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.repeatable' @:: Lens' RangeTableSample Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'repeatable' @:: Lens' RangeTableSample (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' RangeTableSample Data.Int.Int32@ -}
 data RangeTableSample
   = RangeTableSample'_constructor {_RangeTableSample'relation :: !(Prelude.Maybe Node),
                                    _RangeTableSample'method :: !(Data.Vector.Vector Node),
@@ -85911,53 +85911,53 @@ instance Control.DeepSeq.NFData RangeTableSample where
                          (Control.DeepSeq.deepseq (_RangeTableSample'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.rtekind' @:: Lens' RangeTblEntry RTEKind@
-         * 'Proto.PgQuery_Fields.relid' @:: Lens' RangeTblEntry Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.relkind' @:: Lens' RangeTblEntry Data.Text.Text@
-         * 'Proto.PgQuery_Fields.rellockmode' @:: Lens' RangeTblEntry Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.tablesample' @:: Lens' RangeTblEntry TableSampleClause@
-         * 'Proto.PgQuery_Fields.maybe'tablesample' @:: Lens' RangeTblEntry (Prelude.Maybe TableSampleClause)@
-         * 'Proto.PgQuery_Fields.perminfoindex' @:: Lens' RangeTblEntry Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.subquery' @:: Lens' RangeTblEntry Query@
-         * 'Proto.PgQuery_Fields.maybe'subquery' @:: Lens' RangeTblEntry (Prelude.Maybe Query)@
-         * 'Proto.PgQuery_Fields.securityBarrier' @:: Lens' RangeTblEntry Prelude.Bool@
-         * 'Proto.PgQuery_Fields.jointype' @:: Lens' RangeTblEntry JoinType@
-         * 'Proto.PgQuery_Fields.joinmergedcols' @:: Lens' RangeTblEntry Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.joinaliasvars' @:: Lens' RangeTblEntry [Node]@
-         * 'Proto.PgQuery_Fields.vec'joinaliasvars' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.joinleftcols' @:: Lens' RangeTblEntry [Node]@
-         * 'Proto.PgQuery_Fields.vec'joinleftcols' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.joinrightcols' @:: Lens' RangeTblEntry [Node]@
-         * 'Proto.PgQuery_Fields.vec'joinrightcols' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.joinUsingAlias' @:: Lens' RangeTblEntry Alias@
-         * 'Proto.PgQuery_Fields.maybe'joinUsingAlias' @:: Lens' RangeTblEntry (Prelude.Maybe Alias)@
-         * 'Proto.PgQuery_Fields.functions' @:: Lens' RangeTblEntry [Node]@
-         * 'Proto.PgQuery_Fields.vec'functions' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.funcordinality' @:: Lens' RangeTblEntry Prelude.Bool@
-         * 'Proto.PgQuery_Fields.tablefunc' @:: Lens' RangeTblEntry TableFunc@
-         * 'Proto.PgQuery_Fields.maybe'tablefunc' @:: Lens' RangeTblEntry (Prelude.Maybe TableFunc)@
-         * 'Proto.PgQuery_Fields.valuesLists' @:: Lens' RangeTblEntry [Node]@
-         * 'Proto.PgQuery_Fields.vec'valuesLists' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.ctename' @:: Lens' RangeTblEntry Data.Text.Text@
-         * 'Proto.PgQuery_Fields.ctelevelsup' @:: Lens' RangeTblEntry Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.selfReference' @:: Lens' RangeTblEntry Prelude.Bool@
-         * 'Proto.PgQuery_Fields.coltypes' @:: Lens' RangeTblEntry [Node]@
-         * 'Proto.PgQuery_Fields.vec'coltypes' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.coltypmods' @:: Lens' RangeTblEntry [Node]@
-         * 'Proto.PgQuery_Fields.vec'coltypmods' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.colcollations' @:: Lens' RangeTblEntry [Node]@
-         * 'Proto.PgQuery_Fields.vec'colcollations' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.enrname' @:: Lens' RangeTblEntry Data.Text.Text@
-         * 'Proto.PgQuery_Fields.enrtuples' @:: Lens' RangeTblEntry Prelude.Double@
-         * 'Proto.PgQuery_Fields.alias' @:: Lens' RangeTblEntry Alias@
-         * 'Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeTblEntry (Prelude.Maybe Alias)@
-         * 'Proto.PgQuery_Fields.eref' @:: Lens' RangeTblEntry Alias@
-         * 'Proto.PgQuery_Fields.maybe'eref' @:: Lens' RangeTblEntry (Prelude.Maybe Alias)@
-         * 'Proto.PgQuery_Fields.lateral' @:: Lens' RangeTblEntry Prelude.Bool@
-         * 'Proto.PgQuery_Fields.inh' @:: Lens' RangeTblEntry Prelude.Bool@
-         * 'Proto.PgQuery_Fields.inFromCl' @:: Lens' RangeTblEntry Prelude.Bool@
-         * 'Proto.PgQuery_Fields.securityQuals' @:: Lens' RangeTblEntry [Node]@
-         * 'Proto.PgQuery_Fields.vec'securityQuals' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rtekind' @:: Lens' RangeTblEntry RTEKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relid' @:: Lens' RangeTblEntry Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relkind' @:: Lens' RangeTblEntry Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rellockmode' @:: Lens' RangeTblEntry Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tablesample' @:: Lens' RangeTblEntry TableSampleClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'tablesample' @:: Lens' RangeTblEntry (Prelude.Maybe TableSampleClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.perminfoindex' @:: Lens' RangeTblEntry Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subquery' @:: Lens' RangeTblEntry Query@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'subquery' @:: Lens' RangeTblEntry (Prelude.Maybe Query)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.securityBarrier' @:: Lens' RangeTblEntry Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.jointype' @:: Lens' RangeTblEntry JoinType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.joinmergedcols' @:: Lens' RangeTblEntry Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.joinaliasvars' @:: Lens' RangeTblEntry [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'joinaliasvars' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.joinleftcols' @:: Lens' RangeTblEntry [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'joinleftcols' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.joinrightcols' @:: Lens' RangeTblEntry [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'joinrightcols' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.joinUsingAlias' @:: Lens' RangeTblEntry Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'joinUsingAlias' @:: Lens' RangeTblEntry (Prelude.Maybe Alias)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.functions' @:: Lens' RangeTblEntry [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'functions' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcordinality' @:: Lens' RangeTblEntry Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tablefunc' @:: Lens' RangeTblEntry TableFunc@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'tablefunc' @:: Lens' RangeTblEntry (Prelude.Maybe TableFunc)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.valuesLists' @:: Lens' RangeTblEntry [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'valuesLists' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctename' @:: Lens' RangeTblEntry Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctelevelsup' @:: Lens' RangeTblEntry Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.selfReference' @:: Lens' RangeTblEntry Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coltypes' @:: Lens' RangeTblEntry [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'coltypes' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coltypmods' @:: Lens' RangeTblEntry [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'coltypmods' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colcollations' @:: Lens' RangeTblEntry [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colcollations' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.enrname' @:: Lens' RangeTblEntry Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.enrtuples' @:: Lens' RangeTblEntry Prelude.Double@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alias' @:: Lens' RangeTblEntry Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeTblEntry (Prelude.Maybe Alias)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.eref' @:: Lens' RangeTblEntry Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'eref' @:: Lens' RangeTblEntry (Prelude.Maybe Alias)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lateral' @:: Lens' RangeTblEntry Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inh' @:: Lens' RangeTblEntry Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inFromCl' @:: Lens' RangeTblEntry Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.securityQuals' @:: Lens' RangeTblEntry [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'securityQuals' @:: Lens' RangeTblEntry (Data.Vector.Vector Node)@ -}
 data RangeTblEntry
   = RangeTblEntry'_constructor {_RangeTblEntry'rtekind :: !RTEKind,
                                 _RangeTblEntry'relid :: !Data.Word.Word32,
@@ -87964,19 +87964,19 @@ instance Control.DeepSeq.NFData RangeTblEntry where
                                                                                                              ()))))))))))))))))))))))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.funcexpr' @:: Lens' RangeTblFunction Node@
-         * 'Proto.PgQuery_Fields.maybe'funcexpr' @:: Lens' RangeTblFunction (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.funccolcount' @:: Lens' RangeTblFunction Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.funccolnames' @:: Lens' RangeTblFunction [Node]@
-         * 'Proto.PgQuery_Fields.vec'funccolnames' @:: Lens' RangeTblFunction (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.funccoltypes' @:: Lens' RangeTblFunction [Node]@
-         * 'Proto.PgQuery_Fields.vec'funccoltypes' @:: Lens' RangeTblFunction (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.funccoltypmods' @:: Lens' RangeTblFunction [Node]@
-         * 'Proto.PgQuery_Fields.vec'funccoltypmods' @:: Lens' RangeTblFunction (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.funccolcollations' @:: Lens' RangeTblFunction [Node]@
-         * 'Proto.PgQuery_Fields.vec'funccolcollations' @:: Lens' RangeTblFunction (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.funcparams' @:: Lens' RangeTblFunction [Data.Word.Word64]@
-         * 'Proto.PgQuery_Fields.vec'funcparams' @:: Lens' RangeTblFunction (Data.Vector.Unboxed.Vector Data.Word.Word64)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcexpr' @:: Lens' RangeTblFunction Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'funcexpr' @:: Lens' RangeTblFunction (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funccolcount' @:: Lens' RangeTblFunction Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funccolnames' @:: Lens' RangeTblFunction [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funccolnames' @:: Lens' RangeTblFunction (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funccoltypes' @:: Lens' RangeTblFunction [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funccoltypes' @:: Lens' RangeTblFunction (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funccoltypmods' @:: Lens' RangeTblFunction [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funccoltypmods' @:: Lens' RangeTblFunction (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funccolcollations' @:: Lens' RangeTblFunction [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funccolcollations' @:: Lens' RangeTblFunction (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.funcparams' @:: Lens' RangeTblFunction [Data.Word.Word64]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'funcparams' @:: Lens' RangeTblFunction (Data.Vector.Unboxed.Vector Data.Word.Word64)@ -}
 data RangeTblFunction
   = RangeTblFunction'_constructor {_RangeTblFunction'funcexpr :: !(Prelude.Maybe Node),
                                    _RangeTblFunction'funccolcount :: !Data.Int.Int32,
@@ -88517,7 +88517,7 @@ instance Control.DeepSeq.NFData RangeTblFunction where
                                   (_RangeTblFunction'funcparams x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.rtindex' @:: Lens' RangeTblRef Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rtindex' @:: Lens' RangeTblRef Data.Int.Int32@ -}
 data RangeTblRef
   = RangeTblRef'_constructor {_RangeTblRef'rtindex :: !Data.Int.Int32,
                               _RangeTblRef'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -88623,14 +88623,14 @@ instance Control.DeepSeq.NFData RangeTblRef where
              (Control.DeepSeq.deepseq (_RangeTblRef'rtindex x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.catalogname' @:: Lens' RangeVar Data.Text.Text@
-         * 'Proto.PgQuery_Fields.schemaname' @:: Lens' RangeVar Data.Text.Text@
-         * 'Proto.PgQuery_Fields.relname' @:: Lens' RangeVar Data.Text.Text@
-         * 'Proto.PgQuery_Fields.inh' @:: Lens' RangeVar Prelude.Bool@
-         * 'Proto.PgQuery_Fields.relpersistence' @:: Lens' RangeVar Data.Text.Text@
-         * 'Proto.PgQuery_Fields.alias' @:: Lens' RangeVar Alias@
-         * 'Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeVar (Prelude.Maybe Alias)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' RangeVar Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.catalogname' @:: Lens' RangeVar Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.schemaname' @:: Lens' RangeVar Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relname' @:: Lens' RangeVar Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inh' @:: Lens' RangeVar Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relpersistence' @:: Lens' RangeVar Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.alias' @:: Lens' RangeVar Alias@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'alias' @:: Lens' RangeVar (Prelude.Maybe Alias)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' RangeVar Data.Int.Int32@ -}
 data RangeVar
   = RangeVar'_constructor {_RangeVar'catalogname :: !Data.Text.Text,
                            _RangeVar'schemaname :: !Data.Text.Text,
@@ -89012,10 +89012,10 @@ instance Control.DeepSeq.NFData RangeVar where
                                (Control.DeepSeq.deepseq (_RangeVar'location x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.stmt' @:: Lens' RawStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'stmt' @:: Lens' RawStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.stmtLocation' @:: Lens' RawStmt Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.stmtLen' @:: Lens' RawStmt Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.stmt' @:: Lens' RawStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'stmt' @:: Lens' RawStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.stmtLocation' @:: Lens' RawStmt Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.stmtLen' @:: Lens' RawStmt Data.Int.Int32@ -}
 data RawStmt
   = RawStmt'_constructor {_RawStmt'stmt :: !(Prelude.Maybe Node),
                           _RawStmt'stmtLocation :: !Data.Int.Int32,
@@ -89211,10 +89211,10 @@ instance Control.DeepSeq.NFData RawStmt where
                    (Control.DeepSeq.deepseq (_RawStmt'stmtLen x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.roles' @:: Lens' ReassignOwnedStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'roles' @:: Lens' ReassignOwnedStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.newrole' @:: Lens' ReassignOwnedStmt RoleSpec@
-         * 'Proto.PgQuery_Fields.maybe'newrole' @:: Lens' ReassignOwnedStmt (Prelude.Maybe RoleSpec)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.roles' @:: Lens' ReassignOwnedStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'roles' @:: Lens' ReassignOwnedStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newrole' @:: Lens' ReassignOwnedStmt RoleSpec@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'newrole' @:: Lens' ReassignOwnedStmt (Prelude.Maybe RoleSpec)@ -}
 data ReassignOwnedStmt
   = ReassignOwnedStmt'_constructor {_ReassignOwnedStmt'roles :: !(Data.Vector.Vector Node),
                                     _ReassignOwnedStmt'newrole :: !(Prelude.Maybe RoleSpec),
@@ -89397,10 +89397,10 @@ instance Control.DeepSeq.NFData ReassignOwnedStmt where
                 (Control.DeepSeq.deepseq (_ReassignOwnedStmt'newrole x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.concurrent' @:: Lens' RefreshMatViewStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.skipData' @:: Lens' RefreshMatViewStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' RefreshMatViewStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' RefreshMatViewStmt (Prelude.Maybe RangeVar)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.concurrent' @:: Lens' RefreshMatViewStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.skipData' @:: Lens' RefreshMatViewStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' RefreshMatViewStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' RefreshMatViewStmt (Prelude.Maybe RangeVar)@ -}
 data RefreshMatViewStmt
   = RefreshMatViewStmt'_constructor {_RefreshMatViewStmt'concurrent :: !Prelude.Bool,
                                      _RefreshMatViewStmt'skipData :: !Prelude.Bool,
@@ -89702,12 +89702,12 @@ instance Control.DeepSeq.NFData ReindexObjectType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' ReindexStmt ReindexObjectType@
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' ReindexStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' ReindexStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' ReindexStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.params' @:: Lens' ReindexStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'params' @:: Lens' ReindexStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' ReindexStmt ReindexObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' ReindexStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' ReindexStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' ReindexStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.params' @:: Lens' ReindexStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'params' @:: Lens' ReindexStmt (Data.Vector.Vector Node)@ -}
 data ReindexStmt
   = ReindexStmt'_constructor {_ReindexStmt'kind :: !ReindexObjectType,
                               _ReindexStmt'relation :: !(Prelude.Maybe RangeVar),
@@ -89975,15 +89975,15 @@ instance Control.DeepSeq.NFData ReindexStmt where
                       (Control.DeepSeq.deepseq (_ReindexStmt'params x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' RelabelType Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' RelabelType (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' RelabelType Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' RelabelType (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.resulttype' @:: Lens' RelabelType Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.resulttypmod' @:: Lens' RelabelType Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.resultcollid' @:: Lens' RelabelType Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.relabelformat' @:: Lens' RelabelType CoercionForm@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' RelabelType Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' RelabelType Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' RelabelType (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' RelabelType Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' RelabelType (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttype' @:: Lens' RelabelType Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resulttypmod' @:: Lens' RelabelType Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resultcollid' @:: Lens' RelabelType Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relabelformat' @:: Lens' RelabelType CoercionForm@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' RelabelType Data.Int.Int32@ -}
 data RelabelType
   = RelabelType'_constructor {_RelabelType'xpr :: !(Prelude.Maybe Node),
                               _RelabelType'arg :: !(Prelude.Maybe Node),
@@ -90369,16 +90369,16 @@ instance Control.DeepSeq.NFData RelabelType where
                                (Control.DeepSeq.deepseq (_RelabelType'location x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.renameType' @:: Lens' RenameStmt ObjectType@
-         * 'Proto.PgQuery_Fields.relationType' @:: Lens' RenameStmt ObjectType@
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' RenameStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' RenameStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.object' @:: Lens' RenameStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'object' @:: Lens' RenameStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.subname' @:: Lens' RenameStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.newname' @:: Lens' RenameStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.behavior' @:: Lens' RenameStmt DropBehavior@
-         * 'Proto.PgQuery_Fields.missingOk' @:: Lens' RenameStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.renameType' @:: Lens' RenameStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relationType' @:: Lens' RenameStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' RenameStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' RenameStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.object' @:: Lens' RenameStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'object' @:: Lens' RenameStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subname' @:: Lens' RenameStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.newname' @:: Lens' RenameStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.behavior' @:: Lens' RenameStmt DropBehavior@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.missingOk' @:: Lens' RenameStmt Prelude.Bool@ -}
 data RenameStmt
   = RenameStmt'_constructor {_RenameStmt'renameType :: !ObjectType,
                              _RenameStmt'relationType :: !ObjectType,
@@ -90817,8 +90817,8 @@ instance Control.DeepSeq.NFData RenameStmt where
                                   (Control.DeepSeq.deepseq (_RenameStmt'missingOk x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.identityType' @:: Lens' ReplicaIdentityStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' ReplicaIdentityStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.identityType' @:: Lens' ReplicaIdentityStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' ReplicaIdentityStmt Data.Text.Text@ -}
 data ReplicaIdentityStmt
   = ReplicaIdentityStmt'_constructor {_ReplicaIdentityStmt'identityType :: !Data.Text.Text,
                                       _ReplicaIdentityStmt'name :: !Data.Text.Text,
@@ -90978,12 +90978,12 @@ instance Control.DeepSeq.NFData ReplicaIdentityStmt where
                 (Control.DeepSeq.deepseq (_ReplicaIdentityStmt'name x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' ResTarget Data.Text.Text@
-         * 'Proto.PgQuery_Fields.indirection' @:: Lens' ResTarget [Node]@
-         * 'Proto.PgQuery_Fields.vec'indirection' @:: Lens' ResTarget (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.val' @:: Lens' ResTarget Node@
-         * 'Proto.PgQuery_Fields.maybe'val' @:: Lens' ResTarget (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' ResTarget Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' ResTarget Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indirection' @:: Lens' ResTarget [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'indirection' @:: Lens' ResTarget (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.val' @:: Lens' ResTarget Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'val' @:: Lens' ResTarget (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' ResTarget Data.Int.Int32@ -}
 data ResTarget
   = ResTarget'_constructor {_ResTarget'name :: !Data.Text.Text,
                             _ResTarget'indirection :: !(Data.Vector.Vector Node),
@@ -91254,8 +91254,8 @@ instance Control.DeepSeq.NFData ResTarget where
                       (Control.DeepSeq.deepseq (_ResTarget'location x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.returnval' @:: Lens' ReturnStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'returnval' @:: Lens' ReturnStmt (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.returnval' @:: Lens' ReturnStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'returnval' @:: Lens' ReturnStmt (Prelude.Maybe Node)@ -}
 data ReturnStmt
   = ReturnStmt'_constructor {_ReturnStmt'returnval :: !(Prelude.Maybe Node),
                              _ReturnStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -91376,9 +91376,9 @@ instance Control.DeepSeq.NFData ReturnStmt where
              (Control.DeepSeq.deepseq (_ReturnStmt'returnval x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.roletype' @:: Lens' RoleSpec RoleSpecType@
-         * 'Proto.PgQuery_Fields.rolename' @:: Lens' RoleSpec Data.Text.Text@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' RoleSpec Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.roletype' @:: Lens' RoleSpec RoleSpecType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rolename' @:: Lens' RoleSpec Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' RoleSpec Data.Int.Int32@ -}
 data RoleSpec
   = RoleSpec'_constructor {_RoleSpec'roletype :: !RoleSpecType,
                            _RoleSpec'rolename :: !Data.Text.Text,
@@ -91746,19 +91746,19 @@ instance Control.DeepSeq.NFData RoleStmtType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' RowCompareExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' RowCompareExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.rctype' @:: Lens' RowCompareExpr RowCompareType@
-         * 'Proto.PgQuery_Fields.opnos' @:: Lens' RowCompareExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'opnos' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.opfamilies' @:: Lens' RowCompareExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'opfamilies' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.inputcollids' @:: Lens' RowCompareExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'inputcollids' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.largs' @:: Lens' RowCompareExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'largs' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.rargs' @:: Lens' RowCompareExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'rargs' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' RowCompareExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' RowCompareExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rctype' @:: Lens' RowCompareExpr RowCompareType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opnos' @:: Lens' RowCompareExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opnos' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opfamilies' @:: Lens' RowCompareExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'opfamilies' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inputcollids' @:: Lens' RowCompareExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'inputcollids' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.largs' @:: Lens' RowCompareExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'largs' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rargs' @:: Lens' RowCompareExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'rargs' @:: Lens' RowCompareExpr (Data.Vector.Vector Node)@ -}
 data RowCompareExpr
   = RowCompareExpr'_constructor {_RowCompareExpr'xpr :: !(Prelude.Maybe Node),
                                  _RowCompareExpr'rctype :: !RowCompareType,
@@ -92356,15 +92356,15 @@ instance Control.DeepSeq.NFData RowCompareType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' RowExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' RowExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' RowExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' RowExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.rowTypeid' @:: Lens' RowExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.rowFormat' @:: Lens' RowExpr CoercionForm@
-         * 'Proto.PgQuery_Fields.colnames' @:: Lens' RowExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'colnames' @:: Lens' RowExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' RowExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' RowExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' RowExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' RowExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' RowExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rowTypeid' @:: Lens' RowExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rowFormat' @:: Lens' RowExpr CoercionForm@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colnames' @:: Lens' RowExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colnames' @:: Lens' RowExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' RowExpr Data.Int.Int32@ -}
 data RowExpr
   = RowExpr'_constructor {_RowExpr'xpr :: !(Prelude.Maybe Node),
                           _RowExpr'args :: !(Data.Vector.Vector Node),
@@ -92737,10 +92737,10 @@ instance Control.DeepSeq.NFData RowExpr where
                             (Control.DeepSeq.deepseq (_RowExpr'location x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.rti' @:: Lens' RowMarkClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.strength' @:: Lens' RowMarkClause LockClauseStrength@
-         * 'Proto.PgQuery_Fields.waitPolicy' @:: Lens' RowMarkClause LockWaitPolicy@
-         * 'Proto.PgQuery_Fields.pushedDown' @:: Lens' RowMarkClause Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rti' @:: Lens' RowMarkClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.strength' @:: Lens' RowMarkClause LockClauseStrength@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.waitPolicy' @:: Lens' RowMarkClause LockWaitPolicy@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pushedDown' @:: Lens' RowMarkClause Prelude.Bool@ -}
 data RowMarkClause
   = RowMarkClause'_constructor {_RowMarkClause'rti :: !Data.Word.Word32,
                                 _RowMarkClause'strength :: !LockClauseStrength,
@@ -92979,16 +92979,16 @@ instance Control.DeepSeq.NFData RowMarkClause where
                       (Control.DeepSeq.deepseq (_RowMarkClause'pushedDown x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' RuleStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' RuleStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.rulename' @:: Lens' RuleStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' RuleStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' RuleStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.event' @:: Lens' RuleStmt CmdType@
-         * 'Proto.PgQuery_Fields.instead' @:: Lens' RuleStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.actions' @:: Lens' RuleStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'actions' @:: Lens' RuleStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.replace' @:: Lens' RuleStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' RuleStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' RuleStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rulename' @:: Lens' RuleStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' RuleStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' RuleStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.event' @:: Lens' RuleStmt CmdType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.instead' @:: Lens' RuleStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.actions' @:: Lens' RuleStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'actions' @:: Lens' RuleStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.replace' @:: Lens' RuleStmt Prelude.Bool@ -}
 data RuleStmt
   = RuleStmt'_constructor {_RuleStmt'relation :: !(Prelude.Maybe RangeVar),
                            _RuleStmt'rulename :: !Data.Text.Text,
@@ -93392,12 +93392,12 @@ instance Control.DeepSeq.NFData RuleStmt where
                                (Control.DeepSeq.deepseq (_RuleStmt'replace x__) ())))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' SQLValueFunction Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SQLValueFunction (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.op' @:: Lens' SQLValueFunction SQLValueFunctionOp@
-         * 'Proto.PgQuery_Fields.type'' @:: Lens' SQLValueFunction Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.typmod' @:: Lens' SQLValueFunction Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' SQLValueFunction Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' SQLValueFunction Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SQLValueFunction (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.op' @:: Lens' SQLValueFunction SQLValueFunctionOp@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.type'' @:: Lens' SQLValueFunction Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typmod' @:: Lens' SQLValueFunction Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' SQLValueFunction Data.Int.Int32@ -}
 data SQLValueFunction
   = SQLValueFunction'_constructor {_SQLValueFunction'xpr :: !(Prelude.Maybe Node),
                                    _SQLValueFunction'op :: !SQLValueFunctionOp,
@@ -93854,14 +93854,14 @@ instance Control.DeepSeq.NFData SQLValueFunctionOp where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' ScalarArrayOpExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' ScalarArrayOpExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.opno' @:: Lens' ScalarArrayOpExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.useOr' @:: Lens' ScalarArrayOpExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.inputcollid' @:: Lens' ScalarArrayOpExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' ScalarArrayOpExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' ScalarArrayOpExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' ScalarArrayOpExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' ScalarArrayOpExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' ScalarArrayOpExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.opno' @:: Lens' ScalarArrayOpExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.useOr' @:: Lens' ScalarArrayOpExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inputcollid' @:: Lens' ScalarArrayOpExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' ScalarArrayOpExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' ScalarArrayOpExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' ScalarArrayOpExpr Data.Int.Int32@ -}
 data ScalarArrayOpExpr
   = ScalarArrayOpExpr'_constructor {_ScalarArrayOpExpr'xpr :: !(Prelude.Maybe Node),
                                     _ScalarArrayOpExpr'opno :: !Data.Word.Word32,
@@ -94212,9 +94212,9 @@ instance Control.DeepSeq.NFData ScalarArrayOpExpr where
                             (Control.DeepSeq.deepseq (_ScalarArrayOpExpr'location x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.version' @:: Lens' ScanResult Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.tokens' @:: Lens' ScanResult [ScanToken]@
-         * 'Proto.PgQuery_Fields.vec'tokens' @:: Lens' ScanResult (Data.Vector.Vector ScanToken)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.version' @:: Lens' ScanResult Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tokens' @:: Lens' ScanResult [ScanToken]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'tokens' @:: Lens' ScanResult (Data.Vector.Vector ScanToken)@ -}
 data ScanResult
   = ScanResult'_constructor {_ScanResult'version :: !Data.Int.Int32,
                              _ScanResult'tokens :: !(Data.Vector.Vector ScanToken),
@@ -94384,10 +94384,10 @@ instance Control.DeepSeq.NFData ScanResult where
                 (Control.DeepSeq.deepseq (_ScanResult'tokens x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.start' @:: Lens' ScanToken Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.end' @:: Lens' ScanToken Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.token' @:: Lens' ScanToken Token@
-         * 'Proto.PgQuery_Fields.keywordKind' @:: Lens' ScanToken KeywordKind@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.start' @:: Lens' ScanToken Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.end' @:: Lens' ScanToken Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.token' @:: Lens' ScanToken Token@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.keywordKind' @:: Lens' ScanToken KeywordKind@ -}
 data ScanToken
   = ScanToken'_constructor {_ScanToken'start :: !Data.Int.Int32,
                             _ScanToken'end :: !Data.Int.Int32,
@@ -94616,11 +94616,11 @@ instance Control.DeepSeq.NFData ScanToken where
                       (Control.DeepSeq.deepseq (_ScanToken'keywordKind x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.objtype' @:: Lens' SecLabelStmt ObjectType@
-         * 'Proto.PgQuery_Fields.object' @:: Lens' SecLabelStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'object' @:: Lens' SecLabelStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.provider' @:: Lens' SecLabelStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.label' @:: Lens' SecLabelStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.objtype' @:: Lens' SecLabelStmt ObjectType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.object' @:: Lens' SecLabelStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'object' @:: Lens' SecLabelStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.provider' @:: Lens' SecLabelStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.label' @:: Lens' SecLabelStmt Data.Text.Text@ -}
 data SecLabelStmt
   = SecLabelStmt'_constructor {_SecLabelStmt'objtype :: !ObjectType,
                                _SecLabelStmt'object :: !(Prelude.Maybe Node),
@@ -94869,42 +94869,42 @@ instance Control.DeepSeq.NFData SecLabelStmt where
                       (Control.DeepSeq.deepseq (_SecLabelStmt'label x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.distinctClause' @:: Lens' SelectStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'distinctClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.intoClause' @:: Lens' SelectStmt IntoClause@
-         * 'Proto.PgQuery_Fields.maybe'intoClause' @:: Lens' SelectStmt (Prelude.Maybe IntoClause)@
-         * 'Proto.PgQuery_Fields.targetList' @:: Lens' SelectStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'targetList' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.fromClause' @:: Lens' SelectStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'fromClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' SelectStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' SelectStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.groupClause' @:: Lens' SelectStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'groupClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.groupDistinct' @:: Lens' SelectStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.havingClause' @:: Lens' SelectStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'havingClause' @:: Lens' SelectStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.windowClause' @:: Lens' SelectStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'windowClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.valuesLists' @:: Lens' SelectStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'valuesLists' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.sortClause' @:: Lens' SelectStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'sortClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.limitOffset' @:: Lens' SelectStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'limitOffset' @:: Lens' SelectStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.limitCount' @:: Lens' SelectStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'limitCount' @:: Lens' SelectStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.limitOption' @:: Lens' SelectStmt LimitOption@
-         * 'Proto.PgQuery_Fields.lockingClause' @:: Lens' SelectStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'lockingClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.withClause' @:: Lens' SelectStmt WithClause@
-         * 'Proto.PgQuery_Fields.maybe'withClause' @:: Lens' SelectStmt (Prelude.Maybe WithClause)@
-         * 'Proto.PgQuery_Fields.op' @:: Lens' SelectStmt SetOperation@
-         * 'Proto.PgQuery_Fields.all' @:: Lens' SelectStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.larg' @:: Lens' SelectStmt SelectStmt@
-         * 'Proto.PgQuery_Fields.maybe'larg' @:: Lens' SelectStmt (Prelude.Maybe SelectStmt)@
-         * 'Proto.PgQuery_Fields.rarg' @:: Lens' SelectStmt SelectStmt@
-         * 'Proto.PgQuery_Fields.maybe'rarg' @:: Lens' SelectStmt (Prelude.Maybe SelectStmt)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.distinctClause' @:: Lens' SelectStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'distinctClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.intoClause' @:: Lens' SelectStmt IntoClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'intoClause' @:: Lens' SelectStmt (Prelude.Maybe IntoClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.targetList' @:: Lens' SelectStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'targetList' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fromClause' @:: Lens' SelectStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'fromClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' SelectStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' SelectStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.groupClause' @:: Lens' SelectStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'groupClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.groupDistinct' @:: Lens' SelectStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.havingClause' @:: Lens' SelectStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'havingClause' @:: Lens' SelectStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.windowClause' @:: Lens' SelectStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'windowClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.valuesLists' @:: Lens' SelectStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'valuesLists' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sortClause' @:: Lens' SelectStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'sortClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.limitOffset' @:: Lens' SelectStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'limitOffset' @:: Lens' SelectStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.limitCount' @:: Lens' SelectStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'limitCount' @:: Lens' SelectStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.limitOption' @:: Lens' SelectStmt LimitOption@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.lockingClause' @:: Lens' SelectStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'lockingClause' @:: Lens' SelectStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withClause' @:: Lens' SelectStmt WithClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'withClause' @:: Lens' SelectStmt (Prelude.Maybe WithClause)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.op' @:: Lens' SelectStmt SetOperation@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.all' @:: Lens' SelectStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.larg' @:: Lens' SelectStmt SelectStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'larg' @:: Lens' SelectStmt (Prelude.Maybe SelectStmt)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rarg' @:: Lens' SelectStmt SelectStmt@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rarg' @:: Lens' SelectStmt (Prelude.Maybe SelectStmt)@ -}
 data SelectStmt
   = SelectStmt'_constructor {_SelectStmt'distinctClause :: !(Data.Vector.Vector Node),
                              _SelectStmt'intoClause :: !(Prelude.Maybe IntoClause),
@@ -96476,20 +96476,20 @@ instance Control.DeepSeq.NFData SetOperation where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.op' @:: Lens' SetOperationStmt SetOperation@
-         * 'Proto.PgQuery_Fields.all' @:: Lens' SetOperationStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.larg' @:: Lens' SetOperationStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'larg' @:: Lens' SetOperationStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.rarg' @:: Lens' SetOperationStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'rarg' @:: Lens' SetOperationStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.colTypes' @:: Lens' SetOperationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'colTypes' @:: Lens' SetOperationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.colTypmods' @:: Lens' SetOperationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'colTypmods' @:: Lens' SetOperationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.colCollations' @:: Lens' SetOperationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'colCollations' @:: Lens' SetOperationStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.groupClauses' @:: Lens' SetOperationStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'groupClauses' @:: Lens' SetOperationStmt (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.op' @:: Lens' SetOperationStmt SetOperation@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.all' @:: Lens' SetOperationStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.larg' @:: Lens' SetOperationStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'larg' @:: Lens' SetOperationStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rarg' @:: Lens' SetOperationStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rarg' @:: Lens' SetOperationStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colTypes' @:: Lens' SetOperationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colTypes' @:: Lens' SetOperationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colTypmods' @:: Lens' SetOperationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colTypmods' @:: Lens' SetOperationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colCollations' @:: Lens' SetOperationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colCollations' @:: Lens' SetOperationStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.groupClauses' @:: Lens' SetOperationStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'groupClauses' @:: Lens' SetOperationStmt (Data.Vector.Vector Node)@ -}
 data SetOperationStmt
   = SetOperationStmt'_constructor {_SetOperationStmt'op :: !SetOperation,
                                    _SetOperationStmt'all :: !Prelude.Bool,
@@ -97104,12 +97104,12 @@ instance Control.DeepSeq.NFData SetQuantifier where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' SetToDefault Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SetToDefault (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.typeId' @:: Lens' SetToDefault Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.typeMod' @:: Lens' SetToDefault Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.collation' @:: Lens' SetToDefault Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' SetToDefault Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' SetToDefault Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SetToDefault (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeId' @:: Lens' SetToDefault Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeMod' @:: Lens' SetToDefault Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.collation' @:: Lens' SetToDefault Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' SetToDefault Data.Int.Int32@ -}
 data SetToDefault
   = SetToDefault'_constructor {_SetToDefault'xpr :: !(Prelude.Maybe Node),
                                _SetToDefault'typeId :: !Data.Word.Word32,
@@ -97386,13 +97386,13 @@ instance Control.DeepSeq.NFData SetToDefault where
                          (Control.DeepSeq.deepseq (_SetToDefault'location x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.node' @:: Lens' SortBy Node@
-         * 'Proto.PgQuery_Fields.maybe'node' @:: Lens' SortBy (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.sortbyDir' @:: Lens' SortBy SortByDir@
-         * 'Proto.PgQuery_Fields.sortbyNulls' @:: Lens' SortBy SortByNulls@
-         * 'Proto.PgQuery_Fields.useOp' @:: Lens' SortBy [Node]@
-         * 'Proto.PgQuery_Fields.vec'useOp' @:: Lens' SortBy (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' SortBy Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.node' @:: Lens' SortBy Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'node' @:: Lens' SortBy (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sortbyDir' @:: Lens' SortBy SortByDir@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sortbyNulls' @:: Lens' SortBy SortByNulls@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.useOp' @:: Lens' SortBy [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'useOp' @:: Lens' SortBy (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' SortBy Data.Int.Int32@ -}
 data SortBy
   = SortBy'_constructor {_SortBy'node :: !(Prelude.Maybe Node),
                          _SortBy'sortbyDir :: !SortByDir,
@@ -97866,11 +97866,11 @@ instance Control.DeepSeq.NFData SortByNulls where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.tleSortGroupRef' @:: Lens' SortGroupClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.eqop' @:: Lens' SortGroupClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.sortop' @:: Lens' SortGroupClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.nullsFirst' @:: Lens' SortGroupClause Prelude.Bool@
-         * 'Proto.PgQuery_Fields.hashable' @:: Lens' SortGroupClause Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tleSortGroupRef' @:: Lens' SortGroupClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.eqop' @:: Lens' SortGroupClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sortop' @:: Lens' SortGroupClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nullsFirst' @:: Lens' SortGroupClause Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.hashable' @:: Lens' SortGroupClause Prelude.Bool@ -}
 data SortGroupClause
   = SortGroupClause'_constructor {_SortGroupClause'tleSortGroupRef :: !Data.Word.Word32,
                                   _SortGroupClause'eqop :: !Data.Word.Word32,
@@ -98142,9 +98142,9 @@ instance Control.DeepSeq.NFData SortGroupClause where
                          (Control.DeepSeq.deepseq (_SortGroupClause'hashable x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' StatsElem Data.Text.Text@
-         * 'Proto.PgQuery_Fields.expr' @:: Lens' StatsElem Node@
-         * 'Proto.PgQuery_Fields.maybe'expr' @:: Lens' StatsElem (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' StatsElem Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.expr' @:: Lens' StatsElem Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'expr' @:: Lens' StatsElem (Prelude.Maybe Node)@ -}
 data StatsElem
   = StatsElem'_constructor {_StatsElem'name :: !Data.Text.Text,
                             _StatsElem'expr :: !(Prelude.Maybe Node),
@@ -98300,7 +98300,7 @@ instance Control.DeepSeq.NFData StatsElem where
                 (Control.DeepSeq.deepseq (_StatsElem'expr x__) ()))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.sval' @:: Lens' String Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.sval' @:: Lens' String Data.Text.Text@ -}
 data String
   = String'_constructor {_String'sval :: !Data.Text.Text,
                          _String'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -98408,17 +98408,17 @@ instance Control.DeepSeq.NFData String where
              (Control.DeepSeq.deepseq (_String'sval x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' SubLink Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SubLink (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.subLinkType' @:: Lens' SubLink SubLinkType@
-         * 'Proto.PgQuery_Fields.subLinkId' @:: Lens' SubLink Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.testexpr' @:: Lens' SubLink Node@
-         * 'Proto.PgQuery_Fields.maybe'testexpr' @:: Lens' SubLink (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.operName' @:: Lens' SubLink [Node]@
-         * 'Proto.PgQuery_Fields.vec'operName' @:: Lens' SubLink (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.subselect' @:: Lens' SubLink Node@
-         * 'Proto.PgQuery_Fields.maybe'subselect' @:: Lens' SubLink (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' SubLink Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' SubLink Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SubLink (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subLinkType' @:: Lens' SubLink SubLinkType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subLinkId' @:: Lens' SubLink Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.testexpr' @:: Lens' SubLink Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'testexpr' @:: Lens' SubLink (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.operName' @:: Lens' SubLink [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'operName' @:: Lens' SubLink (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subselect' @:: Lens' SubLink Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'subselect' @:: Lens' SubLink (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' SubLink Data.Int.Int32@ -}
 data SubLink
   = SubLink'_constructor {_SubLink'xpr :: !(Prelude.Maybe Node),
                           _SubLink'subLinkType :: !SubLinkType,
@@ -98947,29 +98947,29 @@ instance Control.DeepSeq.NFData SubLinkType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' SubPlan Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SubPlan (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.subLinkType' @:: Lens' SubPlan SubLinkType@
-         * 'Proto.PgQuery_Fields.testexpr' @:: Lens' SubPlan Node@
-         * 'Proto.PgQuery_Fields.maybe'testexpr' @:: Lens' SubPlan (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.paramIds' @:: Lens' SubPlan [Node]@
-         * 'Proto.PgQuery_Fields.vec'paramIds' @:: Lens' SubPlan (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.planId' @:: Lens' SubPlan Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.planName' @:: Lens' SubPlan Data.Text.Text@
-         * 'Proto.PgQuery_Fields.firstColType' @:: Lens' SubPlan Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.firstColTypmod' @:: Lens' SubPlan Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.firstColCollation' @:: Lens' SubPlan Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.useHashTable' @:: Lens' SubPlan Prelude.Bool@
-         * 'Proto.PgQuery_Fields.unknownEqFalse' @:: Lens' SubPlan Prelude.Bool@
-         * 'Proto.PgQuery_Fields.parallelSafe' @:: Lens' SubPlan Prelude.Bool@
-         * 'Proto.PgQuery_Fields.setParam' @:: Lens' SubPlan [Node]@
-         * 'Proto.PgQuery_Fields.vec'setParam' @:: Lens' SubPlan (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.parParam' @:: Lens' SubPlan [Node]@
-         * 'Proto.PgQuery_Fields.vec'parParam' @:: Lens' SubPlan (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' SubPlan [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' SubPlan (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.startupCost' @:: Lens' SubPlan Prelude.Double@
-         * 'Proto.PgQuery_Fields.perCallCost' @:: Lens' SubPlan Prelude.Double@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' SubPlan Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SubPlan (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.subLinkType' @:: Lens' SubPlan SubLinkType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.testexpr' @:: Lens' SubPlan Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'testexpr' @:: Lens' SubPlan (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.paramIds' @:: Lens' SubPlan [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'paramIds' @:: Lens' SubPlan (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.planId' @:: Lens' SubPlan Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.planName' @:: Lens' SubPlan Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.firstColType' @:: Lens' SubPlan Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.firstColTypmod' @:: Lens' SubPlan Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.firstColCollation' @:: Lens' SubPlan Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.useHashTable' @:: Lens' SubPlan Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.unknownEqFalse' @:: Lens' SubPlan Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.parallelSafe' @:: Lens' SubPlan Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.setParam' @:: Lens' SubPlan [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'setParam' @:: Lens' SubPlan (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.parParam' @:: Lens' SubPlan [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'parParam' @:: Lens' SubPlan (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' SubPlan [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' SubPlan (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.startupCost' @:: Lens' SubPlan Prelude.Double@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.perCallCost' @:: Lens' SubPlan Prelude.Double@ -}
 data SubPlan
   = SubPlan'_constructor {_SubPlan'xpr :: !(Prelude.Maybe Node),
                           _SubPlan'subLinkType :: !SubLinkType,
@@ -99925,21 +99925,21 @@ instance Control.DeepSeq.NFData SubPlan where
                                                                 ())))))))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' SubscriptingRef Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SubscriptingRef (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.refcontainertype' @:: Lens' SubscriptingRef Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.refelemtype' @:: Lens' SubscriptingRef Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.refrestype' @:: Lens' SubscriptingRef Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.reftypmod' @:: Lens' SubscriptingRef Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.refcollid' @:: Lens' SubscriptingRef Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.refupperindexpr' @:: Lens' SubscriptingRef [Node]@
-         * 'Proto.PgQuery_Fields.vec'refupperindexpr' @:: Lens' SubscriptingRef (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.reflowerindexpr' @:: Lens' SubscriptingRef [Node]@
-         * 'Proto.PgQuery_Fields.vec'reflowerindexpr' @:: Lens' SubscriptingRef (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.refexpr' @:: Lens' SubscriptingRef Node@
-         * 'Proto.PgQuery_Fields.maybe'refexpr' @:: Lens' SubscriptingRef (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.refassgnexpr' @:: Lens' SubscriptingRef Node@
-         * 'Proto.PgQuery_Fields.maybe'refassgnexpr' @:: Lens' SubscriptingRef (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' SubscriptingRef Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' SubscriptingRef (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refcontainertype' @:: Lens' SubscriptingRef Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refelemtype' @:: Lens' SubscriptingRef Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refrestype' @:: Lens' SubscriptingRef Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.reftypmod' @:: Lens' SubscriptingRef Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refcollid' @:: Lens' SubscriptingRef Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refupperindexpr' @:: Lens' SubscriptingRef [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'refupperindexpr' @:: Lens' SubscriptingRef (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.reflowerindexpr' @:: Lens' SubscriptingRef [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'reflowerindexpr' @:: Lens' SubscriptingRef (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refexpr' @:: Lens' SubscriptingRef Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'refexpr' @:: Lens' SubscriptingRef (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refassgnexpr' @:: Lens' SubscriptingRef Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'refassgnexpr' @:: Lens' SubscriptingRef (Prelude.Maybe Node)@ -}
 data SubscriptingRef
   = SubscriptingRef'_constructor {_SubscriptingRef'xpr :: !(Prelude.Maybe Node),
                                   _SubscriptingRef'refcontainertype :: !Data.Word.Word32,
@@ -100529,30 +100529,30 @@ instance Control.DeepSeq.NFData SubscriptingRef where
                                            (_SubscriptingRef'refassgnexpr x__) ()))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.nsUris' @:: Lens' TableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'nsUris' @:: Lens' TableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.nsNames' @:: Lens' TableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'nsNames' @:: Lens' TableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.docexpr' @:: Lens' TableFunc Node@
-         * 'Proto.PgQuery_Fields.maybe'docexpr' @:: Lens' TableFunc (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.rowexpr' @:: Lens' TableFunc Node@
-         * 'Proto.PgQuery_Fields.maybe'rowexpr' @:: Lens' TableFunc (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.colnames' @:: Lens' TableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'colnames' @:: Lens' TableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.coltypes' @:: Lens' TableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'coltypes' @:: Lens' TableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.coltypmods' @:: Lens' TableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'coltypmods' @:: Lens' TableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.colcollations' @:: Lens' TableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'colcollations' @:: Lens' TableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.colexprs' @:: Lens' TableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'colexprs' @:: Lens' TableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.coldefexprs' @:: Lens' TableFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'coldefexprs' @:: Lens' TableFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.notnulls' @:: Lens' TableFunc [Data.Word.Word64]@
-         * 'Proto.PgQuery_Fields.vec'notnulls' @:: Lens' TableFunc (Data.Vector.Unboxed.Vector Data.Word.Word64)@
-         * 'Proto.PgQuery_Fields.ordinalitycol' @:: Lens' TableFunc Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' TableFunc Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nsUris' @:: Lens' TableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'nsUris' @:: Lens' TableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.nsNames' @:: Lens' TableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'nsNames' @:: Lens' TableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.docexpr' @:: Lens' TableFunc Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'docexpr' @:: Lens' TableFunc (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rowexpr' @:: Lens' TableFunc Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'rowexpr' @:: Lens' TableFunc (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colnames' @:: Lens' TableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colnames' @:: Lens' TableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coltypes' @:: Lens' TableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'coltypes' @:: Lens' TableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coltypmods' @:: Lens' TableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'coltypmods' @:: Lens' TableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colcollations' @:: Lens' TableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colcollations' @:: Lens' TableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.colexprs' @:: Lens' TableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'colexprs' @:: Lens' TableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.coldefexprs' @:: Lens' TableFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'coldefexprs' @:: Lens' TableFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.notnulls' @:: Lens' TableFunc [Data.Word.Word64]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'notnulls' @:: Lens' TableFunc (Data.Vector.Unboxed.Vector Data.Word.Word64)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ordinalitycol' @:: Lens' TableFunc Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' TableFunc Data.Int.Int32@ -}
 data TableFunc
   = TableFunc'_constructor {_TableFunc'nsUris :: !(Data.Vector.Vector Node),
                             _TableFunc'nsNames :: !(Data.Vector.Vector Node),
@@ -101464,10 +101464,10 @@ instance Control.DeepSeq.NFData TableFunc where
                                                     (_TableFunc'location x__) ())))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' TableLikeClause RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' TableLikeClause (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' TableLikeClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.relationOid' @:: Lens' TableLikeClause Data.Word.Word32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' TableLikeClause RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' TableLikeClause (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' TableLikeClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relationOid' @:: Lens' TableLikeClause Data.Word.Word32@ -}
 data TableLikeClause
   = TableLikeClause'_constructor {_TableLikeClause'relation :: !(Prelude.Maybe RangeVar),
                                   _TableLikeClause'options :: !Data.Word.Word32,
@@ -101810,11 +101810,11 @@ instance Control.DeepSeq.NFData TableLikeOption where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.tsmhandler' @:: Lens' TableSampleClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' TableSampleClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' TableSampleClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.repeatable' @:: Lens' TableSampleClause Node@
-         * 'Proto.PgQuery_Fields.maybe'repeatable' @:: Lens' TableSampleClause (Prelude.Maybe Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.tsmhandler' @:: Lens' TableSampleClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' TableSampleClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' TableSampleClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.repeatable' @:: Lens' TableSampleClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'repeatable' @:: Lens' TableSampleClause (Prelude.Maybe Node)@ -}
 data TableSampleClause
   = TableSampleClause'_constructor {_TableSampleClause'tsmhandler :: !Data.Word.Word32,
                                     _TableSampleClause'args :: !(Data.Vector.Vector Node),
@@ -102044,16 +102044,16 @@ instance Control.DeepSeq.NFData TableSampleClause where
                    (Control.DeepSeq.deepseq (_TableSampleClause'repeatable x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' TargetEntry Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' TargetEntry (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.expr' @:: Lens' TargetEntry Node@
-         * 'Proto.PgQuery_Fields.maybe'expr' @:: Lens' TargetEntry (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.resno' @:: Lens' TargetEntry Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.resname' @:: Lens' TargetEntry Data.Text.Text@
-         * 'Proto.PgQuery_Fields.ressortgroupref' @:: Lens' TargetEntry Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.resorigtbl' @:: Lens' TargetEntry Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.resorigcol' @:: Lens' TargetEntry Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.resjunk' @:: Lens' TargetEntry Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' TargetEntry Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' TargetEntry (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.expr' @:: Lens' TargetEntry Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'expr' @:: Lens' TargetEntry (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resno' @:: Lens' TargetEntry Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resname' @:: Lens' TargetEntry Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ressortgroupref' @:: Lens' TargetEntry Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resorigtbl' @:: Lens' TargetEntry Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resorigcol' @:: Lens' TargetEntry Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.resjunk' @:: Lens' TargetEntry Prelude.Bool@ -}
 data TargetEntry
   = TargetEntry'_constructor {_TargetEntry'xpr :: !(Prelude.Maybe Node),
                               _TargetEntry'expr :: !(Prelude.Maybe Node),
@@ -106179,12 +106179,12 @@ instance Control.DeepSeq.NFData Token where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' TransactionStmt TransactionStmtKind@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' TransactionStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' TransactionStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.savepointName' @:: Lens' TransactionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.gid' @:: Lens' TransactionStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.chain' @:: Lens' TransactionStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' TransactionStmt TransactionStmtKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' TransactionStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' TransactionStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.savepointName' @:: Lens' TransactionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.gid' @:: Lens' TransactionStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.chain' @:: Lens' TransactionStmt Prelude.Bool@ -}
 data TransactionStmt
   = TransactionStmt'_constructor {_TransactionStmt'kind :: !TransactionStmtKind,
                                   _TransactionStmt'options :: !(Data.Vector.Vector Node),
@@ -106632,9 +106632,9 @@ instance Control.DeepSeq.NFData TransactionStmtKind where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' TriggerTransition Data.Text.Text@
-         * 'Proto.PgQuery_Fields.isNew' @:: Lens' TriggerTransition Prelude.Bool@
-         * 'Proto.PgQuery_Fields.isTable' @:: Lens' TriggerTransition Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' TriggerTransition Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isNew' @:: Lens' TriggerTransition Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isTable' @:: Lens' TriggerTransition Prelude.Bool@ -}
 data TriggerTransition
   = TriggerTransition'_constructor {_TriggerTransition'name :: !Data.Text.Text,
                                     _TriggerTransition'isNew :: !Prelude.Bool,
@@ -106824,10 +106824,10 @@ instance Control.DeepSeq.NFData TriggerTransition where
                    (Control.DeepSeq.deepseq (_TriggerTransition'isTable x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relations' @:: Lens' TruncateStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'relations' @:: Lens' TruncateStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.restartSeqs' @:: Lens' TruncateStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.behavior' @:: Lens' TruncateStmt DropBehavior@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relations' @:: Lens' TruncateStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'relations' @:: Lens' TruncateStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.restartSeqs' @:: Lens' TruncateStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.behavior' @:: Lens' TruncateStmt DropBehavior@ -}
 data TruncateStmt
   = TruncateStmt'_constructor {_TruncateStmt'relations :: !(Data.Vector.Vector Node),
                                _TruncateStmt'restartSeqs :: !Prelude.Bool,
@@ -107050,11 +107050,11 @@ instance Control.DeepSeq.NFData TruncateStmt where
                    (Control.DeepSeq.deepseq (_TruncateStmt'behavior x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.arg' @:: Lens' TypeCast Node@
-         * 'Proto.PgQuery_Fields.maybe'arg' @:: Lens' TypeCast (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' TypeCast TypeName@
-         * 'Proto.PgQuery_Fields.maybe'typeName' @:: Lens' TypeCast (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' TypeCast Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arg' @:: Lens' TypeCast Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'arg' @:: Lens' TypeCast (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' TypeCast TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typeName' @:: Lens' TypeCast (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' TypeCast Data.Int.Int32@ -}
 data TypeCast
   = TypeCast'_constructor {_TypeCast'arg :: !(Prelude.Maybe Node),
                            _TypeCast'typeName :: !(Prelude.Maybe TypeName),
@@ -107258,17 +107258,17 @@ instance Control.DeepSeq.NFData TypeCast where
                    (Control.DeepSeq.deepseq (_TypeCast'location x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.names' @:: Lens' TypeName [Node]@
-         * 'Proto.PgQuery_Fields.vec'names' @:: Lens' TypeName (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.typeOid' @:: Lens' TypeName Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.setof' @:: Lens' TypeName Prelude.Bool@
-         * 'Proto.PgQuery_Fields.pctType' @:: Lens' TypeName Prelude.Bool@
-         * 'Proto.PgQuery_Fields.typmods' @:: Lens' TypeName [Node]@
-         * 'Proto.PgQuery_Fields.vec'typmods' @:: Lens' TypeName (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.typemod' @:: Lens' TypeName Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.arrayBounds' @:: Lens' TypeName [Node]@
-         * 'Proto.PgQuery_Fields.vec'arrayBounds' @:: Lens' TypeName (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' TypeName Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.names' @:: Lens' TypeName [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'names' @:: Lens' TypeName (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeOid' @:: Lens' TypeName Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.setof' @:: Lens' TypeName Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.pctType' @:: Lens' TypeName Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typmods' @:: Lens' TypeName [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'typmods' @:: Lens' TypeName (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typemod' @:: Lens' TypeName Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.arrayBounds' @:: Lens' TypeName [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'arrayBounds' @:: Lens' TypeName (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' TypeName Data.Int.Int32@ -}
 data TypeName
   = TypeName'_constructor {_TypeName'names :: !(Data.Vector.Vector Node),
                            _TypeName'typeOid :: !Data.Word.Word32,
@@ -107729,7 +107729,7 @@ instance Control.DeepSeq.NFData TypeName where
                                   (Control.DeepSeq.deepseq (_TypeName'location x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.conditionname' @:: Lens' UnlistenStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.conditionname' @:: Lens' UnlistenStmt Data.Text.Text@ -}
 data UnlistenStmt
   = UnlistenStmt'_constructor {_UnlistenStmt'conditionname :: !Data.Text.Text,
                                _UnlistenStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -107846,18 +107846,18 @@ instance Control.DeepSeq.NFData UnlistenStmt where
              (Control.DeepSeq.deepseq (_UnlistenStmt'conditionname x__) ())
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' UpdateStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' UpdateStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.targetList' @:: Lens' UpdateStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'targetList' @:: Lens' UpdateStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.whereClause' @:: Lens' UpdateStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' UpdateStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.fromClause' @:: Lens' UpdateStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'fromClause' @:: Lens' UpdateStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.returningList' @:: Lens' UpdateStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'returningList' @:: Lens' UpdateStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.withClause' @:: Lens' UpdateStmt WithClause@
-         * 'Proto.PgQuery_Fields.maybe'withClause' @:: Lens' UpdateStmt (Prelude.Maybe WithClause)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' UpdateStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' UpdateStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.targetList' @:: Lens' UpdateStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'targetList' @:: Lens' UpdateStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.whereClause' @:: Lens' UpdateStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'whereClause' @:: Lens' UpdateStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.fromClause' @:: Lens' UpdateStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'fromClause' @:: Lens' UpdateStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.returningList' @:: Lens' UpdateStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'returningList' @:: Lens' UpdateStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withClause' @:: Lens' UpdateStmt WithClause@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'withClause' @:: Lens' UpdateStmt (Prelude.Maybe WithClause)@ -}
 data UpdateStmt
   = UpdateStmt'_constructor {_UpdateStmt'relation :: !(Prelude.Maybe RangeVar),
                              _UpdateStmt'targetList :: !(Data.Vector.Vector Node),
@@ -108286,11 +108286,11 @@ instance Control.DeepSeq.NFData UpdateStmt where
                             (Control.DeepSeq.deepseq (_UpdateStmt'withClause x__) ()))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.relation' @:: Lens' VacuumRelation RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'relation' @:: Lens' VacuumRelation (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.oid' @:: Lens' VacuumRelation Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.vaCols' @:: Lens' VacuumRelation [Node]@
-         * 'Proto.PgQuery_Fields.vec'vaCols' @:: Lens' VacuumRelation (Data.Vector.Vector Node)@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relation' @:: Lens' VacuumRelation RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'relation' @:: Lens' VacuumRelation (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.oid' @:: Lens' VacuumRelation Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vaCols' @:: Lens' VacuumRelation [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'vaCols' @:: Lens' VacuumRelation (Data.Vector.Vector Node)@ -}
 data VacuumRelation
   = VacuumRelation'_constructor {_VacuumRelation'relation :: !(Prelude.Maybe RangeVar),
                                  _VacuumRelation'oid :: !Data.Word.Word32,
@@ -108513,11 +108513,11 @@ instance Control.DeepSeq.NFData VacuumRelation where
                    (Control.DeepSeq.deepseq (_VacuumRelation'vaCols x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.options' @:: Lens' VacuumStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' VacuumStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.rels' @:: Lens' VacuumStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'rels' @:: Lens' VacuumStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.isVacuumcmd' @:: Lens' VacuumStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' VacuumStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' VacuumStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.rels' @:: Lens' VacuumStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'rels' @:: Lens' VacuumStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isVacuumcmd' @:: Lens' VacuumStmt Prelude.Bool@ -}
 data VacuumStmt
   = VacuumStmt'_constructor {_VacuumStmt'options :: !(Data.Vector.Vector Node),
                              _VacuumStmt'rels :: !(Data.Vector.Vector Node),
@@ -108749,17 +108749,17 @@ instance Control.DeepSeq.NFData VacuumStmt where
                    (Control.DeepSeq.deepseq (_VacuumStmt'isVacuumcmd x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' Var Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' Var (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.varno' @:: Lens' Var Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.varattno' @:: Lens' Var Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.vartype' @:: Lens' Var Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.vartypmod' @:: Lens' Var Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.varcollid' @:: Lens' Var Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.varnullingrels' @:: Lens' Var [Data.Word.Word64]@
-         * 'Proto.PgQuery_Fields.vec'varnullingrels' @:: Lens' Var (Data.Vector.Unboxed.Vector Data.Word.Word64)@
-         * 'Proto.PgQuery_Fields.varlevelsup' @:: Lens' Var Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' Var Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' Var Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' Var (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.varno' @:: Lens' Var Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.varattno' @:: Lens' Var Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vartype' @:: Lens' Var Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vartypmod' @:: Lens' Var Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.varcollid' @:: Lens' Var Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.varnullingrels' @:: Lens' Var [Data.Word.Word64]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'varnullingrels' @:: Lens' Var (Data.Vector.Unboxed.Vector Data.Word.Word64)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.varlevelsup' @:: Lens' Var Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' Var Data.Int.Int32@ -}
 data Var
   = Var'_constructor {_Var'xpr :: !(Prelude.Maybe Node),
                       _Var'varno :: !Data.Int.Int32,
@@ -109356,11 +109356,11 @@ instance Control.DeepSeq.NFData VariableSetKind where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' VariableSetStmt VariableSetKind@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' VariableSetStmt Data.Text.Text@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' VariableSetStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' VariableSetStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.isLocal' @:: Lens' VariableSetStmt Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' VariableSetStmt VariableSetKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' VariableSetStmt Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' VariableSetStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' VariableSetStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.isLocal' @:: Lens' VariableSetStmt Prelude.Bool@ -}
 data VariableSetStmt
   = VariableSetStmt'_constructor {_VariableSetStmt'kind :: !VariableSetKind,
                                   _VariableSetStmt'name :: !Data.Text.Text,
@@ -109620,7 +109620,7 @@ instance Control.DeepSeq.NFData VariableSetStmt where
                       (Control.DeepSeq.deepseq (_VariableSetStmt'isLocal x__) ()))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' VariableShowStmt Data.Text.Text@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' VariableShowStmt Data.Text.Text@ -}
 data VariableShowStmt
   = VariableShowStmt'_constructor {_VariableShowStmt'name :: !Data.Text.Text,
                                    _VariableShowStmt'_unknownFields :: !Data.ProtoLens.FieldSet}
@@ -109812,16 +109812,16 @@ instance Control.DeepSeq.NFData ViewCheckOption where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.view' @:: Lens' ViewStmt RangeVar@
-         * 'Proto.PgQuery_Fields.maybe'view' @:: Lens' ViewStmt (Prelude.Maybe RangeVar)@
-         * 'Proto.PgQuery_Fields.aliases' @:: Lens' ViewStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'aliases' @:: Lens' ViewStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.query' @:: Lens' ViewStmt Node@
-         * 'Proto.PgQuery_Fields.maybe'query' @:: Lens' ViewStmt (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.replace' @:: Lens' ViewStmt Prelude.Bool@
-         * 'Proto.PgQuery_Fields.options' @:: Lens' ViewStmt [Node]@
-         * 'Proto.PgQuery_Fields.vec'options' @:: Lens' ViewStmt (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.withCheckOption' @:: Lens' ViewStmt ViewCheckOption@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.view' @:: Lens' ViewStmt RangeVar@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'view' @:: Lens' ViewStmt (Prelude.Maybe RangeVar)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aliases' @:: Lens' ViewStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'aliases' @:: Lens' ViewStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.query' @:: Lens' ViewStmt Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'query' @:: Lens' ViewStmt (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.replace' @:: Lens' ViewStmt Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.options' @:: Lens' ViewStmt [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'options' @:: Lens' ViewStmt (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.withCheckOption' @:: Lens' ViewStmt ViewCheckOption@ -}
 data ViewStmt
   = ViewStmt'_constructor {_ViewStmt'view :: !(Prelude.Maybe RangeVar),
                            _ViewStmt'aliases :: !(Data.Vector.Vector Node),
@@ -110300,26 +110300,26 @@ instance Control.DeepSeq.NFData WCOKind where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' WindowClause Data.Text.Text@
-         * 'Proto.PgQuery_Fields.refname' @:: Lens' WindowClause Data.Text.Text@
-         * 'Proto.PgQuery_Fields.partitionClause' @:: Lens' WindowClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'partitionClause' @:: Lens' WindowClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.orderClause' @:: Lens' WindowClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'orderClause' @:: Lens' WindowClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.frameOptions' @:: Lens' WindowClause Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.startOffset' @:: Lens' WindowClause Node@
-         * 'Proto.PgQuery_Fields.maybe'startOffset' @:: Lens' WindowClause (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.endOffset' @:: Lens' WindowClause Node@
-         * 'Proto.PgQuery_Fields.maybe'endOffset' @:: Lens' WindowClause (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.runCondition' @:: Lens' WindowClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'runCondition' @:: Lens' WindowClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.startInRangeFunc' @:: Lens' WindowClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.endInRangeFunc' @:: Lens' WindowClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inRangeColl' @:: Lens' WindowClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inRangeAsc' @:: Lens' WindowClause Prelude.Bool@
-         * 'Proto.PgQuery_Fields.inRangeNullsFirst' @:: Lens' WindowClause Prelude.Bool@
-         * 'Proto.PgQuery_Fields.winref' @:: Lens' WindowClause Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.copiedOrder' @:: Lens' WindowClause Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' WindowClause Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refname' @:: Lens' WindowClause Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partitionClause' @:: Lens' WindowClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'partitionClause' @:: Lens' WindowClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.orderClause' @:: Lens' WindowClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'orderClause' @:: Lens' WindowClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.frameOptions' @:: Lens' WindowClause Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.startOffset' @:: Lens' WindowClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'startOffset' @:: Lens' WindowClause (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.endOffset' @:: Lens' WindowClause Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'endOffset' @:: Lens' WindowClause (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.runCondition' @:: Lens' WindowClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'runCondition' @:: Lens' WindowClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.startInRangeFunc' @:: Lens' WindowClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.endInRangeFunc' @:: Lens' WindowClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inRangeColl' @:: Lens' WindowClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inRangeAsc' @:: Lens' WindowClause Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inRangeNullsFirst' @:: Lens' WindowClause Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.winref' @:: Lens' WindowClause Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.copiedOrder' @:: Lens' WindowClause Prelude.Bool@ -}
 data WindowClause
   = WindowClause'_constructor {_WindowClause'name :: !Data.Text.Text,
                                _WindowClause'refname :: !Data.Text.Text,
@@ -111166,18 +111166,18 @@ instance Control.DeepSeq.NFData WindowClause where
                                                           ())))))))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.name' @:: Lens' WindowDef Data.Text.Text@
-         * 'Proto.PgQuery_Fields.refname' @:: Lens' WindowDef Data.Text.Text@
-         * 'Proto.PgQuery_Fields.partitionClause' @:: Lens' WindowDef [Node]@
-         * 'Proto.PgQuery_Fields.vec'partitionClause' @:: Lens' WindowDef (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.orderClause' @:: Lens' WindowDef [Node]@
-         * 'Proto.PgQuery_Fields.vec'orderClause' @:: Lens' WindowDef (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.frameOptions' @:: Lens' WindowDef Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.startOffset' @:: Lens' WindowDef Node@
-         * 'Proto.PgQuery_Fields.maybe'startOffset' @:: Lens' WindowDef (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.endOffset' @:: Lens' WindowDef Node@
-         * 'Proto.PgQuery_Fields.maybe'endOffset' @:: Lens' WindowDef (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' WindowDef Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' WindowDef Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.refname' @:: Lens' WindowDef Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.partitionClause' @:: Lens' WindowDef [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'partitionClause' @:: Lens' WindowDef (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.orderClause' @:: Lens' WindowDef [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'orderClause' @:: Lens' WindowDef (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.frameOptions' @:: Lens' WindowDef Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.startOffset' @:: Lens' WindowDef Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'startOffset' @:: Lens' WindowDef (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.endOffset' @:: Lens' WindowDef Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'endOffset' @:: Lens' WindowDef (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' WindowDef Data.Int.Int32@ -}
 data WindowDef
   = WindowDef'_constructor {_WindowDef'name :: !Data.Text.Text,
                             _WindowDef'refname :: !Data.Text.Text,
@@ -111666,20 +111666,20 @@ instance Control.DeepSeq.NFData WindowDef where
                                   (Control.DeepSeq.deepseq (_WindowDef'location x__) ()))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' WindowFunc Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' WindowFunc (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.winfnoid' @:: Lens' WindowFunc Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.wintype' @:: Lens' WindowFunc Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.wincollid' @:: Lens' WindowFunc Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.inputcollid' @:: Lens' WindowFunc Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' WindowFunc [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' WindowFunc (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.aggfilter' @:: Lens' WindowFunc Node@
-         * 'Proto.PgQuery_Fields.maybe'aggfilter' @:: Lens' WindowFunc (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.winref' @:: Lens' WindowFunc Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.winstar' @:: Lens' WindowFunc Prelude.Bool@
-         * 'Proto.PgQuery_Fields.winagg' @:: Lens' WindowFunc Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' WindowFunc Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' WindowFunc Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' WindowFunc (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.winfnoid' @:: Lens' WindowFunc Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.wintype' @:: Lens' WindowFunc Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.wincollid' @:: Lens' WindowFunc Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.inputcollid' @:: Lens' WindowFunc Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' WindowFunc [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' WindowFunc (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.aggfilter' @:: Lens' WindowFunc Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'aggfilter' @:: Lens' WindowFunc (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.winref' @:: Lens' WindowFunc Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.winstar' @:: Lens' WindowFunc Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.winagg' @:: Lens' WindowFunc Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' WindowFunc Data.Int.Int32@ -}
 data WindowFunc
   = WindowFunc'_constructor {_WindowFunc'xpr :: !(Prelude.Maybe Node),
                              _WindowFunc'winfnoid :: !Data.Word.Word32,
@@ -112256,12 +112256,12 @@ instance Control.DeepSeq.NFData WindowFunc where
                                               (_WindowFunc'location x__) ())))))))))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.kind' @:: Lens' WithCheckOption WCOKind@
-         * 'Proto.PgQuery_Fields.relname' @:: Lens' WithCheckOption Data.Text.Text@
-         * 'Proto.PgQuery_Fields.polname' @:: Lens' WithCheckOption Data.Text.Text@
-         * 'Proto.PgQuery_Fields.qual' @:: Lens' WithCheckOption Node@
-         * 'Proto.PgQuery_Fields.maybe'qual' @:: Lens' WithCheckOption (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.cascaded' @:: Lens' WithCheckOption Prelude.Bool@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.kind' @:: Lens' WithCheckOption WCOKind@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.relname' @:: Lens' WithCheckOption Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.polname' @:: Lens' WithCheckOption Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.qual' @:: Lens' WithCheckOption Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'qual' @:: Lens' WithCheckOption (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.cascaded' @:: Lens' WithCheckOption Prelude.Bool@ -}
 data WithCheckOption
   = WithCheckOption'_constructor {_WithCheckOption'kind :: !WCOKind,
                                   _WithCheckOption'relname :: !Data.Text.Text,
@@ -112550,10 +112550,10 @@ instance Control.DeepSeq.NFData WithCheckOption where
                          (Control.DeepSeq.deepseq (_WithCheckOption'cascaded x__) ())))))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.ctes' @:: Lens' WithClause [Node]@
-         * 'Proto.PgQuery_Fields.vec'ctes' @:: Lens' WithClause (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.recursive' @:: Lens' WithClause Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' WithClause Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.ctes' @:: Lens' WithClause [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'ctes' @:: Lens' WithClause (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.recursive' @:: Lens' WithClause Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' WithClause Data.Int.Int32@ -}
 data WithClause
   = WithClause'_constructor {_WithClause'ctes :: !(Data.Vector.Vector Node),
                              _WithClause'recursive :: !Prelude.Bool,
@@ -112767,21 +112767,21 @@ instance Control.DeepSeq.NFData WithClause where
                    (Control.DeepSeq.deepseq (_WithClause'location x__) ())))
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xpr' @:: Lens' XmlExpr Node@
-         * 'Proto.PgQuery_Fields.maybe'xpr' @:: Lens' XmlExpr (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.op' @:: Lens' XmlExpr XmlExprOp@
-         * 'Proto.PgQuery_Fields.name' @:: Lens' XmlExpr Data.Text.Text@
-         * 'Proto.PgQuery_Fields.namedArgs' @:: Lens' XmlExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'namedArgs' @:: Lens' XmlExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.argNames' @:: Lens' XmlExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'argNames' @:: Lens' XmlExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.args' @:: Lens' XmlExpr [Node]@
-         * 'Proto.PgQuery_Fields.vec'args' @:: Lens' XmlExpr (Data.Vector.Vector Node)@
-         * 'Proto.PgQuery_Fields.xmloption' @:: Lens' XmlExpr XmlOptionType@
-         * 'Proto.PgQuery_Fields.indent' @:: Lens' XmlExpr Prelude.Bool@
-         * 'Proto.PgQuery_Fields.type'' @:: Lens' XmlExpr Data.Word.Word32@
-         * 'Proto.PgQuery_Fields.typmod' @:: Lens' XmlExpr Data.Int.Int32@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' XmlExpr Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xpr' @:: Lens' XmlExpr Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'xpr' @:: Lens' XmlExpr (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.op' @:: Lens' XmlExpr XmlExprOp@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.name' @:: Lens' XmlExpr Data.Text.Text@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.namedArgs' @:: Lens' XmlExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'namedArgs' @:: Lens' XmlExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.argNames' @:: Lens' XmlExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'argNames' @:: Lens' XmlExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.args' @:: Lens' XmlExpr [Node]@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.vec'args' @:: Lens' XmlExpr (Data.Vector.Vector Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xmloption' @:: Lens' XmlExpr XmlOptionType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indent' @:: Lens' XmlExpr Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.type'' @:: Lens' XmlExpr Data.Word.Word32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typmod' @:: Lens' XmlExpr Data.Int.Int32@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' XmlExpr Data.Int.Int32@ -}
 data XmlExpr
   = XmlExpr'_constructor {_XmlExpr'xpr :: !(Prelude.Maybe Node),
                           _XmlExpr'op :: !XmlExprOp,
@@ -113578,13 +113578,13 @@ instance Control.DeepSeq.NFData XmlOptionType where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
 
-         * 'Proto.PgQuery_Fields.xmloption' @:: Lens' XmlSerialize XmlOptionType@
-         * 'Proto.PgQuery_Fields.expr' @:: Lens' XmlSerialize Node@
-         * 'Proto.PgQuery_Fields.maybe'expr' @:: Lens' XmlSerialize (Prelude.Maybe Node)@
-         * 'Proto.PgQuery_Fields.typeName' @:: Lens' XmlSerialize TypeName@
-         * 'Proto.PgQuery_Fields.maybe'typeName' @:: Lens' XmlSerialize (Prelude.Maybe TypeName)@
-         * 'Proto.PgQuery_Fields.indent' @:: Lens' XmlSerialize Prelude.Bool@
-         * 'Proto.PgQuery_Fields.location' @:: Lens' XmlSerialize Data.Int.Int32@ -}
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.xmloption' @:: Lens' XmlSerialize XmlOptionType@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.expr' @:: Lens' XmlSerialize Node@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'expr' @:: Lens' XmlSerialize (Prelude.Maybe Node)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.typeName' @:: Lens' XmlSerialize TypeName@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.maybe'typeName' @:: Lens' XmlSerialize (Prelude.Maybe TypeName)@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.indent' @:: Lens' XmlSerialize Prelude.Bool@
+         * 'PgQuery.Internal.Proto.PgQuery_Fields.location' @:: Lens' XmlSerialize Data.Int.Int32@ -}
 data XmlSerialize
   = XmlSerialize'_constructor {_XmlSerialize'xmloption :: !XmlOptionType,
                                _XmlSerialize'expr :: !(Prelude.Maybe Node),
