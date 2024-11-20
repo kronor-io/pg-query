@@ -40,7 +40,7 @@
                 pg-query = final.haskell.lib.appendConfigureFlags
                   (hfinal.callCabal2nix "pg-query" ./. { inherit pg_query; })
                   [
-                    "--include-dirs=${pg_query}/include"
+                    "--extra-include-dirs=${pg_query}/include"
                     "--extra-lib-dirs=${pg_query}/lib"
                   ];
               });
@@ -78,8 +78,6 @@
 
                 ## hpack (to avoid needing to generate .cabal files)
                 hspkgs.hpack
-
-                hspkgs.c2hs
 
 
                 # Dev UX
