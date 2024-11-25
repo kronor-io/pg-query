@@ -29,10 +29,10 @@ build-tools:
 dependencies:
   # Haskell's base library, containing core types, data structures, and the
   # Prelude
-  - base >= 4.19.1.0 && < 5.0
+  - base >= 4.0 && < 5.0
 
   # Byte strings
-  - bytestring >= 0.12.1.0 && < 1.0
+  - bytestring >= 0.11 && < 1.0
 
   # A lens-based implementation of protocol buffers in Haskell
   - proto-lens >= 0.7.1.5 && < 1.0

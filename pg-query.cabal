@@ -36,8 +36,8 @@ library
   build-tool-depends:
       proto-lens-protoc:proto-lens-protoc
   build-depends:
-      base >=4.19.1.0 && <5.0
-    , bytestring >=0.12.1.0 && <1.0
+      base >=4.0 && <5.0
+    , bytestring >=0.11 && <1.0
     , proto-lens >=0.7.1.5 && <1.0
     , proto-lens-runtime >=0.7.0.6 && <1.0
   default-language: Haskell2010
@@ -58,8 +58,8 @@ test-suite pg-query-test
       hspec-discover:hspec-discover
     , proto-lens-protoc:proto-lens-protoc
   build-depends:
-      base >=4.19.1.0 && <5.0
-    , bytestring >=0.12.1.0 && <1.0
+      base >=4.0 && <5.0
+    , bytestring >=0.11 && <1.0
     , hspec
     , hspec-contrib
     , hspec-expectations-pretty-diff
