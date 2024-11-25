@@ -96,6 +96,6 @@
               ];
             };
 
-            defaultPackage = pkgs.pg-query;
+            packages.default = pkgs.haskellPackages.pg-query;
           });
 }
