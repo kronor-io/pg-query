@@ -18,23 +18,6 @@
         "type": "github"
       }
     },
-    "hs_bsb-http-chunked": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1666195516,
-        "narHash": "sha256-+UDxfywXPjxPuFupcB8veyMYWVQCKha64me9HADtFGg=",
-        "owner": "sjakobi",
-        "repo": "bsb-http-chunked",
-        "rev": "c0ecd72fe2beb1cf7de9340cc8b4a31045460532",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sjakobi",
-        "repo": "bsb-http-chunked",
-        "rev": "c0ecd72fe2beb1cf7de9340cc8b4a31045460532",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1729770506,
@@ -70,7 +53,6 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "hs_bsb-http-chunked": "hs_bsb-http-chunked",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable"
       }

@@ -5,11 +5,6 @@
   inputs.nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
-  inputs.hs_bsb-http-chunked = {
-    url = "github:sjakobi/bsb-http-chunked/c0ecd72fe2beb1cf7de9340cc8b4a31045460532";
-    flake = false;
-  };
-
   outputs = inputs:
     inputs.flake-utils.lib.eachDefaultSystem (system: let
       pkgsWithoutOverlay = import inputs.nixpkgs {inherit system;};
