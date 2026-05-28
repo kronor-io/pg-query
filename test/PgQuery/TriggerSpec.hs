@@ -20,7 +20,11 @@ import Data.String (String)
 import GHC.Base (error)
 import GHC.Real (fromIntegral)
 import GHC.Show (Show)
-import PgQuery hiding (String, view)
+-- 'functionName' is hidden because libpg_query's PG18 protobuf adds a
+-- field lens of that name, which would clash with the 'functionName'
+-- field of the local 'Trigger' record below (this spec reads the
+-- trigger's function via the 'funcname' lens instead).
+import PgQuery hiding (String, functionName, view)
 import Test.Hspec
   ( Spec,
     describe,
