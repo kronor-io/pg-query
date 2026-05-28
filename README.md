@@ -4,6 +4,20 @@
 which makes use of the actual PostgreSQL server source to parse SQL queries and
 return the internal PostgreSQL parse tree.
 
+> **Note on this fork.** This repository is a fork of
+> [rhizomic's `pg-query`](https://git.sr.ht/~rhizomic/pg-query) maintained
+> by [Kronor](https://kronor.io). It tracks upstream `v0.0.1.1` and adds:
+>
+> - `parsePlpgsql` (wraps `pg_query_parse_plpgsql`)
+> - `deparseProtobuf` (wraps `pg_query_deparse_protobuf`)
+> - `StrictData` default-extension on the library
+> - Drop of the `proto-lens-protoc` cabal `build-tool` (the generated
+>   modules are committed; regenerate with `make generate-protobuf`)
+>
+> Each of these is on a single, self-contained commit, intended to be
+> mailed upstream as a patch series. See `CHANGELOG.md` for the running
+> log of fork changes.
+
 ## Example
 
 ```hs
