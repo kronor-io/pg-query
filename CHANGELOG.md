@@ -1,7 +1,11 @@
 # Changelog
 
-## Unreleased
+## 0.0.2.0 -- 2026-05-28
 
+* Upgraded the bundled libpg_query to `18.0.0` (PostgreSQL 18). The
+  vendored `PgQuery.proto` and the generated `PgQuery.Internal.Proto.*`
+  modules were regenerated to match; the parse-tree AST now follows
+  PostgreSQL 18's grammar.
 * Added `parsePlpgsql` (and the internal `getPlpgsqlParseResult`) wrapping
   libpg_query's `pg_query_parse_plpgsql`. Returns the JSON the C library
   produces; callers parse the JSON themselves since libpg_query does not
