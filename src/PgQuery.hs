@@ -6,6 +6,7 @@ module PgQuery
   ( module PgQuery.Internal.Proto.PgQuery,
     module PgQuery.Internal.Proto.PgQuery_Fields,
     parseSql,
+    parsePlpgsql,
   )
 where
 
@@ -14,9 +15,11 @@ import Data.Either (Either (Left, Right))
 import Data.Function (($))
 import Data.ProtoLens (decodeMessage)
 import Data.String qualified as Base (String)
+import Data.Text (Text)
 import GHC.IO (IO)
 import PgQuery.Internal.Parse
-  ( getProtobufParseResult,
+  ( getPlpgsqlParseResult,
+    getProtobufParseResult,
   )
 import PgQuery.Internal.Proto.PgQuery
 import PgQuery.Internal.Proto.PgQuery_Fields
@@ -49,3 +52,11 @@ parseSql sql = do
   case eTree of
     Left err -> pure $ Left err
     Right result -> pure $ decodeMessage result
+
+-- | Parse a SQL string containing one or more PL/pgSQL function
+--   definitions (e.g. @CREATE FUNCTION foo() RETURNS … AS $$ … $$
+--   LANGUAGE plpgsql@) and return libpg_query's JSON-encoded plpgsql
+--   AST as a 'Text'. The caller is responsible for parsing the JSON
+--   (libpg_query does not expose the plpgsql AST via protobuf).
+parsePlpgsql :: Base.String -> IO (Either Base.String Text)
+parsePlpgsql = getPlpgsqlParseResult

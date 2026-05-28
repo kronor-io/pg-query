@@ -38,6 +38,7 @@ library
     , bytestring >=0.11 && <1.0
     , proto-lens >=0.7.1.5 && <1.0
     , proto-lens-runtime >=0.7.0.6 && <1.0
+    , text >=2.0 && <3.0
   default-language: Haskell2010
 
 test-suite pg-query-test
@@ -45,6 +46,7 @@ test-suite pg-query-test
   main-is: Spec.hs
   other-modules:
       PgQuery.ParamsSpec
+      PgQuery.PlpgsqlSpec
       PgQuery.TriggerSpec
       Paths_pg_query
   autogen-modules:
@@ -64,4 +66,5 @@ test-suite pg-query-test
     , pg-query
     , proto-lens >=0.7.1.5 && <1.0
     , proto-lens-runtime >=0.7.0.6 && <1.0
+    , text >=2.0 && <3.0
   default-language: Haskell2010

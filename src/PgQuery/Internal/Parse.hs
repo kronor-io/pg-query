@@ -1,4 +1,5 @@
 {-# LANGUAGE ForeignFunctionInterface #-}
+{-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE NamedFieldPuns #-}
 {-# LANGUAGE NoImplicitPrelude #-}
 
@@ -12,6 +13,8 @@ import Data.Either (Either (Left, Right))
 import Data.Eq (Eq, (==))
 import Data.Function (($))
 import Data.String (String)
+import Data.Text (Text)
+import Data.Text qualified as Text
 import Foreign
   ( Ptr,
     Storable
@@ -188,4 +191,63 @@ getProtobufParseResult sql = do
 
       free_sql resultPtr
 
+      pure $ Left errorMessage
+
+-- | Data type corresponding to the following struct in 'pg_query.h':
+--
+--   @
+--     typedef struct {
+--       char* plpgsql_funcs;
+--       PgQueryError* error;
+--     } PgQueryPlpgsqlParseResult;
+--   @
+data PgQueryPlpgsqlParseResult = PgQueryPlpgsqlParseResult
+  { plpgsql_funcs :: !CString
+  , plpgsql_error :: !(Ptr PgQueryError)
+  }
+  deriving (Show)
+
+instance Storable PgQueryPlpgsqlParseResult where
+  sizeOf _ = sizeOf (undefined :: CString) + sizeOf (undefined :: Ptr PgQueryError)
+  alignment _ = alignment (undefined :: PgQueryPlpgsqlParseResult)
+  peek ptr = do
+    plpgsql_funcs <- peekByteOff ptr 0
+    plpgsql_error <- peekByteOff ptr (sizeOf (undefined :: CString))
+    pure PgQueryPlpgsqlParseResult {plpgsql_funcs, plpgsql_error}
+  poke _ _ = fail "PgQueryPlpgsqlParseResult poke: not supported"
+
+foreign import ccall "get_plpgsql"
+  get_plpgsql ::
+    CString ->
+    IO (Ptr PgQueryPlpgsqlParseResult)
+
+foreign import ccall "free_plpgsql"
+  free_plpgsql ::
+    Ptr PgQueryPlpgsqlParseResult ->
+    IO ()
+
+-- | Parse a PL/pgSQL function body using libpg_query's
+--   @pg_query_parse_plpgsql@. The input is the full statement
+--   (@CREATE FUNCTION ... AS $$ ... $$ LANGUAGE plpgsql@), not just
+--   the body payload; libpg_query's plpgsql parser expects the
+--   surrounding @CREATE FUNCTION@ context.
+--
+--   Returns the JSON the C library produces; libpg_query does not
+--   expose the plpgsql AST via protobuf, so callers parse the JSON
+--   themselves.
+getPlpgsqlParseResult :: String -> IO (Either String Text)
+getPlpgsqlParseResult sql = do
+  resultPtr <- withCString sql get_plpgsql
+  result <- peek resultPtr
+
+  let errPtr = plpgsql_error result
+  case errPtr == nullPtr of
+    True -> do
+      jsonStr <- peekCString (plpgsql_funcs result)
+      free_plpgsql resultPtr
+      pure $ Right (Text.pack jsonStr)
+    False -> do
+      errorResult <- peek errPtr
+      errorMessage <- peekCString (message errorResult)
+      free_plpgsql resultPtr
       pure $ Left errorMessage

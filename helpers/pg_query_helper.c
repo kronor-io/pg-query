@@ -28,3 +28,16 @@ void free_sql (PgQueryProtobufParseResult * a) {
   free (a);
   return;
 }
+
+PgQueryPlpgsqlParseResult * get_plpgsql (const char * sql) {
+  PgQueryPlpgsqlParseResult * result = malloc (sizeof (PgQueryPlpgsqlParseResult));
+  *result = pg_query_parse_plpgsql(sql);
+
+  return result;
+}
+
+void free_plpgsql (PgQueryPlpgsqlParseResult * a) {
+  pg_query_free_plpgsql_parse_result(*a);
+  free (a);
+  return;
+}
