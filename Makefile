@@ -1,14 +1,12 @@
 # Used for `make test`
 match=
 
-# Used for `make test`
 ifdef match
 export match
 endif
 
 
 build:
-	make hpack
 	cabal build -j
 .PHONY: build
 
@@ -24,11 +22,6 @@ generate-protobuf:
 
 .PHONY: generate-protobuf
 
-hpack:
-	hpack
-.PHONY: hpack
-
 test:
-	make hpack
 	cabal run pg-query-test -- $(if $(match), --match="$(match)")
 .PHONY: test

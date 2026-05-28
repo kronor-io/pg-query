@@ -1,9 +1,5 @@
 cabal-version: 2.2
 
--- This file has been generated from package.yaml by hpack version 0.36.1.
---
--- see: https://github.com/sol/hpack
-
 name:           pg-query
 version:        0.0.1.1
 synopsis:       Parse PostgreSQL DDL and DML: Haskell bindings for libpg_query

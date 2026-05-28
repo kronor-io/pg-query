@@ -1,0 +1,28 @@
+packages:
+  .
+
+program-options
+  ghc-options:
+    -Wall
+    -Wcompat
+    -Widentities
+    -Wincomplete-record-updates
+    -Wincomplete-uni-patterns
+    -Wpartial-fields
+    -Wredundant-constraints
+
+-- GHC 9.12 ships base-4.21 (and a matching ghc-prim 0.13). The
+-- proto-lens family's upper bounds on base, bytestring, and
+-- ghc-prim are stale, so the cabal solver rejects an otherwise
+-- valid install plan. The libraries themselves compile fine
+-- against the newer versions; relax all bounds on this small set
+-- of pkgs rather than maintain a per-dep allow-newer list.
+allow-newer:
+  *:base,
+  *:bytestring,
+  *:ghc-prim,
+  *:template-haskell,
+  *:text,
+  *:transformers,
+
+index-state: hackage.haskell.org 2025-11-24T20:42:33Z
