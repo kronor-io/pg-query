@@ -8,7 +8,7 @@ module PgQuery.Internal.Parse where
 import Control.Applicative (pure)
 import Control.Monad.Fail (fail)
 import Data.Bool (Bool (False, True))
-import Data.ByteString (ByteString, packCStringLen)
+import Data.ByteString (ByteString, packCStringLen, useAsCStringLen)
 import Data.Either (Either (Left, Right))
 import Data.Eq (Eq, (==))
 import Data.Function (($))
@@ -251,3 +251,59 @@ getPlpgsqlParseResult sql = do
       errorMessage <- peekCString (message errorResult)
       free_plpgsql resultPtr
       pure $ Left errorMessage
+
+-- | Data type corresponding to the following struct in 'pg_query.h':
+--
+--   @
+--     typedef struct {
+--       char* query;
+--       PgQueryError* error;
+--     } PgQueryDeparseResult;
+--   @
+data PgQueryDeparseResult = PgQueryDeparseResult
+  { deparse_query :: !CString
+  , deparse_error :: !(Ptr PgQueryError)
+  }
+  deriving (Show)
+
+instance Storable PgQueryDeparseResult where
+  sizeOf _ = sizeOf (undefined :: CString) + sizeOf (undefined :: Ptr PgQueryError)
+  alignment _ = alignment (undefined :: PgQueryDeparseResult)
+  peek ptr = do
+    deparse_query <- peekByteOff ptr 0
+    deparse_error <- peekByteOff ptr (sizeOf (undefined :: CString))
+    pure PgQueryDeparseResult {deparse_query, deparse_error}
+  poke _ _ = fail "PgQueryDeparseResult poke: not supported"
+
+foreign import ccall "get_deparse"
+  get_deparse ::
+    CString ->
+    CSize ->
+    IO (Ptr PgQueryDeparseResult)
+
+foreign import ccall "free_deparse"
+  free_deparse ::
+    Ptr PgQueryDeparseResult ->
+    IO ()
+
+-- | Re-serialize a libpg_query protobuf parse tree to a SQL string
+--   via @pg_query_deparse_protobuf@. The input is the raw protobuf
+--   bytes (as produced by 'getProtobufParseResult', or a hand-crafted
+--   tree built with proto-lens). Returns the deparsed SQL.
+getDeparseResult :: ByteString -> IO (Either String Text)
+getDeparseResult protoBytes =
+  useAsCStringLen protoBytes $ \(ptr, len) -> do
+    resultPtr <- get_deparse ptr (fromIntegral len)
+    result <- peek resultPtr
+
+    let errPtr = deparse_error result
+    case errPtr == nullPtr of
+      True -> do
+        sqlStr <- peekCString (deparse_query result)
+        free_deparse resultPtr
+        pure $ Right (Text.pack sqlStr)
+      False -> do
+        errorResult <- peek errPtr
+        errorMessage <- peekCString (message errorResult)
+        free_deparse resultPtr
+        pure $ Left errorMessage

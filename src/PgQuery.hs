@@ -7,18 +7,20 @@ module PgQuery
     module PgQuery.Internal.Proto.PgQuery_Fields,
     parseSql,
     parsePlpgsql,
+    deparseProtobuf,
   )
 where
 
 import Control.Applicative (pure)
 import Data.Either (Either (Left, Right))
-import Data.Function (($))
-import Data.ProtoLens (decodeMessage)
+import Data.Function (($), (.))
+import Data.ProtoLens (decodeMessage, encodeMessage)
 import Data.String qualified as Base (String)
 import Data.Text (Text)
 import GHC.IO (IO)
 import PgQuery.Internal.Parse
-  ( getPlpgsqlParseResult,
+  ( getDeparseResult,
+    getPlpgsqlParseResult,
     getProtobufParseResult,
   )
 import PgQuery.Internal.Proto.PgQuery
@@ -60,3 +62,11 @@ parseSql sql = do
 --   (libpg_query does not expose the plpgsql AST via protobuf).
 parsePlpgsql :: Base.String -> IO (Either Base.String Text)
 parsePlpgsql = getPlpgsqlParseResult
+
+-- | Re-serialize a 'ParseResult' back to SQL via
+--   @pg_query_deparse_protobuf@. The protobuf is re-encoded to its
+--   wire form and passed to the C library; mutating an AST and round-
+--   tripping it through deparse is the supported way to produce a SQL
+--   variant of an input query.
+deparseProtobuf :: ParseResult -> IO (Either Base.String Text)
+deparseProtobuf = getDeparseResult . encodeMessage

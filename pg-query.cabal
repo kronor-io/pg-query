@@ -45,6 +45,7 @@ test-suite pg-query-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      PgQuery.DeparseSpec
       PgQuery.ParamsSpec
       PgQuery.PlpgsqlSpec
       PgQuery.TriggerSpec

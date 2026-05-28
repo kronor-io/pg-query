@@ -6,6 +6,10 @@
   libpg_query's `pg_query_parse_plpgsql`. Returns the JSON the C library
   produces; callers parse the JSON themselves since libpg_query does not
   expose the plpgsql AST via protobuf.
+* Added `deparseProtobuf` (and the internal `getDeparseResult`) wrapping
+  libpg_query's `pg_query_deparse_protobuf`. Re-serializes a `ParseResult`
+  to SQL — the supported way to mutate an AST and produce a SQL variant
+  of an input query.
 
 ## 0.0.1.1 -- 2024-11-18
 

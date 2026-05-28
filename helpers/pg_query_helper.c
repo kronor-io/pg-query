@@ -41,3 +41,20 @@ void free_plpgsql (PgQueryPlpgsqlParseResult * a) {
   free (a);
   return;
 }
+
+PgQueryDeparseResult * get_deparse (const char * data, size_t len) {
+  PgQueryProtobuf input;
+  input.data = (char *) data;
+  input.len = len;
+
+  PgQueryDeparseResult * result = malloc (sizeof (PgQueryDeparseResult));
+  *result = pg_query_deparse_protobuf(input);
+
+  return result;
+}
+
+void free_deparse (PgQueryDeparseResult * a) {
+  pg_query_free_deparse_result(*a);
+  free (a);
+  return;
+}
