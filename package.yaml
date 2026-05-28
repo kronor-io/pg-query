@@ -23,8 +23,11 @@ extra-source-files:
   - CHANGELOG.md
   - PgQuery.proto
 
-build-tools:
-  - proto-lens-protoc:proto-lens-protoc
+# Note: proto-lens-protoc is *not* declared as a cabal build-tool.
+# The generated modules under src/PgQuery/Internal/Proto/ are checked in,
+# so downstream consumers can build without protoc / proto-lens-protoc on
+# their PATH. When PgQuery.proto changes, run `make generate-protobuf` to
+# refresh the committed modules.
 
 dependencies:
   # Haskell's base library, containing core types, data structures, and the

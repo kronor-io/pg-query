@@ -127,3 +127,19 @@ make build
 ```
 make test
 ```
+
+### Regenerating the protobuf modules
+
+The generated proto-lens modules under `src/PgQuery/Internal/Proto/` are
+committed in the repository so downstream consumers can build `pg-query`
+without `protoc` or `proto-lens-protoc` on their PATH (the package no
+longer declares `proto-lens-protoc` as a cabal `build-tool`).
+
+When `PgQuery.proto` changes, regenerate the modules:
+
+```
+make generate-protobuf
+```
+
+This requires `protoc` and `proto-lens-protoc` to be available; the
+nix dev shell (`nix develop`) provides them.
