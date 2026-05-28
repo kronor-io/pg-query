@@ -131,6 +131,30 @@
               tag = "16-5.2.0";
               hash = "sha256-UziczfuJ0d6tYi87EC/HDDC5nbe3YMliLFZBTaYucj0=";
             };
+            # Upstream's build rule emits the shared library under the
+            # unversioned name (libpg_query.so / .dylib) yet bakes a
+            # versioned SONAME/install-name into it
+            # (libpg_query.so.1605.1 / libpg_query.1605.1.dylib), and
+            # nixpkgs installs only that unversioned file. nixpkgs
+            # never trips over this because its sole consumer links the
+            # static archive, but pg-query links libpg_query
+            # dynamically, so the SONAME it records has no matching
+            # file and the test exe fails to load it at runtime.
+            # Recreate the SONAME (and the fully versioned name) as
+            # symlinks. Ask make itself for the exact names rather than
+            # deriving them from the version string above: the tag is
+            # 16-5.2.0 but the Makefile's own VERSION trails it, so the
+            # real SONAME is libpg_query.so.1605.1.
+            postInstall = ''
+              names=$(make -s --eval='__pg_query_names: ; @echo $(SONAME) $(SOLIBVER) $(SOLIB)' __pg_query_names)
+              set -- $names
+              soname=$1
+              solibver=$2
+              solib=$3
+              cd "$out/lib"
+              [ "$soname" = "$solib" ] || ln -s "$solib" "$soname"
+              [ "$solibver" = "$solib" ] || [ "$solibver" = "$soname" ] || ln -s "$solib" "$solibver"
+            '';
           });
           pg_query = final.libpg_query;
         };
