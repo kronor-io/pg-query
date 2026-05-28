@@ -55,6 +55,8 @@ library:
   - pg_query
   c-sources:
     helpers/pg_query_helper.c
+  default-extensions:
+    - StrictData
 
 tests:
   pg-query-test:

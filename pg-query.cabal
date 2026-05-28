@@ -29,6 +29,8 @@ library
       PgQuery.Internal.Proto.PgQuery_Fields
   hs-source-dirs:
       src
+  default-extensions:
+      StrictData
   c-sources:
       helpers/pg_query_helper.c
   extra-libraries:

@@ -49,8 +49,8 @@ import GHC.Show (Show)
 --     } PgQueryProtobuf;
 --   @
 data PgQueryProtobuf = PgQueryProtobuf
-  { len :: !CSize
-  , protobufData :: !CString
+  { len :: CSize
+  , protobufData :: CString
   }
   deriving (Show, Eq)
 
@@ -85,12 +85,12 @@ instance Storable PgQueryProtobuf where
 --     } PgQueryError;
 --   @
 data PgQueryError = PgQueryError
-  { message :: !CString
-  , funcname :: !CString
-  , filename :: !CString
-  , lineno :: !CInt
-  , cursorpos :: !CInt
-  , context :: !CString
+  { message :: CString
+  , funcname :: CString
+  , filename :: CString
+  , lineno :: CInt
+  , cursorpos :: CInt
+  , context :: CString
   }
   deriving (Show, Eq)
 
@@ -134,9 +134,9 @@ instance Storable PgQueryError where
 --     } PgQueryProtobufParseResult;
 --   @
 data PgQueryProtobufParseResult = PgQueryProtobufParseResult
-  { parse_tree :: !PgQueryProtobuf
-  , stderr_buffer :: !CString
-  , pg_query_error :: !(Ptr PgQueryError)
+  { parse_tree :: PgQueryProtobuf
+  , stderr_buffer :: CString
+  , pg_query_error :: Ptr PgQueryError
   }
   deriving (Show)
 
@@ -202,8 +202,8 @@ getProtobufParseResult sql = do
 --     } PgQueryPlpgsqlParseResult;
 --   @
 data PgQueryPlpgsqlParseResult = PgQueryPlpgsqlParseResult
-  { plpgsql_funcs :: !CString
-  , plpgsql_error :: !(Ptr PgQueryError)
+  { plpgsql_funcs :: CString
+  , plpgsql_error :: Ptr PgQueryError
   }
   deriving (Show)
 
@@ -261,8 +261,8 @@ getPlpgsqlParseResult sql = do
 --     } PgQueryDeparseResult;
 --   @
 data PgQueryDeparseResult = PgQueryDeparseResult
-  { deparse_query :: !CString
-  , deparse_error :: !(Ptr PgQueryError)
+  { deparse_query :: CString
+  , deparse_error :: Ptr PgQueryError
   }
   deriving (Show)
 
