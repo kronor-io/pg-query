@@ -1,5 +1,5 @@
 {
-  description = "pg-query: Haskell bindings for libpg_query (Kronor-maintained fork)";
+  description = "libpg-query: Haskell bindings for libpg_query (Kronor-maintained fork)";
 
   nixConfig = {
     extra-substituters = "https://kronor-open.cachix.org";
@@ -186,13 +186,13 @@
           modules = [
             { doHaddock = false; }
             ({ ... }: {
-              packages.pg-query = {
+              packages.libpg-query = {
                 configureFlags = [
                   "--extra-include-dirs=${libpg_query}/include"
                   "--extra-lib-dirs=${libpg_query}/lib"
                 ];
                 components.library.libs = [ libpg_query ];
-                components.tests.pg-query-test.libs = [ libpg_query ];
+                components.tests.libpg-query-test.libs = [ libpg_query ];
               };
             })
           ];
@@ -200,7 +200,7 @@
 
         shell = pgQueryProject.shellFor {
           withHoogle = false;
-          packages = ps: [ ps.pg-query ];
+          packages = ps: [ ps.libpg-query ];
           nativeBuildInputs = [
             self.checks.${system}.pre-commit-check.enabledPackages
             libpg_query
@@ -235,9 +235,9 @@
           };
         };
         packages = {
-          default = pgQueryProject.pg-query.components.library;
-          pg-query = pgQueryProject.pg-query.components.library;
-          pg-query-test = pgQueryProject.pg-query.components.tests.pg-query-test;
+          default = pgQueryProject.libpg-query.components.library;
+          libpg-query = pgQueryProject.libpg-query.components.library;
+          libpg-query-test = pgQueryProject.libpg-query.components.tests.libpg-query-test;
         };
         devShells.default = shell;
       }

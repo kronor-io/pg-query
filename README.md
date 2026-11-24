@@ -1,12 +1,13 @@
-# pg-query
+# libpg-query
 
-`pg-query` offers Haskell bindings for [libpg_query](https://github.com/pganalyze/libpg_query),
+`libpg-query` offers Haskell bindings for [libpg_query](https://github.com/pganalyze/libpg_query),
 which makes use of the actual PostgreSQL server source to parse SQL queries and
 return the internal PostgreSQL parse tree.
 
 > **Note on this fork.** This repository is a fork of
 > [rhizomic's `pg-query`](https://git.sr.ht/~rhizomic/pg-query) maintained
-> by [Kronor](https://kronor.io). It tracks upstream `v0.0.1.1` and adds:
+> by [Kronor](https://kronor.io), published on Hackage as `libpg-query`
+> (`pg-query` there is upstream's). The modules keep their `PgQuery` names. It tracks upstream `v0.0.1.1` and adds:
 >
 > - `parsePlpgsql` (wraps `pg_query_parse_plpgsql`)
 > - `deparseProtobuf` (wraps `pg_query_deparse_protobuf`)
@@ -145,7 +146,7 @@ make test
 ### Regenerating the protobuf modules
 
 The generated proto-lens modules under `src/PgQuery/Internal/Proto/` are
-committed in the repository so downstream consumers can build `pg-query`
+committed in the repository so downstream consumers can build `libpg-query`
 without `protoc` or `proto-lens-protoc` on their PATH (the package no
 longer declares `proto-lens-protoc` as a cabal `build-tool`).
 

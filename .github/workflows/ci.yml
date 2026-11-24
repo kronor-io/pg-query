@@ -90,4 +90,4 @@ jobs:
         # Reuse the test binary the matrix already built (and the
         # cache pushed); `nix develop --command cabal run` would
         # spin up cabal-install and rebuild the world.
-        run: nix run -L .#pg-query-test
+        run: nix run -L .#libpg-query-test

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.0.0 -- 2026-11-24
+
+* First release on Hackage, as `libpg-query`. This is Kronor's fork of
+  [rhizomic's `pg-query`](https://git.sr.ht/~rhizomic/pg-query) at 0.0.2.0:
+  the same `PgQuery` modules, plus the changes below. `pg-query` on Hackage
+  is upstream's.
+
 ## 0.0.2.0 -- 2026-05-28
 
 * Upgraded the bundled libpg_query to `18.0.0` (PostgreSQL 18). The

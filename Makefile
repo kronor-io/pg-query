@@ -23,5 +23,5 @@ generate-protobuf:
 .PHONY: generate-protobuf
 
 test:
-	cabal run pg-query-test -- $(if $(match), --match="$(match)")
+	cabal run libpg-query-test -- $(if $(match), --match="$(match)")
 .PHONY: test
