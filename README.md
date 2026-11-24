@@ -126,8 +126,11 @@ in `test/PgQuery/`.
 
 ## Installation
 
-You'll need to ensure [libpg_query](https://github.com/pganalyze/libpg_query)
-is installed before trying to build this package.
+Install [libpg_query](https://github.com/pganalyze/libpg_query) 18 (the
+`18.x` releases) first: the generated `PgQuery.Internal.Proto` modules match
+its protobuf schema, and another major version decodes statements into the
+wrong nodes. Install `postgres_deparse.h` beside `pg_query.h`, which
+libpg_query's own `make install` leaves out. `flake.nix` shows both.
 
 ## Development
 
